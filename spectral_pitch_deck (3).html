@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECTRAL - Continuous Privacy Compliance Verification</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+            background: #000000;
+            color: #ffffff;
+            overflow: hidden;
+            font-weight: 300;
+        }
+
+        .deck-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 2rem;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            max-width: 1200px;
+            height: calc(100vh - 4rem);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+            overflow-y: auto;
+            padding: 2rem 0;
+        }
+
+        .slide.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            line-height: 1.1;
+            text-align: center;
+            letter-spacing: -0.02em;
+        }
+
+        .slide h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            text-align: center;
+            letter-spacing: -0.01em;
+        }
+
+        .slide h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+            color: #ffffff;
+            letter-spacing: -0.01em;
+        }
+
+        .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+            color: #888888;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            text-align: center;
+            letter-spacing: 0.01em;
+        }
+
+        .tagline {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.4rem;
+            color: #8B5CF6;
+            font-weight: 400;
+            margin-top: 2rem;
+            text-align: center;
+            letter-spacing: 0.01em;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(139, 92, 246, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .card.violet {
+            background: rgba(139, 92, 246, 0.05);
+            border-color: rgba(139, 92, 246, 0.2);
+        }
+
+        .card.problem {
+            background: rgba(239, 68, 68, 0.05);
+            border-color: rgba(239, 68, 68, 0.2);
+        }
+
+        .card.success {
+            background: rgba(34, 197, 94, 0.05);
+            border-color: rgba(34, 197, 94, 0.2);
+        }
+
+        .workflow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 3rem 0;
+            gap: 1rem;
+        }
+
+        .workflow-step {
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+
+        .workflow-step::after {
+            content: '→';
+            position: absolute;
+            right: -1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: #8B5CF6;
+        }
+
+        .workflow-step:last-child::after {
+            display: none;
+        }
+
+        .step-number {
+            background: #8B5CF6;
+            color: #000000;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin: 0 auto 1rem;
+            font-size: 0.9rem;
+        }
+
+        .feature-detail {
+            background: rgba(139, 92, 246, 0.05);
+            border-left: 3px solid #8B5CF6;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .demo-section {
+            background: rgba(139, 92, 246, 0.03);
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            border-radius: 16px;
+            padding: 3rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .stat-large {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #8B5CF6;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .stat-medium {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #8B5CF6;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1rem;
+            z-index: 1000;
+        }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+        }
+
+        .nav-btn:hover {
+            background: rgba(139, 92, 246, 0.2);
+            border-color: rgba(139, 92, 246, 0.4);
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 2px;
+            background: #8B5CF6;
+            transition: width 0.3s ease;
+            z-index: 1000;
+        }
+
+        .slide-number {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            font-size: 0.9rem;
+            color: #666666;
+            z-index: 1000;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .logo {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            z-index: 1000;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #8B5CF6;
+        }
+
+        .evidence-preview {
+            background: #111111;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.85rem;
+            color: #22C55E;
+            overflow-x: auto;
+        }
+
+        .integration-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .integration-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1rem 2rem;
+            font-weight: 500;
+            color: #cccccc;
+            font-size: 0.9rem;
+        }
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+        }
+
+        .split-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            height: 80%;
+        }
+
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .before {
+            background: rgba(239, 68, 68, 0.05);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .after {
+            background: rgba(34, 197, 94, 0.05);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        ul li::before {
+            content: '•';
+            color: #8B5CF6;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .before ul li::before {
+            color: #EF4444;
+        }
+
+        .after ul li::before {
+            color: #22C55E;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 1rem 0;
+            color: #cccccc;
+        }
+
+        strong {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .highlight {
+            color: #8B5CF6;
+            font-weight: 500;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @media (max-width: 1024px) {
+            .slide h1 { font-size: 3rem; }
+            .slide h2 { font-size: 2.2rem; }
+            .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            .workflow { flex-direction: column; }
+            .workflow-step::after { display: none; }
+            .split-content { grid-template-columns: 1fr; gap: 2rem; }
+            .deck-container { padding: 1rem; }
+        }
+
+        @media (max-width: 768px) {
+            .slide h1 { font-size: 2.5rem; }
+            .slide h2 { font-size: 1.8rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .before-after { grid-template-columns: 1fr; }
+        }
+
+        /* Custom scrollbar */
+        .slide::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .slide::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .slide::-webkit-scrollbar-thumb {
+            background: rgba(139, 92, 246, 0.5);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="slide-number" id="slideNumber">1 / 21</div>
+    <div class="logo">SPECTRAL</div>
+
+    <div class="deck-container">
+        <!-- Slide 1: Title -->
+        <div class="slide active" id="slide1">
+            <div class="center-content">
+                <h1>SPECTRAL</h1>
+                <p class="subtitle">Continuous Privacy Compliance Verification</p>
+                
+                <div style="margin: 4rem 0; font-size: 1.4rem; line-height: 1.6;">
+                    <p>The only platform that <span class="highlight">proves</span> your privacy policies</p>
+                    <p>are actually enforced in production</p>
+                </div>
+                
+                <div class="tagline">
+                    Simulate • Verify • Prove
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Industry Context -->
+        <div class="slide" id="slide2">
+            <h2>The Modern Privacy Compliance Challenge</h2>
+            <p class="subtitle">Regulatory complexity meets operational reality</p>
+            
+            <div class="grid-3">
+                <div class="card animated">
+                    <div class="stat-large">190+</div>
+                    <p><strong>Privacy jurisdictions worldwide</strong></p>
+                    <p>Each with unique requirements and enforcement</p>
+                </div>
+                
+                <div class="card animated">
+                    <div class="stat-large">40hrs</div>
+                    <p><strong>Monthly manual QA time</strong></p>
+                    <p>Privacy teams spending time on repetitive checks</p>
+                </div>
+                
+                <div class="card animated">
+                    <div class="stat-large">73%</div>
+                    <p><strong>Companies have compliance gaps</strong></p>
+                    <p>Between documented policies and live implementation</p>
+                </div>
+            </div>
+            
+            <div class="demo-section">
+                <h3>The Core Challenge</h3>
+                <p style="font-size: 1.2rem; margin-top: 1rem; color: #cccccc;">
+                    Organizations need <span class="highlight">operational confidence</span> that their privacy implementations actually work as intended across all touchpoints
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 3: Current State Problems -->
+        <div class="slide" id="slide3">
+            <h2>Why Privacy Compliance Breaks</h2>
+            <p class="subtitle">The gap between policy promises and runtime reality</p>
+            
+            <div class="grid-4">
+                <div class="card problem animated">
+                    <h3>🚨 Pre-Consent Firing</h3>
+                    <p>Tracking scripts load before users make any consent choice</p>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: #EF4444;">
+                        <strong>Impact:</strong> Direct GDPR violations
+                    </div>
+                </div>
+                
+                <div class="card problem animated">
+                    <h3>⚖️ Reject ≠ Accept</h3>
+                    <p>Inconsistent behavior when users reject vs accept cookies</p>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: #EF4444;">
+                        <strong>Impact:</strong> Audit failures, fines
+                    </div>
+                </div>
+                
+                <div class="card problem animated">
+                    <h3>🔧 Server-Side Blind Spot</h3>
+                    <p>Analytics and marketing tools ignore user consent state</p>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: #EF4444;">
+                        <strong>Impact:</strong> Measurement violations
+                    </div>
+                </div>
+                
+                <div class="card problem animated">
+                    <h3>🔄 Post-Release Drift</h3>
+                    <p>Tags and vendors reappear after deployments</p>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: #EF4444;">
+                        <strong>Impact:</strong> Compliance regressions
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem; text-align: center; padding: 2rem; background: rgba(239, 68, 68, 0.05); border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.2);">
+                <h3>Result: Manual QA can't scale with weekly releases and regulatory complexity</h3>
+            </div>
+        </div>
+
+        <!-- Slide 4: Status Quo Limitations -->
+        <div class="slide" id="slide4">
+            <h2>Current Solutions Fall Short</h2>
+            <p class="subtitle">The status quo leaves critical gaps in compliance verification</p>
+            
+            <div class="before-after">
+                <div class="before">
+                    <h3>❌ Traditional Approach</h3>
+                    <ul>
+                        <li><strong>CMPs:</strong> Set policies, can't verify enforcement</li>
+                        <li><strong>Manual QA:</strong> Quarterly checks, not scalable</li>
+                        <li><strong>Static Scanners:</strong> Point-in-time snapshots</li>
+                        <li><strong>Tag Managers:</strong> Manage tags, not compliance</li>
+                    </ul>
+                    
+                    <div style="margin-top: 2rem; padding: 1rem; background: rgba(239, 68, 68, 0.1); border-radius: 8px;">
+                        <strong>Critical Gaps:</strong>
+                        <ul style="margin-top: 0.5rem;">
+                            <li>No continuous monitoring</li>
+                            <li>No server-side verification</li>
+                            <li>No forensic evidence</li>
+                            <li>Reactive, not preventive</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="after">
+                    <h3>✅ SPECTRAL Approach</h3>
+                    <ul>
+                        <li><strong>Continuous Verification:</strong> 24/7 compliance monitoring</li>
+                        <li><strong>End-to-End Coverage:</strong> Client + server correlation</li>
+                        <li><strong>Evidence-First:</strong> Screenshots, HAR files, audit trails</li>
+                        <li><strong>Automated Resolution:</strong> Tickets with proof</li>
+                    </ul>
+                    
+                    <div style="margin-top: 2rem; padding: 1rem; background: rgba(34, 197, 94, 0.1); border-radius: 8px;">
+                        <strong>Key Benefits:</strong>
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Real-time violation detection</li>
+                            <li>Prevent compliance regressions</li>
+                            <li>Audit-ready documentation</li>
+                            <li>Proactive protection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: SPECTRAL Solution Overview -->
+        <div class="slide" id="slide5">
+            <h2>How SPECTRAL Works</h2>
+            <p class="subtitle">Continuous runtime verification with forensic evidence</p>
+            
+            <div class="workflow">
+                <div class="workflow-step animated">
+                    <div class="step-number">1</div>
+                    <h3>Configure</h3>
+                    <p>Define domains, regions, consent states, critical journeys</p>
+                </div>
+                
+                <div class="workflow-step animated">
+                    <div class="step-number">2</div>
+                    <h3>Simulate</h3>
+                    <p>Automated crawls across None/Accept/Reject/GPC states</p>
+                </div>
+                
+                <div class="workflow-step animated">
+                    <div class="step-number">3</div>
+                    <h3>Capture</h3>
+                    <p>PRE/POST evidence, network traffic, events</p>
+                </div>
+                
+                <div class="workflow-step animated">
+                    <div class="step-number">4</div>
+                    <h3>Analyze</h3>
+                    <p>Rule engine processes against compliance requirements</p>
+                </div>
+                
+                <div class="workflow-step animated">
+                    <div class="step-number">5</div>
+                    <h3>Act</h3>
+                    <p>Auto-create tickets with evidence, block releases</p>
+                </div>
+            </div>
+            
+            <div class="demo-section">
+                <h3>🎯 Core Differentiator</h3>
+                <p style="font-size: 1.3rem; margin-top: 1rem;">
+                    Only platform that verifies <span class="highlight">runtime behavior</span> matches <span class="highlight">policy promises</span> with reproducible evidence
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 6: Multi-Surface Coverage -->
+        <div class="slide" id="slide6">
+            <h2>Complete Multi-Surface Coverage</h2>
+            <p class="subtitle">Web, mobile, CTV + client & server-side verification</p>
+            
+            <div class="grid-4">
+                <div class="card violet animated">
+                    <h3>🌐 Web Verification</h3>
+                    <ul>
+                        <li>DOM analysis and screenshot capture</li>
+                        <li>Network traffic (HAR) inspection</li>
+                        <li>Cookie and localStorage monitoring</li>
+                        <li>Tag manager integration analysis</li>
+                    </ul>
+                </div>
+                
+                <div class="card violet animated">
+                    <h3>📱 Mobile SDK</h3>
+                    <ul>
+                        <li>App consent flow verification</li>
+                        <li>SDK behavior analysis</li>
+                        <li>ATT/IDFA compliance checks</li>
+                        <li>Cross-platform consistency</li>
+                    </ul>
+                </div>
+                
+                <div class="card violet animated">
+                    <h3>📺 CTV & OTT</h3>
+                    <ul>
+                        <li>Connected TV consent verification</li>
+                        <li>Streaming platform compliance</li>
+                        <li>Cross-device tracking analysis</li>
+                        <li>Platform-specific regulations</li>
+                    </ul>
+                </div>
+                
+                <div class="card violet animated">
+                    <h3>🔧 Server-Side</h3>
+                    <ul>
+                        <li>GA4 analytics platform verification</li>
+                        <li>CAPI (Conversions API) compliance</li>
+                        <li>Customer data platform checks</li>
+                        <li>Marketing automation verification</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="feature-detail">
+                <h3>🎯 Client ↔ Server Parity Verification</h3>
+                <p>SPECTRAL ensures the same legal consent state is respected on both client-side (browser/app) and server-side (analytics pipelines), eliminating the most common compliance gap.</p>
+            </div>
+        </div>
+
+        <!-- Slide 7: Technical Deep Dive -->
+        <div class="slide" id="slide7">
+            <h2>Technical Implementation</h2>
+            <p class="subtitle">How SPECTRAL captures and analyzes compliance evidence</p>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3>🔍 Evidence Capture</h3>
+                    <ul>
+                        <li><strong>PRE-Consent:</strong> Screenshots + DOM before banner</li>
+                        <li><strong>POST-Consent:</strong> Screenshots + DOM after accept/reject</li>
+                        <li><strong>Network Analysis:</strong> Complete HAR files</li>
+                        <li><strong>Event Correlation:</strong> Client events + server logs</li>
+                        <li><strong>PII Protection:</strong> Automatic data redaction</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>⚖️ Compliance Analysis</h3>
+                    <ul>
+                        <li><strong>Region-Specific Rules:</strong> GDPR, CCPA, LGPD packs</li>
+                        <li><strong>Dark Pattern Detection:</strong> UI friction analysis</li>
+                        <li><strong>Consent Verification:</strong> None/Accept/Reject/GPC</li>
+                        <li><strong>Timing Analysis:</strong> Pre-consent firing detection</li>
+                        <li><strong>Vendor Tracking:</strong> Tag reappearance monitoring</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="evidence-preview">
+                <strong>Sample Evidence Output:</strong><br><br>
+VIOLATION DETECTED: Pre-consent firing<br>
+─────────────────────────────────────<br>
+Domain: example.com/checkout<br>
+Timestamp: 2024-08-18T14:32:15Z<br>
+Rule: GDPR-001 (No tracking before consent)<br><br>
+Evidence:<br>
+├── PRE_screenshot.png<br>
+├── POST_screenshot.png<br>
+├── network_traffic.har<br>
+└── violation_details.json<br><br>
+Network Calls Before Consent:<br>
+• Google Analytics: ga4-measurement.com<br>
+• Facebook Pixel: facebook.com/tr<br>
+• Mixpanel: api.mixpanel.com<br><br>
+Recommendation: Block pre-consent tracking calls
+            </div>
+        </div>
+
+        <!-- Slide 8: Journey Builder -->
+        <div class="slide" id="slide8">
+            <h2>Journey Builder & Intelligent Scheduling</h2>
+            <p class="subtitle">Monitor critical user paths across regions and consent states</p>
+            
+            <div class="grid-3">
+                <div class="card animated">
+                    <h3>🗺️ Journey Configuration</h3>
+                    <ul>
+                        <li><strong>Critical Paths:</strong> Home → Product → Cart → Checkout</li>
+                        <li><strong>Lead Flows:</strong> Landing → Form → Thank you</li>
+                        <li><strong>Content Journeys:</strong> Article → Related → Newsletter</li>
+                        <li><strong>Account Flows:</strong> Login → Profile → Settings</li>
+                    </ul>
+                </div>
+                
+                <div class="card animated">
+                    <h3>⏰ Smart Scheduling</h3>
+                    <ul>
+                        <li><strong>Continuous:</strong> Real-time critical flow monitoring</li>
+                        <li><strong>Daily:</strong> Regular compliance health checks</li>
+                        <li><strong>Weekly:</strong> Comprehensive journey analysis</li>
+                        <li><strong>On-Demand:</strong> Pre-release validation</li>
+                    </ul>
+                </div>
+                
+                <div class="card animated">
+                    <h3>🌍 Multi-Region</h3>
+                    <ul>
+                        <li><strong>EEA/UK:</strong> GDPR strict consent requirements</li>
+                        <li><strong>California:</strong> CCPA/CPRA compliance</li>
+                        <li><strong>Brazil:</strong> LGPD regulatory alignment</li>
+                        <li><strong>Custom:</strong> Emerging privacy jurisdictions</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="feature-detail">
+                <h3>🎭 Consent State Matrix Testing</h3>
+                <p><strong>None:</strong> Pre-banner state | <strong>Accept:</strong> Full tracking | <strong>Reject:</strong> No tracking | <strong>GPC:</strong> Global Privacy Control</p>
+                <p>SPECTRAL verifies that Reject behavior truly mirrors Accept restrictions, not just cosmetic differences.</p>
+            </div>
+        </div>
+
+        <!-- Slide 9: Rule Engine & Dark Patterns -->
+        <div class="slide" id="slide9">
+            <h2>Advanced Rule Engine</h2>
+            <p class="subtitle">Country-specific compliance rules + dark pattern detection</p>
+            
+            <div class="before-after">
+                <div class="before">
+                    <h3>🚫 Dark Patterns Detected</h3>
+                    <ul>
+                        <li><strong>Reject Button Hiding:</strong> Small, hard-to-find options</li>
+                        <li><strong>Color Manipulation:</strong> Accept prominent, reject subdued</li>
+                        <li><strong>Friction Patterns:</strong> Multiple steps to reject</li>
+                        <li><strong>Misleading Language:</strong> Confusing consent text</li>
+                        <li><strong>Pre-checked Boxes:</strong> Default consent assumptions</li>
+                        <li><strong>Nudging UI:</strong> Visual bias toward acceptance</li>
+                    </ul>
+                </div>
+                
+                <div class="after">
+                    <h3>✅ Compliance Rules</h3>
+                    <ul>
+                        <li><strong>GDPR (EU):</strong> Granular consent, clear language</li>
+                        <li><strong>CCPA (California):</strong> Do Not Sell, GPC support</li>
+                        <li><strong>LGPD (Brazil):</strong> Explicit consent, purpose limitation</li>
+                        <li><strong>PIPEDA (Canada):</strong> Meaningful consent standards</li>
+                        <li><strong>PDPA (Singapore):</strong> Notification requirements</li>
+                        <li><strong>Custom Rules:</strong> Industry-specific compliance</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="demo-section">
+                <h3>🔧 Rule Engine Capabilities</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem;">
+                    <div>✅ Customizable severity levels</div>
+                    <div>✅ False positive reduction</div>
+                    <div>✅ Customer-specific rules</div>
+                    <div>✅ A/B test variant coverage</div>
+                    <div>✅ Rapid rule updates</div>
+                    <div>✅ Historical comparison</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: CI/CD Integration -->
+        <div class="slide" id="slide10">
+            <h2>CI/CD Integration & Release Protection</h2>
+            <p class="subtitle">Prevent compliance regressions from reaching production</p>
+            
+            <div class="grid-2">
+                <div class="card animated">
+                    <h3>🚀 Pre-Release Validation</h3>
+                    <ul>
+                        <li><strong>Staging Scans:</strong> Test compliance before production</li>
+                        <li><strong>Critical Path Verification:</strong> Automated journey testing</li>
+                        <li><strong>Regression Detection:</strong> Compare against baselines</li>
+                        <li><strong>Performance Impact:</strong> Ensure compliance doesn't slow site</li>
+                    </ul>
+                </div>
+                
+                <div class="card animated">
+                    <h3>⛔ Release Gates</h3>
+                    <ul>
+                        <li><strong>Fail Builds:</strong> Block deployments with violations</li>
+                        <li><strong>Warning Thresholds:</strong> Alert on potential issues</li>
+                        <li><strong>Approval Workflows:</strong> Require sign-off for risks</li>
+                        <li><strong>Rollback Triggers:</strong> Automatic reversion</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="integration-row">
+                <div class="integration-item">GitHub Actions</div>
+                <div class="integration-item">Jenkins</div>
+                <div class="integration-item">CircleCI</div>
+                <div class="integration-item">GitLab CI</div>
+                <div class="integration-item">Azure DevOps</div>
+            </div>
+            
+            <div class="evidence-preview">
+# GitHub Actions Integration Example<br><br>
+name: Privacy Compliance Check<br>
+on: [push, pull_request]<br><br>
+jobs:<br>
+&nbsp;&nbsp;privacy-compliance:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;runs-on: ubuntu-latest<br>
+&nbsp;&nbsp;&nbsp;&nbsp;steps:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- name: SPECTRAL Privacy Scan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uses: spectral/privacy-check@v1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;staging_url: ${{ secrets.STAGING_URL }}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;critical_paths: "checkout,signup,contact"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fail_on: "critical"
+            </div>
+        </div>
+
+        <!-- Slide 11: Evidence & Reporting -->
+        <div class="slide" id="slide11">
+            <h2>Evidence-First Reporting</h2>
+            <p class="subtitle">Audit-ready evidence bundles for regulatory compliance</p>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3>📊 Interactive Dashboards</h3>
+                    <ul>
+                        <li><strong>Trust Score:</strong> Overall compliance health metric</li>
+                        <li><strong>Trend Analysis:</strong> Compliance drift over time</li>
+                        <li><strong>Regional Breakdown:</strong> Jurisdiction-specific status</li>
+                        <li><strong>Severity Distribution:</strong> Critical vs warning issues</li>
+                        <li><strong>Team Performance:</strong> Resolution time tracking</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>📋 Evidence Packages</h3>
+                    <ul>
+                        <li><strong>Visual Proof:</strong> Before/after screenshots</li>
+                        <li><strong>Technical Details:</strong> HAR files with data</li>
+                        <li><strong>Rule Mapping:</strong> Specific regulation violations</li>
+                        <li><strong>Remediation Steps:</strong> Clear fix instructions</li>
+                        <li><strong>Export Formats:</strong> PDF, CSV, JSON</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card success animated">
+                    <div class="stat-medium">85%</div>
+                    <p><strong>Reduction in Audit Prep</strong><br>Evidence ready on-demand</p>
+                </div>
+                
+                <div class="card success animated">
+                    <div class="stat-medium">3x</div>
+                    <p><strong>Faster Issue Resolution</strong><br>Clear evidence eliminates back-and-forth</p>
+                </div>
+                
+                <div class="card success animated">
+                    <div class="stat-medium">100%</div>
+                    <p><strong>Audit Defensibility</strong><br>Reproducible evidence</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Integration Ecosystem -->
+        <div class="slide" id="slide12">
+            <h2>Enterprise Integration Ecosystem</h2>
+            <p class="subtitle">Seamless workflow integration with your existing tools</p>
+            
+            <div class="grid-4">
+                <div class="card animated">
+                    <h3>🏷️ CMP & Tag Management</h3>
+                    <ul>
+                        <li>OneTrust policy sync</li>
+                        <li>Cookiebot implementation validation</li>
+                        <li>TrustArc assessment integration</li>
+                        <li>Google Tag Manager analysis</li>
+                        <li>Tealium AudienceStream verification</li>
+                    </ul>
+                </div>
+                
+                <div class="card animated">
+                    <h3>📊 Analytics & Marketing</h3>
+                    <ul>
+                        <li>Google Analytics 4 server-side</li>
+                        <li>Mixpanel event tracking</li>
+                        <li>Segment customer data pipeline</li>
+                        <li>Facebook CAPI compliance</li>
+                        <li>Adobe Analytics validation</li>
+                    </ul>
+                </div>
+                
+                <div class="card animated">
+                    <h3>🎫 Workflow & Ticketing</h3>
+                    <ul>
+                        <li>Jira automated tickets</li>
+                        <li>ServiceNow ITSM integration</li>
+                        <li>Asana task management</li>
+                        <li>Linear developer issues</li>
+                        <li>Slack/Teams notifications</li>
+                    </ul>
+                </div>
+                
+                <div class="card animated">
+                    <h3>🔒 Security & Access</h3>
+                    <ul>
+                        <li>SSO Integration (SAML, OIDC)</li>
+                        <li>Role-based access control</li>
+                        <li>RESTful APIs</li>
+                        <li>SIEM export</li>
+                        <li>Complete audit logging</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="demo-section">
+                <h3>🔌 Implementation Timeline</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem;">
+                    <div style="text-align: center;">
+                        <div class="stat-medium" style="color: #22C55E;">48h</div>
+                        <div><strong>Pilot Setup</strong><br>Connect domains & basic journeys</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="stat-medium" style="color: #22C55E;">2 weeks</div>
+                        <div><strong>Baseline Tuning</strong><br>Rule customization & optimization</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="stat-medium" style="color: #22C55E;">1 month</div>
+                        <div><strong>Full Production</strong><br>Scheduled monitoring & CI/CD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: ROI & Business Impact -->
+        <div class="slide" id="slide13">
+            <h2>ROI & Business Impact</h2>
+            <p class="subtitle">Quantifiable benefits across legal, engineering, and marketing teams</p>
+            
+            <div class="grid-4">
+                <div class="card success animated">
+                    <div class="stat-medium">40+ hrs</div>
+                    <p><strong>Monthly Time Savings</strong><br>Eliminate manual compliance QA</p>
+                </div>
+                
+                <div class="card success animated">
+                    <div class="stat-medium">$2.5M</div>
+                    <p><strong>Average Fine Prevention</strong><br>Avoid GDPR violation penalties</p>
+                </div>
+                
+                <div class="card success animated">
+                    <div class="stat-medium">15-20%</div>
+                    <p><strong>Measurement Quality</strong><br>Cleaner analytics and attribution</p>
+                </div>
+                
+                <div class="card success animated">
+                    <div class="stat-medium">3-6 mo</div>
+                    <p><strong>Payback Period</strong><br>ROI positive within first quarter</p>
+                </div>
+            </div>
+            
+            <div class="before-after">
+                <div class="before">
+                    <h3>❌ Before SPECTRAL</h3>
+                    <ul>
+                        <li>Manual QA consumes 40+ hours monthly</li>
+                        <li>Compliance issues discovered during audits</li>
+                        <li>Post-release rollbacks due to violations</li>
+                        <li>Inconsistent measurement quality</li>
+                        <li>Reactive fire-fighting approach</li>
+                        <li>Trust issues between teams</li>
+                    </ul>
+                </div>
+                
+                <div class="after">
+                    <h3>✅ After SPECTRAL</h3>
+                    <ul>
+                        <li>Automated 24/7 compliance monitoring</li>
+                        <li>Proactive violation prevention</li>
+                        <li>CI/CD gates prevent production issues</li>
+                        <li>Confident measurement and attribution</li>
+                        <li>Predictable compliance operations</li>
+                        <li>Cross-team collaboration with evidence</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem; text-align: center; padding: 2rem; background: rgba(34, 197, 94, 0.05); border-radius: 12px; border: 1px solid rgba(34, 197, 94, 0.2);">
+                <h3>Typical Customer ROI: 400-600% in First Year</h3>
+            </div>
+        </div>
+
+        <!-- Slide 14: Industry Use Cases -->
+        <div class="slide" id="slide14">
+            <h2>Industry-Specific Value</h2>
+            <p class="subtitle">Tailored benefits across regulated sectors</p>
+            
+            <div class="grid-3">
+                <div class="card violet animated">
+                    <h3>🏦 FinTech</h3>
+                    <ul>
+                        <li><strong>Regulatory Confidence:</strong> PCI DSS + GDPR alignment</li>
+                        <li><strong>Audit Readiness:</strong> Continuous compliance evidence</li>
+                        <li><strong>Cross-Border:</strong> Multi-jurisdiction verification</li>
+                        <li><strong>Acquisition Due Diligence:</strong> Privacy compliance proof</li>
+                    </ul>
+                </div>
+                
+                <div class="card violet animated">
+                    <h3>🏥 HealthTech</h3>
+                    <ul>
+                        <li><strong>HIPAA Compliance:</strong> Patient data protection verification</li>
+                        <li><strong>Consent Management:</strong> Research vs treatment consent tracking</li>
+                        <li><strong>Vendor Oversight:</strong> Third-party compliance monitoring</li>
+                        <li><strong>Data Quality:</strong> Clean analytics for clinical insights</li>
+                    </ul>
+                </div>
+                
+                <div class="card violet animated">
+                    <h3>📊 AdTech & MarTech</h3>
+                    <ul>
+                        <li><strong>Attribution Accuracy:</strong> Consent-aligned measurement</li>
+                        <li><strong>Publisher Compliance:</strong> Verify consent across supply chain</li>
+                        <li><strong>Platform Optimization:</strong> Reduce wasted spend on invalid data</li>
+                        <li><strong>Client Trust:</strong> Transparent compliance reporting</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="feature-detail">
+                <h3>🎯 Common Thread: Operational Excellence</h3>
+                <p>Every industry benefits from <strong>higher data quality</strong>, <strong>reduced manual overhead</strong>, and <strong>proactive risk management</strong> that comes with continuous compliance verification.</p>
+            </div>
+        </div>
+
+        <!-- Slide 15: Competitive Comparison -->
+        <div class="slide" id="slide15">
+            <h2>SPECTRAL vs. Current Solutions</h2>
+            <p class="subtitle">Clear differentiation in the privacy compliance landscape</p>
+            
+            <div style="overflow-x: auto; margin: 2rem 0;">
+                <table style="width: 100%; border-collapse: collapse; background: rgba(255, 255, 255, 0.03); border-radius: 12px; overflow: hidden;">
+                    <thead>
+                        <tr style="background: rgba(139, 92, 246, 0.1);">
+                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">Capability</th>
+                            <th style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">OneTrust</th>
+                            <th style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">TrustArc</th>
+                            <th style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">Static Scanners</th>
+                            <th style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.1); background: rgba(139, 92, 246, 0.2);"><strong>SPECTRAL</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05);">Continuous Runtime Verification</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #EF4444;">✗</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #EF4444;">✗</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #EF4444;">✗</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #22C55E;">✓</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05);">Client ↔ Server Correlation</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #EF4444;">✗</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #EF4444;">✗</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #EF4444;">✗</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #22C55E;">✓</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05);">Evidence-Based Reporting</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #EF4444;">✗</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #ffeb3b;">△</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #ffeb3b;">△</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #22C55E;">✓</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05);">CI/CD Integration</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #EF4444;">✗</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #EF4444;">✗</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #EF4444;">✗</td>
+                            <td style="padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #22C55E;">✓</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem;">Multi-Surface Coverage</td>
+                            <td style="padding: 1rem; text-align: center; color: #ffeb3b;">△</td>
+                            <td style="padding: 1rem; text-align: center; color: #ffeb3b;">△</td>
+                            <td style="padding: 1rem; text-align: center; color: #22C55E;">✓</td>
+                            <td style="padding: 1rem; text-align: center; color: #22C55E;">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div style="margin-top: 2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; font-size: 0.9rem; text-align: center;">
+                <div style="color: #22C55E;">✓ = Full Support</div>
+                <div style="color: #ffeb3b;">△ = Partial Support</div>
+                <div style="color: #EF4444;">✗ = Not Available</div>
+            </div>
+        </div>
+
+        <!-- Slide 16: Common Objections -->
+        <div class="slide" id="slide16">
+            <h2>Addressing Common Questions</h2>
+            <p class="subtitle">Clear answers to typical buyer concerns</p>
+            
+            <div class="grid-2">
+                <div class="card animated">
+                    <h3>💭 "Don't we already get this from our CMP?"</h3>
+                    <p><strong>Answer:</strong> CMPs define and present consent policies. SPECTRAL verifies that your entire tech stack actually respects those policies in real-time, including server-side systems that CMPs can't monitor.</p>
+                </div>
+                
+                <div class="card animated">
+                    <h3>🐌 "Will this slow down our website?"</h3>
+                    <p><strong>Answer:</strong> SPECTRAL runs externally with no page tags required. Your site performance is unaffected. We monitor your site the same way your users experience it.</p>
+                </div>
+                
+                <div class="card animated">
+                    <h3>🚨 "What about false positives and alert fatigue?"</h3>
+                    <p><strong>Answer:</strong> Our rule engine includes tunable thresholds, customer-specific customization, and intelligent deduplication. Most customers achieve <5% false positive rates within 2 weeks.</p>
+                </div>
+                
+                <div class="card animated">
+                    <h3>⚡ "How fast can we see value?"</h3>
+                    <p><strong>Answer:</strong> First compliance findings typically appear within 48 hours of setup. Most customers identify 3-5 actionable issues in their first week, often violations they didn't know existed.</p>
+                </div>
+                
+                <div class="card animated">
+                    <h3>🔒 "What about our data security and privacy?"</h3>
+                    <p><strong>Answer:</strong> SPECTRAL operates on a data minimization principle. We capture evidence artifacts only, with automatic PII redaction. No actual user data is ingested or stored.</p>
+                </div>
+                
+                <div class="card animated">
+                    <h3>🛠️ "Do we need to change our current setup?"</h3>
+                    <p><strong>Answer:</strong> No changes to your existing CMP, tag management, or analytics setup required. SPECTRAL integrates with your current tools and workflows via read-only connections.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 17: Security & Privacy Deep Dive -->
+        <div class="slide" id="slide17">
+            <h2>Security & Privacy by Design</h2>
+            <p class="subtitle">Enterprise-grade security for privacy compliance monitoring</p>
+            
+            <div class="grid-4">
+                <div class="card violet animated">
+                    <h3>🔐 Data Minimization</h3>
+                    <ul>
+                        <li><strong>No PII Ingestion:</strong> Automatic redaction of personal data</li>
+                        <li><strong>Evidence Only:</strong> Screenshots, network metadata, compliance findings</li>
+                        <li><strong>Configurable Retention:</strong> 30-365 days based on needs</li>
+                        <li><strong>Right to Deletion:</strong> Complete data removal on request</li>
+                    </ul>
+                </div>
+                
+                <div class="card violet animated">
+                    <h3>🛡️ Infrastructure Security</h3>
+                    <ul>
+                        <li><strong>SOC 2 Type II:</strong> Annual security audits</li>
+                        <li><strong>Encryption:</strong> TLS 1.3 in transit, AES-256 at rest</li>
+                        <li><strong>Zero Trust:</strong> Network isolation and micro-segmentation</li>
+                        <li><strong>Incident Response:</strong> 24/7 security monitoring</li>
+                    </ul>
+                </div>
+                
+                <div class="card violet animated">
+                    <h3>🌍 Data Residency</h3>
+                    <ul>
+                        <li><strong>Regional Deployment:</strong> EU, US, APAC options</li>
+                        <li><strong>Private Cloud:</strong> Dedicated instances available</li>
+                        <li><strong>Cross-Border Controls:</strong> Data never leaves specified regions</li>
+                        <li><strong>Local Compliance:</strong> Meets regional data protection laws</li>
+                    </ul>
+                </div>
+                
+                <div class="card violet animated">
+                    <h3>👥 Access Controls</h3>
+                    <ul>
+                        <li><strong>SSO Integration:</strong> SAML, OIDC, Active Directory</li>
+                        <li><strong>RBAC:</strong> Granular role-based permissions</li>
+                        <li><strong>Audit Logging:</strong> Complete access and action tracking</li>
+                        <li><strong>MFA Required:</strong> Multi-factor authentication enforced</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="demo-section">
+                <h3>🎯 Security-First Architecture</h3>
+                <p style="font-size: 1.2rem; margin-top: 1rem;">
+                    SPECTRAL is built to meet the security standards of the most regulated industries, with <span class="highlight">privacy-by-design</span> principles throughout
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 18: Implementation Roadmap -->
+        <div class="slide" id="slide18">
+            <h2>Implementation Roadmap</h2>
+            <p class="subtitle">Structured deployment with clear milestones and success metrics</p>
+            
+            <div style="margin: 3rem 0;">
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+                    <div class="card violet animated">
+                        <div style="background: #8B5CF6; color: #000; padding: 0.5rem; border-radius: 8px; margin-bottom: 1rem; font-weight: 600; text-align: center;">Week 1</div>
+                        <h3>Discovery & Setup</h3>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Domain and journey configuration</li>
+                            <li>Initial rule pack customization</li>
+                            <li>Integration planning session</li>
+                        </ul>
+                        <div style="margin-top: 1rem; font-size: 0.8rem; color: #888;">
+                            <strong>Success Metric:</strong> First scan completed
+                        </div>
+                    </div>
+                    
+                    <div class="card violet animated">
+                        <div style="background: #8B5CF6; color: #000; padding: 0.5rem; border-radius: 8px; margin-bottom: 1rem; font-weight: 600; text-align: center;">Week 2-3</div>
+                        <h3>Baseline & Tuning</h3>
+                        <ul style="font-size: 0.9rem;">
+                            <li>False positive reduction</li>
+                            <li>Custom rule development</li>
+                            <li>Workflow integration setup</li>
+                        </ul>
+                        <div style="margin-top: 1rem; font-size: 0.8rem; color: #888;">
+                            <strong>Success Metric:</strong> <5% false positive rate
+                        </div>
+                    </div>
+                    
+                    <div class="card violet animated">
+                        <div style="background: #8B5CF6; color: #000; padding: 0.5rem; border-radius: 8px; margin-bottom: 1rem; font-weight: 600; text-align: center;">Week 4</div>
+                        <h3>Production Deployment</h3>
+                        <ul style="font-size: 0.9rem;">
+                            <li>Scheduled monitoring activation</li>
+                            <li>Alert and ticketing setup</li>
+                            <li>Team training sessions</li>
+                        </ul>
+                        <div style="margin-top: 1rem; font-size: 0.8rem; color: #888;">
+                            <strong>Success Metric:</strong> Daily monitoring active
+                        </div>
+                    </div>
+                    
+                    <div class="card violet animated">
+                        <div style="background: #8B5CF6; color: #000; padding: 0.5rem; border-radius: 8px; margin-bottom: 1rem; font-weight: 600; text-align: center;">Month 2-3</div>
+                        <h3>Optimization & Scale</h3>
+                        <ul style="font-size: 0.9rem;">
+                            <li>CI/CD gate implementation</li>
+                            <li>Additional surface coverage</li>
+                            <li>Advanced reporting setup</li>
+                        </ul>
+                        <div style="margin-top: 1rem; font-size: 0.8rem; color: #888;">
+                            <strong>Success Metric:</strong> 40+ hrs/month saved
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature-detail">
+                <h3>🎯 Implementation Support</h3>
+                <p><strong>Dedicated Customer Success Manager</strong> guides you through each phase with weekly check-ins, technical support, and best practice recommendations.</p>
+            </div>
+        </div>
+
+        <!-- Slide 19: Getting Started -->
+        <div class="slide" id="slide14">
+            <h2>Getting Started with SPECTRAL</h2>
+            <p class="subtitle">Fast implementation with immediate value</p>
+            
+            <div class="workflow">
+                <div class="workflow-step animated">
+                    <div class="step-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>15-minute consultation on compliance challenges</p>
+                </div>
+                
+                <div class="workflow-step animated">
+                    <div class="step-number">2</div>
+                    <h3>Demo</h3>
+                    <p>30-minute live demonstration with your domains</p>
+                </div>
+                
+                <div class="workflow-step animated">
+                    <div class="step-number">3</div>
+                    <h3>Pilot</h3>
+                    <p>48-hour pilot to validate findings</p>
+                </div>
+                
+                <div class="workflow-step animated">
+                    <div class="step-number">4</div>
+                    <h3>Deploy</h3>
+                    <p>2-week rollout with team training</p>
+                </div>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card animated">
+                    <h3>🎯 What You Need</h3>
+                    <ul>
+                        <li>List of domains/subdomains to monitor</li>
+                        <li>Key regions for compliance (EEA, CA, etc.)</li>
+                        <li>Critical user journeys to verify</li>
+                        <li>Existing CMP and tag management setup</li>
+                        <li>Integration preferences (Jira, Slack, etc.)</li>
+                    </ul>
+                </div>
+                
+                <div class="card animated">
+                    <h3>🚀 What We Provide</h3>
+                    <ul>
+                        <li>Complete platform setup and configuration</li>
+                        <li>Custom rule tuning for your needs</li>
+                        <li>Team training and best practices</li>
+                        <li>CI/CD integration and workflow setup</li>
+                        <li>Ongoing support and optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 19: Getting Started -->
+        <div class="slide" id="slide19">
+            <h2>Getting Started with SPECTRAL</h2>
+            <p class="subtitle">Fast implementation with immediate value</p>
+            
+            <div class="workflow">
+                <div class="workflow-step animated">
+                    <div class="step-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>15-minute consultation on compliance challenges</p>
+                </div>
+                
+                <div class="workflow-step animated">
+                    <div class="step-number">2</div>
+                    <h3>Demo</h3>
+                    <p>30-minute live demonstration with your domains</p>
+                </div>
+                
+                <div class="workflow-step animated">
+                    <div class="step-number">3</div>
+                    <h3>Pilot</h3>
+                    <p>48-hour pilot to validate findings</p>
+                </div>
+                
+                <div class="workflow-step animated">
+                    <div class="step-number">4</div>
+                    <h3>Deploy</h3>
+                    <p>2-week rollout with team training</p>
+                </div>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card animated">
+                    <h3>🎯 What You Need</h3>
+                    <ul>
+                        <li>List of domains/subdomains to monitor</li>
+                        <li>Key regions for compliance (EEA, CA, etc.)</li>
+                        <li>Critical user journeys to verify</li>
+                        <li>Existing CMP and tag management setup</li>
+                        <li>Integration preferences (Jira, Slack, etc.)</li>
+                    </ul>
+                </div>
+                
+                <div class="card animated">
+                    <h3>🚀 What We Provide</h3>
+                    <ul>
+                        <li>Complete platform setup and configuration</li>
+                        <li>Custom rule tuning for your needs</li>
+                        <li>Team training and best practices</li>
+                        <li>CI/CD integration and workflow setup</li>
+                        <li>Ongoing support and optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 20: Demo Request -->
+        <div class="slide" id="slide20">
+            <h2>Ready to Verify Your Privacy Compliance?</h2>
+            <p class="subtitle">Stop hoping your policies work. Start proving they do.</p>
+            
+            <div class="split-content">
+                <div style="text-align: center;">
+                    <h3 style="color: #8B5CF6; margin-bottom: 2rem;">🚀 Start Your 48-Hour Pilot</h3>
+                    <div style="background: rgba(139, 92, 246, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(139, 92, 246, 0.2);">
+                        <strong>What You'll Get:</strong>
+                        <ul style="margin-top: 1rem; text-align: left;">
+                            <li>Complete compliance scan of 1-2 domains</li>
+                            <li>Evidence package with violations found</li>
+                            <li>Custom demonstration and team Q&A</li>
+                            <li>ROI analysis for your specific use case</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <h3 style="color: #8B5CF6; margin-bottom: 2rem;">📞 Schedule Technical Demo</h3>
+                    <div style="background: rgba(139, 92, 246, 0.1); padding: 2rem; border-radius: 12px; border: 1px solid rgba(139, 92, 246, 0.2);">
+                        <strong>Demo Includes:</strong>
+                        <ul style="margin-top: 1rem; text-align: left;">
+                            <li>Live journey simulation walkthrough</li>
+                            <li>Evidence capture and analysis demo</li>
+                            <li>CI/CD integration examples</li>
+                            <li>Custom pricing and implementation plan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(139, 92, 246, 0.05); border-radius: 16px; border: 1px solid rgba(139, 92, 246, 0.15);">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem;">
+                    <div>
+                        <strong>📧 Email:</strong><br>
+                        <span class="highlight">sales@spectral.com</span>
+                    </div>
+                    <div>
+                        <strong>📅 Book Demo:</strong><br>
+                        <span class="highlight">calendly.com/spectral-demo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 21: Thank You -->
+        <div class="slide" id="slide21">
+            <div class="center-content">
+                <h1>Thank You</h1>
+                <p class="subtitle">Converting compliance promises into compliance proof</p>
+                
+                <div style="margin: 4rem 0;">
+                    <div class="stat-large">SPECTRAL</div>
+                    <p style="font-size: 1.3rem; margin-top: 1rem;">
+                        The future of privacy compliance verification
+                    </p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; max-width: 600px;">
+                    <div>
+                        <strong>Contact:</strong><br>
+                        <span class="highlight">sales@spectral.com</span>
+                    </div>
+                    <div>
+                        <strong>Demo:</strong><br>
+                        <span class="highlight">calendly.com/spectral-demo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" onclick="previousSlide()">← Previous</button>
+        <button class="nav-btn" onclick="nextSlide()">Next →</button>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 21;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            
+            if (n > totalSlides) currentSlide = 1;
+            if (n < 1) currentSlide = totalSlides;
+            
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            document.getElementById(`slide${currentSlide}`).classList.add('active');
+            
+            const progress = (currentSlide / totalSlides) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+            document.getElementById('slideNumber').textContent = `${currentSlide} / ${totalSlides}`;
+            
+            const currentSlideEl = document.getElementById(`slide${currentSlide}`);
+            const animatedElements = currentSlideEl.querySelectorAll('.animated');
+            animatedElements.forEach((el, index) => {
+                el.style.animationDelay = (index * 0.1) + 's';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+
+        function previousSlide() {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                previousSlide();
+            } else if (e.key >= '1' && e.key <= '9') {
+                e.preventDefault();
+                currentSlide = parseInt(e.key);
+                if (currentSlide <= totalSlides) {
+                    showSlide(currentSlide);
+                }
+            } else if (e.key === 'Home') {
+                e.preventDefault();
+                currentSlide = 1;
+                showSlide(currentSlide);
+            } else if (e.key === 'End') {
+                e.preventDefault();
+                currentSlide = totalSlides;
+                showSlide(currentSlide);
+            }
+        });
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }, false);
+
+        document.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, false);
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    nextSlide();
+                } else {
+                    previousSlide();
+                }
+            }
+        }
+
+        showSlide(currentSlide);
+
+        document.addEventListener('click', function(e) {
+            if (!e.target.classList.contains('nav-btn') && !e.target.closest('.nav-btn')) {
+                nextSlide();
+            }
+        });
+
+        document.addEventListener('contextmenu', e => e.preventDefault());
+    </script>
+</body>
+</html>

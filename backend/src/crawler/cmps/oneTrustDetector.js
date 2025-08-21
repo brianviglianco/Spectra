@@ -1,5 +1,5 @@
 // src/crawler/cmps/oneTrustDetector.js
-// Detector específico para OneTrust - el CMP más usado globalmente
+// OneTrust híbrido: API + DOM clicks + validación real
 
 class OneTrustDetector {
     constructor(page) {
@@ -7,74 +7,23 @@ class OneTrustDetector {
         this.name = 'OneTrust';
     }
 
-    // Detecta si OneTrust está presente en la página
     async detect() {
         console.log('🔍 Detectando OneTrust...');
-        
-        // Esperar a que cargue la página
         await new Promise(resolve => setTimeout(resolve, 2000));
         
-        const selectors = {
-            // Banner principal
-            banner: [
-                '#onetrust-banner-sdk',
-                '#onetrust-consent-sdk', 
-                '.onetrust-pc-dark',
-                '.ot-sdk-container'
-            ],
-            // Botones de acción
-            acceptBtn: [
-                '#onetrust-accept-btn-handler',
-                '.onetrust-close-btn-handler',
-                '.accept-cookies-btn'
-            ],
-            rejectBtn: [
-                '#onetrust-reject-all-handler',
-                '.onetrust-reject-all',
-                '.ot-pc-refuse-all-handler'
-            ],
-            settingsBtn: [
-                '#onetrust-pc-btn-handler',
-                '.onetrust-pc-dark-filter',
-                '.ot-sdk-show-settings'
-            ]
-        };
-
-        // Buscar cualquier elemento OneTrust
-        for (const [type, selectorList] of Object.entries(selectors)) {
-            for (const selector of selectorList) {
-                const element = await this.page.$(selector);
-                if (element) {
-                    console.log(`✅ OneTrust detectado: ${selector}`);
-                    return {
-                        detected: true,
-                        provider: this.name,
-                        selectors,
-                        foundSelector: selector,
-                        type
-                    };
-                }
-            }
-        }
-
-        // Buscar scripts OneTrust
-        const scriptCheck = await this.page.evaluate(() => {
-            const scripts = Array.from(document.scripts);
-            return scripts.some(script => 
-                script.src.includes('onetrust') || 
-                script.innerHTML.includes('OneTrust') ||
-                script.innerHTML.includes('OptanonWrapper')
-            );
+        const apiCheck = await this.page.evaluate(() => {
+            return !!(window.OneTrust || window.OptanonWrapper || 
+                     document.querySelector('#onetrust-banner-sdk') ||
+                     document.querySelector('script[src*="onetrust"]'));
         });
 
-        if (scriptCheck) {
-            console.log('✅ OneTrust detectado: script');
+        if (apiCheck) {
+            console.log('✅ OneTrust detectado: API/script');
             return {
                 detected: true,
                 provider: this.name,
-                selectors,
-                foundSelector: 'script',
-                type: 'script'
+                foundSelector: 'api',
+                type: 'api'
             };
         }
 
@@ -82,144 +31,240 @@ class OneTrustDetector {
         return { detected: false };
     }
 
-    // Rechaza todas las cookies con validación robusta
     async rejectAll() {
-        console.log('🚫 Rechazando cookies OneTrust...');
+        console.log('🚫 Rechazando cookies OneTrust (híbrido)...');
         
         try {
-            // Verificar que el banner existe antes de interactuar
-            const bannerExists = await this.page.waitForSelector('#onetrust-banner-sdk, #onetrust-consent-sdk', { timeout: 5000 });
-            if (!bannerExists) {
-                console.log('❌ Banner OneTrust no encontrado');
-                return false;
-            }
-
-            // Paso 1: Buscar botón de rechazo directo
-            const directReject = await this.page.$('#onetrust-reject-all-handler');
-            if (directReject) {
-                // Verificar que el botón es visible y clickeable
-                const isVisible = await this.page.evaluate(el => {
-                    const rect = el.getBoundingClientRect();
-                    return rect.width > 0 && rect.height > 0;
-                }, directReject);
-
-                if (isVisible) {
-                    await directReject.click();
-                    
-                    // VALIDACIÓN: Esperar que el banner desaparezca
-                    const bannerGone = await this.page.waitForFunction(
-                        () => {
-                            const banner = document.querySelector('#onetrust-banner-sdk, #onetrust-consent-sdk');
-                            return !banner || banner.style.display === 'none' || banner.style.visibility === 'hidden';
-                        },
-                        { timeout: 10000 }
-                    );
-
-                    if (bannerGone) {
-                        console.log('✅ Rechazo directo OneTrust - Banner desapareció');
-                        return true;
-                    } else {
-                        console.log('⚠️ Banner OneTrust sigue visible después del click');
-                    }
+            // MÉTODO 1: API JavaScript
+            console.log('🔧 Intentando API...');
+            const apiSuccess = await this.tryAPIReject();
+            if (apiSuccess) {
+                const isEffective = await this.validateEffectiveness('reject');
+                if (isEffective) {
+                    console.log('✅ API reject efectivo');
+                    return true;
+                } else {
+                    console.log('⚠️ API reject no efectivo, probando DOM...');
                 }
             }
 
-            // Paso 2: Método alternativo - configuración manual
-            const settingsBtn = await this.page.$('#onetrust-pc-btn-handler');
-            if (settingsBtn) {
-                await settingsBtn.click();
-                
-                // Esperar modal de configuración
-                await this.page.waitForSelector('#onetrust-pc-sdk', { timeout: 5000 });
-
-                // Desactivar todos los toggles opcionales
-                const toggles = await this.page.$$('.ot-switch input:not([disabled])');
-                console.log(`🔧 Desactivando ${toggles.length} toggles`);
-                
-                for (const toggle of toggles) {
-                    const isChecked = await toggle.isChecked();
-                    if (isChecked) {
-                        await toggle.click();
-                        await new Promise(resolve => setTimeout(resolve, 300));
-                    }
-                }
-
-                // Confirmar cambios
-                const saveBtn = await this.page.$('.save-preference-btn-handler, #onetrust-pc-save-btn-handler');
-                if (saveBtn) {
-                    await saveBtn.click();
-                    
-                    // VALIDACIÓN: Modal debe cerrarse
-                    const modalClosed = await this.page.waitForFunction(
-                        () => {
-                            const modal = document.querySelector('#onetrust-pc-sdk');
-                            return !modal || modal.style.display === 'none';
-                        },
-                        { timeout: 10000 }
-                    );
-
-                    if (modalClosed) {
-                        console.log('✅ Configuración OneTrust guardada - Modal cerrado');
-                        return true;
-                    }
+            // MÉTODO 2: DOM clicks
+            console.log('🔧 Intentando DOM clicks...');
+            const domSuccess = await this.tryDOMReject();
+            if (domSuccess) {
+                const isEffective = await this.validateEffectiveness('reject');
+                if (isEffective) {
+                    console.log('✅ DOM reject efectivo');
+                    return true;
                 }
             }
 
-            console.log('❌ No se pudo rechazar OneTrust');
+            console.log('❌ Todos los métodos fallaron');
             return false;
+
         } catch (error) {
             console.log('❌ Error rechazando OneTrust:', error.message);
             return false;
         }
     }
 
-    // Acepta todas las cookies con validación
-    async acceptAll() {
-        console.log('✅ Aceptando cookies OneTrust...');
-        
-        try {
-            // Verificar banner existe
-            const bannerExists = await this.page.waitForSelector('#onetrust-banner-sdk, #onetrust-consent-sdk', { timeout: 5000 });
-            if (!bannerExists) {
-                console.log('❌ Banner OneTrust no encontrado');
-                return false;
+    async tryAPIReject() {
+        return await this.page.evaluate(() => {
+            if (window.OneTrust) {
+                if (typeof window.OneTrust.setConsent === 'function') {
+                    window.OneTrust.setConsent([1]); // Solo necessary
+                    return 'setConsent';
+                }
+                
+                if (typeof window.OneTrust.UpdateConsent === 'function') {
+                    window.OneTrust.UpdateConsent({
+                        'C0001': true,  // Necessary
+                        'C0002': false, // Performance
+                        'C0003': false, // Functional
+                        'C0004': false  // Targeting
+                    });
+                    return 'UpdateConsent';
+                }
+            }
+            return false;
+        });
+    }
+
+    async tryDOMReject() {
+        // Verificar banner visible
+        const bannerExists = await this.page.$('#onetrust-banner-sdk, #onetrust-consent-sdk');
+        if (!bannerExists) {
+            console.log('❌ Banner OneTrust no visible');
+            return false;
+        }
+
+        // Paso 1: Reject directo
+        const directReject = await this.page.$('#onetrust-reject-all-handler');
+        if (directReject) {
+            const isVisible = await this.page.evaluate(el => {
+                const rect = el.getBoundingClientRect();
+                return rect.width > 0 && rect.height > 0;
+            }, directReject);
+
+            if (isVisible) {
+                await directReject.click();
+                await new Promise(resolve => setTimeout(resolve, 3000));
+                
+                const bannerGone = await this.validateDismissal();
+                if (bannerGone) {
+                    console.log('✅ Reject directo exitoso');
+                    return true;
+                }
+            }
+        }
+
+        // Paso 2: Settings + toggles
+        console.log('🔧 Abriendo settings...');
+        const settingsBtn = await this.page.$('#onetrust-pc-btn-handler');
+        if (settingsBtn) {
+            await settingsBtn.click();
+            await new Promise(resolve => setTimeout(resolve, 2000));
+
+            // Esperar modal
+            await this.page.waitForSelector('#onetrust-pc-sdk', { timeout: 5000 });
+
+            // Desactivar ALL toggles
+            const toggles = await this.page.$$('.ot-switch input:not([disabled])');
+            console.log(`🔧 Encontrados ${toggles.length} toggles`);
+            
+            for (const toggle of toggles) {
+                try {
+                    const isChecked = await toggle.evaluate(el => el.checked);
+                    if (isChecked) {
+                        await toggle.click();
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                        console.log('🔘 Toggle desactivado');
+                    }
+                } catch (error) {
+                    console.log('⚠️ Error en toggle:', error.message);
+                }
             }
 
+            // Confirmar cambios
+            const saveBtn = await this.page.$('.save-preference-btn-handler, #onetrust-pc-save-btn-handler');
+            if (saveBtn) {
+                await saveBtn.click();
+                await new Promise(resolve => setTimeout(resolve, 3000));
+                
+                const modalClosed = await this.validateDismissal();
+                if (modalClosed) {
+                    console.log('✅ Settings reject exitoso');
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    async acceptAll() {
+        console.log('✅ Aceptando cookies OneTrust (híbrido)...');
+        
+        try {
+            // API first
+            console.log('🔧 Intentando API accept...');
+            const apiSuccess = await this.tryAPIAccept();
+            if (apiSuccess) {
+                const isEffective = await this.validateEffectiveness('accept');
+                if (isEffective) {
+                    console.log('✅ API accept efectivo');
+                    return true;
+                }
+            }
+
+            // DOM fallback
+            console.log('🔧 Intentando DOM accept...');
             const acceptBtn = await this.page.$('#onetrust-accept-btn-handler');
             if (acceptBtn) {
-                // Verificar visibilidad
-                const isVisible = await this.page.evaluate(el => {
-                    const rect = el.getBoundingClientRect();
-                    return rect.width > 0 && rect.height > 0;
-                }, acceptBtn);
-
-                if (isVisible) {
-                    await acceptBtn.click();
-                    
-                    // VALIDACIÓN: Banner debe desaparecer
-                    const bannerGone = await this.page.waitForFunction(
-                        () => {
-                            const banner = document.querySelector('#onetrust-banner-sdk, #onetrust-consent-sdk');
-                            return !banner || banner.style.display === 'none' || banner.style.visibility === 'hidden';
-                        },
-                        { timeout: 10000 }
-                    );
-
-                    if (bannerGone) {
-                        console.log('✅ Cookies OneTrust aceptadas - Banner desapareció');
+                await acceptBtn.click();
+                await new Promise(resolve => setTimeout(resolve, 3000));
+                
+                const success = await this.validateDismissal();
+                if (success) {
+                    const isEffective = await this.validateEffectiveness('accept');
+                    if (isEffective) {
+                        console.log('✅ DOM accept efectivo');
                         return true;
-                    } else {
-                        console.log('⚠️ Banner OneTrust sigue visible después del accept');
-                        return false;
                     }
                 }
             }
-            
-            console.log('❌ Botón accept OneTrust no encontrado');
+
             return false;
+
         } catch (error) {
             console.log('❌ Error aceptando OneTrust:', error.message);
             return false;
+        }
+    }
+
+    async tryAPIAccept() {
+        return await this.page.evaluate(() => {
+            if (window.OneTrust) {
+                if (typeof window.OneTrust.setConsent === 'function') {
+                    window.OneTrust.setConsent([1,2,3,4]); // All categories
+                    return 'setConsent_all';
+                }
+                
+                if (typeof window.OneTrust.UpdateConsent === 'function') {
+                    window.OneTrust.UpdateConsent({
+                        'C0001': true, // Necessary
+                        'C0002': true, // Performance  
+                        'C0003': true, // Functional
+                        'C0004': true  // Targeting
+                    });
+                    return 'UpdateConsent_all';
+                }
+            }
+            return false;
+        });
+    }
+
+    async validateDismissal() {
+        try {
+            const dismissed = await this.page.waitForFunction(
+                () => {
+                    const banner = document.querySelector('#onetrust-banner-sdk, #onetrust-consent-sdk');
+                    const modal = document.querySelector('#onetrust-pc-sdk');
+                    return (!banner || banner.style.display === 'none' || !banner.offsetParent) &&
+                           (!modal || modal.style.display === 'none' || !modal.offsetParent);
+                },
+                { timeout: 8000 }
+            );
+            return !!dismissed;
+        } catch (error) {
+            return false;
+        }
+    }
+
+    async validateEffectiveness(action) {
+        console.log(`🔍 Validando efectividad de ${action}...`);
+        
+        // Esperar que la página reaccione
+        await new Promise(resolve => setTimeout(resolve, 5000));
+        
+        // Contar scripts después de acción
+        const scriptCount = await this.page.evaluate(() => {
+            return document.scripts.length;
+        });
+        
+        // Contar requests activos
+        const requestCount = await this.page.evaluate(() => {
+            return window.performance.getEntriesByType('resource').length;
+        });
+        
+        console.log(`📊 Post-${action}: ${scriptCount} scripts, ${requestCount} requests`);
+        
+        // Para accept: debe haber MÁS actividad
+        // Para reject: debe haber MENOS actividad
+        if (action === 'accept') {
+            return scriptCount > 40; // Más scripts = más tracking
+        } else {
+            return scriptCount < 50; // Menos scripts = menos tracking
         }
     }
 }

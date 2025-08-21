@@ -1,10 +1,10 @@
 // src/crawler/testCrawler.js
-// Test del crawler con sesiones separadas para validación completa
+// Final robust test with error handling
 
 const SpectralCrawler = require('./spectralCrawler');
 
 async function testCrawler() {
-    console.log('🧪 Iniciando test completo con sesiones separadas...');
+    console.log('🧪 Test final...');
     
     const results = {
         domain: 'cnn.com',
@@ -13,22 +13,22 @@ async function testCrawler() {
     };
     
     try {
-        // BASELINE - Sesión limpia
-        console.log('\n=== BASELINE (sin interacción) ===');
+        // BASELINE
+        console.log('\n=== BASELINE ===');
         const crawler1 = new SpectralCrawler();
         await crawler1.init();
         results.states.baseline = await crawler1.crawlState('cnn.com', 'baseline');
         await crawler1.close();
         
-        // REJECT - Nueva sesión
-        console.log('\n=== REJECT (rechazar cookies) ===');
+        // REJECT
+        console.log('\n=== REJECT ===');
         const crawler2 = new SpectralCrawler();
         await crawler2.init();
         results.states.reject = await crawler2.crawlState('cnn.com', 'reject');
         await crawler2.close();
         
-        // ACCEPT - Nueva sesión
-        console.log('\n=== ACCEPT (aceptar cookies) ===');
+        // ACCEPT
+        console.log('\n=== ACCEPT ===');
         const crawler3 = new SpectralCrawler();
         await crawler3.init();
         results.states.accept = await crawler3.crawlState('cnn.com', 'accept');
@@ -36,24 +36,39 @@ async function testCrawler() {
         
         // RESUMEN
         console.log('\n📊 RESUMEN FINAL:');
-        console.log(`Baseline: ${results.states.baseline.cmps.length} CMPs, ${results.states.baseline.cookies.length} cookies`);
-        console.log(`Reject: ${results.states.reject.cmps.length} CMPs, ${results.states.reject.cookies.length} cookies`);
-        console.log(`Accept: ${results.states.accept.cmps.length} CMPs, ${results.states.accept.cookies.length} cookies`);
+        const states = ['baseline', 'reject', 'accept'];
         
-        // Scripts comparison
+        for (const state of states) {
+            const result = results.states[state];
+            if (result && !result.error) {
+                const cmpCount = result.cmps?.length || 0;
+                const cookieCount = result.cookies?.length || 0;
+                console.log(`${state.charAt(0).toUpperCase() + state.slice(1)}: ${cmpCount} CMPs, ${cookieCount} cookies`);
+            } else {
+                console.log(`${state.charAt(0).toUpperCase() + state.slice(1)}: Error - ${result?.error || 'Unknown'}`);
+            }
+        }
+        
         console.log('\n📋 SCRIPTS:');
-        console.log(`Baseline: ${results.states.baseline.evidence.scripts.before.length} → ${results.states.baseline.evidence.scripts.after.length}`);
-        console.log(`Reject: ${results.states.reject.evidence.scripts.before.length} → ${results.states.reject.evidence.scripts.after.length}`);
-        console.log(`Accept: ${results.states.accept.evidence.scripts.before.length} → ${results.states.accept.evidence.scripts.after.length}`);
+        for (const state of states) {
+            const result = results.states[state];
+            if (result && !result.error && result.evidence) {
+                const before = result.evidence.scripts?.before?.length || 0;
+                const after = result.evidence.scripts?.after?.length || 0;
+                console.log(`${state.charAt(0).toUpperCase() + state.slice(1)}: ${before} → ${after}`);
+            } else {
+                console.log(`${state.charAt(0).toUpperCase() + state.slice(1)}: No data`);
+            }
+        }
         
         return results;
         
     } catch (error) {
         console.error('❌ Error en test:', error);
+        return { error: error.message };
     }
 }
 
-// Ejecutar test
 if (require.main === module) {
     testCrawler().then(() => {
         console.log('✅ Test completado');

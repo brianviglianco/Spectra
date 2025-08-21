@@ -1,14 +1,16 @@
 // src/crawler/cmps/cmpDetector.js
-// Coordinador principal de detección de CMPs
+// Coordinador principal de detección de CMPs - ACTUALIZADO con Cookiebot
 
 const OneTrustDetector = require('./oneTrustDetector');
+const CookiebotDetector = require('./cookiebotDetector');
 
 class CMPDetector {
     constructor(page) {
         this.page = page;
         this.detectedCMPs = [];
         this.detectors = [
-            new OneTrustDetector(page)
+            new OneTrustDetector(page),
+            new CookiebotDetector(page)
             // Más detectores se agregan aquí
         ];
     }

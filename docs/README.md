@@ -1,129 +1,155 @@
+# SPECTRAL - Automated Privacy Decision Verification Platform
 
-# SPECTRAL - Continuous Privacy Compliance Verification
+🔍 **Automatically verifies if websites respect user privacy decisions with forensic evidence**
 
-🔍 **The only platform that proves your privacy policies are actually enforced in production**
+[![Development Status](https://img.shields.io/badge/Status-MVP%20Development-yellow)](https://github.com/brianviglianco/Spectral)
+[![Demo Ready](https://img.shields.io/badge/Demo-3%20Weeks-green)](https://brianviglianco.github.io/Spectral/)
 
 ## What is SPECTRAL?
 
-SPECTRAL is a continuous verification platform that automatically checks—with reproducible evidence—whether websites, apps, and CTV experiences truly behave according to user consent and privacy policies. It operates across all regions, consent states (none/accept/reject/GPC), and covers both client and server sides.
+SPECTRAL simulates real users navigating websites, tests different privacy states (accept/reject/none), and captures forensic evidence of GDPR/CCPA violations through automated browser interactions with 8+ CMP providers.
 
-## 🎯 Core Value Proposition
+**Unique Value:** Runtime verification vs. static compliance tools + multi-CMP automation + forensic evidence capture.
 
-- **Continuous Runtime Verification** - 24/7 monitoring vs point-in-time audits
-- **Client ↔ Server Correlation** - Ensures same legal state on both sides  
-- **Evidence-First Reporting** - Screenshots, HAR files, reproducible proof
-- **Multi-Surface Coverage** - Web, mobile SDK, CTV in single platform
-- **CI/CD Integration** - Block releases with critical violations
+## 🚀 Live Demo
 
-## 🏗️ Project Status
-
-**Current Phase:** MVP Development  
-**Timeline:** 3 weeks to demo-ready product  
-**Recommendation:** PROCEED with 78% confidence  
-
-### Repository Structure
-
-```
-spectral/
-├── 📊 sales-deck/          # Interactive HTML presentation (21 slides)
-├── 📝 docs/                # Complete business documentation
-├── 🔧 backend/             # Node.js API & crawler engine
-├── 🎨 frontend/            # React dashboard
-├── 🚀 deployment/          # Scripts & deployment configs
-└── 📈 business/            # Strategy & financial projections
-```
-
-## 🎨 Sales Deck
-
-Interactive HTML presentation available at: [View Sales Deck](./sales-deck/index.html)
-
-**Features:**
+**Sales Deck:** [https://brianviglianco.github.io/Spectral/](https://brianviglianco.github.io/Spectral/)
 - 21 comprehensive slides
-- Professional tech-forward design
-- Mobile responsive
-- Complete product story & business case
+- Interactive tech presentation
+- Complete business case
 
-## 📋 Development Roadmap
+## 🎯 Core Features
 
-### Week 1: Backend Foundation
-- [x] Express server setup
-- [x] PostgreSQL database  
-- [x] Puppeteer crawler engine
-- [x] Basic compliance rules
+- **Multi-CMP Detection** - OneTrust, Didomi, TrustArc, Cookiebot + 4 more
+- **Forensic Evidence** - Screenshots PRE/POST + HAR files + violation reports  
+- **Global Regulations** - GDPR, CCPA, LGPD, PIPEDA coverage (MVP: GDPR only)
+- **Runtime Verification** - 24/7 monitoring vs point-in-time audits
+- **Client↔Server Correlation** - Ensures legal state consistency
 
-### Week 2: Frontend Dashboard  
-- [ ] React/Next.js application
-- [ ] SPECTRAL branded UI
-- [ ] Evidence viewer
-- [ ] Report generation
+## 📊 Market Opportunity
 
-### Week 3: Demo Polish
-- [ ] Multi-region testing
-- [ ] Professional UI/UX
-- [ ] Deployment ready
-- [ ] Demo presentation
+- **Market:** $21.17B Privacy Management Software (28.2% CAGR)
+- **Target:** $80M ARR by Year 5, 1,000+ enterprise customers  
+- **Competitive Advantage:** Runtime verification vs OneTrust/TrustArc static assessments
 
-## 🎯 Market Opportunity
+## 💼 Business Model
 
-- **TAM:** $21.17B Privacy Management Software market by 2032
-- **Growth:** 28.2% CAGR  
-- **Target:** $80M ARR by Year 5
-- **Customers:** 1,000+ enterprise clients
+```
+Freemium: 1 domain, weekly scans (SMB adoption)
+Starter:  $1,500/month (3 domains, weekly scans)
+Pro:      $5,000/month (15 domains, daily scans)
+Enterprise: $15,000/month (unlimited, real-time)
+Platform: $50,000+/month (white-label)
+```
 
-## 🏢 Business Model
+## 🏗️ Technical Architecture
 
-**Pricing Tiers:**
-- **Starter:** $1,500/month (3 domains)
-- **Professional:** $5,000/month (15 domains)  
-- **Enterprise:** $15,000/month (unlimited)
-- **Platform:** $50,000+/month (white-label)
+### Current Stack (Working)
+- **Backend:** Node.js v22.18.0 + Express + PostgreSQL + Prisma ✅
+- **Auth:** JWT + bcrypt authentication ✅
+- **API:** User management + domain CRUD ✅
+- **Database:** User/Domain/CrawlSession/Violation models ✅
 
-## 🔧 Technology Stack
+### Next Implementation
+- **Crawler:** Puppeteer + multi-CMP automation
+- **Evidence:** Screenshots + HAR analysis + reports
+- **Frontend:** Next.js + Tailwind dashboard
 
-- **Backend:** Node.js + Express + PostgreSQL
-- **Frontend:** React + Next.js + Tailwind CSS
-- **Crawler:** Puppeteer + Playwright
-- **Deployment:** Vercel + Railway
-- **Monitoring:** Real-time compliance verification
+## 📋 Development Progress
 
-## 📖 Documentation
+### ✅ Completed (August 20, 2025)
+- [x] Development environment setup
+- [x] PostgreSQL + Prisma configuration  
+- [x] JWT authentication system
+- [x] Domain management CRUD
+- [x] GitHub repository structure
+- [x] Sales deck deployment
 
-Complete business and technical documentation available in `/docs/`:
+### 🔄 In Progress (Session 3)
+- [ ] Puppeteer crawler implementation
+- [ ] Multi-CMP detection patterns
+- [ ] GDPR violation rules engine
+- [ ] Evidence capture system
 
-- [Business Plan & Strategy](./docs/business-plan.md)
-- [Technical Architecture](./docs/technical-architecture.md)  
-- [Development Guide](./docs/development-guide.md)
-- [Deployment Instructions](./docs/deployment-guide.md)
-- [Financial Projections](./docs/financial-projections.md)
+### 📅 Roadmap
+**Week 1:** Complete crawler + violation detection  
+**Week 2:** Frontend dashboard + evidence viewer  
+**Week 3:** Demo preparation + deployment
 
 ## 🚀 Quick Start
 
 ```bash
 # Clone repository
 git clone https://github.com/brianviglianco/Spectral.git
-cd Spectral
+cd Spectral/backend
 
-# Install dependencies
+# Install dependencies  
 npm install
+npm install puppeteer  # Next session
 
-# Start development
+# Start development server
 npm run dev
+# Server: http://localhost:3001
+# API: /health, /api/auth, /api/domains
 ```
 
-## 🤝 Contributing
+## 🔧 Environment Setup
 
-This is currently a private MVP development project. Contributions welcome post-launch.
+**Requirements:**
+- Node.js v22.18.0+
+- PostgreSQL 
+- macOS/Linux terminal
 
-## 📄 License
+**Current Status:**
+- Database: `spectral_dev` running locally
+- Test user: brian@spectral.com registered
+- API endpoints functional
 
-Proprietary - All rights reserved
+## 🎯 MVP Scope (3 Weeks)
+
+**Geography:** Europe/GDPR only (expand globally post-MVP)  
+**Surface:** Web desktop only  
+**CMPs:** 8+ providers automated (OneTrust, Didomi, TrustArc, etc.)  
+**Demo Target:** Live privacy violation detection for investors
+
+## 🌍 Full Product Vision
+
+**Global:** GDPR + CCPA + LGPD + PIPEDA coverage  
+**Surfaces:** Web + mobile apps + Connected TV  
+**Enterprise:** Continuous monitoring + compliance dashboards  
+
+## 💰 Funding Status
+
+**Primary Target:** Direcly Partners ($200K-350K for 25-35% equity)  
+**Secondary:** Argentine ecosystem (NXTP Labs, Wayra) + international VCs  
+**Timeline:** Seed round target Q4 2025
+
+## 📁 Repository Structure
+
+```
+spectral/
+├── 🎨 sales-deck/     # Live presentation (deployed)
+├── 🔧 backend/        # Node.js API (current focus)  
+├── 🎯 frontend/       # React dashboard (Week 2)
+├── 📊 docs/          # Business documentation
+└── 🚀 deployment/    # Production configs
+```
+
+## 🧩 Key Insights
+
+Based on Python prototype analysis:
+- Complex OneTrust reject flows required
+- Multi-region header simulation needed
+- Evidence capture patterns proven  
+- GDPR violation rules validated
 
 ## 📞 Contact
 
-**Project Lead:** Brian Viglianco  
-**Status:** Seeking funding & technical partners  
-**Location:** Buenos Aires, Argentina
+**Founder:** Brian Viglianco  
+**Location:** Buenos Aires, Argentina  
+**Status:** Seeking technical co-founder + funding  
+**Demo Ready:** September 10, 2025
 
 ---
 
-⭐ **Star this repo if you're interested in privacy compliance automation!**
+⭐ **Star this repo if you're interested in automated privacy compliance!**

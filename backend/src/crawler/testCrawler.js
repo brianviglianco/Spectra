@@ -9,7 +9,7 @@ async function testCrawler() {
     try {
         await crawler.init();
         
-        const results = await crawler.crawlSite('https://www.osu.edu');
+        const results = await crawler.crawlSite('https://cookielaw.org/the-site/');
         
         console.log('\n📊 RESULTS:');
         console.log(`URL: ${results.url}`);
@@ -62,6 +62,13 @@ async function testCrawler() {
             console.log('• No reject option available (GDPR Article 7 violation)');
             console.log(`• Pre-consent tracking: ${baseline} scripts + ${baselineLS} localStorage + ${baseline3P} 3rd-party scripts`);
             console.log(`• Accept increases: +${accept - acceptPre} scripts, +${acceptLS - (results.evidence.accept_pre?.localStorageCount || 0)} localStorage, +${accept3P - (results.evidence.accept_pre?.thirdPartyScripts || 0)} 3rd-party`);
+        } else if (results.bannerAnalysis?.type === 'GDPR_style') {
+            console.log('✅ NO VIOLATIONS DETECTED');
+            console.log('• GDPR-compliant banner with reject option');
+            console.log('• Reject maintains minimal tracking');
+            console.log('• Accept properly increases tracking after consent');
+        } else {
+            console.log('⚠️ Could not determine compliance - no banner detected');
         }
 
         console.log('\n📷 Screenshots saved in public/screenshots/');

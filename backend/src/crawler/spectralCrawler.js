@@ -158,9 +158,72 @@ class SpectralCrawler {
         const found = await this.page.evaluate((actionType) => {
             const buttons = Array.from(document.querySelectorAll('button'));
             const textPatterns = {
-                accept: ['Accept all cookies', 'Allow all cookies', 'Accept', 'Allow all'],
-                reject: ['Reject all', 'Decline', 'Reject'],
-                settings: ['Review cookie settings', 'Cookie settings', 'Manage preferences', 'Settings']
+                accept: [
+                    // English
+                    'accept all cookies', 'allow all cookies', 'accept', 'allow all',
+                    // German
+                    'alle cookies akzeptieren', 'akzeptieren',
+                    // French
+                    'accepter tous les cookies', 'accepter',
+                    // Spanish
+                    'aceptar todas las cookies', 'aceptar',
+                    // Italian
+                    'accetta tutti i cookie', 'accettare',
+                    // Portuguese
+                    'aceitar todos os cookies', 'aceitar',
+                    // Dutch
+                    'alle cookies accepteren', 'accepteren',
+                    // Swedish
+                    'godkänn alla cookies', 'godkänn',
+                    // Danish
+                    'acceptér alle cookies', 'acceptér',
+                    // Norwegian
+                    'godta alle informasjonskapsler', 'godta'
+                ],
+                reject: [
+                    // English
+                    'reject all', 'decline', 'reject',
+                    // German
+                    'nur das notwendige akzeptieren', 'notwendige', 'ablehnen',
+                    // French
+                    'rejeter tout', 'rejeter', 'nécessaires uniquement',
+                    // Spanish
+                    'rechazar todo', 'rechazar', 'solo necesarias',
+                    // Italian
+                    'rifiuta tutto', 'rifiutare', 'solo necessari',
+                    // Portuguese
+                    'rejeitar tudo', 'rejeitar', 'apenas necessários',
+                    // Dutch
+                    'alles weigeren', 'weigeren', 'alleen noodzakelijk',
+                    // Swedish
+                    'avvisa alla', 'avvisa', 'endast nödvändiga',
+                    // Danish
+                    'afvis alle', 'afvis', 'kun nødvendige',
+                    // Norwegian
+                    'avvis alle', 'avvis', 'kun nødvendige'
+                ],
+                settings: [
+                    // English
+                    'cookie settings', 'manage preferences', 'settings',
+                    // German
+                    'einstellungen anpassen', 'meine einstellungen', 'cookie-einstellungen',
+                    // French
+                    'gérer les préférences', 'paramètres', 'gérer',
+                    // Spanish
+                    'gestionar preferencias', 'configuración', 'gestionar',
+                    // Italian
+                    'gestisci preferenze', 'impostazioni', 'gestire',
+                    // Portuguese
+                    'gerir preferências', 'definições', 'gerir',
+                    // Dutch
+                    'voorkeuren beheren', 'instellingen', 'beheren',
+                    // Swedish
+                    'hantera inställningar', 'inställningar', 'hantera',
+                    // Danish
+                    'administrer præferencer', 'indstillinger', 'administrer',
+                    // Norwegian
+                    'administrer preferanser', 'innstillinger', 'administrer'
+                ]
             };
             
             for (const button of buttons) {
@@ -189,25 +252,44 @@ class SpectralCrawler {
 
     async analyzeBanner() {
         const bannerInfo = await this.page.evaluate(() => {
-            const banner = document.querySelector('#onetrust-banner-sdk');
+            // Check OneTrust
+            const oneTrustBanner = document.querySelector('#onetrust-banner-sdk');
+            
+            // Check SourcePoint
+            const sourcePointBanner = document.querySelector('[class*="sp_choice"], [id*="sp_"], .message-container, [aria-label*="SP Consent"]') ||
+                                     document.querySelector('iframe[src*="sourcepoint"], iframe[title*="SP Consent"]');
+            
+            const banner = oneTrustBanner || sourcePointBanner;
             if (!banner) return { detected: false };
             
             const textContent = banner.textContent || banner.innerText || '';
-            const buttons = Array.from(banner.querySelectorAll('button'));
+            const buttons = Array.from(document.querySelectorAll('button'));
             const buttonTexts = buttons.map(btn => btn.innerText.toLowerCase().trim()).filter(text => text);
             
             const hasAccept = buttonTexts.some(text => 
-                text.includes('accept') || text.includes('allow')
+                text.includes('accept') || text.includes('allow') || text.includes('akzeptieren') || 
+                text.includes('accepter') || text.includes('aceptar') || text.includes('accettare') || 
+                text.includes('aceitar') || text.includes('accepteren') || text.includes('godkänn') || 
+                text.includes('acceptér') || text.includes('alle cookies')
             );
             const hasReject = buttonTexts.some(text => 
-                text.includes('reject') || text.includes('decline')
+                text.includes('reject') || text.includes('decline') || text.includes('notwendige') ||
+                text.includes('rejeter') || text.includes('rechazar') || text.includes('rifiutare') ||
+                text.includes('rejeitar') || text.includes('weigeren') || text.includes('avvisa') ||
+                text.includes('afvis') || text.includes('nur das notwendige')
             );
             const hasSettings = buttonTexts.some(text => 
-                text.includes('review') || text.includes('settings') || text.includes('manage')
+                text.includes('manage') || text.includes('settings') || text.includes('einstellungen') ||
+                text.includes('gérer') || text.includes('gestionar') || text.includes('gestire') ||
+                text.includes('gerir') || text.includes('beheren') || text.includes('hantera') ||
+                text.includes('administrer') || text.includes('anpassen')
             );
+            
+            const provider = oneTrustBanner ? 'OneTrust' : 'SourcePoint';
             
             return {
                 detected: true,
+                provider,
                 text: textContent.substring(0, 200),
                 hasDirectReject: hasReject,
                 hasAccept: hasAccept,

@@ -54,10 +54,8 @@ class SpectralCrawler {
         const evidence = { timestamp: new Date().toISOString(), stage, url };
 
         try {
-            // Wait for page stability
             await new Promise(resolve => setTimeout(resolve, 2000));
             
-            // Count scripts with retry
             let scriptsCount = 0;
             try {
                 scriptsCount = await this.page.evaluate(() => document.scripts.length);
@@ -68,11 +66,50 @@ class SpectralCrawler {
             }
             evidence.scriptsCount = scriptsCount;
 
-            // Count cookies
             const cookies = await this.page.cookies();
             evidence.cookiesCount = cookies.length;
 
-            // Take screenshot
+            // Capture localStorage
+            const storageCount = await this.page.evaluate(() => {
+                try {
+                    return window.localStorage.length;
+                } catch (e) {
+                    return 0;
+                }
+            });
+            evidence.localStorageCount = storageCount;
+
+            // Detect tracking pixels (1x1 images)
+            const trackingPixels = await this.page.evaluate(() => {
+                const images = Array.from(document.querySelectorAll('img'));
+                return images.filter(img => 
+                    (img.width === 1 && img.height === 1) ||
+                    img.src.includes('analytics') ||
+                    img.src.includes('tracking') ||
+                    img.src.includes('pixel') ||
+                    img.src.includes('facebook.com') ||
+                    img.src.includes('google-analytics.com')
+                ).length;
+            });
+            evidence.trackingPixels = trackingPixels;
+
+            // Count third-party scripts (simple network detection)
+            const thirdPartyScripts = await this.page.evaluate(() => {
+                const scripts = Array.from(document.scripts);
+                return scripts.filter(script => {
+                    const src = script.src;
+                    return src && (
+                        src.includes('google') ||
+                        src.includes('facebook') ||
+                        src.includes('analytics') ||
+                        src.includes('doubleclick') ||
+                        src.includes('amazon-adsystem') ||
+                        !src.includes(window.location.hostname)
+                    );
+                }).length;
+            });
+            evidence.thirdPartyScripts = thirdPartyScripts;
+
             const screenshotName = `${Date.now()}_${stage}.png`;
             await this.page.screenshot({ 
                 path: path.join(this.options.screenshotDir, screenshotName),
@@ -80,7 +117,7 @@ class SpectralCrawler {
             });
             evidence.screenshot = screenshotName;
 
-            console.log(`📸 ${stage}: ${scriptsCount} scripts, ${cookies.length} cookies`);
+            console.log(`📸 ${stage}: ${scriptsCount} scripts, ${cookies.length} cookies, ${storageCount} localStorage, ${trackingPixels} pixels, ${thirdPartyScripts} 3rd-party`);
             return evidence;
 
         } catch (error) {
@@ -95,7 +132,6 @@ class SpectralCrawler {
     async clickOneTrustButton(action) {
         console.log(`🖱️ Looking for OneTrust ${action} button...`);
         
-        // Try direct selectors first
         const directSelectors = {
             accept: ['#onetrust-accept-btn-handler'],
             reject: ['#onetrust-reject-all-handler'],
@@ -119,7 +155,6 @@ class SpectralCrawler {
             }
         }
 
-        // Try text-based search
         const found = await this.page.evaluate((actionType) => {
             const buttons = Array.from(document.querySelectorAll('button'));
             const textPatterns = {
@@ -148,75 +183,8 @@ class SpectralCrawler {
             return true;
         }
 
-        // If reject not found, try settings approach
-        if (action === 'reject') {
-            console.log('🔧 No direct reject, trying settings approach...');
-            return await this.handleSettingsReject();
-        }
-
         console.log(`❌ No ${action} button found`);
         return false;
-    }
-
-    async handleSettingsReject() {
-        try {
-            // Click settings button by text search
-            const settingsClicked = await this.page.evaluate(() => {
-                const buttons = Array.from(document.querySelectorAll('button'));
-                for (const button of buttons) {
-                    const text = button.innerText.toLowerCase();
-                    if (text.includes('review') || text.includes('settings') || text.includes('manage')) {
-                        button.click();
-                        return true;
-                    }
-                }
-                return false;
-            });
-
-            if (settingsClicked) {
-                console.log('🔧 Opened cookie settings');
-                await new Promise(resolve => setTimeout(resolve, 2000));
-                
-                // Turn off all toggles
-                const toggles = await this.page.$('.ot-switch input:not([disabled])');
-                console.log(`🔧 Found ${toggles.length} toggles`);
-                
-                for (const toggle of toggles) {
-                    try {
-                        const isChecked = await toggle.evaluate(el => el.checked);
-                        if (isChecked) {
-                            await toggle.click();
-                            await new Promise(resolve => setTimeout(resolve, 500));
-                        }
-                    } catch (error) {
-                        console.log('⚠️ Toggle error:', error.message);
-                    }
-                }
-                
-                // Find save button by text
-                const saveClicked = await this.page.evaluate(() => {
-                    const buttons = Array.from(document.querySelectorAll('button'));
-                    for (const button of buttons) {
-                        const text = button.innerText.toLowerCase();
-                        if (text.includes('confirm') || text.includes('save') || text.includes('apply')) {
-                            button.click();
-                            return true;
-                        }
-                    }
-                    return false;
-                });
-
-                if (saveClicked) {
-                    console.log('✅ Settings reject completed');
-                    await new Promise(resolve => setTimeout(resolve, 3000));
-                    return true;
-                }
-            }
-            return false;
-        } catch (error) {
-            console.log('❌ Settings reject failed:', error.message);
-            return false;
-        }
     }
 
     async analyzeBanner() {
@@ -224,7 +192,6 @@ class SpectralCrawler {
             const banner = document.querySelector('#onetrust-banner-sdk');
             if (!banner) return { detected: false };
             
-            // Get visible text content, not CSS
             const textContent = banner.textContent || banner.innerText || '';
             const buttons = Array.from(banner.querySelectorAll('button'));
             const buttonTexts = buttons.map(btn => btn.innerText.toLowerCase().trim()).filter(text => text);
@@ -259,40 +226,29 @@ class SpectralCrawler {
         const results = { url, evidence: {} };
 
         try {
-            // BASELINE - fresh load
             console.log('📋 Loading baseline...');
             await this.page.goto(url, { waitUntil: 'networkidle2' });
             await new Promise(resolve => setTimeout(resolve, 5000));
             results.evidence.baseline = await this.captureEvidence('baseline', url);
 
-            // REJECT - fresh load
             console.log('📋 Loading for reject...');
             await this.page.deleteCookie(...await this.page.cookies());
             await this.page.evaluate(() => localStorage.clear());
             await this.page.goto(url, { waitUntil: 'networkidle2' });
             await new Promise(resolve => setTimeout(resolve, 5000));
             
-            // Analyze banner before interaction
             const bannerInfo = await this.analyzeBanner();
             results.bannerAnalysis = bannerInfo;
             
             results.evidence.reject_pre = await this.captureEvidence('reject_pre', url);
             
-            // Handle reject based on banner type
             if (bannerInfo.hasDirectReject) {
                 const rejectSuccess = await this.clickOneTrustButton('reject');
                 if (rejectSuccess) {
                     await new Promise(resolve => setTimeout(resolve, 5000));
                 }
                 results.evidence.reject = await this.captureEvidence('reject', url);
-            } else if (bannerInfo.hasSettings) {
-                const settingsSuccess = await this.handleSettingsReject();
-                if (settingsSuccess) {
-                    await new Promise(resolve => setTimeout(resolve, 5000));
-                }
-                results.evidence.reject = await this.captureEvidence('reject', url);
             } else {
-                // US-style with no reject option
                 console.log('⚠️ US-style banner: No reject option available');
                 results.evidence.reject = {
                     ...results.evidence.reject_pre,
@@ -301,7 +257,6 @@ class SpectralCrawler {
                 };
             }
 
-            // ACCEPT - fresh load  
             console.log('📋 Loading for accept...');
             await this.page.deleteCookie(...await this.page.cookies());
             await this.page.evaluate(() => localStorage.clear());

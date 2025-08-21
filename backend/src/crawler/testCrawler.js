@@ -1,82 +1,60 @@
-// src/crawler/testCrawler.js
-// Final robust test with error handling
-
 const SpectralCrawler = require('./spectralCrawler');
 
 async function testCrawler() {
-    console.log('🧪 Test final...');
+    console.log('🧪 SPECTRAL TEST - CNN OneTrust');
+    console.log('=' .repeat(40));
     
-    const results = {
-        domain: 'cnn.com',
-        timestamp: new Date().toISOString(),
-        states: {}
-    };
-    
+    const crawler = new SpectralCrawler({ headless: false });
+
     try {
-        // BASELINE
-        console.log('\n=== BASELINE ===');
-        const crawler1 = new SpectralCrawler();
-        await crawler1.init();
-        results.states.baseline = await crawler1.crawlState('cnn.com', 'baseline');
-        await crawler1.close();
+        await crawler.init();
         
-        // REJECT
-        console.log('\n=== REJECT ===');
-        const crawler2 = new SpectralCrawler();
-        await crawler2.init();
-        results.states.reject = await crawler2.crawlState('cnn.com', 'reject');
-        await crawler2.close();
+        const results = await crawler.crawlSite('https://www.osu.edu');
         
-        // ACCEPT
-        console.log('\n=== ACCEPT ===');
-        const crawler3 = new SpectralCrawler();
-        await crawler3.init();
-        results.states.accept = await crawler3.crawlState('cnn.com', 'accept');
-        await crawler3.close();
+        console.log('\n📊 RESULTS:');
+        console.log(`URL: ${results.url}`);
         
-        // RESUMEN
-        console.log('\n📊 RESUMEN FINAL:');
-        const states = ['baseline', 'reject', 'accept'];
-        
-        for (const state of states) {
-            const result = results.states[state];
-            if (result && !result.error) {
-                const cmpCount = result.cmps?.length || 0;
-                const cookieCount = result.cookies?.length || 0;
-                console.log(`${state.charAt(0).toUpperCase() + state.slice(1)}: ${cmpCount} CMPs, ${cookieCount} cookies`);
-            } else {
-                console.log(`${state.charAt(0).toUpperCase() + state.slice(1)}: Error - ${result?.error || 'Unknown'}`);
+        // Show banner analysis
+        if (results.bannerAnalysis) {
+            console.log('\n🎯 BANNER ANALYSIS:');
+            console.log(`Type: ${results.bannerAnalysis.type || 'Unknown'}`);
+            console.log(`Direct Reject: ${results.bannerAnalysis.hasDirectReject ? 'Yes' : 'No'}`);
+            console.log(`Settings Available: ${results.bannerAnalysis.hasSettings ? 'Yes' : 'No'}`);
+            if (results.bannerAnalysis.text) {
+                console.log(`Text: "${results.bannerAnalysis.text.substring(0, 100)}..."`);
             }
         }
         
-        console.log('\n📋 SCRIPTS:');
-        for (const state of states) {
-            const result = results.states[state];
-            if (result && !result.error && result.evidence) {
-                const before = result.evidence.scripts?.before?.length || 0;
-                const after = result.evidence.scripts?.after?.length || 0;
-                console.log(`${state.charAt(0).toUpperCase() + state.slice(1)}: ${before} → ${after}`);
-            } else {
-                console.log(`${state.charAt(0).toUpperCase() + state.slice(1)}: No data`);
-            }
+        // Show script counts
+        const baseline = results.evidence.baseline?.scriptsCount || 0;
+        const reject = results.evidence.reject?.scriptsCount || 0;
+        const accept = results.evidence.accept?.scriptsCount || 0;
+        
+        console.log('\n📈 SCRIPT COUNTS:');
+        console.log(`Baseline: ${baseline}`);
+        console.log(`Reject:   ${reject} (${reject - baseline >= 0 ? '+' : ''}${reject - baseline})`);
+        console.log(`Accept:   ${accept} (${accept - baseline >= 0 ? '+' : ''}${accept - baseline})`);
+        
+        // Expected: baseline ≈ reject < accept
+        if (accept > baseline + 10) {
+            console.log('\n✅ Accept shows more tracking (good)');
+        } else {
+            console.log('\n⚠️ Accept not showing expected increase');
         }
         
-        return results;
-        
+        if (reject <= baseline + 5) {
+            console.log('✅ Reject shows minimal tracking (good)');
+        } else {
+            console.log('⚠️ Reject not reducing tracking effectively');
+        }
+
+        console.log('\n📷 Screenshots saved in public/screenshots/');
+
     } catch (error) {
-        console.error('❌ Error en test:', error);
-        return { error: error.message };
+        console.error('❌ Test failed:', error.message);
+    } finally {
+        await crawler.close();
     }
 }
 
-if (require.main === module) {
-    testCrawler().then(() => {
-        console.log('✅ Test completado');
-        process.exit(0);
-    }).catch(error => {
-        console.error('❌ Test falló:', error);
-        process.exit(1);
-    });
-}
-
-module.exports = testCrawler;
+testCrawler();

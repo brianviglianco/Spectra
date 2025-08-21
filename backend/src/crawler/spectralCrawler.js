@@ -221,11 +221,13 @@ class SpectralCrawler {
 
     async analyzeBanner() {
         const bannerInfo = await this.page.evaluate(() => {
-            const banner = document.querySelector('#onetrust-banner-sdk, [id*="onetrust"]');
+            const banner = document.querySelector('#onetrust-banner-sdk');
             if (!banner) return { detected: false };
             
+            // Get visible text content, not CSS
+            const textContent = banner.textContent || banner.innerText || '';
             const buttons = Array.from(banner.querySelectorAll('button'));
-            const buttonTexts = buttons.map(btn => btn.innerText.toLowerCase());
+            const buttonTexts = buttons.map(btn => btn.innerText.toLowerCase().trim()).filter(text => text);
             
             const hasAccept = buttonTexts.some(text => 
                 text.includes('accept') || text.includes('allow')
@@ -239,7 +241,7 @@ class SpectralCrawler {
             
             return {
                 detected: true,
-                text: banner.innerText.substring(0, 200),
+                text: textContent.substring(0, 200),
                 hasDirectReject: hasReject,
                 hasAccept: hasAccept,
                 hasSettings: hasSettings,
@@ -276,11 +278,28 @@ class SpectralCrawler {
             
             results.evidence.reject_pre = await this.captureEvidence('reject_pre', url);
             
-            const rejectSuccess = await this.clickOneTrustButton('reject');
-            if (rejectSuccess) {
-                await new Promise(resolve => setTimeout(resolve, 5000));
+            // Handle reject based on banner type
+            if (bannerInfo.hasDirectReject) {
+                const rejectSuccess = await this.clickOneTrustButton('reject');
+                if (rejectSuccess) {
+                    await new Promise(resolve => setTimeout(resolve, 5000));
+                }
+                results.evidence.reject = await this.captureEvidence('reject', url);
+            } else if (bannerInfo.hasSettings) {
+                const settingsSuccess = await this.handleSettingsReject();
+                if (settingsSuccess) {
+                    await new Promise(resolve => setTimeout(resolve, 5000));
+                }
+                results.evidence.reject = await this.captureEvidence('reject', url);
+            } else {
+                // US-style with no reject option
+                console.log('⚠️ US-style banner: No reject option available');
+                results.evidence.reject = {
+                    ...results.evidence.reject_pre,
+                    stage: 'reject_unavailable',
+                    violation: 'No reject option provided (GDPR violation)'
+                };
             }
-            results.evidence.reject = await this.captureEvidence('reject', url);
 
             // ACCEPT - fresh load  
             console.log('📋 Loading for accept...');

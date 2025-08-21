@@ -25,27 +25,37 @@ async function testCrawler() {
             }
         }
         
-        // Show script counts
+        // Show script counts with PRE/POST details
         const baseline = results.evidence.baseline?.scriptsCount || 0;
+        const rejectPre = results.evidence.reject_pre?.scriptsCount || 0;
         const reject = results.evidence.reject?.scriptsCount || 0;
+        const acceptPre = results.evidence.accept_pre?.scriptsCount || 0;
         const accept = results.evidence.accept?.scriptsCount || 0;
         
-        console.log('\n📈 SCRIPT COUNTS:');
-        console.log(`Baseline: ${baseline}`);
-        console.log(`Reject:   ${reject} (${reject - baseline >= 0 ? '+' : ''}${reject - baseline})`);
-        console.log(`Accept:   ${accept} (${accept - baseline >= 0 ? '+' : ''}${accept - baseline})`);
+        console.log('\n📈 DETAILED SCRIPT ANALYSIS:');
+        console.log(`Baseline: ${baseline} scripts`);
+        console.log('');
         
-        // Expected: baseline ≈ reject < accept
-        if (accept > baseline + 10) {
-            console.log('\n✅ Accept shows more tracking (good)');
+        if (results.evidence.reject?.violation) {
+            console.log(`REJECT TEST:`);
+            console.log(`  PRE:  ${rejectPre} scripts`);
+            console.log(`  POST: UNAVAILABLE (${results.evidence.reject.violation})`);
         } else {
-            console.log('\n⚠️ Accept not showing expected increase');
+            console.log(`REJECT TEST:`);
+            console.log(`  PRE:  ${rejectPre} scripts`);
+            console.log(`  POST: ${reject} scripts (${reject - rejectPre >= 0 ? '+' : ''}${reject - rejectPre} change)`);
         }
         
-        if (reject <= baseline + 5) {
-            console.log('✅ Reject shows minimal tracking (good)');
-        } else {
-            console.log('⚠️ Reject not reducing tracking effectively');
+        console.log('');
+        console.log(`ACCEPT TEST:`);
+        console.log(`  PRE:  ${acceptPre} scripts`);
+        console.log(`  POST: ${accept} scripts (${accept - acceptPre >= 0 ? '+' : ''}${accept - acceptPre} change)`);
+        
+        console.log('\n🚨 VIOLATIONS DETECTED:');
+        if (results.bannerAnalysis?.type === 'US_style' && !results.bannerAnalysis.hasDirectReject) {
+            console.log('• No reject option available (GDPR Article 7 violation)');
+            console.log(`• Pre-consent tracking: ${baseline} scripts loaded before user choice`);
+            console.log(`• Accept increases tracking by ${accept - acceptPre} scripts (+${((accept - acceptPre) / acceptPre * 100).toFixed(1)}%)`);
         }
 
         console.log('\n📷 Screenshots saved in public/screenshots/');

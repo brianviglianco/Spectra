@@ -69,7 +69,6 @@ class SpectralCrawler {
             const cookies = await this.page.cookies();
             evidence.cookiesCount = cookies.length;
 
-            // Capture localStorage
             const storageCount = await this.page.evaluate(() => {
                 try {
                     return window.localStorage.length;
@@ -79,7 +78,6 @@ class SpectralCrawler {
             });
             evidence.localStorageCount = storageCount;
 
-            // Detect tracking pixels (1x1 images)
             const trackingPixels = await this.page.evaluate(() => {
                 const images = Array.from(document.querySelectorAll('img'));
                 return images.filter(img => 
@@ -93,7 +91,6 @@ class SpectralCrawler {
             });
             evidence.trackingPixels = trackingPixels;
 
-            // Count third-party scripts (simple network detection)
             const thirdPartyScripts = await this.page.evaluate(() => {
                 const scripts = Array.from(document.scripts);
                 return scripts.filter(script => {
@@ -110,6 +107,91 @@ class SpectralCrawler {
             });
             evidence.thirdPartyScripts = thirdPartyScripts;
 
+            // Analyze scripts by domain/purpose
+            const scriptAnalysis = await this.page.evaluate(() => {
+                const scripts = Array.from(document.scripts);
+                
+                const trackingDomains = [
+                    'google-analytics.com', 'googletagmanager.com', 'googlesyndication.com',
+                    'facebook.com', 'facebook.net', 'doubleclick.net',
+                    'amazon-adsystem.com', 'adsystem.amazon.com',
+                    'twitter.com', 'analytics.twitter.com',
+                    'linkedin.com', 'ads.linkedin.com',
+                    'hotjar.com', 'mouseflow.com', 'crazyegg.com',
+                    'segment.com', 'mixpanel.com', 'amplitude.com'
+                ];
+                
+                const necessaryDomains = [
+                    'cookielaw.org', 'onetrust.com', // CMP scripts
+                    'jquery.com', 'jsdelivr.net', 'unpkg.com', // Libraries
+                    'stripe.com', 'paypal.com', // Payment
+                    'recaptcha.net', 'hcaptcha.com' // Security
+                ];
+                
+                let trackingScripts = 0;
+                let necessaryScripts = 0;
+                let unknownScripts = 0;
+                
+                scripts.forEach(script => {
+                    const src = script.src || '';
+                    const hostname = window.location.hostname;
+                    
+                    if (!src || src.includes(hostname)) {
+                        necessaryScripts++; // First-party or inline
+                    } else if (trackingDomains.some(domain => src.includes(domain))) {
+                        trackingScripts++;
+                    } else if (necessaryDomains.some(domain => src.includes(domain))) {
+                        necessaryScripts++;
+                    } else {
+                        unknownScripts++;
+                    }
+                });
+                
+                return {
+                    total: scripts.length,
+                    tracking: trackingScripts,
+                    necessary: necessaryScripts,
+                    unknown: unknownScripts
+                };
+            });
+            evidence.scriptAnalysis = scriptAnalysis;
+
+            // Analyze cookies by domain/purpose
+            const cookieAnalysis = await this.page.evaluate(() => {
+                const cookies = document.cookie.split(';');
+                const trackingCookies = cookies.filter(cookie => {
+                    const name = cookie.split('=')[0].trim().toLowerCase();
+                    return name.includes('ga') || name.includes('_utm') || 
+                           name.includes('facebook') || name.includes('_fbp') ||
+                           name.includes('linkedin') || name.includes('doubleclick');
+                });
+                
+                return {
+                    total: cookies.length,
+                    tracking: trackingCookies.length,
+                    necessary: cookies.length - trackingCookies.length
+                };
+            });
+            evidence.cookieAnalysis = cookieAnalysis;
+
+            // Analyze localStorage for tracking content
+            const localStorageAnalysis = await this.page.evaluate(() => {
+                let trackingItems = 0;
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i).toLowerCase();
+                    if (key.includes('ga') || key.includes('utm') || key.includes('facebook') || 
+                        key.includes('analytics') || key.includes('tracking')) {
+                        trackingItems++;
+                    }
+                }
+                return {
+                    total: localStorage.length,
+                    tracking: trackingItems,
+                    necessary: localStorage.length - trackingItems
+                };
+            });
+            evidence.localStorageAnalysis = localStorageAnalysis;
+
             const screenshotName = `${Date.now()}_${stage}.png`;
             await this.page.screenshot({ 
                 path: path.join(this.options.screenshotDir, screenshotName),
@@ -117,7 +199,7 @@ class SpectralCrawler {
             });
             evidence.screenshot = screenshotName;
 
-            console.log(`📸 ${stage}: ${scriptsCount} scripts, ${cookies.length} cookies, ${storageCount} localStorage, ${trackingPixels} pixels, ${thirdPartyScripts} 3rd-party`);
+            console.log(`📸 ${stage}: ${scriptsCount} scripts (${scriptAnalysis.tracking} tracking, ${scriptAnalysis.necessary} necessary), ${cookies.length} cookies (${cookieAnalysis.tracking} tracking), ${storageCount} localStorage (${localStorageAnalysis.tracking} tracking), ${trackingPixels} pixels, ${thirdPartyScripts} 3rd-party`);
             return evidence;
 
         } catch (error) {
@@ -125,13 +207,17 @@ class SpectralCrawler {
             evidence.error = error.message;
             evidence.scriptsCount = 0;
             evidence.cookiesCount = 0;
+            evidence.localStorageCount = 0;
+            evidence.trackingPixels = 0;
+            evidence.thirdPartyScripts = 0;
             return evidence;
         }
     }
 
     async clickOneTrustButton(action) {
-        console.log(`🖱️ Looking for OneTrust ${action} button...`);
+        console.log(`🖱️ Looking for ${action} button...`);
         
+        // Try direct OneTrust selectors first
         const directSelectors = {
             accept: ['#onetrust-accept-btn-handler'],
             reject: ['#onetrust-reject-all-handler'],
@@ -155,74 +241,49 @@ class SpectralCrawler {
             }
         }
 
+        // Try clicking iframe content for SourcePoint
+        const iframeClicked = await this.page.evaluate((actionType) => {
+            const iframes = document.querySelectorAll('iframe');
+            for (const iframe of iframes) {
+                try {
+                    const rect = iframe.getBoundingClientRect();
+                    if (rect.width > 100 && rect.height > 100) { // Likely consent iframe
+                        if (actionType === 'accept') {
+                            iframe.click(); // Click center of iframe
+                            return 'iframe_accept';
+                        } else if (actionType === 'reject') {
+                            // Click left side of iframe (where reject usually is)
+                            const event = new MouseEvent('click', {
+                                clientX: rect.left + rect.width * 0.3,
+                                clientY: rect.top + rect.height * 0.8
+                            });
+                            iframe.dispatchEvent(event);
+                            return 'iframe_reject';
+                        }
+                    }
+                } catch (e) {}
+            }
+            return false;
+        }, action);
+
+        if (iframeClicked) {
+            console.log(`✅ Clicked ${action} in iframe: ${iframeClicked}`);
+            await new Promise(resolve => setTimeout(resolve, 3000));
+            return true;
+        }
+
+        // Fallback to text-based search
         const found = await this.page.evaluate((actionType) => {
             const buttons = Array.from(document.querySelectorAll('button'));
             const textPatterns = {
                 accept: [
-                    // English
                     'accept all cookies', 'allow all cookies', 'accept', 'allow all',
-                    // German
                     'alle cookies akzeptieren', 'akzeptieren',
-                    // French
-                    'accepter tous les cookies', 'accepter',
-                    // Spanish
-                    'aceptar todas las cookies', 'aceptar',
-                    // Italian
-                    'accetta tutti i cookie', 'accettare',
-                    // Portuguese
-                    'aceitar todos os cookies', 'aceitar',
-                    // Dutch
-                    'alle cookies accepteren', 'accepteren',
-                    // Swedish
-                    'godkänn alla cookies', 'godkänn',
-                    // Danish
-                    'acceptér alle cookies', 'acceptér',
-                    // Norwegian
-                    'godta alle informasjonskapsler', 'godta'
+                    'accepter tous les cookies', 'accepter'
                 ],
                 reject: [
-                    // English
-                    'reject all', 'decline', 'reject',
-                    // German
-                    'nur das notwendige akzeptieren', 'notwendige', 'ablehnen',
-                    // French
-                    'rejeter tout', 'rejeter', 'nécessaires uniquement',
-                    // Spanish
-                    'rechazar todo', 'rechazar', 'solo necesarias',
-                    // Italian
-                    'rifiuta tutto', 'rifiutare', 'solo necessari',
-                    // Portuguese
-                    'rejeitar tudo', 'rejeitar', 'apenas necessários',
-                    // Dutch
-                    'alles weigeren', 'weigeren', 'alleen noodzakelijk',
-                    // Swedish
-                    'avvisa alla', 'avvisa', 'endast nödvändiga',
-                    // Danish
-                    'afvis alle', 'afvis', 'kun nødvendige',
-                    // Norwegian
-                    'avvis alle', 'avvis', 'kun nødvendige'
-                ],
-                settings: [
-                    // English
-                    'cookie settings', 'manage preferences', 'settings',
-                    // German
-                    'einstellungen anpassen', 'meine einstellungen', 'cookie-einstellungen',
-                    // French
-                    'gérer les préférences', 'paramètres', 'gérer',
-                    // Spanish
-                    'gestionar preferencias', 'configuración', 'gestionar',
-                    // Italian
-                    'gestisci preferenze', 'impostazioni', 'gestire',
-                    // Portuguese
-                    'gerir preferências', 'definições', 'gerir',
-                    // Dutch
-                    'voorkeuren beheren', 'instellingen', 'beheren',
-                    // Swedish
-                    'hantera inställningar', 'inställningar', 'hantera',
-                    // Danish
-                    'administrer præferencer', 'indstillinger', 'administrer',
-                    // Norwegian
-                    'administrer preferanser', 'innstillinger', 'administrer'
+                    'reject all', 'decline', 'reject', 'accept only necessary', 'only necessary',
+                    'nur das notwendige akzeptieren', 'notwendige', 'ablehnen'
                 ]
             };
             
@@ -255,16 +316,30 @@ class SpectralCrawler {
             // Check OneTrust
             const oneTrustBanner = document.querySelector('#onetrust-banner-sdk');
             
-            // Check SourcePoint
-            const sourcePointBanner = document.querySelector('[class*="sp_choice"], [id*="sp_"], .message-container, [aria-label*="SP Consent"]') ||
-                                     document.querySelector('iframe[src*="sourcepoint"], iframe[title*="SP Consent"]');
+            // Check SourcePoint (including iframes)
+            const sourcePointBanner = document.querySelector('[class*="sp_choice"], [id*="sp_"], .message-container') ||
+                                     document.querySelector('iframe[src*="sourcepoint"], iframe[title*="SP Consent"]') ||
+                                     (document.querySelector('iframe') && document.querySelector('iframe').contentDocument?.querySelector('[class*="sp_choice"]'));
             
             const banner = oneTrustBanner || sourcePointBanner;
             if (!banner) return { detected: false };
             
-            const textContent = banner.textContent || banner.innerText || '';
+            // Get all buttons on page (including iframe content)
             const buttons = Array.from(document.querySelectorAll('button'));
-            const buttonTexts = buttons.map(btn => btn.innerText.toLowerCase().trim()).filter(text => text);
+            const iframeButtons = [];
+            
+            // Try to access iframe buttons (if same-origin)
+            document.querySelectorAll('iframe').forEach(iframe => {
+                try {
+                    const iframeDoc = iframe.contentDocument;
+                    if (iframeDoc) {
+                        iframeButtons.push(...Array.from(iframeDoc.querySelectorAll('button')));
+                    }
+                } catch (e) {} // Cross-origin iframe, skip
+            });
+            
+            const allButtons = [...buttons, ...iframeButtons];
+            const buttonTexts = allButtons.map(btn => btn.innerText.toLowerCase().trim()).filter(text => text);
             
             const hasAccept = buttonTexts.some(text => 
                 text.includes('accept') || text.includes('allow') || text.includes('akzeptieren') || 
@@ -276,7 +351,9 @@ class SpectralCrawler {
                 text.includes('reject') || text.includes('decline') || text.includes('notwendige') ||
                 text.includes('rejeter') || text.includes('rechazar') || text.includes('rifiutare') ||
                 text.includes('rejeitar') || text.includes('weigeren') || text.includes('avvisa') ||
-                text.includes('afvis') || text.includes('nur das notwendige')
+                text.includes('afvis') || text.includes('nur das notwendige') ||
+                text.includes('accept only necessary') || text.includes('only necessary') ||
+                text.includes('manage or reject')
             );
             const hasSettings = buttonTexts.some(text => 
                 text.includes('manage') || text.includes('settings') || text.includes('einstellungen') ||
@@ -286,6 +363,7 @@ class SpectralCrawler {
             );
             
             const provider = oneTrustBanner ? 'OneTrust' : 'SourcePoint';
+            const textContent = banner.textContent || banner.innerText || '';
             
             return {
                 detected: true,

@@ -1,7 +1,7 @@
 const SpectralCrawler = require('./spectralCrawler');
 
 async function testCrawler() {
-    console.log('🧪 SPECTRAL TEST - DR.dk Cookiebot');
+    console.log('🧪 SPECTRAL TEST - CNN OneTrust');
     console.log('=' .repeat(40));
     
     const crawler = new SpectralCrawler({ headless: false });
@@ -9,7 +9,7 @@ async function testCrawler() {
     try {
         await crawler.init();
         
-        const results = await crawler.crawlSite('https://www.dr.dk');
+        const results = await crawler.crawlSite('https://www.cnn.com');
         
         console.log('\n📊 RESULTS:');
         console.log(`URL: ${results.url}`);
@@ -17,7 +17,6 @@ async function testCrawler() {
         if (results.bannerAnalysis) {
             console.log('\n🎯 BANNER ANALYSIS:');
             console.log(`Type: ${results.bannerAnalysis.type || 'Unknown'}`);
-            console.log(`Provider: ${results.bannerAnalysis.provider || 'Unknown'}`);
             console.log(`Direct Reject: ${results.bannerAnalysis.hasDirectReject ? 'Yes' : 'No'}`);
             console.log(`Settings Available: ${results.bannerAnalysis.hasSettings ? 'Yes' : 'No'}`);
             if (results.bannerAnalysis.text) {
@@ -103,7 +102,6 @@ async function testCrawler() {
 
     } catch (error) {
         console.error('❌ Test failed:', error.message);
-        console.error('Stack:', error.stack);
     } finally {
         await crawler.close();
     }

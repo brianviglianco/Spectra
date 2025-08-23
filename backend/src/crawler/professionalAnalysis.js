@@ -32,8 +32,8 @@ class SpectralAnalysisRunner {
             // Display GDPR compliance report
             this.displayGDPRComplianceReport(results.gdprCompliance);
             
-            // Display unknown scripts research
-            this.displayUnknownScriptsAnalysis(results.evidence);
+            // Display unknown scripts research - FIXED
+            this.displayUnknownScriptsAnalysis(results);
             
             // Display recommendations
             this.displayStrategicRecommendations(report);
@@ -177,8 +177,9 @@ class SpectralAnalysisRunner {
         }
     }
 
-    displayUnknownScriptsAnalysis(evidence) {
-        const baseline = evidence.baseline;
+    // FIXED: Unknown Scripts Analysis with correct data access
+    displayUnknownScriptsAnalysis(results) {
+        const baseline = results.evidence.baseline;
         const unknownScripts = baseline?.scriptAnalysis?.unknownDetails || [];
         
         if (unknownScripts.length === 0) return;
@@ -188,22 +189,107 @@ class SpectralAnalysisRunner {
         
         console.log(`Found ${unknownScripts.length} unknown scripts requiring manual classification:`);
         
-        unknownScripts.forEach((script, index) => {
-            console.log(`\n${index + 1}. ${script.src}`);
-            if (script.research) {
-                const confidenceIcon = script.research.confidence >= 0.8 ? '🟢' :
-                                      script.research.confidence >= 0.6 ? '🟡' :
-                                      script.research.confidence >= 0.4 ? '🟠' : '🔴';
-                
-                console.log(`   ${confidenceIcon} Analysis: ${script.research.suggestion}`);
-                console.log(`   Confidence: ${Math.round(script.research.confidence * 100)}%`);
-                console.log(`   Suggested Category: ${script.research.category}`);
-                console.log(`   Action: ${script.research.needsManualReview ? 'Manual review required' : 'Auto-classification possible'}`);
-            }
+        unknownScripts.forEach((scriptUrl, index) => {
+            console.log(`\n${index + 1}. ${scriptUrl}`);
+            
+            // Enhanced research logic with confidence scoring
+            const research = this.analyzeUnknownScript(scriptUrl);
+            
+            const confidenceIcon = research.confidence >= 0.8 ? '🟢' :
+                                  research.confidence >= 0.6 ? '🟡' :
+                                  research.confidence >= 0.4 ? '🟠' : '🔴';
+            
+            console.log(`   ${confidenceIcon} Analysis: ${research.suggestion}`);
+            console.log(`   Confidence: ${Math.round(research.confidence * 100)}%`);
+            console.log(`   Suggested Category: ${research.category}`);
+            console.log(`   Action: ${research.needsManualReview ? 'Manual review required' : 'Auto-classification possible'}`);
         });
         
         console.log(`\n💡 RECOMMENDATION: Review these ${unknownScripts.length} scripts to improve analysis accuracy.`);
         console.log(`   High-confidence suggestions can be added to the script classification database.`);
+    }
+
+    // NEW: Intelligent script analysis with confidence scoring
+    analyzeUnknownScript(scriptUrl) {
+        if (!scriptUrl || typeof scriptUrl !== 'string') {
+            return {
+                suggestion: 'Invalid script URL',
+                confidence: 0,
+                category: 'error',
+                needsManualReview: true
+            };
+        }
+
+        const url = scriptUrl.toLowerCase();
+        
+        // Domain-based analysis patterns
+        const patterns = [
+            // High confidence patterns
+            {
+                pattern: /api\.[^\/]+\/.*\/(build|bundle|component)/,
+                suggestion: 'Custom API frontend component',
+                confidence: 0.85,
+                category: 'necessary'
+            },
+            {
+                pattern: /cdn\.[^\/]+\/.*\/(ui|widget|component)/,
+                suggestion: 'Third-party UI component',
+                confidence: 0.8,
+                category: 'functional'
+            },
+            {
+                pattern: /\.(gov|edu)\/.*\/(public|assets)/,
+                suggestion: 'Government/educational institution asset',
+                confidence: 0.9,
+                category: 'necessary'
+            },
+            // Medium confidence patterns
+            {
+                pattern: /\/assets?\//,
+                suggestion: 'Website asset or resource file',
+                confidence: 0.7,
+                category: 'necessary'
+            },
+            {
+                pattern: /\/(static|public)\//,
+                suggestion: 'Static website resource',
+                confidence: 0.75,
+                category: 'necessary'
+            },
+            {
+                pattern: /\/(build|dist|bundle)/,
+                suggestion: 'Compiled frontend bundle',
+                confidence: 0.8,
+                category: 'necessary'
+            },
+            // Lower confidence patterns
+            {
+                pattern: /\.(min\.)?js$/,
+                suggestion: 'JavaScript file, requires manual classification',
+                confidence: 0.3,
+                category: 'unknown'
+            }
+        ];
+
+        // Check against patterns
+        for (const pattern of patterns) {
+            if (pattern.pattern.test(url)) {
+                return {
+                    suggestion: pattern.suggestion,
+                    confidence: pattern.confidence,
+                    category: pattern.category,
+                    needsManualReview: pattern.confidence < 0.7
+                };
+            }
+        }
+
+        // Default case
+        return {
+            suggestion: 'Unknown script, manual review required',
+            confidence: 0.2,
+            category: 'unknown',
+            needsManualReview: true
+        };
     }
 
     displayStrategicRecommendations(report) {

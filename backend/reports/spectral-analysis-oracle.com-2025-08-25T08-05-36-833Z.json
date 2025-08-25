@@ -1,0 +1,845 @@
+{
+  "url": "https://oracle.com",
+  "timestamp": "2025-08-25T08:05:36.833Z",
+  "executiveReport": {
+    "executiveSummary": {
+      "complianceScore": 20,
+      "riskLevel": "CRITICAL",
+      "totalViolations": 3,
+      "criticalViolations": 2,
+      "trackingScripts": 0,
+      "unknownScripts": 0,
+      "cmpProvider": "None detected",
+      "consentMechanism": "Unknown"
+    },
+    "technicalFindings": {
+      "preConsentTracking": 0,
+      "postAcceptTracking": 0,
+      "postRejectTracking": 0,
+      "trackingIncrease": 0,
+      "cookieIncrease": 0,
+      "storageIncrease": 0
+    },
+    "businessImpact": "HIGH - Immediate legal risk, potential €20M fines, regulatory investigation likely",
+    "urgency": "IMMEDIATE - Address within 1-2 weeks"
+  },
+  "detailedResults": {
+    "url": "https://oracle.com",
+    "evidence": {
+      "baseline": {
+        "timestamp": "2025-08-25T08:05:14.584Z",
+        "stage": "baseline",
+        "url": "https://oracle.com",
+        "scriptsCount": 1,
+        "scripts": [
+          {
+            "src": "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/fHILcW/p4fS5k?v=985792a3-d7da-bef1-18b1-719f56581724",
+            "type": "text/javascript",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 7,
+        "cookies": [
+          {
+            "name": "bm_s",
+            "value": "YAAQEaAkF67zY9OYAQAARoFC4AOYHa1O1ECJk4fhvV0CVEVxoLYKomDeH2AG5Waq1io5sujuMCzEvNRLBD5B/Ixbo6u8iYeFm0L3pl8stHomEpwyVcZm/NP2lZ6A9Q9c43SfkI0dotOMsT5M5G44hO+5fZnaYgIGJrFH+WqL7UHg/eO+2OVlcRGcpQMPdgnR9Ek4aZ+h8LdR58BHAijJKu9JMMel8z0VfQvV7KZ0TRl2EDvFTcLhdNuuwe2mGAcn3RcbehgPnvxunp6c/XdniTUISNEQK4yuw5Sv7io+Ct3FkPGoWQrSrG/LqWFpwFKnuSlK9Rf1m+xu70/bsxfH/FkVCVia0eCwNGvuO+j0YRefaQpM1PGhOxH1SOsKTbG5cfifum8EeXOVkPq+MuatwtD2OU4atd9Qa/3U3JfKQBrJbMK/rZ/HGVdClnVjuX1ZJvoWr1jg4cICk/6MojvjEguVJ+pzX5NLskrKkOfD/q49Be+hA1dsmFdAisn7umE3DSyNpFdWqPdy6ki8y53F0ZO9PkmNX9SLST1bFqoDSQ24j9cIrrv6fDMOzCk=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1758787511.156064,
+            "size": 576,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_lso",
+            "value": "AC46B51D51F9FAD4AB8F7C23BA9AAD78BA835C54C088D35AA7940EFC2736475B~YAAQEaAkF87yY9OYAQAAnnVC4AQ2PwbSq9cG6OUHa8owkkWI+c5nmlnyrhkCd9qJV1YbFudKQZsP4GrxmYXpHVT8j53cIfnYfo8idcsUjo2aFPRA5eThjtiqeUvjzSwQdh0BEijIC9/SZiTxSGssYsAqzQIjEPKlF/obC7n0HgGO2wZD5/U0jI4TyJXUx4IV5LNUbWyWJnFpWB8LMa2ZdYl2aaQbWTfJxDS5SQMTlA88KoUWxsP90pS4Htw4uStQc0SoVCxE7dd7fwbNaq5ECyMo3SRP37ihljwLL4aSLUPAQHVk+QPWg+vBzB9JNktF7yYHQbYxbjfcPrnxqk6lNpuGYRxrZabSK9KGdK5nSY9cN9Xt2khHPiWxGPH4TDGFxps93TRACtodO0iHcSVIR9U31aF6JlJz0j54u2+97TiFNHYKKqQIDWNwuGN7eUe7t8fE99LQ31s4fPqbfhnAOA==^1756109109580",
+            "domain": ".www.oracle.com",
+            "path": "/",
+            "expires": 1758701109,
+            "size": 557,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_ss",
+            "value": "ab8e18ef4e",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756112708.170596,
+            "size": 15,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AKA_A2",
+            "value": "A",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756112708.168909,
+            "size": 7,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_so",
+            "value": "AC46B51D51F9FAD4AB8F7C23BA9AAD78BA835C54C088D35AA7940EFC2736475B~YAAQEaAkF87yY9OYAQAAnnVC4AQ2PwbSq9cG6OUHa8owkkWI+c5nmlnyrhkCd9qJV1YbFudKQZsP4GrxmYXpHVT8j53cIfnYfo8idcsUjo2aFPRA5eThjtiqeUvjzSwQdh0BEijIC9/SZiTxSGssYsAqzQIjEPKlF/obC7n0HgGO2wZD5/U0jI4TyJXUx4IV5LNUbWyWJnFpWB8LMa2ZdYl2aaQbWTfJxDS5SQMTlA88KoUWxsP90pS4Htw4uStQc0SoVCxE7dd7fwbNaq5ECyMo3SRP37ihljwLL4aSLUPAQHVk+QPWg+vBzB9JNktF7yYHQbYxbjfcPrnxqk6lNpuGYRxrZabSK9KGdK5nSY9cN9Xt2khHPiWxGPH4TDGFxps93TRACtodO0iHcSVIR9U31aF6JlJz0j54u2+97TiFNHYKKqQIDWNwuGN7eUe7t8fE99LQ31s4fPqbfhnAOA==",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756195508.170725,
+            "size": 542,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "2C11C361EF319331674D13ADF21DC969~000000000000000000000000000000~YAAQEaAkF63zY9OYAQAARoFC4BwYdXOttlmygBxMeKfkGl4qWn4367SLeIEIcywRyHXwrljNKPinPW+jgBzjpMC8ncN7Uleg6NJLE0hBGQ3lhUzEFgY1diPwlRNyzIvlGy8Tay9r67KNy/Jq1MkDUH4FokxTfZ8JujvOzjboui82knComvTPnVXzkcTa4uyh+4IZDClCNEnS++K7ms7BoVWH5Oc6zf/ZOqMSBqryIjLDnvwzyq2bI5Eb7Y6qgABqGoa8KNZSH84TpfsrUskNV8uVKmc1U9aeTo9/FUVsfoQKDVTJ7kwtVPkoYKDBUd1ZN5RUcH6I7qvsfcQ9hjrGMKj9IDy4zuGt9+o3d+ajSZLqLgDPQkEQY25efOSEHx4R92/BULRITKJHXcN4ggc=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756116311.155902,
+            "size": 475,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akaas_aud-seg-ocom-prod",
+            "value": "2147483647~rv=54~id=09743a7f0fe2ea479bc59c777e7a309a",
+            "domain": "www.oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 75,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 0,
+        "scriptAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1,
+          "unknown": 0,
+          "trackingDetails": [],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/fHILcW/p4fS5k?v=985792a3-d7da-bef1-18b1-719f56581724"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 4,
+          "tracking": 0,
+          "necessary": 4
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1756109116603_baseline.png"
+      },
+      "reject_pre": {
+        "timestamp": "2025-08-25T08:05:22.555Z",
+        "stage": "reject_pre",
+        "url": "https://oracle.com",
+        "scriptsCount": 1,
+        "scripts": [
+          {
+            "src": "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/fHILcW/p4fS5k?v=3632aca5-1962-ecc9-3972-8b0b47a81724",
+            "type": "text/javascript",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 7,
+        "cookies": [
+          {
+            "name": "bm_s",
+            "value": "YAAQEaAkF9r1Y9OYAQAAH59C4AMBYxpPEB609Y1H8grD+Fim7apAu7qPw7z+Ew+WaZACpxWju8f2H1r/M7edrQN8GfV/W4IZz82XRg67rb5X2BI2Y0MT/INi35PXntgCGMY7/+1ylmEP1k9FYBD5bmrlprFQkiZ5AR4o/XO+6dN91vcGlkVndyJ9eko+n2e70XjY2QXiCpqihm622h2eDv5hJE3W3LwlrszR8YT1d16idiuMYh8gYEW3vAs5F6oxgEDnWedPL/0gl129M9peNXftxC+JJ50Zl+5qYHCjs905jmI1XhbAwfePgT4xPs6Rd99z7u9NZhtx+2faHNGdmitGpC+2HE+dSlzJD1XUGMEQZ6FSkXt9YWiDXlSZMlF9iKz2cq48cD87lBGUTFaXRIynMMcTRd+qBBAsbqiOfRujA5h8Nbb10o9x+M44Lk8Ri8sV6Bu0eZVLttq1iJDzBRL4embj/IE0fYBOUqo9ignQltqSyOq9ZRgOV4PFPqEN2u9OqPWiGxIm3n6BDpiN751SruJdkvkxorF4xmpbwhsBVdqWzfi7zrC85HQ=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1758787518.879176,
+            "size": 576,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_lso",
+            "value": "D9C40B2749D9506FBC83BA4ACAEE5962C771204123260442F822EC595D5406BB~YAAQEaAkFz/1Y9OYAQAAjphC4AS6psqrqCgm6fRuzA6lX1FcxV16FSdVxdiSzQII6vQcw/izXITgUPCOeG9SJ/9+4KUiQAdcayhwckTCwTZ2r5+8YkHpxsAuIfDfMao6HfAwdNlOc+pTdiMNbETcsB8oexE+NuNsI5peSChoJ0k6NdeIYh1mdwfC6A2BGnV+JYrzBcCgHrjZ0fW/FPisT0FIRsC5noOkGVaafMdePuXSWhawU6C2B8V6ufGlhbXZfeviPbLubdy/WKeYNtSbwIiu5/b6K+vHQeall3aqnfemwck/GOiEb2Y89hIs2Deqhk2LgXduDZyMNyZyeIDc4ImMldNB8SMYwU1D5OlLxhQS2f4ffYoNg9kCTEWYvo+P+F/jyD/Xhph0KftTkpmF/TBp1F6JHdh85NAD8OXvYA/w68iepkLAENcail+8AEIIrmfF4YCnso/P7EBf/pxDow==^1756109117545",
+            "domain": ".www.oracle.com",
+            "path": "/",
+            "expires": 1758701117,
+            "size": 557,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_ss",
+            "value": "ab8e18ef4e",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756112717.116695,
+            "size": 15,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AKA_A2",
+            "value": "A",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756112717.116407,
+            "size": 7,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_so",
+            "value": "D9C40B2749D9506FBC83BA4ACAEE5962C771204123260442F822EC595D5406BB~YAAQEaAkFz/1Y9OYAQAAjphC4AS6psqrqCgm6fRuzA6lX1FcxV16FSdVxdiSzQII6vQcw/izXITgUPCOeG9SJ/9+4KUiQAdcayhwckTCwTZ2r5+8YkHpxsAuIfDfMao6HfAwdNlOc+pTdiMNbETcsB8oexE+NuNsI5peSChoJ0k6NdeIYh1mdwfC6A2BGnV+JYrzBcCgHrjZ0fW/FPisT0FIRsC5noOkGVaafMdePuXSWhawU6C2B8V6ufGlhbXZfeviPbLubdy/WKeYNtSbwIiu5/b6K+vHQeall3aqnfemwck/GOiEb2Y89hIs2Deqhk2LgXduDZyMNyZyeIDc4ImMldNB8SMYwU1D5OlLxhQS2f4ffYoNg9kCTEWYvo+P+F/jyD/Xhph0KftTkpmF/TBp1F6JHdh85NAD8OXvYA/w68iepkLAENcail+8AEIIrmfF4YCnso/P7EBf/pxDow==",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756195517.116823,
+            "size": 542,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "A3C617344ABCB67DA236A6FA9FC8F720~000000000000000000000000000000~YAAQEaAkF9n1Y9OYAQAAH59C4BxD9GX9g7GS1nB087Tu8itoB7MGRucghgejLBM+L3nprpSCEJtH2OSKXPZCf8Hg2OtLJnEW1FXzISQ1BvKhtL63bcxqO6vzyPgWGWXAF8t/iYqmVM8MfcQVoqTe+eYvXLNyh05xLeabOXf0tMkMNY3ZmPWHQFoJW9TanJRDcSvo8NvfwJskP7djw6jwTTfYKLKlpwiPqRtS/zWRBWNXPRvwNOSUy8FfQJ9v899iw29/T3AK/DjdRcnOLvIS1T60sgYZRysDyL/1vxQOagGaA78NV1fDTWhhscvCI8dP0P1kp3wEk6LmovJRzr+BBhbTUxfzI3ZYU8HCcNAOzjvr+N2UPgrKy6XiI6vuGv4x633kGnJWYV83yMJsleo=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756116318.879036,
+            "size": 475,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akaas_aud-seg-ocom-prod",
+            "value": "2147483647~rv=45~id=bbb5ddc6c8b42ca63a6bf6f19861ab3c",
+            "domain": "www.oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 75,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 0,
+        "scriptAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1,
+          "unknown": 0,
+          "trackingDetails": [],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/fHILcW/p4fS5k?v=3632aca5-1962-ecc9-3972-8b0b47a81724"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 4,
+          "tracking": 0,
+          "necessary": 4
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1756109124574_reject_pre.png"
+      },
+      "reject": {
+        "timestamp": "2025-08-25T08:05:22.555Z",
+        "stage": "reject_unavailable",
+        "url": "https://oracle.com",
+        "scriptsCount": 1,
+        "scripts": [
+          {
+            "src": "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/fHILcW/p4fS5k?v=3632aca5-1962-ecc9-3972-8b0b47a81724",
+            "type": "text/javascript",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 7,
+        "cookies": [
+          {
+            "name": "bm_s",
+            "value": "YAAQEaAkF9r1Y9OYAQAAH59C4AMBYxpPEB609Y1H8grD+Fim7apAu7qPw7z+Ew+WaZACpxWju8f2H1r/M7edrQN8GfV/W4IZz82XRg67rb5X2BI2Y0MT/INi35PXntgCGMY7/+1ylmEP1k9FYBD5bmrlprFQkiZ5AR4o/XO+6dN91vcGlkVndyJ9eko+n2e70XjY2QXiCpqihm622h2eDv5hJE3W3LwlrszR8YT1d16idiuMYh8gYEW3vAs5F6oxgEDnWedPL/0gl129M9peNXftxC+JJ50Zl+5qYHCjs905jmI1XhbAwfePgT4xPs6Rd99z7u9NZhtx+2faHNGdmitGpC+2HE+dSlzJD1XUGMEQZ6FSkXt9YWiDXlSZMlF9iKz2cq48cD87lBGUTFaXRIynMMcTRd+qBBAsbqiOfRujA5h8Nbb10o9x+M44Lk8Ri8sV6Bu0eZVLttq1iJDzBRL4embj/IE0fYBOUqo9ignQltqSyOq9ZRgOV4PFPqEN2u9OqPWiGxIm3n6BDpiN751SruJdkvkxorF4xmpbwhsBVdqWzfi7zrC85HQ=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1758787518.879176,
+            "size": 576,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_lso",
+            "value": "D9C40B2749D9506FBC83BA4ACAEE5962C771204123260442F822EC595D5406BB~YAAQEaAkFz/1Y9OYAQAAjphC4AS6psqrqCgm6fRuzA6lX1FcxV16FSdVxdiSzQII6vQcw/izXITgUPCOeG9SJ/9+4KUiQAdcayhwckTCwTZ2r5+8YkHpxsAuIfDfMao6HfAwdNlOc+pTdiMNbETcsB8oexE+NuNsI5peSChoJ0k6NdeIYh1mdwfC6A2BGnV+JYrzBcCgHrjZ0fW/FPisT0FIRsC5noOkGVaafMdePuXSWhawU6C2B8V6ufGlhbXZfeviPbLubdy/WKeYNtSbwIiu5/b6K+vHQeall3aqnfemwck/GOiEb2Y89hIs2Deqhk2LgXduDZyMNyZyeIDc4ImMldNB8SMYwU1D5OlLxhQS2f4ffYoNg9kCTEWYvo+P+F/jyD/Xhph0KftTkpmF/TBp1F6JHdh85NAD8OXvYA/w68iepkLAENcail+8AEIIrmfF4YCnso/P7EBf/pxDow==^1756109117545",
+            "domain": ".www.oracle.com",
+            "path": "/",
+            "expires": 1758701117,
+            "size": 557,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_ss",
+            "value": "ab8e18ef4e",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756112717.116695,
+            "size": 15,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AKA_A2",
+            "value": "A",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756112717.116407,
+            "size": 7,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_so",
+            "value": "D9C40B2749D9506FBC83BA4ACAEE5962C771204123260442F822EC595D5406BB~YAAQEaAkFz/1Y9OYAQAAjphC4AS6psqrqCgm6fRuzA6lX1FcxV16FSdVxdiSzQII6vQcw/izXITgUPCOeG9SJ/9+4KUiQAdcayhwckTCwTZ2r5+8YkHpxsAuIfDfMao6HfAwdNlOc+pTdiMNbETcsB8oexE+NuNsI5peSChoJ0k6NdeIYh1mdwfC6A2BGnV+JYrzBcCgHrjZ0fW/FPisT0FIRsC5noOkGVaafMdePuXSWhawU6C2B8V6ufGlhbXZfeviPbLubdy/WKeYNtSbwIiu5/b6K+vHQeall3aqnfemwck/GOiEb2Y89hIs2Deqhk2LgXduDZyMNyZyeIDc4ImMldNB8SMYwU1D5OlLxhQS2f4ffYoNg9kCTEWYvo+P+F/jyD/Xhph0KftTkpmF/TBp1F6JHdh85NAD8OXvYA/w68iepkLAENcail+8AEIIrmfF4YCnso/P7EBf/pxDow==",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756195517.116823,
+            "size": 542,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "A3C617344ABCB67DA236A6FA9FC8F720~000000000000000000000000000000~YAAQEaAkF9n1Y9OYAQAAH59C4BxD9GX9g7GS1nB087Tu8itoB7MGRucghgejLBM+L3nprpSCEJtH2OSKXPZCf8Hg2OtLJnEW1FXzISQ1BvKhtL63bcxqO6vzyPgWGWXAF8t/iYqmVM8MfcQVoqTe+eYvXLNyh05xLeabOXf0tMkMNY3ZmPWHQFoJW9TanJRDcSvo8NvfwJskP7djw6jwTTfYKLKlpwiPqRtS/zWRBWNXPRvwNOSUy8FfQJ9v899iw29/T3AK/DjdRcnOLvIS1T60sgYZRysDyL/1vxQOagGaA78NV1fDTWhhscvCI8dP0P1kp3wEk6LmovJRzr+BBhbTUxfzI3ZYU8HCcNAOzjvr+N2UPgrKy6XiI6vuGv4x633kGnJWYV83yMJsleo=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756116318.879036,
+            "size": 475,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akaas_aud-seg-ocom-prod",
+            "value": "2147483647~rv=45~id=bbb5ddc6c8b42ca63a6bf6f19861ab3c",
+            "domain": "www.oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 75,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 0,
+        "scriptAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1,
+          "unknown": 0,
+          "trackingDetails": [],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/fHILcW/p4fS5k?v=3632aca5-1962-ecc9-3972-8b0b47a81724"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 4,
+          "tracking": 0,
+          "necessary": 4
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1756109124574_reject_pre.png",
+        "violation": "No reject option provided (GDPR violation)"
+      },
+      "accept_pre": {
+        "timestamp": "2025-08-25T08:05:30.549Z",
+        "stage": "accept_pre",
+        "url": "https://oracle.com",
+        "scriptsCount": 1,
+        "scripts": [
+          {
+            "src": "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/fHILcW/p4fS5k?v=dca4068e-b17f-1308-e5a0-287e97ca1724",
+            "type": "text/javascript",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 7,
+        "cookies": [
+          {
+            "name": "bm_s",
+            "value": "YAAQEaAkF6z4Y9OYAQAAgr5C4AO6WxXzCdG43MkeNa5n3rpBdoDZ6QhwrvylB6lola/8E5F9j5aoQk8D4OCFBhx1OZ66BluOq6SJ0a2zyKv5YEsmAwOs731LJhCyBuiV8DgOZFifCV6S3VareYDTh6Bkz3cZQAgb4G24k/J6ke4tSdBGnYOGyjjl6Jyd35rugMy+96AfCOFhsFCVnqG8O2GMivEUHQS5VSXl07uykSNnOrDyC6ygpa05PFuqFBDg4W4cjCAJadV8sIE1OzIiCzkR3dpuRzWL1YTZVGz7gzuX6be4gj0AeIC0Sj+HLpIFCg7I+azepJBD1ky8wh+hAXWkOcX2CReSOxCnhv4dLnI6IFsx2uJZxUQxHDNlyloJfNH7GNPmRZuU1Q/op203pULJVWlCpWGa4Mp0Xu/KjZbyq1NXTm86jzgqLDo3gE/3qvrvqoDWQtyq2W9S22xDjbJKL/CvvZpp4nlN1SV2qcf5WounyHoE8Bt6TB9ynZ7ysJQcg94N1xIMZW20ghTxQxQ3v2YlMcWE56PAMLvGHR4nbngahvRqEVy5n3g=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1758787526.832685,
+            "size": 576,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_lso",
+            "value": "D57315CA991E114BA77887249CEA3B3BF78A3EB64941E0B08F90786A467480FF~YAAQEaAkF/L3Y9OYAQAApbdC4ARlFIhQPrF91FIwFPEEWvoBXcAkNwneUOLhtfz2cE/YxFkxgOSn31fw92Ei5yyk0iPYkGHALmRZPcbNR3MWpMXitLRXcbD/pPybSUqTMiQau97ON1PNyBSLV/XlUgK1Tp2yCEqIVNadDH8/S4SZLAxL9ikVFnK4/6vPtnQIQ20UPyh6DpC+IUn9SZBrJJ/RduKPipj7vQOfAD7poNtqRVdDveIz72mjFSumcqj1VK/AiHUfavgYp7BptxJSDzB7q0Hf8Mwu9YEZplxRO8+IHO3033y+9pe0Lr/E17QhNKrcNhTue1JpOKiOVYQYp+4sDUi0yfa+ibC6vhd5NCJeZ5wxFMppssSOTg9yblzcXkYcgTdhBnABCOknuinISBmGq91v+HxRVR+Y5b6DBJRd7VFtdKGi5LyuhD0S58uZzpuO4jOy8w2MOHo92qJBuw==^1756109125545",
+            "domain": ".www.oracle.com",
+            "path": "/",
+            "expires": 1758701125,
+            "size": 557,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_ss",
+            "value": "ab8e18ef4e",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756112725.072134,
+            "size": 15,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AKA_A2",
+            "value": "A",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756112725.071737,
+            "size": 7,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_so",
+            "value": "D57315CA991E114BA77887249CEA3B3BF78A3EB64941E0B08F90786A467480FF~YAAQEaAkF/L3Y9OYAQAApbdC4ARlFIhQPrF91FIwFPEEWvoBXcAkNwneUOLhtfz2cE/YxFkxgOSn31fw92Ei5yyk0iPYkGHALmRZPcbNR3MWpMXitLRXcbD/pPybSUqTMiQau97ON1PNyBSLV/XlUgK1Tp2yCEqIVNadDH8/S4SZLAxL9ikVFnK4/6vPtnQIQ20UPyh6DpC+IUn9SZBrJJ/RduKPipj7vQOfAD7poNtqRVdDveIz72mjFSumcqj1VK/AiHUfavgYp7BptxJSDzB7q0Hf8Mwu9YEZplxRO8+IHO3033y+9pe0Lr/E17QhNKrcNhTue1JpOKiOVYQYp+4sDUi0yfa+ibC6vhd5NCJeZ5wxFMppssSOTg9yblzcXkYcgTdhBnABCOknuinISBmGq91v+HxRVR+Y5b6DBJRd7VFtdKGi5LyuhD0S58uZzpuO4jOy8w2MOHo92qJBuw==",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756195525.072644,
+            "size": 542,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "1DF1290CF168DC54229403DAF9F50448~000000000000000000000000000000~YAAQEaAkF6v4Y9OYAQAAgr5C4Byb1BqhxMjl8meR+9xolCJRNjZzdGWEY01r0uTJwubEubKIhUBZRmDjIXopHUT94TZ82qLAg+hTzC/YvZZ3nylpJryRey8et7hMw30tFBduyM6ZdR02PzbcLysK5wr8d/shEiG7WTLkJs/ofvlJb46sQN9FBcJqTsisRpWxTkL9ny8I4L4gjIuce4Et7S/88boBF1Xbe0+jjCdoftLNRc+z/LI3lzREiAHsG+Ql/TXQLIjNYh19CmV2Glv1jnGEJ6KiymOC0qM+6F7uW8iARUn4a9Yepnkgs6QafQgDZoLf94gCNVPVHTnRVb/V57M2QDsKuZl82MGoAR557v8D8uu00wfZvUuAYgaYkv1J5aLE311kfDiB2gV2+CU=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756116326.8326,
+            "size": 475,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akaas_aud-seg-ocom-prod",
+            "value": "2147483647~rv=90~id=9a26167811b517200574e9ad61710440",
+            "domain": "www.oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 75,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 0,
+        "scriptAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1,
+          "unknown": 0,
+          "trackingDetails": [],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/fHILcW/p4fS5k?v=dca4068e-b17f-1308-e5a0-287e97ca1724"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 4,
+          "tracking": 0,
+          "necessary": 4
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1756109132561_accept_pre.png"
+      },
+      "accept": {
+        "timestamp": "2025-08-25T08:05:34.717Z",
+        "stage": "accept",
+        "url": "https://oracle.com",
+        "scriptsCount": 1,
+        "scripts": [
+          {
+            "src": "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/fHILcW/p4fS5k?v=dca4068e-b17f-1308-e5a0-287e97ca1724",
+            "type": "text/javascript",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 7,
+        "cookies": [
+          {
+            "name": "bm_s",
+            "value": "YAAQEaAkF6z4Y9OYAQAAgr5C4AO6WxXzCdG43MkeNa5n3rpBdoDZ6QhwrvylB6lola/8E5F9j5aoQk8D4OCFBhx1OZ66BluOq6SJ0a2zyKv5YEsmAwOs731LJhCyBuiV8DgOZFifCV6S3VareYDTh6Bkz3cZQAgb4G24k/J6ke4tSdBGnYOGyjjl6Jyd35rugMy+96AfCOFhsFCVnqG8O2GMivEUHQS5VSXl07uykSNnOrDyC6ygpa05PFuqFBDg4W4cjCAJadV8sIE1OzIiCzkR3dpuRzWL1YTZVGz7gzuX6be4gj0AeIC0Sj+HLpIFCg7I+azepJBD1ky8wh+hAXWkOcX2CReSOxCnhv4dLnI6IFsx2uJZxUQxHDNlyloJfNH7GNPmRZuU1Q/op203pULJVWlCpWGa4Mp0Xu/KjZbyq1NXTm86jzgqLDo3gE/3qvrvqoDWQtyq2W9S22xDjbJKL/CvvZpp4nlN1SV2qcf5WounyHoE8Bt6TB9ynZ7ysJQcg94N1xIMZW20ghTxQxQ3v2YlMcWE56PAMLvGHR4nbngahvRqEVy5n3g=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1758787526.832685,
+            "size": 576,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_lso",
+            "value": "D57315CA991E114BA77887249CEA3B3BF78A3EB64941E0B08F90786A467480FF~YAAQEaAkF/L3Y9OYAQAApbdC4ARlFIhQPrF91FIwFPEEWvoBXcAkNwneUOLhtfz2cE/YxFkxgOSn31fw92Ei5yyk0iPYkGHALmRZPcbNR3MWpMXitLRXcbD/pPybSUqTMiQau97ON1PNyBSLV/XlUgK1Tp2yCEqIVNadDH8/S4SZLAxL9ikVFnK4/6vPtnQIQ20UPyh6DpC+IUn9SZBrJJ/RduKPipj7vQOfAD7poNtqRVdDveIz72mjFSumcqj1VK/AiHUfavgYp7BptxJSDzB7q0Hf8Mwu9YEZplxRO8+IHO3033y+9pe0Lr/E17QhNKrcNhTue1JpOKiOVYQYp+4sDUi0yfa+ibC6vhd5NCJeZ5wxFMppssSOTg9yblzcXkYcgTdhBnABCOknuinISBmGq91v+HxRVR+Y5b6DBJRd7VFtdKGi5LyuhD0S58uZzpuO4jOy8w2MOHo92qJBuw==^1756109125545",
+            "domain": ".www.oracle.com",
+            "path": "/",
+            "expires": 1758701125,
+            "size": 557,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_ss",
+            "value": "ab8e18ef4e",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756112725.072134,
+            "size": 15,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AKA_A2",
+            "value": "A",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756112725.071737,
+            "size": 7,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_so",
+            "value": "D57315CA991E114BA77887249CEA3B3BF78A3EB64941E0B08F90786A467480FF~YAAQEaAkF/L3Y9OYAQAApbdC4ARlFIhQPrF91FIwFPEEWvoBXcAkNwneUOLhtfz2cE/YxFkxgOSn31fw92Ei5yyk0iPYkGHALmRZPcbNR3MWpMXitLRXcbD/pPybSUqTMiQau97ON1PNyBSLV/XlUgK1Tp2yCEqIVNadDH8/S4SZLAxL9ikVFnK4/6vPtnQIQ20UPyh6DpC+IUn9SZBrJJ/RduKPipj7vQOfAD7poNtqRVdDveIz72mjFSumcqj1VK/AiHUfavgYp7BptxJSDzB7q0Hf8Mwu9YEZplxRO8+IHO3033y+9pe0Lr/E17QhNKrcNhTue1JpOKiOVYQYp+4sDUi0yfa+ibC6vhd5NCJeZ5wxFMppssSOTg9yblzcXkYcgTdhBnABCOknuinISBmGq91v+HxRVR+Y5b6DBJRd7VFtdKGi5LyuhD0S58uZzpuO4jOy8w2MOHo92qJBuw==",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756195525.072644,
+            "size": 542,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "1DF1290CF168DC54229403DAF9F50448~000000000000000000000000000000~YAAQEaAkF6v4Y9OYAQAAgr5C4Byb1BqhxMjl8meR+9xolCJRNjZzdGWEY01r0uTJwubEubKIhUBZRmDjIXopHUT94TZ82qLAg+hTzC/YvZZ3nylpJryRey8et7hMw30tFBduyM6ZdR02PzbcLysK5wr8d/shEiG7WTLkJs/ofvlJb46sQN9FBcJqTsisRpWxTkL9ny8I4L4gjIuce4Et7S/88boBF1Xbe0+jjCdoftLNRc+z/LI3lzREiAHsG+Ql/TXQLIjNYh19CmV2Glv1jnGEJ6KiymOC0qM+6F7uW8iARUn4a9Yepnkgs6QafQgDZoLf94gCNVPVHTnRVb/V57M2QDsKuZl82MGoAR557v8D8uu00wfZvUuAYgaYkv1J5aLE311kfDiB2gV2+CU=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756116326.8326,
+            "size": 475,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akaas_aud-seg-ocom-prod",
+            "value": "2147483647~rv=90~id=9a26167811b517200574e9ad61710440",
+            "domain": "www.oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 75,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 0,
+        "scriptAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1,
+          "unknown": 0,
+          "trackingDetails": [],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/fHILcW/p4fS5k?v=dca4068e-b17f-1308-e5a0-287e97ca1724"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 4,
+          "tracking": 0,
+          "necessary": 4
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1756109136728_accept.png"
+      }
+    },
+    "bannerAnalysis": {
+      "detected": false
+    },
+    "gdprCompliance": {
+      "complianceScore": 20,
+      "riskLevel": "CRITICAL",
+      "summary": {
+        "totalViolations": 3,
+        "criticalViolations": 2,
+        "highViolations": 1,
+        "mediumViolations": 0
+      },
+      "violations": [
+        {
+          "code": "EU-C-004",
+          "title": "Missing Reject Option",
+          "severity": "CRITICAL",
+          "gdprArticle": "Article 7(4)",
+          "description": "No clear mechanism to reject non-essential cookies",
+          "businessImpact": "Consent not freely given, entire consent framework invalid",
+          "remediation": "Add prominent \"Reject All\" button with equal visual weight to \"Accept\"",
+          "details": {
+            "detectedButtons": [],
+            "evidence": "1756109116603_baseline.png"
+          },
+          "detectedAt": "2025-08-25T08:05:36.831Z"
+        },
+        {
+          "code": "EU-C-016",
+          "title": "Consent Mechanism Not Functional",
+          "severity": "CRITICAL",
+          "gdprArticle": "Article 7(1)",
+          "description": "Accept consent does not activate agreed tracking technologies",
+          "businessImpact": "CMP implementation failure, consent framework invalid",
+          "remediation": "Debug and fix consent signal propagation to tracking scripts",
+          "details": {
+            "acceptIncrease": {
+              "scripts": 0,
+              "cookies": 0,
+              "localStorage": 0
+            },
+            "evidence": "1756109136728_accept.png",
+            "details": "Accept consent did not activate any additional tracking"
+          },
+          "detectedAt": "2025-08-25T08:05:36.832Z"
+        },
+        {
+          "code": "EU-C-017",
+          "title": "Identical Tracking Regardless of Choice",
+          "severity": "HIGH",
+          "gdprArticle": "Article 7(4)",
+          "description": "Same tracking behavior whether user accepts or rejects",
+          "businessImpact": "Consent choices meaningless, potential regulatory investigation",
+          "remediation": "Implement differential tracking based on user consent",
+          "details": {
+            "rejectData": {
+              "scripts": 1,
+              "cookies": 7,
+              "localStorage": 0
+            },
+            "acceptData": {
+              "scripts": 1,
+              "cookies": 7,
+              "localStorage": 0
+            },
+            "evidence": "1756109136728_accept.png"
+          },
+          "detectedAt": "2025-08-25T08:05:36.832Z"
+        }
+      ],
+      "recommendations": [
+        {
+          "priority": "IMMEDIATE",
+          "category": "UI/UX Design",
+          "action": "Add prominent \"Reject All\" button to consent banner",
+          "timeline": "1-3 days",
+          "effort": "Low",
+          "impact": "Ensures freely given consent, critical for GDPR compliance"
+        },
+        {
+          "priority": "CRITICAL",
+          "category": "CMP Configuration",
+          "action": "Debug and fix consent mechanism functionality",
+          "timeline": "1 week",
+          "effort": "High",
+          "impact": "Makes consent choices meaningful and legally valid"
+        }
+      ],
+      "legalAnalysis": {
+        "affectedArticles": [
+          "Article 7(4)",
+          "Article 7(1)"
+        ],
+        "legalRisk": "HIGH - Fundamental consent violations detected. Immediate remediation required.",
+        "regulatoryAction": "Regulatory investigation risk if user complaints filed. Priority remediation advised.",
+        "fineExposure": "Up to €20M or 4% of annual turnover for systematic consent violations"
+      }
+    }
+  },
+  "metadata": {
+    "spectralVersion": "1.0.0",
+    "analysisType": "comprehensive-privacy-compliance",
+    "reportGeneration": "automated"
+  }
+}

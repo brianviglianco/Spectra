@@ -1,0 +1,1968 @@
+{
+  "url": "https://oracle.com",
+  "timestamp": "2025-08-25T07:48:56.777Z",
+  "executiveReport": {
+    "executiveSummary": {
+      "complianceScore": 0,
+      "riskLevel": "CRITICAL",
+      "totalViolations": 5,
+      "criticalViolations": 2,
+      "trackingScripts": 2,
+      "unknownScripts": 6,
+      "cmpProvider": "TrustArc",
+      "consentMechanism": "US_style"
+    },
+    "technicalFindings": {
+      "preConsentTracking": 2,
+      "postAcceptTracking": 2,
+      "postRejectTracking": 2,
+      "trackingIncrease": 0,
+      "cookieIncrease": 2,
+      "storageIncrease": 0
+    },
+    "businessImpact": "HIGH - Immediate legal risk, potential €20M fines, regulatory investigation likely",
+    "urgency": "IMMEDIATE - Address within 1-2 weeks"
+  },
+  "detailedResults": {
+    "url": "https://oracle.com",
+    "evidence": {
+      "baseline": {
+        "timestamp": "2025-08-25T07:48:16.024Z",
+        "stage": "baseline",
+        "url": "https://oracle.com",
+        "scriptsCount": 26,
+        "scripts": [
+          {
+            "src": "https://www.oracle.com/asset/sequoia/js/wc-chatbot.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//page info\npageData.pageInfo = pageData.pageInfo || {};\npageData.pa"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//taxonmy\npageData.taxonomy = pageData.taxonomy || {};\npageData.taxo"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//page info\npageData.pageInfo = pageData.pageInfo || {};\npageData.pa"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n!function(){\nvar d=document.documentElement;d.className=d.className.replace(/no-js/,'js');\nif(docum"
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/redwood-base.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/redwood-lib.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/jquery-min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.sync.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n(function(a,b,c,d){\nif(location.href.indexOf(\"tealium=dev\") == -1) {\na='https://tms.oracle.com/main"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "(window.BOOMR_mq=window.BOOMR_mq||[]).push([\"addVar\",{\"rua.upush\":\"false\",\"rua.cpush\":\"false\",\"rua.u"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "!function(e){var n=\"https://s.go-mpulse.net/boomerang/\";if(\"False\"==\"True\")e.BOOMR_config=e.BOOMR_co"
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=oracle/main/202508192308&cb=1756108091034",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.42.js?utv=ut4.48.202503141811",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.124.js?utv=ut4.48.202505151423",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/handlebars-redwood.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://s.go-mpulse.net/boomerang/DXNLE-YBWWY-AR74T-WMD99-77VRA",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/settings-v2.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/web-sdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\nvar u30min = [722,352,0,0];\nvar u30brsz = new ResizeObserver(u30 => {\ndocument.getElementById('u30'"
+          },
+          {
+            "src": "https://consent.trustarc.com/asset/notice.js/v/v1.7-1179",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/analytics/ora_ocom.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/PG9AXx/luOi5k?v=ed73c521-2d3d-ae0f-2384-13e90e611724",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://consent.trustarc.com/notice?domain=oracle.com&c=teconsent&text=true&gtm=1&cdn=1&pcookie",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/us/assets/metrics/ora_code.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 14,
+        "cookies": [
+          {
+            "name": "AMCV_93263704532955710A490D44%40AdobeOrg",
+            "value": "1585540135%7CMCIDTS%7C20326%7CMCMID%7C43803532912876132060329053766473839707%7CMCAAMLH-1756712892%7C6%7CMCAAMB-1756712892%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1756115293s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C4.4.0",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1790668093.870193,
+            "size": 280,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "notice_behavior",
+            "value": "expressed,eu",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 27,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "RT",
+            "value": "\"z=1&dm=oracle.com&si=ec170d59-f592-45a2-87eb-689fb0a9edec&ss=meqtevcp&sl=1&tt=6wu&bcn=%2F%2F684dd311.akstat.io%2F&ld=6wy\"",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756712895,
+            "size": 124,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_sv",
+            "value": "F150DF7E959D51B04FB6E3BA8A0CA98C~YAAQEaAkFzWfYtOYAQAAEPQy4BySNxL93AP5Eu5LOqXZGQI0BvW522AkEYdKVAx8gpExC1mLGeSY5aWavx2GZ10dqDePFP9KkoFPnMqHEwuTx14MaLtF89hrC0LRtNagJgs4TR5/S2rDKujT+oI2uy+zhQ8iUQAlGQmOrvjyIIQJz6oYyskRLJYqTQ+gyC3DtmUVmBfyf7JLcNH6zS+2GjZzM6kfftjk5V7d+4WSSXO7W5igy/XJ4ov7ZyumC7lM~1",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756115290.982545,
+            "size": 296,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "utag_main",
+            "value": "v_id:0198e032ee9500018fc74798468805075001706d00998$_sn:1$_se:1$_ss:1$_st:1756109891030$ses_id:1756108091030%3Bexp-session$_pn:1%3Bexp-session",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1787644091,
+            "size": 150,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_s",
+            "value": "YAAQEaAkF0ehYtOYAQAAhAYz4APf0VWwnhaU/h6rC5MXJtRFuvI7iqt2t+FTOhDVQK0SULCjWr7a2pU5P6Gz5knDjXX4EVRvTfZYzGrIhjHRRUZSnd+5ZtBdoyVB27Q0ktynAT3dL963UyCXwq8AyHDf5b6q8AgCJhMRZzI55fsQd/U+uEBKK7ALk3kmr1/oK1IxhP48jOaYRRP+iJCcbk56FTn4KNDpjy1J4vc8AYmBxdwRLviCexHSix9+GPgq1mQyHJ/KRljU1QC84aPjG38vyaoAvwAyTSRQAMOENHP1MdRWKhSa0Wta5kNhqIksL7WCTyOkma9kmvvkkktIdzIxqbhxS8b6TiMHGlw7Orx/73WRnfU3CzRESXaL2Ob+rqVgiBGjoIpnoinOyZPB6skoyrfeMrI0yqcWvuLptrwb3dDXqr/p0+znWnK4dF/DNtmN+M68sr3xMILSdbinfjPbaVb0UiINvMryazi/XbOORYIpWwxZgMM3gqsC11LPBd9zkd4VCjW6u2ZsuchyDh+pN4QnudwOgYMj6mf2oFoEGiwpJ0nG5sCzQTA=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1758786496.737593,
+            "size": 576,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_lso",
+            "value": "D8B0E5E070655FFE724F90737442CE445F7C4892E244791C0106E04706DDE551~YAAQEaAkFzSeYtOYAQAAg+gy4ASVm6dOQusVSNs7NShmCl0rGQbMKlXAqSIwAjN0v0u0X5vH+ub6DBVmPjxzcoBqARj99wBr1dR1FPMq+iokk/RYY2hPZRqlTfA+jSjt+MiwawKGOLwbZkhPYSId8K4TAzdtPy6h4UIuGX8FfhiejM4P9GArXkOOlKTs3MmC9tSg5VhlPgWTR/fvpxwtSvkd6hkdDqxUE5OHc2rnSZpE/Mq3n8lHxYHWOqyBeJAoMubPlzUKdF2lryv4rQ9wP6Taus8Z0PSTXPDHVO34yRQrOPyuraQtJUej7vg5hGH1RN4VPa3Yy80PCVFn93yzpEoMY25AykwXa3H6ZYnnDQ6FuYxBaiFclgqdvK6KjTPVxtxQzWHlKKbZ2XdODZzCxsBPEYcFfMaLOhLHpFV5iqFH3CLE0Imk2+d2TDMfLO+TYgizuAuUnposF1I44dylGg==^1756108091022",
+            "domain": ".www.oracle.com",
+            "path": "/",
+            "expires": 1758700091,
+            "size": 557,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "TAsessionID",
+            "value": "28396bcc-d905-4c5c-8e2d-3cb2945a601c|NEW",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756109892,
+            "size": 51,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_ss",
+            "value": "ab8e18ef4e",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756111689.036701,
+            "size": 15,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AKA_A2",
+            "value": "A",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756111689.03505,
+            "size": 7,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_so",
+            "value": "D8B0E5E070655FFE724F90737442CE445F7C4892E244791C0106E04706DDE551~YAAQEaAkFzSeYtOYAQAAg+gy4ASVm6dOQusVSNs7NShmCl0rGQbMKlXAqSIwAjN0v0u0X5vH+ub6DBVmPjxzcoBqARj99wBr1dR1FPMq+iokk/RYY2hPZRqlTfA+jSjt+MiwawKGOLwbZkhPYSId8K4TAzdtPy6h4UIuGX8FfhiejM4P9GArXkOOlKTs3MmC9tSg5VhlPgWTR/fvpxwtSvkd6hkdDqxUE5OHc2rnSZpE/Mq3n8lHxYHWOqyBeJAoMubPlzUKdF2lryv4rQ9wP6Taus8Z0PSTXPDHVO34yRQrOPyuraQtJUej7vg5hGH1RN4VPa3Yy80PCVFn93yzpEoMY25AykwXa3H6ZYnnDQ6FuYxBaiFclgqdvK6KjTPVxtxQzWHlKKbZ2XdODZzCxsBPEYcFfMaLOhLHpFV5iqFH3CLE0Imk2+d2TDMfLO+TYgizuAuUnposF1I44dylGg==",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756194489.036825,
+            "size": 542,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "6CA132AF0F1574263E5FD7BD186AA939~000000000000000000000000000000~YAAQEaAkF6meYtOYAQAA0+0y4BwG0YaxpwMvlwCC98XodJHw6zKtvfQRbDs3oCL7uh+H5zr4KtYd/N5W6OsnhVf/un/RsmEgCCloYCDjb1LjzPE09Jl3JM/FNxk1zalEHi9e//DISJXQJeuI3xT3NKyuf2J0dm+rBCv19kjlMh95Sr28tAHTTkiEImFxo7YecsFydFT+T1Sm2vVu7sP8J9wWp3UMR6RGU3E4NWmG0zaLAbM50FMHPBCBDUeTxfOwCGSYQ2x1/W10H+7gIA6nzh446yhll+2VvCcr4yiPdLNWPCKulzxKJ7TXOdUqOL7x5azN9dsBD1xNR3iGhTRkuiIPy5fQrwLqk9sgHx+kSQMHWNyZm96YrwjMHe/4rUy4GQi0bnSmwScYJPsE2gA=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756115290.492996,
+            "size": 475,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AMCVS_93263704532955710A490D44%40AdobeOrg",
+            "value": "1",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 42,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akaas_aud-seg-ocom-prod",
+            "value": "2147483647~rv=20~id=82669f3d5ad015f6f4412b7d18babb1f",
+            "domain": "www.oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 75,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 1,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 9,
+        "scriptAnalysis": {
+          "total": 26,
+          "tracking": 2,
+          "necessary": 18,
+          "unknown": 6,
+          "trackingDetails": [
+            "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=oracle/main/202508192308&cb=1756108091034",
+            "https://s.go-mpulse.net/boomerang/DXNLE-YBWWY-AR74T-WMD99-77VRA"
+          ],
+          "unknownDetails": [
+            "https://tms.oracle.com/main/prod/utag.js",
+            "https://tms.oracle.com/main/prod/utag.sync.js",
+            "https://tms.oracle.com/main/prod/utag.42.js?utv=ut4.48.202503141811",
+            "https://tms.oracle.com/main/prod/utag.124.js?utv=ut4.48.202505151423",
+            "https://consent.trustarc.com/asset/notice.js/v/v1.7-1179",
+            "https://consent.trustarc.com/notice?domain=oracle.com&c=teconsent&text=true&gtm=1&cdn=1&pcookie"
+          ],
+          "necessaryDetails": [
+            "https://www.oracle.com/asset/sequoia/js/wc-chatbot.js",
+            "[inline]",
+            "[inline]",
+            "[inline]",
+            "[inline]"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 11,
+          "tracking": 0,
+          "necessary": 11
+        },
+        "localStorageAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1
+        },
+        "screenshot": "1756108098047_baseline.png"
+      },
+      "reject_pre": {
+        "timestamp": "2025-08-25T07:48:23.247Z",
+        "stage": "reject_pre",
+        "url": "https://oracle.com",
+        "scriptsCount": 27,
+        "scripts": [
+          {
+            "src": "https://www.oracle.com/asset/sequoia/js/wc-chatbot.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//page info\npageData.pageInfo = pageData.pageInfo || {};\npageData.pa"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//taxonmy\npageData.taxonomy = pageData.taxonomy || {};\npageData.taxo"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//page info\npageData.pageInfo = pageData.pageInfo || {};\npageData.pa"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n!function(){\nvar d=document.documentElement;d.className=d.className.replace(/no-js/,'js');\nif(docum"
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/redwood-base.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/redwood-lib.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/jquery-min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.sync.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n(function(a,b,c,d){\nif(location.href.indexOf(\"tealium=dev\") == -1) {\na='https://tms.oracle.com/main"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "(window.BOOMR_mq=window.BOOMR_mq||[]).push([\"addVar\",{\"rua.upush\":\"false\",\"rua.cpush\":\"false\",\"rua.u"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "!function(e){var n=\"https://s.go-mpulse.net/boomerang/\";if(\"False\"==\"True\")e.BOOMR_config=e.BOOMR_co"
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=oracle/main/202508192308&cb=1756108098242",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://s.go-mpulse.net/boomerang/DXNLE-YBWWY-AR74T-WMD99-77VRA",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.42.js?utv=ut4.48.202503141811",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.124.js?utv=ut4.48.202505151423",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.5.js?utv=ut4.48.202508192308",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/handlebars-redwood.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/settings-v2.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/web-sdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\nvar u30min = [722,352,0,0];\nvar u30brsz = new ResizeObserver(u30 => {\ndocument.getElementById('u30'"
+          },
+          {
+            "src": "https://consent.trustarc.com/asset/notice.js/v/v1.7-1179",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/analytics/ora_ocom.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/PG9AXx/luOi5k?v=ed73c521-2d3d-ae0f-2384-13e90e611724",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://consent.trustarc.com/notice?domain=oracle.com&c=teconsent&text=true&gtm=1&cdn=1&pcookie",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/us/assets/metrics/ora_code.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 10,
+        "cookies": [
+          {
+            "name": "bm_s",
+            "value": "YAAQEaAkFwKjYtOYAQAAwBMz4AP+dy2q6qFod4xoIAcIaq9f0143wxkdrY/xVOXF+KHUKYkoUsDP4I6hpd3Z2hSdNXJItQaTyOaKCjr4e95P8V1bSkWQCkNqD4jLrC2RMVl/fRFFkun4+Kw6VgQEuBWmMBAausX8RNhzRQScF6ksLCVY5vQpZG3ZwVB9unTyT6d/r1VRG7+9HweaLVJuMPwhXJ1E1NvJif0wiH5qS7XTllWP+B2Egle78ayXNxxe19giWBmgvP8/pgX1FMsvLaqdOfE1WeiDvylQpRiQfROtaBubosXKrALNp2n7cgzJu2Sobf428cgrmKuEdNxWPTxOyBuJGTs/QsmaNftVPC6tyKzdoEA/iQzBO41weCLSrldOAYeWvFvGSym86D0Ez9mrc+1roYyzyoDjzPcdboIps76VcBvN7DoxsjYa55U2x1aJikRkz244VGlPb5Luu0rsGzwLBcLbPu5ldhqsQ4poFn5PF7LQd7URvws3eiaSOKkMHS9JOrPiCH9yCccagO7ZJRA/8Mb5ilo+LsMej+Qa4T+zhE1IBAW1Ut4=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1758786500.094073,
+            "size": 576,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AMCV_93263704532955710A490D44%40AdobeOrg",
+            "value": "1585540135%7CMCIDTS%7C20326%7CMCMID%7C69013878174363338560210112051679961538%7CMCAAMLH-1756712898%7C6%7CMCAAMB-1756712898%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1756115298s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C4.4.0",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1790668098.881852,
+            "size": 280,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AMCVS_93263704532955710A490D44%40AdobeOrg",
+            "value": "1",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 42,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "EBB9369E34F3E0956F00C5B138ACD1E8~000000000000000000000000000000~YAAQEaAkFz+iYtOYAQAApw0z4BxQJRnW3YBXlZcdrv8kY54XAxPz/CiMc4fTkrgnQ9TGH91b9zQ6Ac+65BWNuYS/d1qLnJI20ZTZhgysiD+CD8cWES0nEXq/suK9STVr5XCJdG3LmVTP3CoFyl8S+hiYSVTuuQU21YTEdfgfj6KF9Z232+K4bpqPaVbnNc55UAOqh95QO+BWIp9KMopo1xtrbqoegVl8USX0gc/a471BQBU54Bt6FceYCCpKPSCgufjwnsnw7LwkgZWU90c6cu7UM4cxzWMHAln4OaHCchKAV1yU5dHktrR5CF3HcZ12utGejZO452dFrePFCYt6CeoJgs/uHSDHWx1IcDq+lchjOfY5OoVTsRK4W5mAMewyoAZklsqPG8YT55mDvZo=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756115298.53214,
+            "size": 475,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akaas_aud-seg-ocom-prod",
+            "value": "2147483647~rv=10~id=9060d95a973b55e26be7d7dc2e751726",
+            "domain": "www.oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 75,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_ss",
+            "value": "ab8e18ef4e",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756111700.093926,
+            "size": 15,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "RT",
+            "value": "\"z=1&dm=oracle.com&si=ec170d59-f592-45a2-87eb-689fb0a9edec&ss=meqtevcp&sl=2&tt=7ha&bcn=%2F%2F684dd311.akstat.io%2F&ld=9wo\"",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756712898,
+            "size": 124,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "TAsessionID",
+            "value": "9df16b47-d34c-4fbb-83b9-eaa7c1527649|NEW",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756109898,
+            "size": 51,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "notice_behavior",
+            "value": "expressed,eu",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 27,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "utag_main",
+            "value": "v_id:0198e0330ac00026eec4f97f564005075001706d00998$_sn:1$_se:1$_ss:1$_st:1756109898240$ses_id:1756108098240%3Bexp-session$_pn:1%3Bexp-session",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1787644098,
+            "size": 150,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 1,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 10,
+        "scriptAnalysis": {
+          "total": 27,
+          "tracking": 2,
+          "necessary": 18,
+          "unknown": 7,
+          "trackingDetails": [
+            "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=oracle/main/202508192308&cb=1756108098242",
+            "https://s.go-mpulse.net/boomerang/DXNLE-YBWWY-AR74T-WMD99-77VRA"
+          ],
+          "unknownDetails": [
+            "https://tms.oracle.com/main/prod/utag.js",
+            "https://tms.oracle.com/main/prod/utag.sync.js",
+            "https://tms.oracle.com/main/prod/utag.42.js?utv=ut4.48.202503141811",
+            "https://tms.oracle.com/main/prod/utag.124.js?utv=ut4.48.202505151423",
+            "https://tms.oracle.com/main/prod/utag.5.js?utv=ut4.48.202508192308",
+            "https://consent.trustarc.com/asset/notice.js/v/v1.7-1179",
+            "https://consent.trustarc.com/notice?domain=oracle.com&c=teconsent&text=true&gtm=1&cdn=1&pcookie"
+          ],
+          "necessaryDetails": [
+            "https://www.oracle.com/asset/sequoia/js/wc-chatbot.js",
+            "[inline]",
+            "[inline]",
+            "[inline]",
+            "[inline]"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 8,
+          "tracking": 0,
+          "necessary": 8
+        },
+        "localStorageAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1
+        },
+        "screenshot": "1756108105260_reject_pre.png"
+      },
+      "reject": {
+        "timestamp": "2025-08-25T07:48:23.247Z",
+        "stage": "reject_unavailable",
+        "url": "https://oracle.com",
+        "scriptsCount": 27,
+        "scripts": [
+          {
+            "src": "https://www.oracle.com/asset/sequoia/js/wc-chatbot.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//page info\npageData.pageInfo = pageData.pageInfo || {};\npageData.pa"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//taxonmy\npageData.taxonomy = pageData.taxonomy || {};\npageData.taxo"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//page info\npageData.pageInfo = pageData.pageInfo || {};\npageData.pa"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n!function(){\nvar d=document.documentElement;d.className=d.className.replace(/no-js/,'js');\nif(docum"
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/redwood-base.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/redwood-lib.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/jquery-min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.sync.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n(function(a,b,c,d){\nif(location.href.indexOf(\"tealium=dev\") == -1) {\na='https://tms.oracle.com/main"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "(window.BOOMR_mq=window.BOOMR_mq||[]).push([\"addVar\",{\"rua.upush\":\"false\",\"rua.cpush\":\"false\",\"rua.u"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "!function(e){var n=\"https://s.go-mpulse.net/boomerang/\";if(\"False\"==\"True\")e.BOOMR_config=e.BOOMR_co"
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=oracle/main/202508192308&cb=1756108098242",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://s.go-mpulse.net/boomerang/DXNLE-YBWWY-AR74T-WMD99-77VRA",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.42.js?utv=ut4.48.202503141811",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.124.js?utv=ut4.48.202505151423",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.5.js?utv=ut4.48.202508192308",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/handlebars-redwood.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/settings-v2.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/web-sdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\nvar u30min = [722,352,0,0];\nvar u30brsz = new ResizeObserver(u30 => {\ndocument.getElementById('u30'"
+          },
+          {
+            "src": "https://consent.trustarc.com/asset/notice.js/v/v1.7-1179",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/analytics/ora_ocom.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/PG9AXx/luOi5k?v=ed73c521-2d3d-ae0f-2384-13e90e611724",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://consent.trustarc.com/notice?domain=oracle.com&c=teconsent&text=true&gtm=1&cdn=1&pcookie",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/us/assets/metrics/ora_code.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 10,
+        "cookies": [
+          {
+            "name": "bm_s",
+            "value": "YAAQEaAkFwKjYtOYAQAAwBMz4AP+dy2q6qFod4xoIAcIaq9f0143wxkdrY/xVOXF+KHUKYkoUsDP4I6hpd3Z2hSdNXJItQaTyOaKCjr4e95P8V1bSkWQCkNqD4jLrC2RMVl/fRFFkun4+Kw6VgQEuBWmMBAausX8RNhzRQScF6ksLCVY5vQpZG3ZwVB9unTyT6d/r1VRG7+9HweaLVJuMPwhXJ1E1NvJif0wiH5qS7XTllWP+B2Egle78ayXNxxe19giWBmgvP8/pgX1FMsvLaqdOfE1WeiDvylQpRiQfROtaBubosXKrALNp2n7cgzJu2Sobf428cgrmKuEdNxWPTxOyBuJGTs/QsmaNftVPC6tyKzdoEA/iQzBO41weCLSrldOAYeWvFvGSym86D0Ez9mrc+1roYyzyoDjzPcdboIps76VcBvN7DoxsjYa55U2x1aJikRkz244VGlPb5Luu0rsGzwLBcLbPu5ldhqsQ4poFn5PF7LQd7URvws3eiaSOKkMHS9JOrPiCH9yCccagO7ZJRA/8Mb5ilo+LsMej+Qa4T+zhE1IBAW1Ut4=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1758786500.094073,
+            "size": 576,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AMCV_93263704532955710A490D44%40AdobeOrg",
+            "value": "1585540135%7CMCIDTS%7C20326%7CMCMID%7C69013878174363338560210112051679961538%7CMCAAMLH-1756712898%7C6%7CMCAAMB-1756712898%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1756115298s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C4.4.0",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1790668098.881852,
+            "size": 280,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AMCVS_93263704532955710A490D44%40AdobeOrg",
+            "value": "1",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 42,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "EBB9369E34F3E0956F00C5B138ACD1E8~000000000000000000000000000000~YAAQEaAkFz+iYtOYAQAApw0z4BxQJRnW3YBXlZcdrv8kY54XAxPz/CiMc4fTkrgnQ9TGH91b9zQ6Ac+65BWNuYS/d1qLnJI20ZTZhgysiD+CD8cWES0nEXq/suK9STVr5XCJdG3LmVTP3CoFyl8S+hiYSVTuuQU21YTEdfgfj6KF9Z232+K4bpqPaVbnNc55UAOqh95QO+BWIp9KMopo1xtrbqoegVl8USX0gc/a471BQBU54Bt6FceYCCpKPSCgufjwnsnw7LwkgZWU90c6cu7UM4cxzWMHAln4OaHCchKAV1yU5dHktrR5CF3HcZ12utGejZO452dFrePFCYt6CeoJgs/uHSDHWx1IcDq+lchjOfY5OoVTsRK4W5mAMewyoAZklsqPG8YT55mDvZo=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756115298.53214,
+            "size": 475,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akaas_aud-seg-ocom-prod",
+            "value": "2147483647~rv=10~id=9060d95a973b55e26be7d7dc2e751726",
+            "domain": "www.oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 75,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_ss",
+            "value": "ab8e18ef4e",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756111700.093926,
+            "size": 15,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "RT",
+            "value": "\"z=1&dm=oracle.com&si=ec170d59-f592-45a2-87eb-689fb0a9edec&ss=meqtevcp&sl=2&tt=7ha&bcn=%2F%2F684dd311.akstat.io%2F&ld=9wo\"",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756712898,
+            "size": 124,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "TAsessionID",
+            "value": "9df16b47-d34c-4fbb-83b9-eaa7c1527649|NEW",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756109898,
+            "size": 51,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "notice_behavior",
+            "value": "expressed,eu",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 27,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "utag_main",
+            "value": "v_id:0198e0330ac00026eec4f97f564005075001706d00998$_sn:1$_se:1$_ss:1$_st:1756109898240$ses_id:1756108098240%3Bexp-session$_pn:1%3Bexp-session",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1787644098,
+            "size": 150,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 1,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 10,
+        "scriptAnalysis": {
+          "total": 27,
+          "tracking": 2,
+          "necessary": 18,
+          "unknown": 7,
+          "trackingDetails": [
+            "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=oracle/main/202508192308&cb=1756108098242",
+            "https://s.go-mpulse.net/boomerang/DXNLE-YBWWY-AR74T-WMD99-77VRA"
+          ],
+          "unknownDetails": [
+            "https://tms.oracle.com/main/prod/utag.js",
+            "https://tms.oracle.com/main/prod/utag.sync.js",
+            "https://tms.oracle.com/main/prod/utag.42.js?utv=ut4.48.202503141811",
+            "https://tms.oracle.com/main/prod/utag.124.js?utv=ut4.48.202505151423",
+            "https://tms.oracle.com/main/prod/utag.5.js?utv=ut4.48.202508192308",
+            "https://consent.trustarc.com/asset/notice.js/v/v1.7-1179",
+            "https://consent.trustarc.com/notice?domain=oracle.com&c=teconsent&text=true&gtm=1&cdn=1&pcookie"
+          ],
+          "necessaryDetails": [
+            "https://www.oracle.com/asset/sequoia/js/wc-chatbot.js",
+            "[inline]",
+            "[inline]",
+            "[inline]",
+            "[inline]"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 8,
+          "tracking": 0,
+          "necessary": 8
+        },
+        "localStorageAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1
+        },
+        "screenshot": "1756108105260_reject_pre.png",
+        "violation": "No reject option provided (GDPR violation)"
+      },
+      "accept_pre": {
+        "timestamp": "2025-08-25T07:48:30.455Z",
+        "stage": "accept_pre",
+        "url": "https://oracle.com",
+        "scriptsCount": 27,
+        "scripts": [
+          {
+            "src": "https://www.oracle.com/asset/sequoia/js/wc-chatbot.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//page info\npageData.pageInfo = pageData.pageInfo || {};\npageData.pa"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//taxonmy\npageData.taxonomy = pageData.taxonomy || {};\npageData.taxo"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//page info\npageData.pageInfo = pageData.pageInfo || {};\npageData.pa"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n!function(){\nvar d=document.documentElement;d.className=d.className.replace(/no-js/,'js');\nif(docum"
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/redwood-base.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/redwood-lib.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/jquery-min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.sync.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n(function(a,b,c,d){\nif(location.href.indexOf(\"tealium=dev\") == -1) {\na='https://tms.oracle.com/main"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "(window.BOOMR_mq=window.BOOMR_mq||[]).push([\"addVar\",{\"rua.upush\":\"false\",\"rua.cpush\":\"false\",\"rua.u"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "!function(e){var n=\"https://s.go-mpulse.net/boomerang/\";if(\"False\"==\"True\")e.BOOMR_config=e.BOOMR_co"
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=oracle/main/202508192308&cb=1756108105459",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://s.go-mpulse.net/boomerang/DXNLE-YBWWY-AR74T-WMD99-77VRA",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.42.js?utv=ut4.48.202503141811",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.124.js?utv=ut4.48.202505151423",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.5.js?utv=ut4.48.202508192308",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/handlebars-redwood.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/settings-v2.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/web-sdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\nvar u30min = [722,352,0,0];\nvar u30brsz = new ResizeObserver(u30 => {\ndocument.getElementById('u30'"
+          },
+          {
+            "src": "https://consent.trustarc.com/asset/notice.js/v/v1.7-1179",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/analytics/ora_ocom.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/PG9AXx/luOi5k?v=ed73c521-2d3d-ae0f-2384-13e90e611724",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://consent.trustarc.com/notice?domain=oracle.com&c=teconsent&text=true&gtm=1&cdn=1&pcookie",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/us/assets/metrics/ora_code.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 10,
+        "cookies": [
+          {
+            "name": "bm_s",
+            "value": "YAAQEaAkF2elYtOYAQAA0C8z4AOyBGg9Y1j/nxGxH4BeYyzKFyKJ9OCyrKjDL/QqpvfoaZ7ZiZYE4foJMUcF3nTUazeGOqIYZRarGuPHgfS+Pn2SNalic5plbD3zd8MKZD/QhiJFf27gD+dZ2SMTc77TptwAbs0+ER+trE4xYiCQ5089p9te/jdShMmKZHDnG6NvAV3Es8sC90fhxAcsjcqj+nbc4ddDQ2LeYYjGnK8kaic1GpA3Zp+mr0SlSqL8yTVWHwdEq0QMkyDZI7Ch2RMp4zNmN/j6LPInKS2MNZaT145ku4t5nXZ7a3iRPHA1RjI3Njv8ktaks3vT1aZn85wsWQEWRn6ulHQEVHx6QsTRymASHtqpMvLJVUScqV0og6+cUIu3yiZnlZN+p93K3BwUxj/8WHfulkUOIhBtDSNo3xYTWjfcnVm2zOHu3b3yq8gtAiT8A+L2k1DouYpGUKA7c6E0kExVgKD5jMtlmhgCBoy3IxznOvm98GXH84SJx2Jl46Ic/S9TF9ra7a7RTt3roEN5gTrgPM31WFDBxCRBQM2aerj0cVkJ0uE=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1758786507.278771,
+            "size": 576,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AMCV_93263704532955710A490D44%40AdobeOrg",
+            "value": "1585540135%7CMCIDTS%7C20326%7CMCMID%7C37393024031486948281588472378156183746%7CMCAAMLH-1756712905%7C6%7CMCAAMB-1756712905%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1756115306s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C4.4.0",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1790668106.051262,
+            "size": 280,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AMCVS_93263704532955710A490D44%40AdobeOrg",
+            "value": "1",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 42,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "32C15B9F869D352EF9F8060B703379F8~000000000000000000000000000000~YAAQEaAkF/CkYtOYAQAA3Skz4BxxjHqanDCELU/D5GCYnV8ankrTLbyrgyOkGnsWR8RnPsBz/qfOERgVr1HRa6UGeqiNJi2ArZlfQ/112fz5x7BEVTyuIwh+LBwanprHNFz4ahnwJ6j3PtBMhIAqlwZL+Ab4rMcoFGJAMcUKLd5nGbpXyQwyyBUTjF7nuXqS9O6Y+OkHbf9EjFlZZIGhIMc9VZtnXF9oW+oZNWbWksugwxX5k7LhtoJrS8arickIgAOiHeLy9MgWYgTjb6sfiD84XCZlIko97l3tyA1b9x8KoOElH6M+Ivy5SH3vgFMD3t/uI3vSe8qHpMr4XsmuFMCn4vXgUlheZH/wDbVzTM9/6WUPvRPhK3njZeL4mhXDrmUKAlf42/IQrmy1G/Y=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756115305.756083,
+            "size": 475,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akaas_aud-seg-ocom-prod",
+            "value": "2147483647~rv=94~id=237f29dbc62c81f27365c20cb206564b",
+            "domain": "www.oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 75,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_ss",
+            "value": "ab8e18ef4e",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756111707.278694,
+            "size": 15,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "RT",
+            "value": "\"z=1&dm=oracle.com&si=ec170d59-f592-45a2-87eb-689fb0a9edec&ss=meqtevcp&sl=3&tt=80z&bcn=%2F%2F684dd311.akstat.io%2F&ld=fgi\"",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756712906,
+            "size": 124,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "TAsessionID",
+            "value": "093ab121-2631-4586-a6e5-6ace4cbb9180|NEW",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756109905,
+            "size": 51,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "notice_behavior",
+            "value": "expressed,eu",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 27,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "utag_main",
+            "value": "v_id:0198e03326f200838b866857626005075001706d00998$_sn:1$_se:1$_ss:1$_st:1756109905458$ses_id:1756108105458%3Bexp-session$_pn:1%3Bexp-session",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1787644105,
+            "size": 150,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 1,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 10,
+        "scriptAnalysis": {
+          "total": 27,
+          "tracking": 2,
+          "necessary": 18,
+          "unknown": 7,
+          "trackingDetails": [
+            "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=oracle/main/202508192308&cb=1756108105459",
+            "https://s.go-mpulse.net/boomerang/DXNLE-YBWWY-AR74T-WMD99-77VRA"
+          ],
+          "unknownDetails": [
+            "https://tms.oracle.com/main/prod/utag.js",
+            "https://tms.oracle.com/main/prod/utag.sync.js",
+            "https://tms.oracle.com/main/prod/utag.42.js?utv=ut4.48.202503141811",
+            "https://tms.oracle.com/main/prod/utag.124.js?utv=ut4.48.202505151423",
+            "https://tms.oracle.com/main/prod/utag.5.js?utv=ut4.48.202508192308",
+            "https://consent.trustarc.com/asset/notice.js/v/v1.7-1179",
+            "https://consent.trustarc.com/notice?domain=oracle.com&c=teconsent&text=true&gtm=1&cdn=1&pcookie"
+          ],
+          "necessaryDetails": [
+            "https://www.oracle.com/asset/sequoia/js/wc-chatbot.js",
+            "[inline]",
+            "[inline]",
+            "[inline]",
+            "[inline]"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 8,
+          "tracking": 0,
+          "necessary": 8
+        },
+        "localStorageAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1
+        },
+        "screenshot": "1756108112462_accept_pre.png"
+      },
+      "accept": {
+        "timestamp": "2025-08-25T07:48:54.629Z",
+        "stage": "accept",
+        "url": "https://oracle.com",
+        "scriptsCount": 27,
+        "scripts": [
+          {
+            "src": "https://www.oracle.com/asset/sequoia/js/wc-chatbot.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//page info\npageData.pageInfo = pageData.pageInfo || {};\npageData.pa"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//taxonmy\npageData.taxonomy = pageData.taxonomy || {};\npageData.taxo"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nvar pageData = pageData || {};\n//page info\npageData.pageInfo = pageData.pageInfo || {};\npageData.pa"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n!function(){\nvar d=document.documentElement;d.className=d.className.replace(/no-js/,'js');\nif(docum"
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/redwood-base.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/redwood-lib.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/jquery-min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.sync.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n(function(a,b,c,d){\nif(location.href.indexOf(\"tealium=dev\") == -1) {\na='https://tms.oracle.com/main"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "(window.BOOMR_mq=window.BOOMR_mq||[]).push([\"addVar\",{\"rua.upush\":\"false\",\"rua.cpush\":\"false\",\"rua.u"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "!function(e){var n=\"https://s.go-mpulse.net/boomerang/\";if(\"False\"==\"True\")e.BOOMR_config=e.BOOMR_co"
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=oracle/main/202508192308&cb=1756108105459",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://s.go-mpulse.net/boomerang/DXNLE-YBWWY-AR74T-WMD99-77VRA",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.42.js?utv=ut4.48.202503141811",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.124.js?utv=ut4.48.202505151423",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tms.oracle.com/main/prod/utag.5.js?utv=ut4.48.202508192308",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/handlebars-redwood.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/settings-v2.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/js/web-sdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\nvar u30min = [722,352,0,0];\nvar u30brsz = new ResizeObserver(u30 => {\ndocument.getElementById('u30'"
+          },
+          {
+            "src": "https://consent.trustarc.com/asset/notice.js/v/v1.7-1179",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/asset/web/analytics/ora_ocom.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/UaevQnEUbHNHqfamCOsdKAQIRlI/Qc7EX6EuQa/FTsuU25AaAU/PG9AXx/luOi5k?v=ed73c521-2d3d-ae0f-2384-13e90e611724",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://consent.trustarc.com/notice?domain=oracle.com&c=teconsent&text=true&gtm=1&cdn=1&pcookie",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.oracle.com/us/assets/metrics/ora_code.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 16,
+        "cookies": [
+          {
+            "name": "gpw_e24",
+            "value": "no%20value",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756109914,
+            "size": 17,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ora_session",
+            "value": "set",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 14,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "s_ppv",
+            "value": "ocom%253Aen-us%253A%252F%2C31%2C31%2C31%2C768%2C3%2C1",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 58,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_s",
+            "value": "YAAQEaAkF2elYtOYAQAA0C8z4AOyBGg9Y1j/nxGxH4BeYyzKFyKJ9OCyrKjDL/QqpvfoaZ7ZiZYE4foJMUcF3nTUazeGOqIYZRarGuPHgfS+Pn2SNalic5plbD3zd8MKZD/QhiJFf27gD+dZ2SMTc77TptwAbs0+ER+trE4xYiCQ5089p9te/jdShMmKZHDnG6NvAV3Es8sC90fhxAcsjcqj+nbc4ddDQ2LeYYjGnK8kaic1GpA3Zp+mr0SlSqL8yTVWHwdEq0QMkyDZI7Ch2RMp4zNmN/j6LPInKS2MNZaT145ku4t5nXZ7a3iRPHA1RjI3Njv8ktaks3vT1aZn85wsWQEWRn6ulHQEVHx6QsTRymASHtqpMvLJVUScqV0og6+cUIu3yiZnlZN+p93K3BwUxj/8WHfulkUOIhBtDSNo3xYTWjfcnVm2zOHu3b3yq8gtAiT8A+L2k1DouYpGUKA7c6E0kExVgKD5jMtlmhgCBoy3IxznOvm98GXH84SJx2Jl46Ic/S9TF9ra7a7RTt3roEN5gTrgPM31WFDBxCRBQM2aerj0cVkJ0uE=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1758786507.278771,
+            "size": 576,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "notice_behavior",
+            "value": "expressed,eu",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 27,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "s_ips",
+            "value": "768",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 8,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AMCV_93263704532955710A490D44%40AdobeOrg",
+            "value": "1585540135%7CMCIDTS%7C20326%7CMCMID%7C37393024031486948281588472378156183746%7CMCAAMLH-1756712905%7C6%7CMCAAMB-1756712905%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1756115306s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C4.4.0",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1790668106.051262,
+            "size": 280,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AMCVS_93263704532955710A490D44%40AdobeOrg",
+            "value": "1",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 42,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "32C15B9F869D352EF9F8060B703379F8~000000000000000000000000000000~YAAQEaAkF/CkYtOYAQAA3Skz4BxxjHqanDCELU/D5GCYnV8ankrTLbyrgyOkGnsWR8RnPsBz/qfOERgVr1HRa6UGeqiNJi2ArZlfQ/112fz5x7BEVTyuIwh+LBwanprHNFz4ahnwJ6j3PtBMhIAqlwZL+Ab4rMcoFGJAMcUKLd5nGbpXyQwyyBUTjF7nuXqS9O6Y+OkHbf9EjFlZZIGhIMc9VZtnXF9oW+oZNWbWksugwxX5k7LhtoJrS8arickIgAOiHeLy9MgWYgTjb6sfiD84XCZlIko97l3tyA1b9x8KoOElH6M+Ivy5SH3vgFMD3t/uI3vSe8qHpMr4XsmuFMCn4vXgUlheZH/wDbVzTM9/6WUPvRPhK3njZeL4mhXDrmUKAlf42/IQrmy1G/Y=",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756115305.756083,
+            "size": 475,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akaas_aud-seg-ocom-prod",
+            "value": "2147483647~rv=94~id=237f29dbc62c81f27365c20cb206564b",
+            "domain": "www.oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 75,
+            "httpOnly": false,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "s_tp",
+            "value": "2494",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": -1,
+            "size": 8,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_ss",
+            "value": "ab8e18ef4e",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756111707.278694,
+            "size": 15,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "RT",
+            "value": "\"z=1&dm=oracle.com&si=ec170d59-f592-45a2-87eb-689fb0a9edec&ss=meqtevcp&sl=3&tt=80z&bcn=%2F%2F684dd311.akstat.io%2F&ld=fgi\"",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756712906,
+            "size": 124,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "s_nr",
+            "value": "1756108114713-New",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1758700114,
+            "size": 21,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "TAsessionID",
+            "value": "093ab121-2631-4586-a6e5-6ace4cbb9180|NEW",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1756109905,
+            "size": 51,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "utag_main",
+            "value": "v_id:0198e03326f200838b866857626005075001706d00998$_sn:1$_se:1$_ss:1$_st:1756109905458$ses_id:1756108105458%3Bexp-session$_pn:1%3Bexp-session",
+            "domain": ".oracle.com",
+            "path": "/",
+            "expires": 1787644105,
+            "size": 150,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 1,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 10,
+        "scriptAnalysis": {
+          "total": 27,
+          "tracking": 2,
+          "necessary": 18,
+          "unknown": 7,
+          "trackingDetails": [
+            "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=oracle/main/202508192308&cb=1756108105459",
+            "https://s.go-mpulse.net/boomerang/DXNLE-YBWWY-AR74T-WMD99-77VRA"
+          ],
+          "unknownDetails": [
+            "https://tms.oracle.com/main/prod/utag.js",
+            "https://tms.oracle.com/main/prod/utag.sync.js",
+            "https://tms.oracle.com/main/prod/utag.42.js?utv=ut4.48.202503141811",
+            "https://tms.oracle.com/main/prod/utag.124.js?utv=ut4.48.202505151423",
+            "https://tms.oracle.com/main/prod/utag.5.js?utv=ut4.48.202508192308",
+            "https://consent.trustarc.com/asset/notice.js/v/v1.7-1179",
+            "https://consent.trustarc.com/notice?domain=oracle.com&c=teconsent&text=true&gtm=1&cdn=1&pcookie"
+          ],
+          "necessaryDetails": [
+            "https://www.oracle.com/asset/sequoia/js/wc-chatbot.js",
+            "[inline]",
+            "[inline]",
+            "[inline]",
+            "[inline]"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 14,
+          "tracking": 0,
+          "necessary": 14
+        },
+        "localStorageAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1
+        },
+        "screenshot": "1756108136642_accept.png"
+      }
+    },
+    "bannerAnalysis": {
+      "detected": true,
+      "provider": "TrustArc",
+      "text": "Cookie-Einstellungen",
+      "hasDirectReject": false,
+      "hasAccept": false,
+      "hasSettings": false,
+      "type": "US_style",
+      "buttonTexts": []
+    },
+    "gdprCompliance": {
+      "complianceScore": 0,
+      "riskLevel": "CRITICAL",
+      "summary": {
+        "totalViolations": 5,
+        "criticalViolations": 2,
+        "highViolations": 2,
+        "mediumViolations": 1
+      },
+      "violations": [
+        {
+          "code": "EU-C-001",
+          "title": "Pre-consent Tracking Script Execution",
+          "severity": "HIGH",
+          "gdprArticle": "Article 5(3)",
+          "description": "Tracking scripts executed before user consent obtained",
+          "businessImpact": "Unlawful processing of personal data, potential fines up to €20M",
+          "remediation": "Implement consent-gated script loading using CMP integration",
+          "details": {
+            "count": 2,
+            "scripts": [
+              "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=oracle/main/202508192308&cb=1756108091034",
+              "https://s.go-mpulse.net/boomerang/DXNLE-YBWWY-AR74T-WMD99-77VRA"
+            ],
+            "evidence": "1756108098047_baseline.png",
+            "rawData": {
+              "totalScripts": 26,
+              "trackingScripts": 2,
+              "necessaryScripts": 18
+            }
+          },
+          "detectedAt": "2025-08-25T07:48:56.775Z"
+        },
+        {
+          "code": "EU-C-004",
+          "title": "Missing Reject Option",
+          "severity": "CRITICAL",
+          "gdprArticle": "Article 7(4)",
+          "description": "No clear mechanism to reject non-essential cookies",
+          "businessImpact": "Consent not freely given, entire consent framework invalid",
+          "remediation": "Add prominent \"Reject All\" button with equal visual weight to \"Accept\"",
+          "details": {
+            "bannerType": "TrustArc",
+            "detectedButtons": [],
+            "evidence": "1756108098047_baseline.png"
+          },
+          "detectedAt": "2025-08-25T07:48:56.775Z"
+        },
+        {
+          "code": "EU-C-005",
+          "title": "Accept-only Banner Design",
+          "severity": "HIGH",
+          "gdprArticle": "Article 7(4)",
+          "description": "Banner designed to nudge users toward acceptance only",
+          "businessImpact": "Consent not freely given, potential regulatory investigation",
+          "remediation": "Redesign banner with neutral language and equal choice prominence",
+          "details": {
+            "bannerType": "TrustArc",
+            "pattern": "accept-only-design",
+            "evidence": "1756108098047_baseline.png"
+          },
+          "detectedAt": "2025-08-25T07:48:56.775Z"
+        },
+        {
+          "code": "EU-C-011",
+          "title": "Consent Bypass Vulnerability",
+          "severity": "CRITICAL",
+          "gdprArticle": "Article 5(1)(a)",
+          "description": "Technical methods detected to bypass consent mechanism",
+          "businessImpact": "Systematic GDPR violations, potential criminal liability",
+          "remediation": "Implement server-side consent validation and audit trails",
+          "details": {
+            "type": "consent-bypass",
+            "scripts": [
+              "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=oracle/main/202508192308&cb=1756108098242",
+              "https://s.go-mpulse.net/boomerang/DXNLE-YBWWY-AR74T-WMD99-77VRA"
+            ],
+            "evidence": "1756108105260_reject_pre.png"
+          },
+          "detectedAt": "2025-08-25T07:48:56.775Z"
+        },
+        {
+          "code": "EU-C-007",
+          "title": "Insufficient Cookie Information",
+          "severity": "MEDIUM",
+          "gdprArticle": "Article 12(1)",
+          "description": "Incomplete or unclear cookie purpose descriptions",
+          "businessImpact": "Lack of transparency, potential user complaints and fines",
+          "remediation": "Provide detailed cookie tables with purpose, duration, and data controller",
+          "details": {
+            "textLength": 20,
+            "missingInfo": "detailed-cookie-purposes",
+            "evidence": "1756108098047_baseline.png"
+          },
+          "detectedAt": "2025-08-25T07:48:56.775Z"
+        }
+      ],
+      "recommendations": [
+        {
+          "priority": "IMMEDIATE",
+          "category": "Technical Implementation",
+          "action": "Implement consent-gated loading for all tracking technologies",
+          "timeline": "1-2 weeks",
+          "effort": "Medium",
+          "impact": "Eliminates high-risk pre-consent violations"
+        },
+        {
+          "priority": "IMMEDIATE",
+          "category": "UI/UX Design",
+          "action": "Add prominent \"Reject All\" button to consent banner",
+          "timeline": "1-3 days",
+          "effort": "Low",
+          "impact": "Ensures freely given consent, critical for GDPR compliance"
+        }
+      ],
+      "legalAnalysis": {
+        "affectedArticles": [
+          "Article 5(3)",
+          "Article 7(4)",
+          "Article 5(1)(a)",
+          "Article 12(1)"
+        ],
+        "legalRisk": "HIGH - Fundamental consent violations detected. Immediate remediation required.",
+        "regulatoryAction": "Regulatory investigation risk if user complaints filed. Priority remediation advised.",
+        "fineExposure": "Up to €20M or 4% of annual turnover for systematic consent violations"
+      }
+    }
+  },
+  "metadata": {
+    "spectralVersion": "1.0.0",
+    "analysisType": "comprehensive-privacy-compliance",
+    "reportGeneration": "automated"
+  }
+}

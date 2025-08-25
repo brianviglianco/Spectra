@@ -1,0 +1,1248 @@
+{
+  "url": "https://siemens.com",
+  "timestamp": "2025-08-25T05:46:35.682Z",
+  "executiveReport": {
+    "executiveSummary": {
+      "complianceScore": 0,
+      "riskLevel": "CRITICAL",
+      "totalViolations": 4,
+      "criticalViolations": 2,
+      "trackingScripts": 4,
+      "unknownScripts": 0,
+      "cmpProvider": "Usercentrics",
+      "consentMechanism": "GDPR_style"
+    },
+    "technicalFindings": {
+      "preConsentTracking": 4,
+      "postAcceptTracking": 4,
+      "postRejectTracking": 4,
+      "trackingIncrease": 0,
+      "cookieIncrease": 0,
+      "storageIncrease": 2
+    },
+    "businessImpact": "HIGH - Immediate legal risk, potential €20M fines, regulatory investigation likely",
+    "urgency": "IMMEDIATE - Address within 1-2 weeks"
+  },
+  "detailedResults": {
+    "url": "https://siemens.com",
+    "evidence": {
+      "baseline": {
+        "timestamp": "2025-08-25T05:45:30.173Z",
+        "stage": "baseline",
+        "url": "https://siemens.com",
+        "scriptsCount": 28,
+        "scripts": [
+          {
+            "src": "https://w3.siemens.com/c2_analytics.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://img.en25.com/i/elqCfg.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/js/container_Rfpo1n9N.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/launch-EN94e8a0c1a62247fb92741f83d3ea12b6.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": " var _mtm = window._mtm = window._mtm || []; _mtm.push({'mtm.startTime': (new Date().getTime()), 'ev"
+          },
+          {
+            "src": "https://w3.siemens.com/ote/light/config.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://prod.ste.dc.siemens.com/ste/dnbdata/ste_dnbdata.aspx?fct=ste.cd_callback&rnd=385260208",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "if(void 0===window._paq)var _paq=window._paq=window._paq||[];_paq.push([\"setExcludedQueryParams\",[\"h"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "function addTrackingToElement(e,t){document.querySelectorAll(e).forEach((function(e){e.addEventListe"
+          },
+          {
+            "src": "https://w3.siemens.com/applications/62faba30-51a5-d7bc-2f2e-639eb42ebe5e/js/author-toolbox.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/plugins/HeatmapSessionRecording/configs.php?idsite=1&trackerid=YuHe8L&url=https%3A%2F%2Fwww.siemens.com%2Fde%2Fde.html",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://app.usercentrics.eu/browser-ui/3.78.0/index.module.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\"use strict\";(()=>{var{replace:s}=\"\",g=/&(?:amp|#38|lt|#60|gt|#62|apos|#39|quot|#34);/g;var l={\"&amp"
+          },
+          {
+            "src": "https://w3.siemens.com/ote/ote_config.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://data.cdn.siemens.com/?settingsId=GXj83XOdm",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/ote/aem/ote.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.siemens.com/assets/js/usercentrics/siemens-usercentrics-581b5ec2.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var _elqQ = _elqQ || [];\n    _elqQ.push(['elqSetSiteId', '2033604275']);\n    _elqQ.push(['elqUs"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "    \n    var client = new XMLHttpRequest();\n    client.open('HEAD', window.location.href);\n    clien"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "    \n  (function () {\n    var trackingTimer = setInterval(function () {\n      var visitorApiIndex = "
+          },
+          {
+            "src": "",
+            "type": "application/json",
+            "innerHTML": "{\"analyticsPageTitle\":\"!undefined\",\"apolloState\":{\"globalsearch\":{},\"defaultClient\":{\"ROOT_QUERY\":{\""
+          },
+          {
+            "src": "https://www.siemens.com/assets/js/entries/entry-server-routing-527f0376.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/usercentrics/country-cookie-notice-allocator.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/ste/cookiemonster/cookiemonster.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\ndocument.querySelector(\"#usercentrics-r"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript2\"](function(event, target, Promise) {\nwindow.ste_statistic = window.ste_stati"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript3\"](function(event, target, Promise) {\nlet ste = window.ste = window.ste || {}"
+          }
+        ],
+        "cookiesCount": 2,
+        "cookies": [
+          {
+            "name": "ELQCOUNTRY",
+            "value": "DE",
+            "domain": ".siemens.com",
+            "path": "/",
+            "expires": -1,
+            "size": 12,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "s_cc",
+            "value": "true",
+            "domain": ".siemens.com",
+            "path": "/",
+            "expires": -1,
+            "size": 8,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 1,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 14,
+        "scriptAnalysis": {
+          "total": 28,
+          "tracking": 4,
+          "necessary": 24,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://img.en25.com/i/elqCfg.min.js",
+            "https://assets.adobedtm.com/launch-EN94e8a0c1a62247fb92741f83d3ea12b6.min.js",
+            "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+            "https://app.usercentrics.eu/browser-ui/3.78.0/index.module.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://w3.siemens.com/c2_analytics.js",
+            "https://w3.siemens.com/js/container_Rfpo1n9N.js",
+            "[inline]",
+            "https://w3.siemens.com/ote/light/config.js",
+            "https://prod.ste.dc.siemens.com/ste/dnbdata/ste_dnbdata.aspx?fct=ste.cd_callback&rnd=385260208"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 2,
+          "tracking": 0,
+          "necessary": 2
+        },
+        "localStorageAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1
+        },
+        "screenshot": "1756100732181_baseline.png"
+      },
+      "reject_pre": {
+        "timestamp": "2025-08-25T05:45:41.519Z",
+        "stage": "reject_pre",
+        "url": "https://siemens.com",
+        "scriptsCount": 28,
+        "scripts": [
+          {
+            "src": "https://w3.siemens.com/c2_analytics.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://img.en25.com/i/elqCfg.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/js/container_Rfpo1n9N.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/launch-EN94e8a0c1a62247fb92741f83d3ea12b6.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": " var _mtm = window._mtm = window._mtm || []; _mtm.push({'mtm.startTime': (new Date().getTime()), 'ev"
+          },
+          {
+            "src": "https://w3.siemens.com/ote/light/config.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://prod.ste.dc.siemens.com/ste/dnbdata/ste_dnbdata.aspx?fct=ste.cd_callback&rnd=208333967",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "if(void 0===window._paq)var _paq=window._paq=window._paq||[];_paq.push([\"setExcludedQueryParams\",[\"h"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "function addTrackingToElement(e,t){document.querySelectorAll(e).forEach((function(e){e.addEventListe"
+          },
+          {
+            "src": "https://w3.siemens.com/applications/62faba30-51a5-d7bc-2f2e-639eb42ebe5e/js/author-toolbox.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/plugins/HeatmapSessionRecording/configs.php?idsite=1&trackerid=u070UT&url=https%3A%2F%2Fwww.siemens.com%2Fde%2Fde.html",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://app.usercentrics.eu/browser-ui/3.78.0/index.module.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\"use strict\";(()=>{var{replace:s}=\"\",g=/&(?:amp|#38|lt|#60|gt|#62|apos|#39|quot|#34);/g;var l={\"&amp"
+          },
+          {
+            "src": "https://w3.siemens.com/ote/ote_config.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/ote/aem/ote.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.siemens.com/assets/js/usercentrics/siemens-usercentrics-581b5ec2.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var _elqQ = _elqQ || [];\n    _elqQ.push(['elqSetSiteId', '2033604275']);\n    _elqQ.push(['elqUs"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "    \n    var client = new XMLHttpRequest();\n    client.open('HEAD', window.location.href);\n    clien"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "    \n  (function () {\n    var trackingTimer = setInterval(function () {\n      var visitorApiIndex = "
+          },
+          {
+            "src": "",
+            "type": "application/json",
+            "innerHTML": "{\"analyticsPageTitle\":\"!undefined\",\"apolloState\":{\"globalsearch\":{},\"defaultClient\":{\"ROOT_QUERY\":{\""
+          },
+          {
+            "src": "https://www.siemens.com/assets/js/entries/entry-server-routing-527f0376.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://data.cdn.siemens.com/?settingsId=GXj83XOdm",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/usercentrics/country-cookie-notice-allocator.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/ste/cookiemonster/cookiemonster.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\ndocument.querySelector(\"#usercentrics-r"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript2\"](function(event, target, Promise) {\nwindow.ste_statistic = window.ste_stati"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript3\"](function(event, target, Promise) {\nlet ste = window.ste = window.ste || {}"
+          }
+        ],
+        "cookiesCount": 2,
+        "cookies": [
+          {
+            "name": "s_cc",
+            "value": "true",
+            "domain": ".siemens.com",
+            "path": "/",
+            "expires": -1,
+            "size": 8,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ELQCOUNTRY",
+            "value": "DE",
+            "domain": ".siemens.com",
+            "path": "/",
+            "expires": -1,
+            "size": 12,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 3,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 14,
+        "scriptAnalysis": {
+          "total": 28,
+          "tracking": 4,
+          "necessary": 24,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://img.en25.com/i/elqCfg.min.js",
+            "https://assets.adobedtm.com/launch-EN94e8a0c1a62247fb92741f83d3ea12b6.min.js",
+            "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+            "https://app.usercentrics.eu/browser-ui/3.78.0/index.module.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://w3.siemens.com/c2_analytics.js",
+            "https://w3.siemens.com/js/container_Rfpo1n9N.js",
+            "[inline]",
+            "https://w3.siemens.com/ote/light/config.js",
+            "https://prod.ste.dc.siemens.com/ste/dnbdata/ste_dnbdata.aspx?fct=ste.cd_callback&rnd=208333967"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 2,
+          "tracking": 0,
+          "necessary": 2
+        },
+        "localStorageAnalysis": {
+          "total": 3,
+          "tracking": 0,
+          "necessary": 3
+        },
+        "screenshot": "1756100743533_reject_pre.png"
+      },
+      "reject": {
+        "timestamp": "2025-08-25T05:46:01.245Z",
+        "stage": "reject",
+        "url": "https://siemens.com",
+        "scriptsCount": 28,
+        "scripts": [
+          {
+            "src": "https://w3.siemens.com/c2_analytics.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://img.en25.com/i/elqCfg.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/js/container_Rfpo1n9N.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/launch-EN94e8a0c1a62247fb92741f83d3ea12b6.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": " var _mtm = window._mtm = window._mtm || []; _mtm.push({'mtm.startTime': (new Date().getTime()), 'ev"
+          },
+          {
+            "src": "https://w3.siemens.com/ote/light/config.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://prod.ste.dc.siemens.com/ste/dnbdata/ste_dnbdata.aspx?fct=ste.cd_callback&rnd=415577011",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "if(void 0===window._paq)var _paq=window._paq=window._paq||[];_paq.push([\"setExcludedQueryParams\",[\"h"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "function addTrackingToElement(e,t){document.querySelectorAll(e).forEach((function(e){e.addEventListe"
+          },
+          {
+            "src": "https://w3.siemens.com/applications/62faba30-51a5-d7bc-2f2e-639eb42ebe5e/js/author-toolbox.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/plugins/HeatmapSessionRecording/configs.php?idsite=1&trackerid=BRWpn5&url=https%3A%2F%2Fwww.siemens.com%2Fde%2Fde.html",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://app.usercentrics.eu/browser-ui/3.78.0/index.module.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\"use strict\";(()=>{var{replace:s}=\"\",g=/&(?:amp|#38|lt|#60|gt|#62|apos|#39|quot|#34);/g;var l={\"&amp"
+          },
+          {
+            "src": "https://w3.siemens.com/ote/ote_config.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/ote/aem/ote.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.siemens.com/assets/js/usercentrics/siemens-usercentrics-581b5ec2.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var _elqQ = _elqQ || [];\n    _elqQ.push(['elqSetSiteId', '2033604275']);\n    _elqQ.push(['elqUs"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "    \n    var client = new XMLHttpRequest();\n    client.open('HEAD', window.location.href);\n    clien"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "    \n  (function () {\n    var trackingTimer = setInterval(function () {\n      var visitorApiIndex = "
+          },
+          {
+            "src": "",
+            "type": "application/json",
+            "innerHTML": "{\"analyticsPageTitle\":\"!undefined\",\"apolloState\":{\"globalsearch\":{},\"defaultClient\":{\"ROOT_QUERY\":{\""
+          },
+          {
+            "src": "https://www.siemens.com/assets/js/entries/entry-server-routing-527f0376.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://data.cdn.siemens.com/?settingsId=GXj83XOdm",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/usercentrics/country-cookie-notice-allocator.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/ste/cookiemonster/cookiemonster.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\ndocument.querySelector(\"#usercentrics-r"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript2\"](function(event, target, Promise) {\nwindow.ste_statistic = window.ste_stati"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript3\"](function(event, target, Promise) {\nlet ste = window.ste = window.ste || {}"
+          }
+        ],
+        "cookiesCount": 2,
+        "cookies": [
+          {
+            "name": "s_cc",
+            "value": "true",
+            "domain": ".siemens.com",
+            "path": "/",
+            "expires": -1,
+            "size": 8,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ELQCOUNTRY",
+            "value": "DE",
+            "domain": ".siemens.com",
+            "path": "/",
+            "expires": -1,
+            "size": 12,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 3,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 14,
+        "scriptAnalysis": {
+          "total": 28,
+          "tracking": 4,
+          "necessary": 24,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://img.en25.com/i/elqCfg.min.js",
+            "https://assets.adobedtm.com/launch-EN94e8a0c1a62247fb92741f83d3ea12b6.min.js",
+            "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+            "https://app.usercentrics.eu/browser-ui/3.78.0/index.module.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://w3.siemens.com/c2_analytics.js",
+            "https://w3.siemens.com/js/container_Rfpo1n9N.js",
+            "[inline]",
+            "https://w3.siemens.com/ote/light/config.js",
+            "https://prod.ste.dc.siemens.com/ste/dnbdata/ste_dnbdata.aspx?fct=ste.cd_callback&rnd=415577011"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 2,
+          "tracking": 0,
+          "necessary": 2
+        },
+        "localStorageAnalysis": {
+          "total": 3,
+          "tracking": 0,
+          "necessary": 3
+        },
+        "screenshot": "1756100763257_reject.png"
+      },
+      "accept_pre": {
+        "timestamp": "2025-08-25T05:46:10.311Z",
+        "stage": "accept_pre",
+        "url": "https://siemens.com",
+        "scriptsCount": 28,
+        "scripts": [
+          {
+            "src": "https://w3.siemens.com/c2_analytics.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://img.en25.com/i/elqCfg.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/js/container_Rfpo1n9N.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/launch-EN94e8a0c1a62247fb92741f83d3ea12b6.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": " var _mtm = window._mtm = window._mtm || []; _mtm.push({'mtm.startTime': (new Date().getTime()), 'ev"
+          },
+          {
+            "src": "https://w3.siemens.com/ote/light/config.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://prod.ste.dc.siemens.com/ste/dnbdata/ste_dnbdata.aspx?fct=ste.cd_callback&rnd=940083692",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "if(void 0===window._paq)var _paq=window._paq=window._paq||[];_paq.push([\"setExcludedQueryParams\",[\"h"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "function addTrackingToElement(e,t){document.querySelectorAll(e).forEach((function(e){e.addEventListe"
+          },
+          {
+            "src": "https://w3.siemens.com/applications/62faba30-51a5-d7bc-2f2e-639eb42ebe5e/js/author-toolbox.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/plugins/HeatmapSessionRecording/configs.php?idsite=1&trackerid=rp7jza&url=https%3A%2F%2Fwww.siemens.com%2Fde%2Fde.html",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://app.usercentrics.eu/browser-ui/3.78.0/index.module.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\"use strict\";(()=>{var{replace:s}=\"\",g=/&(?:amp|#38|lt|#60|gt|#62|apos|#39|quot|#34);/g;var l={\"&amp"
+          },
+          {
+            "src": "https://w3.siemens.com/ote/ote_config.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/ote/aem/ote.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.siemens.com/assets/js/usercentrics/siemens-usercentrics-581b5ec2.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var _elqQ = _elqQ || [];\n    _elqQ.push(['elqSetSiteId', '2033604275']);\n    _elqQ.push(['elqUs"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "    \n    var client = new XMLHttpRequest();\n    client.open('HEAD', window.location.href);\n    clien"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "    \n  (function () {\n    var trackingTimer = setInterval(function () {\n      var visitorApiIndex = "
+          },
+          {
+            "src": "",
+            "type": "application/json",
+            "innerHTML": "{\"analyticsPageTitle\":\"!undefined\",\"apolloState\":{\"globalsearch\":{},\"defaultClient\":{\"ROOT_QUERY\":{\""
+          },
+          {
+            "src": "https://www.siemens.com/assets/js/entries/entry-server-routing-527f0376.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://data.cdn.siemens.com/?settingsId=GXj83XOdm",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/usercentrics/country-cookie-notice-allocator.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/ste/cookiemonster/cookiemonster.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\ndocument.querySelector(\"#usercentrics-r"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript2\"](function(event, target, Promise) {\nwindow.ste_statistic = window.ste_stati"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript3\"](function(event, target, Promise) {\nlet ste = window.ste = window.ste || {}"
+          }
+        ],
+        "cookiesCount": 2,
+        "cookies": [
+          {
+            "name": "s_cc",
+            "value": "true",
+            "domain": ".siemens.com",
+            "path": "/",
+            "expires": -1,
+            "size": 8,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ELQCOUNTRY",
+            "value": "DE",
+            "domain": ".siemens.com",
+            "path": "/",
+            "expires": -1,
+            "size": 12,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 3,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 14,
+        "scriptAnalysis": {
+          "total": 28,
+          "tracking": 4,
+          "necessary": 24,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://img.en25.com/i/elqCfg.min.js",
+            "https://assets.adobedtm.com/launch-EN94e8a0c1a62247fb92741f83d3ea12b6.min.js",
+            "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+            "https://app.usercentrics.eu/browser-ui/3.78.0/index.module.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://w3.siemens.com/c2_analytics.js",
+            "https://w3.siemens.com/js/container_Rfpo1n9N.js",
+            "[inline]",
+            "https://w3.siemens.com/ote/light/config.js",
+            "https://prod.ste.dc.siemens.com/ste/dnbdata/ste_dnbdata.aspx?fct=ste.cd_callback&rnd=940083692"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 2,
+          "tracking": 0,
+          "necessary": 2
+        },
+        "localStorageAnalysis": {
+          "total": 3,
+          "tracking": 0,
+          "necessary": 3
+        },
+        "screenshot": "1756100772325_accept_pre.png"
+      },
+      "accept": {
+        "timestamp": "2025-08-25T05:46:33.519Z",
+        "stage": "accept",
+        "url": "https://siemens.com",
+        "scriptsCount": 28,
+        "scripts": [
+          {
+            "src": "https://w3.siemens.com/c2_analytics.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://img.en25.com/i/elqCfg.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/js/container_Rfpo1n9N.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/launch-EN94e8a0c1a62247fb92741f83d3ea12b6.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": " var _mtm = window._mtm = window._mtm || []; _mtm.push({'mtm.startTime': (new Date().getTime()), 'ev"
+          },
+          {
+            "src": "https://w3.siemens.com/ote/light/config.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://prod.ste.dc.siemens.com/ste/dnbdata/ste_dnbdata.aspx?fct=ste.cd_callback&rnd=940083692",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "if(void 0===window._paq)var _paq=window._paq=window._paq||[];_paq.push([\"setExcludedQueryParams\",[\"h"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "function addTrackingToElement(e,t){document.querySelectorAll(e).forEach((function(e){e.addEventListe"
+          },
+          {
+            "src": "https://w3.siemens.com/applications/62faba30-51a5-d7bc-2f2e-639eb42ebe5e/js/author-toolbox.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/plugins/HeatmapSessionRecording/configs.php?idsite=1&trackerid=rp7jza&url=https%3A%2F%2Fwww.siemens.com%2Fde%2Fde.html",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://app.usercentrics.eu/browser-ui/3.78.0/index.module.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\"use strict\";(()=>{var{replace:s}=\"\",g=/&(?:amp|#38|lt|#60|gt|#62|apos|#39|quot|#34);/g;var l={\"&amp"
+          },
+          {
+            "src": "https://w3.siemens.com/ote/ote_config.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/ote/aem/ote.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.siemens.com/assets/js/usercentrics/siemens-usercentrics-581b5ec2.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var _elqQ = _elqQ || [];\n    _elqQ.push(['elqSetSiteId', '2033604275']);\n    _elqQ.push(['elqUs"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "    \n    var client = new XMLHttpRequest();\n    client.open('HEAD', window.location.href);\n    clien"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "    \n  (function () {\n    var trackingTimer = setInterval(function () {\n      var visitorApiIndex = "
+          },
+          {
+            "src": "",
+            "type": "application/json",
+            "innerHTML": "{\"analyticsPageTitle\":\"!undefined\",\"apolloState\":{\"globalsearch\":{},\"defaultClient\":{\"ROOT_QUERY\":{\""
+          },
+          {
+            "src": "https://www.siemens.com/assets/js/entries/entry-server-routing-527f0376.js",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://data.cdn.siemens.com/?settingsId=GXj83XOdm",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/usercentrics/country-cookie-notice-allocator.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://w3.siemens.com/ste/cookiemonster/cookiemonster.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\ndocument.querySelector(\"#usercentrics-r"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript2\"](function(event, target, Promise) {\nwindow.ste_statistic = window.ste_stati"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript3\"](function(event, target, Promise) {\nlet ste = window.ste = window.ste || {}"
+          }
+        ],
+        "cookiesCount": 2,
+        "cookies": [
+          {
+            "name": "s_cc",
+            "value": "true",
+            "domain": ".siemens.com",
+            "path": "/",
+            "expires": -1,
+            "size": 8,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ELQCOUNTRY",
+            "value": "DE",
+            "domain": ".siemens.com",
+            "path": "/",
+            "expires": -1,
+            "size": 12,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 3,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 14,
+        "scriptAnalysis": {
+          "total": 28,
+          "tracking": 4,
+          "necessary": 24,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://img.en25.com/i/elqCfg.min.js",
+            "https://assets.adobedtm.com/launch-EN94e8a0c1a62247fb92741f83d3ea12b6.min.js",
+            "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+            "https://app.usercentrics.eu/browser-ui/3.78.0/index.module.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://w3.siemens.com/c2_analytics.js",
+            "https://w3.siemens.com/js/container_Rfpo1n9N.js",
+            "[inline]",
+            "https://w3.siemens.com/ote/light/config.js",
+            "https://prod.ste.dc.siemens.com/ste/dnbdata/ste_dnbdata.aspx?fct=ste.cd_callback&rnd=940083692"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 2,
+          "tracking": 0,
+          "necessary": 2
+        },
+        "localStorageAnalysis": {
+          "total": 3,
+          "tracking": 0,
+          "necessary": 3
+        },
+        "screenshot": "1756100795532_accept.png"
+      }
+    },
+    "bannerAnalysis": {
+      "detected": true,
+      "provider": "Usercentrics",
+      "text": "",
+      "hasDirectReject": true,
+      "hasAccept": true,
+      "hasSettings": true,
+      "type": "GDPR_style",
+      "buttonTexts": [
+        "einstellungen verwalten",
+        "cookies ablehnen",
+        "alle cookies akzeptieren"
+      ]
+    },
+    "gdprCompliance": {
+      "complianceScore": 0,
+      "riskLevel": "CRITICAL",
+      "summary": {
+        "totalViolations": 4,
+        "criticalViolations": 2,
+        "highViolations": 2,
+        "mediumViolations": 0
+      },
+      "violations": [
+        {
+          "code": "EU-C-001",
+          "title": "Pre-consent Tracking Script Execution",
+          "severity": "HIGH",
+          "gdprArticle": "Article 5(3)",
+          "description": "Tracking scripts executed before user consent obtained",
+          "businessImpact": "Unlawful processing of personal data, potential fines up to €20M",
+          "remediation": "Implement consent-gated script loading using CMP integration",
+          "details": {
+            "count": 4,
+            "scripts": [
+              "https://img.en25.com/i/elqCfg.min.js",
+              "https://assets.adobedtm.com/launch-EN94e8a0c1a62247fb92741f83d3ea12b6.min.js",
+              "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+              "https://app.usercentrics.eu/browser-ui/3.78.0/index.module.js"
+            ],
+            "evidence": "1756100732181_baseline.png",
+            "rawData": {
+              "totalScripts": 28,
+              "trackingScripts": 4,
+              "necessaryScripts": 24
+            }
+          },
+          "detectedAt": "2025-08-25T05:46:35.680Z"
+        },
+        {
+          "code": "EU-C-011",
+          "title": "Consent Bypass Vulnerability",
+          "severity": "CRITICAL",
+          "gdprArticle": "Article 5(1)(a)",
+          "description": "Technical methods detected to bypass consent mechanism",
+          "businessImpact": "Systematic GDPR violations, potential criminal liability",
+          "remediation": "Implement server-side consent validation and audit trails",
+          "details": {
+            "type": "consent-bypass",
+            "scripts": [
+              "https://img.en25.com/i/elqCfg.min.js",
+              "https://assets.adobedtm.com/launch-EN94e8a0c1a62247fb92741f83d3ea12b6.min.js",
+              "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+              "https://app.usercentrics.eu/browser-ui/3.78.0/index.module.js"
+            ],
+            "evidence": "1756100763257_reject.png"
+          },
+          "detectedAt": "2025-08-25T05:46:35.681Z"
+        },
+        {
+          "code": "EU-C-016",
+          "title": "Consent Mechanism Not Functional",
+          "severity": "CRITICAL",
+          "gdprArticle": "Article 7(1)",
+          "description": "Accept consent does not activate agreed tracking technologies",
+          "businessImpact": "CMP implementation failure, consent framework invalid",
+          "remediation": "Debug and fix consent signal propagation to tracking scripts",
+          "details": {
+            "acceptIncrease": {
+              "scripts": 0,
+              "cookies": 0,
+              "localStorage": 0
+            },
+            "evidence": "1756100795532_accept.png",
+            "details": "Accept consent did not activate any additional tracking"
+          },
+          "detectedAt": "2025-08-25T05:46:35.681Z"
+        },
+        {
+          "code": "EU-C-017",
+          "title": "Identical Tracking Regardless of Choice",
+          "severity": "HIGH",
+          "gdprArticle": "Article 7(4)",
+          "description": "Same tracking behavior whether user accepts or rejects",
+          "businessImpact": "Consent choices meaningless, potential regulatory investigation",
+          "remediation": "Implement differential tracking based on user consent",
+          "details": {
+            "rejectData": {
+              "scripts": 28,
+              "cookies": 2,
+              "localStorage": 3
+            },
+            "acceptData": {
+              "scripts": 28,
+              "cookies": 2,
+              "localStorage": 3
+            },
+            "evidence": "1756100795532_accept.png"
+          },
+          "detectedAt": "2025-08-25T05:46:35.681Z"
+        }
+      ],
+      "recommendations": [
+        {
+          "priority": "IMMEDIATE",
+          "category": "Technical Implementation",
+          "action": "Implement consent-gated loading for all tracking technologies",
+          "timeline": "1-2 weeks",
+          "effort": "Medium",
+          "impact": "Eliminates high-risk pre-consent violations"
+        },
+        {
+          "priority": "CRITICAL",
+          "category": "CMP Configuration",
+          "action": "Debug and fix consent mechanism functionality",
+          "timeline": "1 week",
+          "effort": "High",
+          "impact": "Makes consent choices meaningful and legally valid"
+        }
+      ],
+      "legalAnalysis": {
+        "affectedArticles": [
+          "Article 5(3)",
+          "Article 5(1)(a)",
+          "Article 7(1)",
+          "Article 7(4)"
+        ],
+        "legalRisk": "HIGH - Fundamental consent violations detected. Immediate remediation required.",
+        "regulatoryAction": "Regulatory investigation risk if user complaints filed. Priority remediation advised.",
+        "fineExposure": "Up to €20M or 4% of annual turnover for systematic consent violations"
+      }
+    }
+  },
+  "metadata": {
+    "spectralVersion": "1.0.0",
+    "analysisType": "comprehensive-privacy-compliance",
+    "reportGeneration": "automated"
+  }
+}

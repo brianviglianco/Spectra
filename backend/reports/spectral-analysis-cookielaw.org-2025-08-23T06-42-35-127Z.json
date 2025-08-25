@@ -1,0 +1,1271 @@
+{
+  "url": "https://cookielaw.org",
+  "timestamp": "2025-08-23T06:42:35.127Z",
+  "executiveReport": {
+    "executiveSummary": {
+      "complianceScore": 50,
+      "riskLevel": "CRITICAL",
+      "totalViolations": 2,
+      "criticalViolations": 1,
+      "trackingScripts": 4,
+      "unknownScripts": 0,
+      "cmpProvider": "OneTrust",
+      "consentMechanism": "GDPR_style"
+    },
+    "technicalFindings": {
+      "preConsentTracking": 4,
+      "postAcceptTracking": 21,
+      "postRejectTracking": 4,
+      "trackingIncrease": 17,
+      "cookieIncrease": 13,
+      "storageIncrease": 1
+    },
+    "businessImpact": "HIGH - Immediate legal risk, potential €20M fines, regulatory investigation likely",
+    "urgency": "IMMEDIATE - Address within 1-2 weeks"
+  },
+  "detailedResults": {
+    "url": "https://cookielaw.org",
+    "evidence": {
+      "baseline": {
+        "timestamp": "2025-08-23T06:41:36.696Z",
+        "stage": "baseline",
+        "url": "https://cookielaw.org",
+        "scriptsCount": 20,
+        "scripts": [
+          {
+            "src": "https://www.onetrust.com/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-jquery.lc-76a92234952929ebefaa60dd43afeddb-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-slick.lc-cfa1c7e0057b97fcfa12873b8cfd7209-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    // Page View\n    window.addEventListener('load', function () {\n      var payload = {\n        ev"
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/launch-0c183b87ca70.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement_Module_ActivityMap.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCa2306e6cbdf4411799e40fce6da5ab61-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/202505.1.0/otBannerSdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(() => {\n  'use strict';\n\n  const CURRENT_DATE_PATTERN = `{{CURRENT_DATE}}`\n  const currentYear = n"
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-site.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-base.lc-e79a4481a4d384d31e55e40f35b78564-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    (function () {\n        const form = $('[id^=\"mktoForm_\"]');\n        if (form.length > 0) {\n    "
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nfunction OptanonWrapper() {\n}\n"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n// Wrapper for _satellite.track - used for event router\nfunction trackEvent(payload) {\n  _satellite"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\nfunction routeEvent(t){window.digitalDa"
+          }
+        ],
+        "cookiesCount": 1,
+        "cookies": [
+          {
+            "name": "OptanonConsent",
+            "value": "isGpcEnabled=0&datestamp=Sat+Aug+23+2025+03%3A41%3A36+GMT-0300+(Argentina+Standard+Time)&version=202505.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=e6543f5d-d933-4d56-a3c5-57deb8cf1eb7&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fwww.onetrust.com%2Fproducts%2Fcookie-consent%2F&groups=1%3A1%2C2%3A0%2C3%3A0%2C4%3A0&vs=S671%3A1%2CS283%3A1%2CS135%3A1%2CS1%3A1%2CS57%3A1%2CS15%3A0%2CS32%3A0%2CS62%3A0%2CS34%3A0%2CS77%3A0%2CS21%3A0%2CS41%3A0%2CS30%3A0%2CS672%3A0%2CS161%3A0%2CS16%3A0%2CS97%3A0%2CS379%3A0",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1787467296,
+            "size": 539,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 7,
+        "scriptAnalysis": {
+          "total": 20,
+          "tracking": 4,
+          "necessary": 16,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/launch-0c183b87ca70.min.js",
+            "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement.min.js",
+            "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement_Module_ActivityMap.min.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCa2306e6cbdf4411799e40fce6da5ab61-source.min.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://www.onetrust.com/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-jquery.lc-76a92234952929ebefaa60dd43afeddb-lc.min.js",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-slick.lc-cfa1c7e0057b97fcfa12873b8cfd7209-lc.min.js",
+            "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1755931298708_baseline.png"
+      },
+      "reject_pre": {
+        "timestamp": "2025-08-23T06:41:44.435Z",
+        "stage": "reject_pre",
+        "url": "https://cookielaw.org",
+        "scriptsCount": 20,
+        "scripts": [
+          {
+            "src": "https://www.onetrust.com/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-jquery.lc-76a92234952929ebefaa60dd43afeddb-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-slick.lc-cfa1c7e0057b97fcfa12873b8cfd7209-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    // Page View\n    window.addEventListener('load', function () {\n      var payload = {\n        ev"
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/launch-0c183b87ca70.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement_Module_ActivityMap.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCa2306e6cbdf4411799e40fce6da5ab61-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/202505.1.0/otBannerSdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(() => {\n  'use strict';\n\n  const CURRENT_DATE_PATTERN = `{{CURRENT_DATE}}`\n  const currentYear = n"
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-site.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-base.lc-e79a4481a4d384d31e55e40f35b78564-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    (function () {\n        const form = $('[id^=\"mktoForm_\"]');\n        if (form.length > 0) {\n    "
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nfunction OptanonWrapper() {\n}\n"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n// Wrapper for _satellite.track - used for event router\nfunction trackEvent(payload) {\n  _satellite"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\nfunction routeEvent(t){window.digitalDa"
+          }
+        ],
+        "cookiesCount": 1,
+        "cookies": [
+          {
+            "name": "OptanonConsent",
+            "value": "consentId=9ffd2d09-4d61-4e02-8027-fea58f0f3b67&datestamp=Sat+Aug+23+2025+03%3A41%3A39+GMT-0300+(Argentina+Standard+Time)&version=202505.1.0&interactionCount=0&isAnonUser=1&isGpcEnabled=0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=https%3A%2F%2Fwww.onetrust.com%2Fproducts%2Fcookie-consent%2F&groups=1%3A1%2C2%3A0%2C3%3A0%2C4%3A0&vs=S671%3A1%2CS283%3A1%2CS135%3A1%2CS1%3A1%2CS57%3A1%2CS15%3A0%2CS32%3A0%2CS62%3A0%2CS34%3A0%2CS77%3A0%2CS21%3A0%2CS41%3A0%2CS30%3A0%2CS672%3A0%2CS161%3A0%2CS16%3A0%2CS97%3A0%2CS379%3A0",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1787467299,
+            "size": 539,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 7,
+        "scriptAnalysis": {
+          "total": 20,
+          "tracking": 4,
+          "necessary": 16,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/launch-0c183b87ca70.min.js",
+            "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement.min.js",
+            "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement_Module_ActivityMap.min.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCa2306e6cbdf4411799e40fce6da5ab61-source.min.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://www.onetrust.com/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-jquery.lc-76a92234952929ebefaa60dd43afeddb-lc.min.js",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-slick.lc-cfa1c7e0057b97fcfa12873b8cfd7209-lc.min.js",
+            "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1755931306442_reject_pre.png"
+      },
+      "reject": {
+        "timestamp": "2025-08-23T06:42:03.217Z",
+        "stage": "reject",
+        "url": "https://cookielaw.org",
+        "scriptsCount": 20,
+        "scripts": [
+          {
+            "src": "https://www.onetrust.com/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-jquery.lc-76a92234952929ebefaa60dd43afeddb-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-slick.lc-cfa1c7e0057b97fcfa12873b8cfd7209-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    // Page View\n    window.addEventListener('load', function () {\n      var payload = {\n        ev"
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/launch-0c183b87ca70.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement_Module_ActivityMap.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/202505.1.0/otBannerSdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCa2306e6cbdf4411799e40fce6da5ab61-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(() => {\n  'use strict';\n\n  const CURRENT_DATE_PATTERN = `{{CURRENT_DATE}}`\n  const currentYear = n"
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-site.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-base.lc-e79a4481a4d384d31e55e40f35b78564-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    (function () {\n        const form = $('[id^=\"mktoForm_\"]');\n        if (form.length > 0) {\n    "
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nfunction OptanonWrapper() {\n}\n"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n// Wrapper for _satellite.track - used for event router\nfunction trackEvent(payload) {\n  _satellite"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\nfunction routeEvent(t){window.digitalDa"
+          }
+        ],
+        "cookiesCount": 2,
+        "cookies": [
+          {
+            "name": "OptanonConsent",
+            "value": "consentId=9ffd2d09-4d61-4e02-8027-fea58f0f3b67&datestamp=Sat+Aug+23+2025+03%3A42%3A00+GMT-0300+(Argentina+Standard+Time)&version=202505.1.0&interactionCount=1&isAnonUser=1&isGpcEnabled=0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=NotLandingPage&groups=1%3A1%2C3%3A0%2C2%3A0%2C4%3A0&vs=S671%3A1%2CS283%3A1%2CS135%3A1%2CS1%3A1%2CS57%3A1%2CS15%3A0%2CS32%3A0%2CS62%3A0%2CS34%3A0%2CS77%3A0%2CS21%3A0%2CS41%3A0%2CS30%3A0%2CS672%3A0%2CS161%3A0%2CS16%3A0%2CS97%3A0%2CS379%3A0&intType=2&geolocation=DE%3BNW&AwaitingReconsent=false",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1787467320,
+            "size": 546,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "OptanonAlertBoxClosed",
+            "value": "2025-08-23T06:41:46.573Z",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1787467306,
+            "size": 45,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 7,
+        "scriptAnalysis": {
+          "total": 20,
+          "tracking": 4,
+          "necessary": 16,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/launch-0c183b87ca70.min.js",
+            "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement.min.js",
+            "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement_Module_ActivityMap.min.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCa2306e6cbdf4411799e40fce6da5ab61-source.min.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://www.onetrust.com/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-jquery.lc-76a92234952929ebefaa60dd43afeddb-lc.min.js",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-slick.lc-cfa1c7e0057b97fcfa12873b8cfd7209-lc.min.js",
+            "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 2,
+          "tracking": 0,
+          "necessary": 2
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1755931325231_reject.png"
+      },
+      "accept_pre": {
+        "timestamp": "2025-08-23T06:42:10.931Z",
+        "stage": "accept_pre",
+        "url": "https://cookielaw.org",
+        "scriptsCount": 20,
+        "scripts": [
+          {
+            "src": "https://www.onetrust.com/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-jquery.lc-76a92234952929ebefaa60dd43afeddb-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-slick.lc-cfa1c7e0057b97fcfa12873b8cfd7209-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    // Page View\n    window.addEventListener('load', function () {\n      var payload = {\n        ev"
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/launch-0c183b87ca70.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement_Module_ActivityMap.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCa2306e6cbdf4411799e40fce6da5ab61-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/202505.1.0/otBannerSdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(() => {\n  'use strict';\n\n  const CURRENT_DATE_PATTERN = `{{CURRENT_DATE}}`\n  const currentYear = n"
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-site.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-base.lc-e79a4481a4d384d31e55e40f35b78564-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    (function () {\n        const form = $('[id^=\"mktoForm_\"]');\n        if (form.length > 0) {\n    "
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nfunction OptanonWrapper() {\n}\n"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n// Wrapper for _satellite.track - used for event router\nfunction trackEvent(payload) {\n  _satellite"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\nfunction routeEvent(t){window.digitalDa"
+          }
+        ],
+        "cookiesCount": 1,
+        "cookies": [
+          {
+            "name": "OptanonConsent",
+            "value": "isGpcEnabled=0&datestamp=Sat+Aug+23+2025+03%3A42%3A06+GMT-0300+(Argentina+Standard+Time)&version=202505.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=706ab399-082f-47b6-8cb4-b88864753ba9&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fwww.onetrust.com%2Fproducts%2Fcookie-consent%2F&groups=1%3A1%2C2%3A0%2C3%3A0%2C4%3A0&vs=S671%3A1%2CS283%3A1%2CS135%3A1%2CS1%3A1%2CS57%3A1%2CS15%3A0%2CS32%3A0%2CS62%3A0%2CS34%3A0%2CS77%3A0%2CS21%3A0%2CS41%3A0%2CS30%3A0%2CS672%3A0%2CS161%3A0%2CS16%3A0%2CS97%3A0%2CS379%3A0",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1787467326,
+            "size": 539,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 7,
+        "scriptAnalysis": {
+          "total": 20,
+          "tracking": 4,
+          "necessary": 16,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/launch-0c183b87ca70.min.js",
+            "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement.min.js",
+            "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement_Module_ActivityMap.min.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCa2306e6cbdf4411799e40fce6da5ab61-source.min.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://www.onetrust.com/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-jquery.lc-76a92234952929ebefaa60dd43afeddb-lc.min.js",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-slick.lc-cfa1c7e0057b97fcfa12873b8cfd7209-lc.min.js",
+            "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1755931332938_accept_pre.png"
+      },
+      "accept": {
+        "timestamp": "2025-08-23T06:42:33.036Z",
+        "stage": "accept",
+        "url": "https://cookielaw.org",
+        "scriptsCount": 43,
+        "scripts": [
+          {
+            "src": "https://js.driftt.com/include/1755931500000/h2iy553ntpa5.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://snap.licdn.com/li.lms-analytics/insight.old.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://j.6sc.co/6si.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.bizible.com/xdc.js?_biz_u=4636a8d94e4748fdcaf570a306e9dd88&_biz_h=26475358&cdn_o=a&jsVer=4.25.08.18",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://munchkin.marketo.net/164/munchkin.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-jquery.lc-76a92234952929ebefaa60dd43afeddb-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-slick.lc-cfa1c7e0057b97fcfa12873b8cfd7209-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    // Page View\n    window.addEventListener('load', function () {\n      var payload = {\n        ev"
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/launch-0c183b87ca70.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement_Module_ActivityMap.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCa2306e6cbdf4411799e40fce6da5ab61-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/202505.1.0/otBannerSdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCecdfb1d7ac024150b701b2fc983ab4a1-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://munchkin.marketo.net/munchkin.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RC2fbd5f50e92a4420a629d9b1d9c20751-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RC5e3df1c99be64c538a7bcea55d647a37-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RC9b9336562daf4820aaefeb999dc2ecc4-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RC95a949eaeaf0485584f9aa629b7ce698-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCc3adab0f3ced464c820746fe7392483a-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RC0edf680f38ec4a06830d8c530da4646a-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(() => {\n  'use strict';\n\n  const CURRENT_DATE_PATTERN = `{{CURRENT_DATE}}`\n  const currentYear = n"
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-site.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-base.lc-e79a4481a4d384d31e55e40f35b78564-lc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    (function () {\n        const form = $('[id^=\"mktoForm_\"]');\n        if (form.length > 0) {\n    "
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\nfunction OptanonWrapper() {\n}\n"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n// Wrapper for _satellite.track - used for event router\nfunction trackEvent(payload) {\n  _satellite"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\nfunction routeEvent(t){window.digitalDa"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n(function() {\n  var didInit = false;\n  function initMunchkin() {\n    if(didInit === false) {\n      "
+          },
+          {
+            "src": "https://cdn.bizible.com/scripts/bizible.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://j.6sc.co/j/d871ec91-844a-4dcc-941a-80ecf6cbe832.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "_linkedin_partner_id = \"25966\";window._linkedin_data_partner_ids = window._linkedin_data_partner_ids"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "(function(){var s = document.getElementsByTagName(\"script\")[0];var b = document.createElement(\"scrip"
+          },
+          {
+            "src": "https://script.crazyegg.com/pages/scripts/0118/1856.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.everestjs.net/static/le/last-event-tag-latest.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "AdCloudEvent(_satellite.getVar(\"Adobe Org ID\"), _satellite.getVar(\"Report Suite ID\"));"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\"use strict\";\n!function() {\n  var t = window.driftt = window.drift = window.driftt || [];\n  if (!t."
+          }
+        ],
+        "cookiesCount": 14,
+        "cookies": [
+          {
+            "name": "driftt_aid",
+            "value": "beae2ef7-4760-409a-9558-7264fe225ca6",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1790491344.079279,
+            "size": 46,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "drift_campaign_refresh",
+            "value": "ffc2bb8f-d687-4b71-9b45-830a504eb43a",
+            "domain": "www.onetrust.com",
+            "path": "/",
+            "expires": 1755933140,
+            "size": 58,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_biz_flagsA",
+            "value": "%7B%22Version%22%3A1%2C%22XDomain%22%3A%221%22%2C%22Mkto%22%3A%221%22%2C%22ViewThrough%22%3A%221%22%7D",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1787467335,
+            "size": 113,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_gd_session",
+            "value": "e85a6a76-be1b-447d-87b8-d8f36c2b7066",
+            "domain": "www.onetrust.com",
+            "path": "/",
+            "expires": 1755945736,
+            "size": 47,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_mkto_trk",
+            "value": "id:113-ZYD-389&token:_mch-onetrust.com-3607d31dc8d785ed562f42af6b901a02",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1790491334.64608,
+            "size": 80,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_gd_visitor",
+            "value": "9fc31e1c-88ee-4328-8090-05b65e969638",
+            "domain": "www.onetrust.com",
+            "path": "/",
+            "expires": 1790491336.496345,
+            "size": 47,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_biz_pendingA",
+            "value": "%5B%5D",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1787467335,
+            "size": 19,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "adcloud",
+            "value": "{%22_les_v%22:%22c%2Cy%2Conetrust.com%2C1755933139%22}",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1790491339.376701,
+            "size": 61,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_biz_nA",
+            "value": "2",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1787467335,
+            "size": 8,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "OptanonAlertBoxClosed",
+            "value": "2025-08-23T06:42:13.042Z",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1787467333,
+            "size": 45,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "drift_aid",
+            "value": "beae2ef7-4760-409a-9558-7264fe225ca6",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1790491344.079159,
+            "size": 45,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_biz_uid",
+            "value": "4636a8d94e4748fdcaf570a306e9dd88",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1787467334,
+            "size": 40,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_an_uid",
+            "value": "-1",
+            "domain": "www.onetrust.com",
+            "path": "/",
+            "expires": 1756536137,
+            "size": 9,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "OptanonConsent",
+            "value": "isGpcEnabled=0&datestamp=Sat+Aug+23+2025+03%3A42%3A13+GMT-0300+(Argentina+Standard+Time)&version=202505.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=706ab399-082f-47b6-8cb4-b88864753ba9&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=1%3A1%2C3%3A1%2C2%3A1%2C4%3A1&vs=S671%3A1%2CS283%3A1%2CS135%3A1%2CS1%3A1%2CS57%3A1%2CS15%3A1%2CS32%3A1%2CS62%3A1%2CS34%3A1%2CS77%3A1%2CS21%3A1%2CS41%3A1%2CS30%3A1%2CS672%3A1%2CS161%3A1%2CS16%3A1%2CS97%3A1%2CS379%3A1&intType=1",
+            "domain": ".onetrust.com",
+            "path": "/",
+            "expires": 1787467333,
+            "size": 502,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 1,
+        "trackingPixels": 3,
+        "thirdPartyScripts": 25,
+        "scriptAnalysis": {
+          "total": 43,
+          "tracking": 21,
+          "necessary": 21,
+          "unknown": 1,
+          "trackingDetails": [
+            "https://js.driftt.com/include/1755931500000/h2iy553ntpa5.js",
+            "https://snap.licdn.com/li.lms-analytics/insight.old.min.js",
+            "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+            "https://j.6sc.co/6si.min.js",
+            "https://cdn.bizible.com/xdc.js?_biz_u=4636a8d94e4748fdcaf570a306e9dd88&_biz_h=26475358&cdn_o=a&jsVer=4.25.08.18",
+            "https://munchkin.marketo.net/164/munchkin.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/launch-0c183b87ca70.min.js",
+            "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement.min.js",
+            "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement_Module_ActivityMap.min.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCa2306e6cbdf4411799e40fce6da5ab61-source.min.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCecdfb1d7ac024150b701b2fc983ab4a1-source.min.js",
+            "https://munchkin.marketo.net/munchkin.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RC2fbd5f50e92a4420a629d9b1d9c20751-source.min.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RC5e3df1c99be64c538a7bcea55d647a37-source.min.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RC9b9336562daf4820aaefeb999dc2ecc4-source.min.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RC95a949eaeaf0485584f9aa629b7ce698-source.min.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCc3adab0f3ced464c820746fe7392483a-source.min.js",
+            "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RC0edf680f38ec4a06830d8c530da4646a-source.min.js",
+            "https://cdn.bizible.com/scripts/bizible.js",
+            "https://j.6sc.co/j/d871ec91-844a-4dcc-941a-80ecf6cbe832.js",
+            "https://script.crazyegg.com/pages/scripts/0118/1856.js"
+          ],
+          "unknownDetails": [
+            "https://www.everestjs.net/static/le/last-event-tag-latest.min.js"
+          ],
+          "necessaryDetails": [
+            "https://www.onetrust.com/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-jquery.lc-76a92234952929ebefaa60dd43afeddb-lc.min.js",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-slick.lc-cfa1c7e0057b97fcfa12873b8cfd7209-lc.min.js",
+            "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit",
+            "https://www.onetrust.com/etc.clientlibs/onetrust/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 14,
+          "tracking": 1,
+          "necessary": 13
+        },
+        "localStorageAnalysis": {
+          "total": 1,
+          "tracking": 0,
+          "necessary": 1
+        },
+        "screenshot": "1755931355044_accept.png"
+      }
+    },
+    "bannerAnalysis": {
+      "detected": true,
+      "provider": "OneTrust",
+      "text": "Cookies ButtonWarum verwenden wir Cookies und andere Tracking-Technologien?Unsere Website verwendet ein Skript (z. B. Cookies), das Informationen in Ihrem Browser und auf Ihrem Gerät lesen, speichern ",
+      "hasDirectReject": true,
+      "hasAccept": true,
+      "hasSettings": true,
+      "type": "GDPR_style",
+      "buttonTexts": [
+        "automatically categorize cookies and trackers",
+        "enable cookie auto-blocking to ensure compliance",
+        "optimize your cookie consent banner to maximize opt-ins",
+        "cookies button",
+        "alle cookies akzeptieren",
+        "nur das notwendige akzeptieren",
+        "meine einstellungen anpassen",
+        "nur das notwendige akzeptieren"
+      ]
+    },
+    "gdprCompliance": {
+      "complianceScore": 50,
+      "riskLevel": "CRITICAL",
+      "summary": {
+        "totalViolations": 2,
+        "criticalViolations": 1,
+        "highViolations": 1,
+        "mediumViolations": 0
+      },
+      "violations": [
+        {
+          "code": "EU-C-001",
+          "title": "Pre-consent Tracking Script Execution",
+          "severity": "HIGH",
+          "gdprArticle": "Article 5(3)",
+          "description": "Tracking scripts executed before user consent obtained",
+          "businessImpact": "Unlawful processing of personal data, potential fines up to €20M",
+          "remediation": "Implement consent-gated script loading using CMP integration",
+          "details": {
+            "count": 4,
+            "scripts": [
+              "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/launch-0c183b87ca70.min.js",
+              "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement.min.js",
+              "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement_Module_ActivityMap.min.js",
+              "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCa2306e6cbdf4411799e40fce6da5ab61-source.min.js"
+            ],
+            "evidence": "1755931298708_baseline.png",
+            "rawData": {
+              "totalScripts": 20,
+              "trackingScripts": 4,
+              "necessaryScripts": 16
+            }
+          },
+          "detectedAt": "2025-08-23T06:42:35.125Z"
+        },
+        {
+          "code": "EU-C-011",
+          "title": "Consent Bypass Vulnerability",
+          "severity": "CRITICAL",
+          "gdprArticle": "Article 5(1)(a)",
+          "description": "Technical methods detected to bypass consent mechanism",
+          "businessImpact": "Systematic GDPR violations, potential criminal liability",
+          "remediation": "Implement server-side consent validation and audit trails",
+          "details": {
+            "type": "consent-bypass",
+            "scripts": [
+              "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/launch-0c183b87ca70.min.js",
+              "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement.min.js",
+              "https://assets.adobedtm.com/extensions/EP31dbb9c60e404ba1aa6e746d49be6f29/AppMeasurement_Module_ActivityMap.min.js",
+              "https://assets.adobedtm.com/753c34c7c721/1906ac9abeaf/68056814ad6f/RCa2306e6cbdf4411799e40fce6da5ab61-source.min.js"
+            ],
+            "evidence": "1755931325231_reject.png"
+          },
+          "detectedAt": "2025-08-23T06:42:35.125Z"
+        }
+      ],
+      "recommendations": [
+        {
+          "priority": "IMMEDIATE",
+          "category": "Technical Implementation",
+          "action": "Implement consent-gated loading for all tracking technologies",
+          "timeline": "1-2 weeks",
+          "effort": "Medium",
+          "impact": "Eliminates high-risk pre-consent violations"
+        }
+      ],
+      "legalAnalysis": {
+        "affectedArticles": [
+          "Article 5(3)",
+          "Article 5(1)(a)"
+        ],
+        "legalRisk": "HIGH - Fundamental consent violations detected. Immediate remediation required.",
+        "regulatoryAction": "Regulatory investigation risk if user complaints filed. Priority remediation advised.",
+        "fineExposure": "Up to €20M or 4% of annual turnover for systematic consent violations"
+      }
+    }
+  },
+  "metadata": {
+    "spectralVersion": "1.0.0",
+    "analysisType": "comprehensive-privacy-compliance",
+    "reportGeneration": "automated"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "url": "https:/.cnn.com/",
+  "timestamp": "2025-08-25T07:29:26.713Z",
+  "executiveReport": {
+    "executiveSummary": {
+      "complianceScore": 0,
+      "riskLevel": "UNKNOWN",
+      "totalViolations": 0,
+      "criticalViolations": 0,
+      "trackingScripts": 0,
+      "unknownScripts": 0,
+      "cmpProvider": "None detected",
+      "consentMechanism": "Unknown"
+    },
+    "technicalFindings": {
+      "preConsentTracking": 0,
+      "postAcceptTracking": 0,
+      "postRejectTracking": 0,
+      "trackingIncrease": 0,
+      "cookieIncrease": 0,
+      "storageIncrease": 0
+    },
+    "businessImpact": "Unknown - Analysis incomplete",
+    "urgency": "Assessment needed"
+  },
+  "detailedResults": {
+    "url": "https:/.cnn.com/",
+    "evidence": {},
+    "error": "net::ERR_NAME_NOT_RESOLVED at https:/.cnn.com/"
+  },
+  "metadata": {
+    "spectralVersion": "1.0.0",
+    "analysisType": "comprehensive-privacy-compliance",
+    "reportGeneration": "automated"
+  }
+}

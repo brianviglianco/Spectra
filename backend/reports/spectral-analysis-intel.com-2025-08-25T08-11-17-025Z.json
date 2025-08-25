@@ -1,0 +1,3788 @@
+{
+  "url": "https://intel.com",
+  "timestamp": "2025-08-25T08:11:17.025Z",
+  "executiveReport": {
+    "executiveSummary": {
+      "complianceScore": 100,
+      "riskLevel": "LOW",
+      "totalViolations": 0,
+      "criticalViolations": 0,
+      "trackingScripts": 0,
+      "unknownScripts": 2,
+      "cmpProvider": "OneTrust",
+      "consentMechanism": "GDPR_style"
+    },
+    "technicalFindings": {
+      "preConsentTracking": 0,
+      "postAcceptTracking": 1,
+      "postRejectTracking": 0,
+      "trackingIncrease": 1,
+      "cookieIncrease": 8,
+      "storageIncrease": 1
+    },
+    "businessImpact": "MINIMAL - Good privacy practices, continue monitoring",
+    "urgency": "LOW - Monitor and improve continuously"
+  },
+  "detailedResults": {
+    "url": "https://intel.com",
+    "evidence": {
+      "baseline": {
+        "timestamp": "2025-08-25T08:10:18.171Z",
+        "stage": "baseline",
+        "url": "https://intel.com",
+        "scriptsCount": 102,
+        "scripts": [
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/launch-b6e76cb6fa37.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/content/dam/www/global/wap/performance-config.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/global/targetDataCookie.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-standalone-3_6_0.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/jquery-3_6_0.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/legacy-libs.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/modernizr.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/picturefill-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/handlebars.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/html5-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-cookie-2_1_3.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/detectizr.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.matchHeight.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/bootstrap-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/bootstrap-affix.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/moment.locales.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/scrollToPlugin.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/slick-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.scrollTo.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/fastclick.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.resize.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.touchswipe.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-detect.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-polyfill.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-init.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-ezmark.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/owl.carousel.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/polyfills.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/purify.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/intc-core.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "bazadebezolkohpepadr=\"725609197\""
+          },
+          {
+            "src": "https://www.intel.de/akam/13/2b3fe98c",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "!function(){var e=setInterval(function(){\"undefined\"!=typeof $CQ&&($CQ(function(){CQ_Analytics.Segme"
+          },
+          {
+            "src": "https://cdn.cookielaw.org/consent/3b4678d9-3d40-4b04-84df-88c341c05a6a/otSDKStub.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCefaadf1149a44182b125218544d167c9-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/202508.1.0/otBannerSdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "var isTargetEnabled =false;"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var cq_tms = {\n        \n        wa_industry_type: \"\",\n        wa_subject: \"\",\n        wa_emt_or"
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/virtual-assistant-services.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var chatContextObj = {};\n    chatContextObj[\"locale\"] = 'de-DE';\n    chatContextObj[\"app\"] = 'S"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var chatConfigObj = {};\n    var cq_tms = cq_tms || {};\n    chatConfigObj[\"virtualAssistantName\""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/purify.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/virtual-assistant.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/content/dam/www/global/wap/main/wap.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    var isLoggedin = (document.cookie.indexOf('IGHFLoggedIn') != -1);\n    var currentURL = window.l"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    /**\n     * This chunk of code is used to bypass Akamai cache - since this goes to the globalNav"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    var intel = intel || {};\n    intel.signinsimplifyConfig = {\n        authorizationUrl: '/content"
+          },
+          {
+            "src": "",
+            "type": "text/x-handlebars-template",
+            "innerHTML": "\n    <section class=\"myintel-tools-content\" role=\"region\"\n             aria-label=\"My Intel\">\n      "
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var newLangSelector = true;\n"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var global_config = {\n        \"icsUrl\": \"https://supporttickets.intel.com/services/oauth2/autho"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    intel = intel || {};\n    intel.utils = intel.utils || {};\n    intel.utils.breadcrumbSource = \"\""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n            \n            var globalHeader = globalHeader || {};\n            globalHeader = {\n      "
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/in-viewport.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/nav.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/secondaryNav.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "\n    {\n        \"@context\": \"http://schema.org\",\n        \"@type\": \"WebSite\",\n        \"url\": \"https://"
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/runtime.script.2cfbf25a.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/dm.components.pages.mobileFirst.homepage-refresh.script.33cf8e5e.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.themeModes.script.16fd8372.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/npm.babel.script.fae7abe1.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/6227.script.a3a0921a.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.homepageHero.script.1c1f3914.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.floatingNavBar.script.7d524f76.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.calloutBlade.script.251c8338.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.developerTools.script.5ac29cc7.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\n(n=>{const e=a=>{n.head.appendChild(n.c"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript2\"](function(event, target, Promise) {\n((a,e)=>{let t=a.location.href.split(\"/"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n/*!\n * Copyright (c) 2018 Chris O'Hara\n *\n * Permission is hereby granted, free of charge, to any p"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript3\"](function(event, target, Promise) {\n((e,o)=>{e.wap_tms=e.wap_tms||{},e.wap_"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((y,g)=>{const S=\"wapPageView\",O=\"pageView\",H=\"wapDataLayer\",l=\"#\",w=\"wapEvent\",U=\"websdk:ready\",N="
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n!function(n,o){[\"alloy\"].forEach((function(o){n[o]||((n.__alloyNS=n.__alloyNS||[]).push(o),n[o]=fun"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n/**\n * Copyright 2019 Adobe. All rights reserved.\n * This file is licensed to you under the Apache "
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript4\"](function(event, target, Promise) {\n((e,r)=>{e.wap_tms.custom.deleteOneTrus"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript5\"](function(event, target, Promise) {\n(a=>{a.utag_data=a.utag_data||{},a.utag"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript6\"](function(event, target, Promise) {\n(e=>{(e.utag_data.aem_Websites.includes"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript7\"](function(event, target, Promise) {\n(a=>{a.utag_data.cookies_consent_enable"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript8\"](function(event, target, Promise) {\n(e=>{e.utag_data.cookies_consent_enable"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript9\"](function(event, target, Promise) {\n((e,a)=>{if(e.utag_data.cookies_consent"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript10\"](function(event, target, Promise) {\n(e=>{if(e.utag_data.cookies_consent_en"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript11\"](function(event, target, Promise) {\n((e,a,p)=>{e.wap_tms.consent.vendor=e."
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript12\"](function(event, target, Promise) {\n((t,n)=>{if(t.utag_data.cookies_consen"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript13\"](function(event, target, Promise) {\n(a=>{a.utag_data.wa_geolocation_countr"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript14\"](function(event, target, Promise) {\n(async(t,n)=>{if(t.utag_data.cookies_c"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript15\"](function(event, target, Promise) {\n((e,t)=>{e.utag_data.cookies_consent_e"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,e)=>{t.wap_tms.custom.executeCallbackWhen({when:()=>localStorage.getItem(\"_wap_user_consent_str"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript16\"](function(event, target, Promise) {\n(e=>{const i={\"id-id\":\"Kelola Pengatur"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript17\"](function(event, target, Promise) {\n((t,e)=>{if(t.location.pathname.includ"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript18\"](function(event, target, Promise) {\n((e,c)=>{if(e.location.search?.include"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((a,l)=>{a.wap_tms=a.wap_tms||{},a.wap_tms.detectAdBlocker=async()=>{if(!a.utag_data.ad_block_sent)"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,m,c)=>{m.addEventListener(\"wapCqDone\",({detail:d})=>{const{page:_,hit:n}=d;if(e.location.search"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript19\"](function(event, target, Promise) {\n((e,a)=>{a.addEventListener(\"wapCq\",({"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,u,i)=>{u.addEventListener(\"wapGlobal\",({detail:P})=>{if(t.location.search.includes(\"debugger\")&"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(async(e,u,y)=>{const D=\"User Account Activity\",j=\"event.crossdomain:\";if(e.location.search.include"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((n,t)=>{const o=[!1,!1,!1,!1],M=50,l=()=>{const r=Math.max(Math.max(t.body.scrollHeight,t.document"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{if(e.location.search.includes(\"debugger\")&&e.location.search.includes(\"brightcove\"))debugger;e"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(t=>{(t.utag_data.wa_page_url?.includes(\"/target-test/\")||t.utag_data.wa_page_url?.includes(\"/test/"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript20\"](function(event, target, Promise) {\n(a=>{a.utag_data.wa_section&&(a.utag_d"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript21\"](function(event, target, Promise) {\n(a=>{a.utag_data.target_load=\"true\",a."
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(a=>{a.utag_data.wa_page_name!==void 0&&(a.utag_data.rec_entity_id=a.utag_data.wa_page_name)})(wind"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,r)=>{e.utag_data.wa_page_url.startsWith(\"https://ark.intel.com/\")&&(e.utag_data.wa_zone=(()=>{t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((c,o)=>{c.utag_data.wa_page_url.includes(\"/products/\")&&(c.utag_data.wa_zone=(()=>{try{const t=[\"#"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,e)=>{const s=\"pdf|jpg|png|gif|zip|doc|xls|exe|mp3|bz2|tar|mov|mpg|wmv|msi|gz|bio|rar|iso|7z|txz"
+          }
+        ],
+        "cookiesCount": 5,
+        "cookies": [
+          {
+            "name": "utag_main",
+            "value": "ad_blocker:0",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787645416,
+            "size": 21,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "326FB7958911AF7A6F2D72A811331BAC~000000000000000000000000000000~YAAQUxczFwHppLKYAQAAOx9H4BwiO2WI1rJKvlHMyJX+ykmn6mLRgvjbNqvCxlXnl/T+LHSs1Ms4aRjCf4fJjWA8gi2m25P2gysyu8pVlq5VQnJhRMUBxodTyCUeAVFuMCevj03X75KYopQvNydXX6yPmmCY5MdKiSoqskPz8jdyGbGJbixwwnzOYeB9+1j5eycszP+OQOOca7qG40u/flN6U9cw7X7CNt0QttdBLp4P13XQqFc4F7pRbNSiq/MOfA55/A8ES2L4qG3v1DNY6Pex4VpazvXl0JVkMCy8/FXOqoZrVx3jL6fNEW/RUiACDhwcBK6SJd1o+BWv/yxUiG78Heev0X8IB3ZM8Ey/2zdzz3lkuJuvMAqc6doPNOg1OUZ4FAu9WvElrUnlN7+xO//g+gyH1j0WfHBOuXWhOjBd0lGYvhUbu5WBgnXGvuCbCOeOrCY=",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1756116609.727707,
+            "size": 527,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "OptanonConsent",
+            "value": "isGpcEnabled=0&datestamp=Mon+Aug+25+2025+05%3A10%3A17+GMT-0300+(Argentina+Standard+Time)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&identifierType=Cookie+Unique+Id&hosts=&consentId=922414f5-4c6c-4e31-a04d-15fec1b0bf58&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fwww.intel.de%2Fcontent%2Fwww%2Fde%2Fde%2Fhomepage.html&groups=C0001%3A1%2CC0003%3A0%2CC0004%3A0%2CC0002%3A0",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787213417,
+            "size": 408,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "src_countrycode",
+            "value": "DE",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": -1,
+            "size": 17,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "detected_bandwidth",
+            "value": "HIGH",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": -1,
+            "size": 22,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 3,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 4,
+        "scriptAnalysis": {
+          "total": 102,
+          "tracking": 0,
+          "necessary": 100,
+          "unknown": 2,
+          "trackingDetails": [],
+          "unknownDetails": [
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/launch-b6e76cb6fa37.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCefaadf1149a44182b125218544d167c9-source.min.js"
+          ],
+          "necessaryDetails": [
+            "https://www.intel.de/content/dam/www/global/wap/performance-config.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/global/targetDataCookie.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-standalone-3_6_0.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/jquery-3_6_0.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/legacy-libs.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 3,
+          "tracking": 0,
+          "necessary": 3
+        },
+        "localStorageAnalysis": {
+          "total": 3,
+          "tracking": 0,
+          "necessary": 3
+        },
+        "screenshot": "1756109420187_baseline.png"
+      },
+      "reject_pre": {
+        "timestamp": "2025-08-25T08:10:26.228Z",
+        "stage": "reject_pre",
+        "url": "https://intel.com",
+        "scriptsCount": 102,
+        "scripts": [
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/launch-b6e76cb6fa37.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/content/dam/www/global/wap/performance-config.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/global/targetDataCookie.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-standalone-3_6_0.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/jquery-3_6_0.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/legacy-libs.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/modernizr.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/picturefill-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/handlebars.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/html5-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-cookie-2_1_3.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/detectizr.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.matchHeight.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/bootstrap-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/bootstrap-affix.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/moment.locales.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/scrollToPlugin.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/slick-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.scrollTo.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/fastclick.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.resize.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.touchswipe.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-detect.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-polyfill.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-init.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-ezmark.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/owl.carousel.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/polyfills.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/purify.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/intc-core.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "bazadebezolkohpepadr=\"725609197\""
+          },
+          {
+            "src": "https://www.intel.de/akam/13/2b3fe98c",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "!function(){var e=setInterval(function(){\"undefined\"!=typeof $CQ&&($CQ(function(){CQ_Analytics.Segme"
+          },
+          {
+            "src": "https://cdn.cookielaw.org/consent/3b4678d9-3d40-4b04-84df-88c341c05a6a/otSDKStub.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCefaadf1149a44182b125218544d167c9-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/202508.1.0/otBannerSdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "var isTargetEnabled =false;"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var cq_tms = {\n        \n        wa_industry_type: \"\",\n        wa_subject: \"\",\n        wa_emt_or"
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/virtual-assistant-services.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var chatContextObj = {};\n    chatContextObj[\"locale\"] = 'de-DE';\n    chatContextObj[\"app\"] = 'S"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var chatConfigObj = {};\n    var cq_tms = cq_tms || {};\n    chatConfigObj[\"virtualAssistantName\""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/purify.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/virtual-assistant.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/content/dam/www/global/wap/main/wap.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    var isLoggedin = (document.cookie.indexOf('IGHFLoggedIn') != -1);\n    var currentURL = window.l"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    /**\n     * This chunk of code is used to bypass Akamai cache - since this goes to the globalNav"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    var intel = intel || {};\n    intel.signinsimplifyConfig = {\n        authorizationUrl: '/content"
+          },
+          {
+            "src": "",
+            "type": "text/x-handlebars-template",
+            "innerHTML": "\n    <section class=\"myintel-tools-content\" role=\"region\"\n             aria-label=\"My Intel\">\n      "
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var newLangSelector = true;\n"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var global_config = {\n        \"icsUrl\": \"https://supporttickets.intel.com/services/oauth2/autho"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    intel = intel || {};\n    intel.utils = intel.utils || {};\n    intel.utils.breadcrumbSource = \"\""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n            \n            var globalHeader = globalHeader || {};\n            globalHeader = {\n      "
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/in-viewport.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/nav.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/secondaryNav.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "\n    {\n        \"@context\": \"http://schema.org\",\n        \"@type\": \"WebSite\",\n        \"url\": \"https://"
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/runtime.script.2cfbf25a.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/dm.components.pages.mobileFirst.homepage-refresh.script.33cf8e5e.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.themeModes.script.16fd8372.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/npm.babel.script.fae7abe1.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/6227.script.a3a0921a.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.homepageHero.script.1c1f3914.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.floatingNavBar.script.7d524f76.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.calloutBlade.script.251c8338.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.developerTools.script.5ac29cc7.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\n(n=>{const e=a=>{n.head.appendChild(n.c"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript2\"](function(event, target, Promise) {\n((a,e)=>{let t=a.location.href.split(\"/"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n/*!\n * Copyright (c) 2018 Chris O'Hara\n *\n * Permission is hereby granted, free of charge, to any p"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript3\"](function(event, target, Promise) {\n((e,o)=>{e.wap_tms=e.wap_tms||{},e.wap_"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((y,g)=>{const S=\"wapPageView\",O=\"pageView\",H=\"wapDataLayer\",l=\"#\",w=\"wapEvent\",U=\"websdk:ready\",N="
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n!function(n,o){[\"alloy\"].forEach((function(o){n[o]||((n.__alloyNS=n.__alloyNS||[]).push(o),n[o]=fun"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n/**\n * Copyright 2019 Adobe. All rights reserved.\n * This file is licensed to you under the Apache "
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript4\"](function(event, target, Promise) {\n((e,r)=>{e.wap_tms.custom.deleteOneTrus"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript5\"](function(event, target, Promise) {\n(a=>{a.utag_data=a.utag_data||{},a.utag"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript6\"](function(event, target, Promise) {\n(e=>{(e.utag_data.aem_Websites.includes"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript7\"](function(event, target, Promise) {\n(a=>{a.utag_data.cookies_consent_enable"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript8\"](function(event, target, Promise) {\n(e=>{e.utag_data.cookies_consent_enable"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript9\"](function(event, target, Promise) {\n((e,a)=>{if(e.utag_data.cookies_consent"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript10\"](function(event, target, Promise) {\n(e=>{if(e.utag_data.cookies_consent_en"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript11\"](function(event, target, Promise) {\n((e,a,p)=>{e.wap_tms.consent.vendor=e."
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript12\"](function(event, target, Promise) {\n((t,n)=>{if(t.utag_data.cookies_consen"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript13\"](function(event, target, Promise) {\n(a=>{a.utag_data.wa_geolocation_countr"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript14\"](function(event, target, Promise) {\n(async(t,n)=>{if(t.utag_data.cookies_c"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript15\"](function(event, target, Promise) {\n((e,t)=>{e.utag_data.cookies_consent_e"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,e)=>{t.wap_tms.custom.executeCallbackWhen({when:()=>localStorage.getItem(\"_wap_user_consent_str"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript16\"](function(event, target, Promise) {\n(e=>{const i={\"id-id\":\"Kelola Pengatur"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript17\"](function(event, target, Promise) {\n((t,e)=>{if(t.location.pathname.includ"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript18\"](function(event, target, Promise) {\n((e,c)=>{if(e.location.search?.include"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((a,l)=>{a.wap_tms=a.wap_tms||{},a.wap_tms.detectAdBlocker=async()=>{if(!a.utag_data.ad_block_sent)"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,m,c)=>{m.addEventListener(\"wapCqDone\",({detail:d})=>{const{page:_,hit:n}=d;if(e.location.search"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript19\"](function(event, target, Promise) {\n((e,a)=>{a.addEventListener(\"wapCq\",({"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,u,i)=>{u.addEventListener(\"wapGlobal\",({detail:P})=>{if(t.location.search.includes(\"debugger\")&"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(async(e,u,y)=>{const D=\"User Account Activity\",j=\"event.crossdomain:\";if(e.location.search.include"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((n,t)=>{const o=[!1,!1,!1,!1],M=50,l=()=>{const r=Math.max(Math.max(t.body.scrollHeight,t.document"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{if(e.location.search.includes(\"debugger\")&&e.location.search.includes(\"brightcove\"))debugger;e"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(t=>{(t.utag_data.wa_page_url?.includes(\"/target-test/\")||t.utag_data.wa_page_url?.includes(\"/test/"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript20\"](function(event, target, Promise) {\n(a=>{a.utag_data.wa_section&&(a.utag_d"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript21\"](function(event, target, Promise) {\n(a=>{a.utag_data.target_load=\"true\",a."
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(a=>{a.utag_data.wa_page_name!==void 0&&(a.utag_data.rec_entity_id=a.utag_data.wa_page_name)})(wind"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,r)=>{e.utag_data.wa_page_url.startsWith(\"https://ark.intel.com/\")&&(e.utag_data.wa_zone=(()=>{t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((c,o)=>{c.utag_data.wa_page_url.includes(\"/products/\")&&(c.utag_data.wa_zone=(()=>{try{const t=[\"#"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,e)=>{const s=\"pdf|jpg|png|gif|zip|doc|xls|exe|mp3|bz2|tar|mov|mpg|wmv|msi|gz|bio|rar|iso|7z|txz"
+          }
+        ],
+        "cookiesCount": 5,
+        "cookies": [
+          {
+            "name": "ak_bmsc",
+            "value": "164C58AED40A6D49C44D3262C9B1F77C~000000000000000000000000000000~YAAQUxczF4rqpLKYAQAAhz9H4BwsSncyElL+KY2cMf5ocugNt6FescM5IZ1q9hRMXGlQFHI+MVlVt7yxjAYX+Oe96sm0+2cq9tGy39kANFeg6ZfnzNUrOhDsfIYRsDlpLrpli8qYuEUHoFlyqYKv2xYNoQph/bqOQy2mXF8v2OdKtEb6D+MofR0iEOQk7TNPXA24xXHkHkgiNSQv1mFmBTGeYWKIE2VAI6IvHL/1Xq7SmueKX8+5FKEmz7f9e2VABw/arvpx4T2iY4bbX6Eyt5hd19ec7u6KNx/MnmDimDX6UsiKuHbJeEhuznRlxlitHHjnJmKIPvESxZLha9+ey6NnUFM2S7+mApZbM4oHbTPJqpREinFE+HbrGl71BXZZSs7blTUn6j2n630VpHn0oriqcnEmjM95tTzEQqv3PqUAvj9P8/Lqd5VU7me81RsZDxIbyGk=",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1756116620.991902,
+            "size": 527,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "utag_main",
+            "value": "",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787645421,
+            "size": 9,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "OptanonConsent",
+            "value": "isGpcEnabled=0&datestamp=Mon+Aug+25+2025+05%3A10%3A21+GMT-0300+(Argentina+Standard+Time)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&identifierType=Cookie+Unique+Id&hosts=&consentId=728b1365-61c3-4232-8993-c7625d8c8e94&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fwww.intel.de%2Fcontent%2Fwww%2Fde%2Fde%2Fhomepage.html&groups=C0001%3A1%2CC0003%3A0%2CC0004%3A0%2CC0002%3A0",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787213421,
+            "size": 408,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "src_countrycode",
+            "value": "DE",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": -1,
+            "size": 17,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "detected_bandwidth",
+            "value": "HIGH",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": -1,
+            "size": 22,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 2,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 4,
+        "scriptAnalysis": {
+          "total": 102,
+          "tracking": 0,
+          "necessary": 100,
+          "unknown": 2,
+          "trackingDetails": [],
+          "unknownDetails": [
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/launch-b6e76cb6fa37.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCefaadf1149a44182b125218544d167c9-source.min.js"
+          ],
+          "necessaryDetails": [
+            "https://www.intel.de/content/dam/www/global/wap/performance-config.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/global/targetDataCookie.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-standalone-3_6_0.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/jquery-3_6_0.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/legacy-libs.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 3,
+          "tracking": 0,
+          "necessary": 3
+        },
+        "localStorageAnalysis": {
+          "total": 2,
+          "tracking": 0,
+          "necessary": 2
+        },
+        "screenshot": "1756109428244_reject_pre.png"
+      },
+      "reject": {
+        "timestamp": "2025-08-25T08:10:44.723Z",
+        "stage": "reject",
+        "url": "https://intel.com",
+        "scriptsCount": 126,
+        "scripts": [
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/launch-b6e76cb6fa37.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/content/dam/www/global/wap/performance-config.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/global/targetDataCookie.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-standalone-3_6_0.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/jquery-3_6_0.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/legacy-libs.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/modernizr.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/picturefill-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/handlebars.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/html5-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-cookie-2_1_3.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/detectizr.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.matchHeight.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/bootstrap-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/bootstrap-affix.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/moment.locales.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/scrollToPlugin.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/slick-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.scrollTo.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/fastclick.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.resize.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.touchswipe.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-detect.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-polyfill.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-init.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-ezmark.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/owl.carousel.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/polyfills.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/purify.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/intc-core.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.cookielaw.org/consent/3b4678d9-3d40-4b04-84df-88c341c05a6a/otSDKStub.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC99fb5cd49eae4792acecc6136592aad1-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC0f277073139042d0a1e78dd927885029-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/202508.1.0/otBannerSdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCf4240a986b1849178fc678dd2d248f4d-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCd6d4b861707547498db7a1519040048d-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC8108f7d634d04d2e81ef50df819c4dbf-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC47eed40acb5d453dbd3fb40d3ee82ffb-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC315890331cfe43b88e403490d9f18bb8-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCc969a2b4a0034a20b9695400303934aa-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC035765e618944f9aba63691a04f09eea-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC4ed968e1455147bca0c6f0e5c124b93f-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCcb3d041765eb41ca9c8452e3c0d0c129-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC777b06dffcb1421cac07cf2f82ead54a-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCefaadf1149a44182b125218544d167c9-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC37e3dfd98d924773a6177fea4e5f33e3-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "!function(){var e=setInterval(function(){\"undefined\"!=typeof $CQ&&($CQ(function(){CQ_Analytics.Segme"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "var isTargetEnabled =false;"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var cq_tms = {\n        \n        wa_industry_type: \"\",\n        wa_subject: \"\",\n        wa_emt_or"
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/virtual-assistant-services.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var chatContextObj = {};\n    chatContextObj[\"locale\"] = 'de-DE';\n    chatContextObj[\"app\"] = 'S"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var chatConfigObj = {};\n    var cq_tms = cq_tms || {};\n    chatConfigObj[\"virtualAssistantName\""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/purify.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/virtual-assistant.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/content/dam/www/global/wap/main/wap.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    var isLoggedin = (document.cookie.indexOf('IGHFLoggedIn') != -1);\n    var currentURL = window.l"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    /**\n     * This chunk of code is used to bypass Akamai cache - since this goes to the globalNav"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    var intel = intel || {};\n    intel.signinsimplifyConfig = {\n        authorizationUrl: '/content"
+          },
+          {
+            "src": "",
+            "type": "text/x-handlebars-template",
+            "innerHTML": "\n    <section class=\"myintel-tools-content\" role=\"region\"\n             aria-label=\"My Intel\">\n      "
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var newLangSelector = true;\n"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var global_config = {\n        \"icsUrl\": \"https://supporttickets.intel.com/services/oauth2/autho"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    intel = intel || {};\n    intel.utils = intel.utils || {};\n    intel.utils.breadcrumbSource = \"\""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n            \n            var globalHeader = globalHeader || {};\n            globalHeader = {\n      "
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/in-viewport.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/nav.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/secondaryNav.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "\n    {\n        \"@context\": \"http://schema.org\",\n        \"@type\": \"WebSite\",\n        \"url\": \"https://"
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/runtime.script.2cfbf25a.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/dm.components.pages.mobileFirst.homepage-refresh.script.33cf8e5e.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.themeModes.script.16fd8372.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/npm.babel.script.fae7abe1.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/6227.script.a3a0921a.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.homepageHero.script.1c1f3914.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.floatingNavBar.script.7d524f76.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.calloutBlade.script.251c8338.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.developerTools.script.5ac29cc7.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\n(n=>{const e=a=>{n.head.appendChild(n.c"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript2\"](function(event, target, Promise) {\n((a,e)=>{let t=a.location.href.split(\"/"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n/*!\n * Copyright (c) 2018 Chris O'Hara\n *\n * Permission is hereby granted, free of charge, to any p"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript3\"](function(event, target, Promise) {\n((e,o)=>{e.wap_tms=e.wap_tms||{},e.wap_"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((y,g)=>{const S=\"wapPageView\",O=\"pageView\",H=\"wapDataLayer\",l=\"#\",w=\"wapEvent\",U=\"websdk:ready\",N="
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n!function(n,o){[\"alloy\"].forEach((function(o){n[o]||((n.__alloyNS=n.__alloyNS||[]).push(o),n[o]=fun"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n/**\n * Copyright 2019 Adobe. All rights reserved.\n * This file is licensed to you under the Apache "
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript4\"](function(event, target, Promise) {\n((e,r)=>{e.wap_tms.custom.deleteOneTrus"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript5\"](function(event, target, Promise) {\n(a=>{a.utag_data=a.utag_data||{},a.utag"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript6\"](function(event, target, Promise) {\n(e=>{(e.utag_data.aem_Websites.includes"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript7\"](function(event, target, Promise) {\n(a=>{a.utag_data.cookies_consent_enable"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript8\"](function(event, target, Promise) {\n(e=>{e.utag_data.cookies_consent_enable"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript9\"](function(event, target, Promise) {\n((e,a)=>{if(e.utag_data.cookies_consent"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript10\"](function(event, target, Promise) {\n(e=>{if(e.utag_data.cookies_consent_en"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript11\"](function(event, target, Promise) {\n((e,a,p)=>{e.wap_tms.consent.vendor=e."
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript12\"](function(event, target, Promise) {\n((t,n)=>{if(t.utag_data.cookies_consen"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript13\"](function(event, target, Promise) {\n(a=>{a.utag_data.wa_geolocation_countr"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript14\"](function(event, target, Promise) {\n(async(t,n)=>{if(t.utag_data.cookies_c"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript15\"](function(event, target, Promise) {\n((e,t)=>{e.utag_data.cookies_consent_e"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,e)=>{t.wap_tms.custom.executeCallbackWhen({when:()=>localStorage.getItem(\"_wap_user_consent_str"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript16\"](function(event, target, Promise) {\n(e=>{const i={\"id-id\":\"Kelola Pengatur"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript17\"](function(event, target, Promise) {\n((t,e)=>{if(t.location.pathname.includ"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript18\"](function(event, target, Promise) {\n((e,c)=>{if(e.location.search?.include"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((a,l)=>{a.wap_tms=a.wap_tms||{},a.wap_tms.detectAdBlocker=async()=>{if(!a.utag_data.ad_block_sent)"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,m,c)=>{m.addEventListener(\"wapCqDone\",({detail:d})=>{const{page:_,hit:n}=d;if(e.location.search"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript19\"](function(event, target, Promise) {\n((e,a)=>{a.addEventListener(\"wapCq\",({"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,u,i)=>{u.addEventListener(\"wapGlobal\",({detail:P})=>{if(t.location.search.includes(\"debugger\")&"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(async(e,u,y)=>{const D=\"User Account Activity\",j=\"event.crossdomain:\";if(e.location.search.include"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((n,t)=>{const o=[!1,!1,!1,!1],M=50,l=()=>{const r=Math.max(Math.max(t.body.scrollHeight,t.document"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{if(e.location.search.includes(\"debugger\")&&e.location.search.includes(\"brightcove\"))debugger;e"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(t=>{(t.utag_data.wa_page_url?.includes(\"/target-test/\")||t.utag_data.wa_page_url?.includes(\"/test/"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript20\"](function(event, target, Promise) {\n(a=>{a.utag_data.wa_section&&(a.utag_d"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript21\"](function(event, target, Promise) {\n(a=>{a.utag_data.target_load=\"true\",a."
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(a=>{a.utag_data.wa_page_name!==void 0&&(a.utag_data.rec_entity_id=a.utag_data.wa_page_name)})(wind"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,r)=>{e.utag_data.wa_page_url.startsWith(\"https://ark.intel.com/\")&&(e.utag_data.wa_zone=(()=>{t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((c,o)=>{c.utag_data.wa_page_url.includes(\"/products/\")&&(c.utag_data.wa_zone=(()=>{try{const t=[\"#"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(async a=>{a.wap_websdk=a.wap_websdk||{};const e={prod:{all:\"b8d26132-7918-4d14-9e5a-835f5dbf5c7c\","
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,e,a)=>{t.wap_websdk.tg={impressionsSent:[],propsDisplaySent:[],propsInteractsToSend:[]};const n"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(a=>{a.wap_websdk.isEnabled&&(a.wap_websdk.setECID=e=>{a.utag_data.wa_amc_id=e,a.wapDataLayer.add(\""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,t)=>{if(e.wap_websdk.isEnabled){const a={eVar1:\"geo\",eVar2:\"localCode\",eVar3:\"section\",eVar4:\"s"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{if(e.wap_websdk.isEnabled){e.wap_websdk.px={};const n=()=>(e.wap_tms.storage.refresh(),{consen"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{e.wap_websdk.isEnabled&&(e.wap_websdk.px.pixels=e.wap_websdk.px.pixels||{},e.wap_websdk.px.pix"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{e.wap_websdk.isEnabled&&(e.wap_websdk.px.pixels=e.wap_websdk.px.pixels||{},e.wap_websdk.px.pix"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{if(e.wap_tms.eloqua=e.wap_tms.eloqua||{},e.wap_tms.eloqua.domain=\"intel\",e.wap_tms.eloqua.doma"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{e.wap_websdk.isEnabled&&(e.wap_websdk.px.pixels=e.wap_websdk.px.pixels||{},e.wap_websdk.px.pix"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\ndocument.dispatchEvent(new CustomEvent(\"wapEvent\",{detail:\"websdk:ready\"}));\n"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(t=>{if(t.utag_data){const e=t.location.href.toString();t.wap_tms?.custom?.contains(e,[\"/content/da"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,t)=>{e.wap_tms.custom.performance=e.wap_tms.custom.performance||{};const n=!(!e.wa&&!e.performa"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,e)=>{const s=\"pdf|jpg|png|gif|zip|doc|xls|exe|mp3|bz2|tar|mov|mpg|wmv|msi|gz|bio|rar|iso|7z|txz"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(async w=>{await w.wap_websdk.tg.checkCustomComponents()})(window);\n"
+          }
+        ],
+        "cookiesCount": 6,
+        "cookies": [
+          {
+            "name": "OptanonConsent",
+            "value": "isGpcEnabled=0&datestamp=Mon+Aug+25+2025+05%3A10%3A41+GMT-0300+(Argentina+Standard+Time)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&identifierType=Cookie+Unique+Id&hosts=&consentId=728b1365-61c3-4232-8993-c7625d8c8e94&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0003%3A0%2CC0004%3A0%2CC0002%3A0&iType=5&intType=5&geolocation=DE%3B&AwaitingReconsent=false",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787213441,
+            "size": 414,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "OptanonAlertBoxClosed",
+            "value": "2025-08-25T08:10:28.385Z",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787213428,
+            "size": 45,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "164C58AED40A6D49C44D3262C9B1F77C~000000000000000000000000000000~YAAQUxczF4rqpLKYAQAAhz9H4BwsSncyElL+KY2cMf5ocugNt6FescM5IZ1q9hRMXGlQFHI+MVlVt7yxjAYX+Oe96sm0+2cq9tGy39kANFeg6ZfnzNUrOhDsfIYRsDlpLrpli8qYuEUHoFlyqYKv2xYNoQph/bqOQy2mXF8v2OdKtEb6D+MofR0iEOQk7TNPXA24xXHkHkgiNSQv1mFmBTGeYWKIE2VAI6IvHL/1Xq7SmueKX8+5FKEmz7f9e2VABw/arvpx4T2iY4bbX6Eyt5hd19ec7u6KNx/MnmDimDX6UsiKuHbJeEhuznRlxlitHHjnJmKIPvESxZLha9+ey6NnUFM2S7+mApZbM4oHbTPJqpREinFE+HbrGl71BXZZSs7blTUn6j2n630VpHn0oriqcnEmjM95tTzEQqv3PqUAvj9P8/Lqd5VU7me81RsZDxIbyGk=",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1756116620.991902,
+            "size": 527,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "utag_main",
+            "value": "",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787645441,
+            "size": 9,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "src_countrycode",
+            "value": "DE",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": -1,
+            "size": 17,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "detected_bandwidth",
+            "value": "HIGH",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": -1,
+            "size": 22,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 2,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 17,
+        "scriptAnalysis": {
+          "total": 126,
+          "tracking": 0,
+          "necessary": 111,
+          "unknown": 15,
+          "trackingDetails": [],
+          "unknownDetails": [
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/launch-b6e76cb6fa37.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC99fb5cd49eae4792acecc6136592aad1-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC0f277073139042d0a1e78dd927885029-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCf4240a986b1849178fc678dd2d248f4d-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCd6d4b861707547498db7a1519040048d-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC8108f7d634d04d2e81ef50df819c4dbf-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC47eed40acb5d453dbd3fb40d3ee82ffb-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC315890331cfe43b88e403490d9f18bb8-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCc969a2b4a0034a20b9695400303934aa-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC035765e618944f9aba63691a04f09eea-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC4ed968e1455147bca0c6f0e5c124b93f-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCcb3d041765eb41ca9c8452e3c0d0c129-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC777b06dffcb1421cac07cf2f82ead54a-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCefaadf1149a44182b125218544d167c9-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC37e3dfd98d924773a6177fea4e5f33e3-source.min.js"
+          ],
+          "necessaryDetails": [
+            "https://www.intel.de/content/dam/www/global/wap/performance-config.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/global/targetDataCookie.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-standalone-3_6_0.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/jquery-3_6_0.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/legacy-libs.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 4,
+          "tracking": 0,
+          "necessary": 4
+        },
+        "localStorageAnalysis": {
+          "total": 2,
+          "tracking": 0,
+          "necessary": 2
+        },
+        "screenshot": "1756109446734_reject.png"
+      },
+      "accept_pre": {
+        "timestamp": "2025-08-25T08:10:52.736Z",
+        "stage": "accept_pre",
+        "url": "https://intel.com",
+        "scriptsCount": 102,
+        "scripts": [
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/launch-b6e76cb6fa37.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/content/dam/www/global/wap/performance-config.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/global/targetDataCookie.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-standalone-3_6_0.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/jquery-3_6_0.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/legacy-libs.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/modernizr.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/picturefill-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/handlebars.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/html5-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-cookie-2_1_3.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/detectizr.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.matchHeight.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/bootstrap-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/bootstrap-affix.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/moment.locales.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/scrollToPlugin.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/slick-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.scrollTo.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/fastclick.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.resize.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.touchswipe.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-detect.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-polyfill.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-init.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-ezmark.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/owl.carousel.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/polyfills.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/purify.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/intc-core.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "bazadebezolkohpepadr=\"725609197\""
+          },
+          {
+            "src": "https://www.intel.de/akam/13/2b3fe98c",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "!function(){var e=setInterval(function(){\"undefined\"!=typeof $CQ&&($CQ(function(){CQ_Analytics.Segme"
+          },
+          {
+            "src": "https://cdn.cookielaw.org/consent/3b4678d9-3d40-4b04-84df-88c341c05a6a/otSDKStub.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCefaadf1149a44182b125218544d167c9-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/202508.1.0/otBannerSdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "var isTargetEnabled =false;"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var cq_tms = {\n        \n        wa_industry_type: \"\",\n        wa_subject: \"\",\n        wa_emt_or"
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/virtual-assistant-services.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var chatContextObj = {};\n    chatContextObj[\"locale\"] = 'de-DE';\n    chatContextObj[\"app\"] = 'S"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var chatConfigObj = {};\n    var cq_tms = cq_tms || {};\n    chatConfigObj[\"virtualAssistantName\""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/purify.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/virtual-assistant.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/content/dam/www/global/wap/main/wap.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    var isLoggedin = (document.cookie.indexOf('IGHFLoggedIn') != -1);\n    var currentURL = window.l"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    /**\n     * This chunk of code is used to bypass Akamai cache - since this goes to the globalNav"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    var intel = intel || {};\n    intel.signinsimplifyConfig = {\n        authorizationUrl: '/content"
+          },
+          {
+            "src": "",
+            "type": "text/x-handlebars-template",
+            "innerHTML": "\n    <section class=\"myintel-tools-content\" role=\"region\"\n             aria-label=\"My Intel\">\n      "
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var newLangSelector = true;\n"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var global_config = {\n        \"icsUrl\": \"https://supporttickets.intel.com/services/oauth2/autho"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    intel = intel || {};\n    intel.utils = intel.utils || {};\n    intel.utils.breadcrumbSource = \"\""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n            \n            var globalHeader = globalHeader || {};\n            globalHeader = {\n      "
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/in-viewport.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/nav.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/secondaryNav.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "\n    {\n        \"@context\": \"http://schema.org\",\n        \"@type\": \"WebSite\",\n        \"url\": \"https://"
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/runtime.script.2cfbf25a.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/dm.components.pages.mobileFirst.homepage-refresh.script.33cf8e5e.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.themeModes.script.16fd8372.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/npm.babel.script.fae7abe1.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/6227.script.a3a0921a.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.homepageHero.script.1c1f3914.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.floatingNavBar.script.7d524f76.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.calloutBlade.script.251c8338.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.developerTools.script.5ac29cc7.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\n(n=>{const e=a=>{n.head.appendChild(n.c"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript2\"](function(event, target, Promise) {\n((a,e)=>{let t=a.location.href.split(\"/"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n/*!\n * Copyright (c) 2018 Chris O'Hara\n *\n * Permission is hereby granted, free of charge, to any p"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript3\"](function(event, target, Promise) {\n((e,o)=>{e.wap_tms=e.wap_tms||{},e.wap_"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((y,g)=>{const S=\"wapPageView\",O=\"pageView\",H=\"wapDataLayer\",l=\"#\",w=\"wapEvent\",U=\"websdk:ready\",N="
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n!function(n,o){[\"alloy\"].forEach((function(o){n[o]||((n.__alloyNS=n.__alloyNS||[]).push(o),n[o]=fun"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n/**\n * Copyright 2019 Adobe. All rights reserved.\n * This file is licensed to you under the Apache "
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript4\"](function(event, target, Promise) {\n((e,r)=>{e.wap_tms.custom.deleteOneTrus"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript5\"](function(event, target, Promise) {\n(a=>{a.utag_data=a.utag_data||{},a.utag"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript6\"](function(event, target, Promise) {\n(e=>{(e.utag_data.aem_Websites.includes"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript7\"](function(event, target, Promise) {\n(a=>{a.utag_data.cookies_consent_enable"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript8\"](function(event, target, Promise) {\n(e=>{e.utag_data.cookies_consent_enable"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript9\"](function(event, target, Promise) {\n((e,a)=>{if(e.utag_data.cookies_consent"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript10\"](function(event, target, Promise) {\n(e=>{if(e.utag_data.cookies_consent_en"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript11\"](function(event, target, Promise) {\n((e,a,p)=>{e.wap_tms.consent.vendor=e."
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript12\"](function(event, target, Promise) {\n((t,n)=>{if(t.utag_data.cookies_consen"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript13\"](function(event, target, Promise) {\n(a=>{a.utag_data.wa_geolocation_countr"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript14\"](function(event, target, Promise) {\n(async(t,n)=>{if(t.utag_data.cookies_c"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript15\"](function(event, target, Promise) {\n((e,t)=>{e.utag_data.cookies_consent_e"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,e)=>{t.wap_tms.custom.executeCallbackWhen({when:()=>localStorage.getItem(\"_wap_user_consent_str"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript16\"](function(event, target, Promise) {\n(e=>{const i={\"id-id\":\"Kelola Pengatur"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript17\"](function(event, target, Promise) {\n((t,e)=>{if(t.location.pathname.includ"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript18\"](function(event, target, Promise) {\n((e,c)=>{if(e.location.search?.include"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((a,l)=>{a.wap_tms=a.wap_tms||{},a.wap_tms.detectAdBlocker=async()=>{if(!a.utag_data.ad_block_sent)"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,m,c)=>{m.addEventListener(\"wapCqDone\",({detail:d})=>{const{page:_,hit:n}=d;if(e.location.search"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript19\"](function(event, target, Promise) {\n((e,a)=>{a.addEventListener(\"wapCq\",({"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,u,i)=>{u.addEventListener(\"wapGlobal\",({detail:P})=>{if(t.location.search.includes(\"debugger\")&"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(async(e,u,y)=>{const D=\"User Account Activity\",j=\"event.crossdomain:\";if(e.location.search.include"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((n,t)=>{const o=[!1,!1,!1,!1],M=50,l=()=>{const r=Math.max(Math.max(t.body.scrollHeight,t.document"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{if(e.location.search.includes(\"debugger\")&&e.location.search.includes(\"brightcove\"))debugger;e"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(t=>{(t.utag_data.wa_page_url?.includes(\"/target-test/\")||t.utag_data.wa_page_url?.includes(\"/test/"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript20\"](function(event, target, Promise) {\n(a=>{a.utag_data.wa_section&&(a.utag_d"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript21\"](function(event, target, Promise) {\n(a=>{a.utag_data.target_load=\"true\",a."
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(a=>{a.utag_data.wa_page_name!==void 0&&(a.utag_data.rec_entity_id=a.utag_data.wa_page_name)})(wind"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,r)=>{e.utag_data.wa_page_url.startsWith(\"https://ark.intel.com/\")&&(e.utag_data.wa_zone=(()=>{t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((c,o)=>{c.utag_data.wa_page_url.includes(\"/products/\")&&(c.utag_data.wa_zone=(()=>{try{const t=[\"#"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,e)=>{const s=\"pdf|jpg|png|gif|zip|doc|xls|exe|mp3|bz2|tar|mov|mpg|wmv|msi|gz|bio|rar|iso|7z|txz"
+          }
+        ],
+        "cookiesCount": 5,
+        "cookies": [
+          {
+            "name": "ak_bmsc",
+            "value": "E4BA4C7E1FF5A2019F5A86AA06F18011~000000000000000000000000000000~YAAQUxczF2jvpLKYAQAAK6dH4BzNy1C8iN4XfRxpShHBRbSPkPmLi/k/cg2auQwq5KqztFcbQolWAgCu8bexcWpn3R87INf1rJ7DpH0QmR68bxZ+Wpk/ZiMKr7xB5ODQYbdCZZb4ZryYqWBp2qB8NZZyLOFvBgGJW2pGrMfCTB753cnOao3KatmtU0bdmEmwZ+IUOgdX4AzbA0QqH+KRCNd0wMsBB5of8wsJZcmKDRLhyBhIDdeFkYAhuZGPBUEzsStCqy7lPxbmaTotHtMlrEOUns2jakUEyprRgO9AUaFFmBvx9ad2hLKfTyMm1YIDGQI+h2Su0EdVAxlDOgfbhf1mNhypfA/tlNLei8Xz+gWYxDS4O5PS40fGlxhHTBcp8fuJndJ7glEGd4tJBtJREzu/1ERchNCkK+g22TPh5Z4QbQYy5+C61u8a3oYelDy7BRmbLVQ=",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1756116646.524487,
+            "size": 527,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "utag_main",
+            "value": "",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787645447,
+            "size": 9,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "OptanonConsent",
+            "value": "isGpcEnabled=0&datestamp=Mon+Aug+25+2025+05%3A10%3A47+GMT-0300+(Argentina+Standard+Time)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&identifierType=Cookie+Unique+Id&hosts=&consentId=0eaf15c1-595e-4da8-9261-6254fc294e27&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fwww.intel.de%2Fcontent%2Fwww%2Fde%2Fde%2Fhomepage.html&groups=C0001%3A1%2CC0003%3A0%2CC0004%3A0%2CC0002%3A0",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787213447,
+            "size": 408,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "src_countrycode",
+            "value": "DE",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": -1,
+            "size": 17,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "detected_bandwidth",
+            "value": "HIGH",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": -1,
+            "size": 22,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 2,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 4,
+        "scriptAnalysis": {
+          "total": 102,
+          "tracking": 0,
+          "necessary": 100,
+          "unknown": 2,
+          "trackingDetails": [],
+          "unknownDetails": [
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/launch-b6e76cb6fa37.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCefaadf1149a44182b125218544d167c9-source.min.js"
+          ],
+          "necessaryDetails": [
+            "https://www.intel.de/content/dam/www/global/wap/performance-config.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/global/targetDataCookie.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-standalone-3_6_0.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/jquery-3_6_0.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/legacy-libs.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 3,
+          "tracking": 0,
+          "necessary": 3
+        },
+        "localStorageAnalysis": {
+          "total": 2,
+          "tracking": 0,
+          "necessary": 2
+        },
+        "screenshot": "1756109454743_accept_pre.png"
+      },
+      "accept": {
+        "timestamp": "2025-08-25T08:11:14.887Z",
+        "stage": "accept",
+        "url": "https://intel.com",
+        "scriptsCount": 160,
+        "scripts": [
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/launch-b6e76cb6fa37.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/content/dam/www/global/wap/performance-config.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/global/targetDataCookie.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-standalone-3_6_0.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/jquery-3_6_0.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/legacy-libs.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/modernizr.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/picturefill-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/handlebars.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/html5-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-cookie-2_1_3.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/detectizr.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.matchHeight.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/bootstrap-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/bootstrap-affix.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/moment.locales.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/scrollToPlugin.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/slick-js.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.scrollTo.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/fastclick.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.resize.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery.touchswipe.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-detect.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-polyfill.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/overthrow-init.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-ezmark.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/owl.carousel.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/polyfills.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/purify.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/intc-core.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "bazadebezolkohpepadr=\"725609197\""
+          },
+          {
+            "src": "https://www.intel.de/akam/13/2b3fe98c",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "!function(){var e=setInterval(function(){\"undefined\"!=typeof $CQ&&($CQ(function(){CQ_Analytics.Segme"
+          },
+          {
+            "src": "https://cdn.cookielaw.org/consent/3b4678d9-3d40-4b04-84df-88c341c05a6a/otSDKStub.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCefaadf1149a44182b125218544d167c9-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.cookielaw.org/scripttemplates/202508.1.0/otBannerSdk.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC99fb5cd49eae4792acecc6136592aad1-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC0f277073139042d0a1e78dd927885029-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCf4240a986b1849178fc678dd2d248f4d-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCd6d4b861707547498db7a1519040048d-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC8108f7d634d04d2e81ef50df819c4dbf-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC47eed40acb5d453dbd3fb40d3ee82ffb-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC315890331cfe43b88e403490d9f18bb8-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCc969a2b4a0034a20b9695400303934aa-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC035765e618944f9aba63691a04f09eea-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC4ed968e1455147bca0c6f0e5c124b93f-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCcb3d041765eb41ca9c8452e3c0d0c129-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC777b06dffcb1421cac07cf2f82ead54a-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC6ca23d46a69b4bf2b2a8e6baf7ff2d59-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC4ae693189e704718996315ef376ec714-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCbb7564f09c9642cf990d669d499278ec-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCd810eb8ea65b45e4910c4635798f63ee-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC8cc30267d0c442649ffcdbfabaa40482-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCaeb3bd40075946f4a25a5ab91afc4b3a-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC72af8e3a1c494fb8ba3588c54dfff3d8-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC15fc910827e44c3fb12226b8317ab101-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC536a78439d874956b38bc1154f71afdd-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC77e39351907d463ea8a396ac8491928f-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://siteintercept.qualtrics.com/dxjsmodule/8.0d8be1d80729cd07e641.chunk.js?Q_CLIENTVERSION=2.34.0&Q_CLIENTTYPE=web&Q_BRANDID=www.intel.de",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((win, doc) => {\n  win.wap_tms.onReadyState(() => {\n\tfooterHTML = document.querySelector('div.foote"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "(e=>{const a=r=>{const t=e.querySelector(r);if(t&&t.hasAttribute(\"data-target\")){const g=t.getAttrib"
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC63efe9d753de40cf8850473ed6240767-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://siteintercept.qualtrics.com/dxjsmodule/5.8b256cd2c3cc6caff909.chunk.js?Q_CLIENTVERSION=2.34.0&Q_CLIENTTYPE=web&Q_BRANDID=inteldotcomvoc",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://siteintercept.qualtrics.com/dxjsmodule/1.a4fbf7d7ab4bec9885c0.chunk.js?Q_CLIENTVERSION=2.34.0&Q_CLIENTTYPE=web&Q_BRANDID=inteldotcomvoc",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCf3795b6bf6a44ff88390af861a18074d-source.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "var isTargetEnabled =false;"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var cq_tms = {\n        \n        wa_industry_type: \"\",\n        wa_subject: \"\",\n        wa_emt_or"
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/virtual-assistant-services.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var chatContextObj = {};\n    chatContextObj[\"locale\"] = 'de-DE';\n    chatContextObj[\"app\"] = 'S"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var chatConfigObj = {};\n    var cq_tms = cq_tms || {};\n    chatConfigObj[\"virtualAssistantName\""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/purify.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/virtual-assistant.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/content/dam/www/global/wap/main/wap.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    var isLoggedin = (document.cookie.indexOf('IGHFLoggedIn') != -1);\n    var currentURL = window.l"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    /**\n     * This chunk of code is used to bypass Akamai cache - since this goes to the globalNav"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    var intel = intel || {};\n    intel.signinsimplifyConfig = {\n        authorizationUrl: '/content"
+          },
+          {
+            "src": "",
+            "type": "text/x-handlebars-template",
+            "innerHTML": "\n    <section class=\"myintel-tools-content\" role=\"region\"\n             aria-label=\"My Intel\">\n      "
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var newLangSelector = true;\n"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    var global_config = {\n        \"icsUrl\": \"https://supporttickets.intel.com/services/oauth2/autho"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n    intel = intel || {};\n    intel.utils = intel.utils || {};\n    intel.utils.breadcrumbSource = \"\""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n            \n            var globalHeader = globalHeader || {};\n            globalHeader = {\n      "
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/in-viewport.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/nav.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/clientlibs/pages/secondaryNav.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "\n    {\n        \"@context\": \"http://schema.org\",\n        \"@type\": \"WebSite\",\n        \"url\": \"https://"
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/runtime.script.2cfbf25a.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/dm.components.pages.mobileFirst.homepage-refresh.script.33cf8e5e.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.themeModes.script.16fd8372.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/npm.babel.script.fae7abe1.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/6227.script.a3a0921a.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.homepageHero.script.1c1f3914.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.floatingNavBar.script.7d524f76.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.calloutBlade.script.251c8338.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.intel.de/etc.clientlibs/intel/clientlibs/bundles/resources/js/commons.components.content.homepage.developerTools.script.5ac29cc7.bundle.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript1\"](function(event, target, Promise) {\n(n=>{const e=a=>{n.head.appendChild(n.c"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript2\"](function(event, target, Promise) {\n((a,e)=>{let t=a.location.href.split(\"/"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n/*!\n * Copyright (c) 2018 Chris O'Hara\n *\n * Permission is hereby granted, free of charge, to any p"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript3\"](function(event, target, Promise) {\n((e,o)=>{e.wap_tms=e.wap_tms||{},e.wap_"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((y,g)=>{const S=\"wapPageView\",O=\"pageView\",H=\"wapDataLayer\",l=\"#\",w=\"wapEvent\",U=\"websdk:ready\",N="
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n!function(n,o){[\"alloy\"].forEach((function(o){n[o]||((n.__alloyNS=n.__alloyNS||[]).push(o),n[o]=fun"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n/**\n * Copyright 2019 Adobe. All rights reserved.\n * This file is licensed to you under the Apache "
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript4\"](function(event, target, Promise) {\n((e,r)=>{e.wap_tms.custom.deleteOneTrus"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript5\"](function(event, target, Promise) {\n(a=>{a.utag_data=a.utag_data||{},a.utag"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript6\"](function(event, target, Promise) {\n(e=>{(e.utag_data.aem_Websites.includes"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript7\"](function(event, target, Promise) {\n(a=>{a.utag_data.cookies_consent_enable"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript8\"](function(event, target, Promise) {\n(e=>{e.utag_data.cookies_consent_enable"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript9\"](function(event, target, Promise) {\n((e,a)=>{if(e.utag_data.cookies_consent"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript10\"](function(event, target, Promise) {\n(e=>{if(e.utag_data.cookies_consent_en"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript11\"](function(event, target, Promise) {\n((e,a,p)=>{e.wap_tms.consent.vendor=e."
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript12\"](function(event, target, Promise) {\n((t,n)=>{if(t.utag_data.cookies_consen"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript13\"](function(event, target, Promise) {\n(a=>{a.utag_data.wa_geolocation_countr"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript14\"](function(event, target, Promise) {\n(async(t,n)=>{if(t.utag_data.cookies_c"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript15\"](function(event, target, Promise) {\n((e,t)=>{e.utag_data.cookies_consent_e"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,e)=>{t.wap_tms.custom.executeCallbackWhen({when:()=>localStorage.getItem(\"_wap_user_consent_str"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript16\"](function(event, target, Promise) {\n(e=>{const i={\"id-id\":\"Kelola Pengatur"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript17\"](function(event, target, Promise) {\n((t,e)=>{if(t.location.pathname.includ"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript18\"](function(event, target, Promise) {\n((e,c)=>{if(e.location.search?.include"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((a,l)=>{a.wap_tms=a.wap_tms||{},a.wap_tms.detectAdBlocker=async()=>{if(!a.utag_data.ad_block_sent)"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,m,c)=>{m.addEventListener(\"wapCqDone\",({detail:d})=>{const{page:_,hit:n}=d;if(e.location.search"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript19\"](function(event, target, Promise) {\n((e,a)=>{a.addEventListener(\"wapCq\",({"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,u,i)=>{u.addEventListener(\"wapGlobal\",({detail:P})=>{if(t.location.search.includes(\"debugger\")&"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(async(e,u,y)=>{const D=\"User Account Activity\",j=\"event.crossdomain:\";if(e.location.search.include"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((n,t)=>{const o=[!1,!1,!1,!1],M=50,l=()=>{const r=Math.max(Math.max(t.body.scrollHeight,t.document"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{if(e.location.search.includes(\"debugger\")&&e.location.search.includes(\"brightcove\"))debugger;e"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(t=>{(t.utag_data.wa_page_url?.includes(\"/target-test/\")||t.utag_data.wa_page_url?.includes(\"/test/"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript20\"](function(event, target, Promise) {\n(a=>{a.utag_data.wa_section&&(a.utag_d"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript21\"](function(event, target, Promise) {\n(a=>{a.utag_data.target_load=\"true\",a."
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(a=>{a.utag_data.wa_page_name!==void 0&&(a.utag_data.rec_entity_id=a.utag_data.wa_page_name)})(wind"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,r)=>{e.utag_data.wa_page_url.startsWith(\"https://ark.intel.com/\")&&(e.utag_data.wa_zone=(()=>{t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((c,o)=>{c.utag_data.wa_page_url.includes(\"/products/\")&&(c.utag_data.wa_zone=(()=>{try{const t=[\"#"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,e)=>{const s=\"pdf|jpg|png|gif|zip|doc|xls|exe|mp3|bz2|tar|mov|mpg|wmv|msi|gz|bio|rar|iso|7z|txz"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(async a=>{a.wap_websdk=a.wap_websdk||{};const e={prod:{all:\"b8d26132-7918-4d14-9e5a-835f5dbf5c7c\","
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,e,a)=>{t.wap_websdk.tg={impressionsSent:[],propsDisplaySent:[],propsInteractsToSend:[]};const n"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(a=>{a.wap_websdk.isEnabled&&(a.wap_websdk.setECID=e=>{a.utag_data.wa_amc_id=e,a.wapDataLayer.add(\""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,t)=>{if(e.wap_websdk.isEnabled){const a={eVar1:\"geo\",eVar2:\"localCode\",eVar3:\"section\",eVar4:\"s"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{if(e.wap_websdk.isEnabled){e.wap_websdk.px={};const n=()=>(e.wap_tms.storage.refresh(),{consen"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{e.wap_websdk.isEnabled&&(e.wap_websdk.px.pixels=e.wap_websdk.px.pixels||{},e.wap_websdk.px.pix"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{e.wap_websdk.isEnabled&&(e.wap_websdk.px.pixels=e.wap_websdk.px.pixels||{},e.wap_websdk.px.pix"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{if(e.wap_tms.eloqua=e.wap_tms.eloqua||{},e.wap_tms.eloqua.domain=\"intel\",e.wap_tms.eloqua.doma"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(e=>{e.wap_websdk.isEnabled&&(e.wap_websdk.px.pixels=e.wap_websdk.px.pixels||{},e.wap_websdk.px.pix"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\ndocument.dispatchEvent(new CustomEvent(\"wapEvent\",{detail:\"websdk:ready\"}));\n"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n(t=>{if(t.utag_data){const e=t.location.href.toString();t.wap_tms?.custom?.contains(e,[\"/content/da"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,t)=>{e.wap_tms.custom.performance=e.wap_tms.custom.performance||{};const n=!(!e.wa&&!e.performa"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,t,a)=>{let r=\"\";e.wap_tms=e.wap_tms||{},e.wap_tms.eloqua=e.wap_tms.eloqua||{},e.wap_tms.eloqua."
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript22\"](function(event, target, Promise) {\n((a,e)=>{a.location.href.includes(\"/su"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript23\"](function(event, target, Promise) {\n(t=>{var a,e,c,r,i,n,d;t.utag_data.loa"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript24\"](function(event, target, Promise) {\n(a=>{let t=!1;if(a.clarityInjected){le"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript25\"](function(event, target, Promise) {\n((t,e)=>{const a=e.createElement(\"scri"
+          },
+          {
+            "src": "https://www.googletagmanager.com/gtag/js?id=DC-9064218",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript26\"](function(event, target, Promise) {\n(a=>{a.dataLayer=a.dataLayer||[],a.gta"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript27\"](function(event, target, Promise) {\n((t,c)=>{t.addEventListener(\"qualtrics"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((t,a)=>{switch(t.utag_data.wa_language_code){case\"zh_CN\":t.utag_data.qualtrics_language=\"ZH-S\";bre"
+          },
+          {
+            "src": "https://zn3vonk1wgpmvfrmg-inteldotcomvoc.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_3VOnK1wGpMvfRMG",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,t)=>{const s=(s,o)=>{const n=\"https://www.intel.com/content/www/us/en\",r=`https://live.rezync.c"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n((e,t)=>{const n=()=>{const n=[],a=\"intel\",c=Date.now(),o={\"0986\":e.utag_data.wa_page_url?.includes"
+          },
+          {
+            "src": "https://siteintercept.qualtrics.com/dxjsmodule/CoreModule.js?Q_CLIENTVERSION=2.34.0&Q_CLIENTTYPE=web&Q_BRANDID=inteldotcomvoc",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://siteintercept.qualtrics.com/dxjsmodule/WebResponsiveDialogModule.js?Q_CLIENTVERSION=2.34.0&Q_CLIENTTYPE=web&Q_BRANDID=inteldotcomvoc",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://siteintercept.qualtrics.com/dxjsmodule/EmbeddedTargetModule.js?Q_CLIENTVERSION=2.34.0&Q_CLIENTTYPE=web&Q_BRANDID=inteldotcomvoc",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript28\"](function(event, target, Promise) {\n(t=>{event.detail.floodlight_id=\"14198"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"_runScript29\"](function(event, target, Promise) {\n(e=>{if(e.gtag&&event.detail.fire){con"
+          }
+        ],
+        "cookiesCount": 13,
+        "cookies": [
+          {
+            "name": "utag_main",
+            "value": "wa_ecid:46216664959132745774542257309016425634",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787645459,
+            "size": 55,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AWSALBCORS",
+            "value": "DHl/n+LhfO+qRL1b6pmL2JEyiyCvD1Ej6zSkrBOnEGe7uMRyM+fLBGCWp5yS7n+nMDWcHS3gptowIXXlVl3kGoY29QJtGXQY59QjonrB/Ci/FY0qfzHdU1KLbEhe",
+            "domain": "www.intel.de",
+            "path": "/",
+            "expires": 1756714254.553296,
+            "size": 134,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AWSALB",
+            "value": "DHl/n+LhfO+qRL1b6pmL2JEyiyCvD1Ej6zSkrBOnEGe7uMRyM+fLBGCWp5yS7n+nMDWcHS3gptowIXXlVl3kGoY29QJtGXQY59QjonrB/Ci/FY0qfzHdU1KLbEhe",
+            "domain": "www.intel.de",
+            "path": "/",
+            "expires": 1756714254.553192,
+            "size": 130,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "AMCV_AD2A1C8B53308E600A490D4D%40AdobeOrg",
+            "value": "MCMID|46216664959132745774542257309016425634",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1789805456,
+            "size": 84,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_gcl_au",
+            "value": "1.1.990926083.1756109458",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1763885457,
+            "size": 31,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "OptanonAlertBoxClosed",
+            "value": "2025-08-25T08:10:54.873Z",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787213454,
+            "size": 45,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "kndctr_AD2A1C8B53308E600A490D4D_AdobeOrg_cluster",
+            "value": "irl1",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1756111256.674988,
+            "size": 52,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "FPID",
+            "value": "5b805315-c013-4c47-bf4b-d3be0626ad21",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787645455.553335,
+            "size": 40,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "E4BA4C7E1FF5A2019F5A86AA06F18011~000000000000000000000000000000~YAAQUxczF2jvpLKYAQAAK6dH4BzNy1C8iN4XfRxpShHBRbSPkPmLi/k/cg2auQwq5KqztFcbQolWAgCu8bexcWpn3R87INf1rJ7DpH0QmR68bxZ+Wpk/ZiMKr7xB5ODQYbdCZZb4ZryYqWBp2qB8NZZyLOFvBgGJW2pGrMfCTB753cnOao3KatmtU0bdmEmwZ+IUOgdX4AzbA0QqH+KRCNd0wMsBB5of8wsJZcmKDRLhyBhIDdeFkYAhuZGPBUEzsStCqy7lPxbmaTotHtMlrEOUns2jakUEyprRgO9AUaFFmBvx9ad2hLKfTyMm1YIDGQI+h2Su0EdVAxlDOgfbhf1mNhypfA/tlNLei8Xz+gWYxDS4O5PS40fGlxhHTBcp8fuJndJ7glEGd4tJBtJREzu/1ERchNCkK+g22TPh5Z4QbQYy5+C61u8a3oYelDy7BRmbLVQ=",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1756116646.524487,
+            "size": 527,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "kndctr_AD2A1C8B53308E600A490D4D_AdobeOrg_identity",
+            "value": "CiY0NjIxNjY2NDk1OTEzMjc0NTc3NDU0MjI1NzMwOTAxNjQyNTYzNFIRCMaNn4KOMxgBKgRJUkwxMAKgAdCNn4KOM7ABA%5FABxo2fgo4z",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1790237456.674939,
+            "size": 155,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "OptanonConsent",
+            "value": "isGpcEnabled=0&datestamp=Mon+Aug+25+2025+05%3A10%3A54+GMT-0300+(Argentina+Standard+Time)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&identifierType=Cookie+Unique+Id&hosts=&consentId=0eaf15c1-595e-4da8-9261-6254fc294e27&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0003%3A1%2CC0004%3A1%2CC0002%3A1&iType=4&intType=4",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": 1787213454,
+            "size": 372,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "src_countrycode",
+            "value": "DE",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": -1,
+            "size": 17,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "detected_bandwidth",
+            "value": "HIGH",
+            "domain": ".intel.de",
+            "path": "/",
+            "expires": -1,
+            "size": 22,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 4,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 35,
+        "scriptAnalysis": {
+          "total": 160,
+          "tracking": 1,
+          "necessary": 127,
+          "unknown": 32,
+          "trackingDetails": [
+            "https://www.googletagmanager.com/gtag/js?id=DC-9064218"
+          ],
+          "unknownDetails": [
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/launch-b6e76cb6fa37.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCefaadf1149a44182b125218544d167c9-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC99fb5cd49eae4792acecc6136592aad1-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC0f277073139042d0a1e78dd927885029-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCf4240a986b1849178fc678dd2d248f4d-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCd6d4b861707547498db7a1519040048d-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC8108f7d634d04d2e81ef50df819c4dbf-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC47eed40acb5d453dbd3fb40d3ee82ffb-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC315890331cfe43b88e403490d9f18bb8-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCc969a2b4a0034a20b9695400303934aa-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC035765e618944f9aba63691a04f09eea-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC4ed968e1455147bca0c6f0e5c124b93f-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCcb3d041765eb41ca9c8452e3c0d0c129-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC777b06dffcb1421cac07cf2f82ead54a-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC6ca23d46a69b4bf2b2a8e6baf7ff2d59-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC4ae693189e704718996315ef376ec714-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCbb7564f09c9642cf990d669d499278ec-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCd810eb8ea65b45e4910c4635798f63ee-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC8cc30267d0c442649ffcdbfabaa40482-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCaeb3bd40075946f4a25a5ab91afc4b3a-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC72af8e3a1c494fb8ba3588c54dfff3d8-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC15fc910827e44c3fb12226b8317ab101-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC536a78439d874956b38bc1154f71afdd-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC77e39351907d463ea8a396ac8491928f-source.min.js",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RC63efe9d753de40cf8850473ed6240767-source.min.js",
+            "https://siteintercept.qualtrics.com/dxjsmodule/5.8b256cd2c3cc6caff909.chunk.js?Q_CLIENTVERSION=2.34.0&Q_CLIENTTYPE=web&Q_BRANDID=inteldotcomvoc",
+            "https://siteintercept.qualtrics.com/dxjsmodule/1.a4fbf7d7ab4bec9885c0.chunk.js?Q_CLIENTVERSION=2.34.0&Q_CLIENTTYPE=web&Q_BRANDID=inteldotcomvoc",
+            "https://www.intel.com/content/dam/www/global/wap/tms/profile-aem-global/prod/fc1241264adf/215af9cdf35e/26bba6de2d0c/RCf3795b6bf6a44ff88390af861a18074d-source.min.js",
+            "https://zn3vonk1wgpmvfrmg-inteldotcomvoc.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_3VOnK1wGpMvfRMG",
+            "https://siteintercept.qualtrics.com/dxjsmodule/CoreModule.js?Q_CLIENTVERSION=2.34.0&Q_CLIENTTYPE=web&Q_BRANDID=inteldotcomvoc",
+            "https://siteintercept.qualtrics.com/dxjsmodule/WebResponsiveDialogModule.js?Q_CLIENTVERSION=2.34.0&Q_CLIENTTYPE=web&Q_BRANDID=inteldotcomvoc",
+            "https://siteintercept.qualtrics.com/dxjsmodule/EmbeddedTargetModule.js?Q_CLIENTVERSION=2.34.0&Q_CLIENTTYPE=web&Q_BRANDID=inteldotcomvoc"
+          ],
+          "necessaryDetails": [
+            "https://www.intel.de/content/dam/www/global/wap/performance-config.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/global/targetDataCookie.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/externallibs/jquery-standalone-3_6_0.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/jquery-3_6_0.min.js",
+            "https://www.intel.de/etc.clientlibs/settings/wcm/designs/ver/250820/intel/us/en/clientlibs/legacy-libs.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 11,
+          "tracking": 0,
+          "necessary": 11
+        },
+        "localStorageAnalysis": {
+          "total": 4,
+          "tracking": 0,
+          "necessary": 4
+        },
+        "screenshot": "1756109476902_accept.png"
+      }
+    },
+    "bannerAnalysis": {
+      "detected": true,
+      "provider": "OneTrust",
+      "text": "Willkommen!Intel Corporation verwendet Cookies und ähnliche Technik auf dieser Website, um Ihr Online-Erlebnis zu verbessern, die Nutzung der Website zu analysieren und Ihnen relevante Werbung zu zeig",
+      "hasDirectReject": true,
+      "hasAccept": true,
+      "hasSettings": true,
+      "type": "GDPR_style",
+      "buttonTexts": [
+        "cookie-einstellungen verwalten cookies deaktivieren cookies aktivieren",
+        "cookie-einstellungen verwalten",
+        "cookies deaktivieren",
+        "cookies aktivieren",
+        "cookie-details‎",
+        "cookie-details‎",
+        "cookie-details‎",
+        "cookie-details‎",
+        "filter button",
+        "alle ablehnen"
+      ]
+    },
+    "gdprCompliance": {
+      "complianceScore": 100,
+      "riskLevel": "LOW",
+      "summary": {
+        "totalViolations": 0,
+        "criticalViolations": 0,
+        "highViolations": 0,
+        "mediumViolations": 0
+      },
+      "violations": [],
+      "recommendations": [],
+      "legalAnalysis": {
+        "affectedArticles": [],
+        "legalRisk": "LOW - Minor compliance gaps. Monitor and improve.",
+        "regulatoryAction": "Low regulatory risk. Proactive compliance improvements recommended.",
+        "fineExposure": "Administrative fines up to €10,000 for minor violations"
+      }
+    }
+  },
+  "metadata": {
+    "spectralVersion": "1.0.0",
+    "analysisType": "comprehensive-privacy-compliance",
+    "reportGeneration": "automated"
+  }
+}

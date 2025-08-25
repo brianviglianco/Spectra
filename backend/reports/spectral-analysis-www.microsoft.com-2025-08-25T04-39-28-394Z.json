@@ -1,0 +1,2678 @@
+{
+  "url": "https://www.microsoft.com/sv-se/",
+  "timestamp": "2025-08-25T04:39:28.394Z",
+  "executiveReport": {
+    "executiveSummary": {
+      "complianceScore": 50,
+      "riskLevel": "CRITICAL",
+      "totalViolations": 2,
+      "criticalViolations": 1,
+      "trackingScripts": 3,
+      "unknownScripts": 0,
+      "cmpProvider": "Microsoft",
+      "consentMechanism": "GDPR_style"
+    },
+    "technicalFindings": {
+      "preConsentTracking": 3,
+      "postAcceptTracking": 9,
+      "postRejectTracking": 3,
+      "trackingIncrease": 6,
+      "cookieIncrease": 1,
+      "storageIncrease": 3
+    },
+    "businessImpact": "HIGH - Immediate legal risk, potential €20M fines, regulatory investigation likely",
+    "urgency": "IMMEDIATE - Address within 1-2 weeks"
+  },
+  "detailedResults": {
+    "url": "https://www.microsoft.com/sv-se/",
+    "evidence": {
+      "baseline": {
+        "timestamp": "2025-08-25T04:38:30.678Z",
+        "stage": "baseline",
+        "url": "https://www.microsoft.com/sv-se/",
+        "scriptsCount": 62,
+        "scripts": [
+          {
+            "src": "https://scripts.clarity.ms/0.8.26/clarity.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.clarity.ms/tag/rcwvv0hsnp",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": " \n            (function(c,l,a,r,i,t,y){ \n                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).p"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\n        var isModernBrowser = (\n            'fetch' in window &&\n            'assign' in Object\n  "
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.ACSHASH75d0cb3e9ff9fee40f5ce5fd93c17fb2.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.ACSHASH5c75a4fa9fb3503322f8a0c9dd51512d.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/exp-analytics/v1.ACSHASHbf7b336dbb370c984e1bf59b1a980d86.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n                var expToken = {\n                    \"exp\": {\n                        \"target\": {\n "
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/exp-cookiecomp/v1.ACSHASHa238861e6209e4e02576ddf5d1749c8b.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/dynamicclientsidelibs/handlerscripts/v1.ACSHASH6734c5d7a732130b83c7d4a6ba54dcec.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/scripts/me/MeControl/10.25136.1/sv-SE/meBoot.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/scripts/me/MeControl/10.25136.1/sv-SE/meCore.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n  \t  \t\t\twindow.mscv = 'CASMicrosoftCV2732c0fb.0'\n  \t\t\t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n  \t  \t\t\twindow.msservercv = 'CASMicrosoftCV2732c0fb.0'\n  \t\t\t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\t\t\t\t\twindow.traceid = undefined;\n\t\t\t\t"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\twindow.msauthIsPublisher = true;\n\t"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/universalheader/v1/universalheader/clientlibs/site.ACSHASH6b0fa624326335f56e3ec96360ea8161.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/dynamic-price/v1/dynamic-price/clientlibs/sites.ACSHASHa26d031bf8c00f082570666bfff25659.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/calltoaction/v1/calltoaction/clientlibs/site.ACSHASH964114f14ca5f1658fba1f10201d6e0d.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/highlight/v1/highlight/clientlibs/site.ACSHASH7c85d20692857758ab7de8f4f3875cbd.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/highlightcarousel/v1/highlightcarousel/clientlibs/site.ACSHASHd400f29832195fd5da2ac04233f6dccc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-base.ACSHASH0f41d13aa1e519644ba949bbcffbd2d7.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/lists/link-list/v1/link-list/clientlibs/site.ACSHASHf11202afda48223f923cb85087fb53a3.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card/v1/content-card/clientlibs/site.ACSHASH599da71828ca4c25785a067f1ba2b290.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card/v1/content-card/clientlibs/site.ACSHASH599da71828ca4c25785a067f1ba2b290.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/socialfollow/v1/socialfollow/clientlibs/site.ACSHASHf9bb04580dd78f31d39261869e76dc76.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "\n            {\n                \"@context\": \"https://schema.org\",\n                \"@type\": \"Organizat"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/back-to-top-button/v1/back-to-top-button/clientlibs/sites.ACSHASH148bbe2eead6c5832c56691afb23e496.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    const globalPrivacyControlEnabled = navigator.globalPrivacyControl;\n\n    const GPC_DataSharingO"
+          },
+          {
+            "src": "https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/onerfstatics/marketingsites-neu-prod/shell/_scrf/js/themes=default/54-af9f9f/d4-fb1f57/e1-a50eee/e7-954872/d8-97d509/f0-251fe2/46-be1318/77-04a268/11-240c7b/63-077520/a4-34de62/77-380647/db-bc0148/dc-7e9864/6d-c07ea1/6f-dafe8c/f6-aa5278/e6-5f3533/6d-1e7ed0/b7-cadaa7/62-2741f0/ca-40b7b0/4e-ee3a55/3e-f5c39b/c3-6454d7/f9-7592d3/d0-e64f3e/92-10345d/79-499886/7e-cda2d3/58-ab4971/57-c14418/38-b93a9e/de-884374/1f-100dea/33-abe4df/2b-8e0ae6?ver=2.0&_cf=02242021_3231&iife=1",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/meversion?partner=mshomepage&market=sv-se&uhf=1",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/clientlib-mwf-new/main-light.ACSHASHf8a6ecd849f93a3e5d989c0cee0ceb80.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/clientlib-httpclient.ACSHASHef4feda6256042e46a6877fdfef29b4b.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-cookieconsent.ACSHASHc892f451b0c4db9c8ab2601a427c9b2c.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\t\t\t(function(){\n\t\t\t\t\tvar partnerScripts =\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"meta\": {\n\t\t\t\t\t\t\t\t\t\"partnerJsHash\": \"ACSH"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\t            //<![CDATA[\n\t\t\t\t\t//_pageBITags=jsonElement;\n\t\t\t\t//]]>\n\t\t\t"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\t\t\t(function(){\n\t\t\t\t\tvar contentSq =\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"entryFile\": \"https://cdnssl.clicktale.net/www"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/embed-thirdparty.ACSHASH8074248b00389a487fe4b9a5499d8616.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/featurecontrol.ACSHASHf120033122e43a4cb0b53bb306afc5dc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/components/structure/cascade-page/clientlibs/featurecontrol.ACSHASHf120033122e43a4cb0b53bb306afc5dc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/custom-oneds.ACSHASHd21775b74193f03767dd82cfbc692eff.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/components/structure/cascade-page/clientlibs/custom-oneds.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/cookie-compliance-manager.ACSHASH3e1ce2533da76bf772cb51fb6e992293.min.js",
+            "type": "",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 8,
+        "cookies": [
+          {
+            "name": "MSFPC",
+            "value": "GUID=ca345198ad374bd6898cd209f412411e&HASH=ca34&LV=202508&V=4&LU=1756096708727",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1787632709.60051,
+            "size": 83,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MS0",
+            "value": "bd1f5616329542348a36fc54db02389a",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1756098508.827929,
+            "size": 35,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MC1",
+            "value": "GUID=ca345198ad374bd6898cd209f412411e&HASH=ca34&LV=202508&V=4&LU=1756096708727",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1787632708.827468,
+            "size": 81,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akacd_OneRF",
+            "value": "1763872700~rv=67~id=3f1d4a340f7db2201537c9b6acc1b6ab",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1763872700.487928,
+            "size": 63,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ai_session",
+            "value": "715+6kZRQdCqhCR3US/OAK|1756096704391|1756096707290",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1756098507,
+            "size": 60,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MicrosoftApplicationsTelemetryDeviceId",
+            "value": "da9d1c25-45c9-4566-806d-355c9953a796",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1787632704.387557,
+            "size": 74,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "F8277C3FF10A859D71270074942C2E9E~000000000000000000000000000000~YAAQHlzaFyyX0bOYAQAA/yCF3xyToQ0fiOCfDtPU5BQBnKPtWBOAL3svCkvd6jbboryGtBeeQrU8ungpg33P7ZNxidojFd91Ooo7qFY/BuUFvJKPE3qJLjo0fsYXaHbfqTnwhVAxiKcoiKlMqqPxWrolFBnv6Pugl2FI/62Es3myKrQvkNFDmfgndcorFzuh6Iz8UBxXwWpX+jllPTJD6265lrzE76Kc8CFF3P+hxZGy/4Fkids7fjQehpC1kQhrRtwQ1T0xnKaasrgY6S7VqTCseVdKiIMasIJeoXThEfl6Z9thikPcAJH+rO8OXKPTiLzKcPcPN0vQWf3Cm2htTgshMUZna1bat2lKZfYMOjsNvRiRMH4Qw4h3HfAZlHhxeYOLPjyT4Cii4pM287QalyY=",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1756103900.48816,
+            "size": 479,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "Cascade.AuthSSO",
+            "value": "1",
+            "domain": "www.microsoft.com",
+            "path": "/sv-se",
+            "expires": 1756098505.680976,
+            "size": 16,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 9,
+        "scriptAnalysis": {
+          "total": 62,
+          "tracking": 3,
+          "necessary": 59,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://scripts.clarity.ms/0.8.26/clarity.js",
+            "https://www.clarity.ms/tag/rcwvv0hsnp",
+            "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "[inline]",
+            "[inline]",
+            "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.ACSHASH75d0cb3e9ff9fee40f5ce5fd93c17fb2.min.js",
+            "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.ACSHASH5c75a4fa9fb3503322f8a0c9dd51512d.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 8,
+          "tracking": 0,
+          "necessary": 8
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1756096712698_baseline.png"
+      },
+      "reject_pre": {
+        "timestamp": "2025-08-25T04:38:38.198Z",
+        "stage": "reject_pre",
+        "url": "https://www.microsoft.com/sv-se/",
+        "scriptsCount": 62,
+        "scripts": [
+          {
+            "src": "https://scripts.clarity.ms/0.8.26/clarity.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.clarity.ms/tag/rcwvv0hsnp",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": " \n            (function(c,l,a,r,i,t,y){ \n                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).p"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\n        var isModernBrowser = (\n            'fetch' in window &&\n            'assign' in Object\n  "
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.ACSHASH75d0cb3e9ff9fee40f5ce5fd93c17fb2.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.ACSHASH5c75a4fa9fb3503322f8a0c9dd51512d.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/exp-analytics/v1.ACSHASHbf7b336dbb370c984e1bf59b1a980d86.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n                var expToken = {\n                    \"exp\": {\n                        \"target\": {\n "
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/exp-cookiecomp/v1.ACSHASHa238861e6209e4e02576ddf5d1749c8b.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/dynamicclientsidelibs/handlerscripts/v1.ACSHASH6734c5d7a732130b83c7d4a6ba54dcec.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/scripts/me/MeControl/10.25136.1/sv-SE/meBoot.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/scripts/me/MeControl/10.25136.1/sv-SE/meCore.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n  \t  \t\t\twindow.mscv = 'CASMicrosoftCV2732f215.0'\n  \t\t\t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n  \t  \t\t\twindow.msservercv = 'CASMicrosoftCV2732f215.0'\n  \t\t\t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\t\t\t\t\twindow.traceid = undefined;\n\t\t\t\t"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\twindow.msauthIsPublisher = true;\n\t"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/universalheader/v1/universalheader/clientlibs/site.ACSHASH6b0fa624326335f56e3ec96360ea8161.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/dynamic-price/v1/dynamic-price/clientlibs/sites.ACSHASHa26d031bf8c00f082570666bfff25659.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/calltoaction/v1/calltoaction/clientlibs/site.ACSHASH964114f14ca5f1658fba1f10201d6e0d.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/highlight/v1/highlight/clientlibs/site.ACSHASH7c85d20692857758ab7de8f4f3875cbd.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/highlightcarousel/v1/highlightcarousel/clientlibs/site.ACSHASHd400f29832195fd5da2ac04233f6dccc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-base.ACSHASH0f41d13aa1e519644ba949bbcffbd2d7.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/lists/link-list/v1/link-list/clientlibs/site.ACSHASHf11202afda48223f923cb85087fb53a3.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card/v1/content-card/clientlibs/site.ACSHASH599da71828ca4c25785a067f1ba2b290.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card/v1/content-card/clientlibs/site.ACSHASH599da71828ca4c25785a067f1ba2b290.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/socialfollow/v1/socialfollow/clientlibs/site.ACSHASHf9bb04580dd78f31d39261869e76dc76.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "\n            {\n                \"@context\": \"https://schema.org\",\n                \"@type\": \"Organizat"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/back-to-top-button/v1/back-to-top-button/clientlibs/sites.ACSHASH148bbe2eead6c5832c56691afb23e496.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    const globalPrivacyControlEnabled = navigator.globalPrivacyControl;\n\n    const GPC_DataSharingO"
+          },
+          {
+            "src": "https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/onerfstatics/marketingsites-neu-prod/shell/_scrf/js/themes=default/54-af9f9f/d4-fb1f57/e1-a50eee/e7-954872/d8-97d509/f0-251fe2/46-be1318/77-04a268/11-240c7b/63-077520/a4-34de62/77-380647/db-bc0148/dc-7e9864/6d-c07ea1/6f-dafe8c/f6-aa5278/e6-5f3533/6d-1e7ed0/b7-cadaa7/62-2741f0/ca-40b7b0/4e-ee3a55/3e-f5c39b/c3-6454d7/f9-7592d3/d0-e64f3e/92-10345d/79-499886/7e-cda2d3/58-ab4971/57-c14418/38-b93a9e/de-884374/1f-100dea/33-abe4df/2b-8e0ae6?ver=2.0&_cf=02242021_3231&iife=1",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/meversion?partner=mshomepage&market=sv-se&uhf=1",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/clientlib-mwf-new/main-light.ACSHASHf8a6ecd849f93a3e5d989c0cee0ceb80.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/clientlib-httpclient.ACSHASHef4feda6256042e46a6877fdfef29b4b.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-cookieconsent.ACSHASHc892f451b0c4db9c8ab2601a427c9b2c.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\t\t\t(function(){\n\t\t\t\t\tvar partnerScripts =\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"meta\": {\n\t\t\t\t\t\t\t\t\t\"partnerJsHash\": \"ACSH"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\t            //<![CDATA[\n\t\t\t\t\t//_pageBITags=jsonElement;\n\t\t\t\t//]]>\n\t\t\t"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\t\t\t(function(){\n\t\t\t\t\tvar contentSq =\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"entryFile\": \"https://cdnssl.clicktale.net/www"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/embed-thirdparty.ACSHASH8074248b00389a487fe4b9a5499d8616.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/featurecontrol.ACSHASHf120033122e43a4cb0b53bb306afc5dc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/components/structure/cascade-page/clientlibs/featurecontrol.ACSHASHf120033122e43a4cb0b53bb306afc5dc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/custom-oneds.ACSHASHd21775b74193f03767dd82cfbc692eff.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/components/structure/cascade-page/clientlibs/custom-oneds.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/cookie-compliance-manager.ACSHASH3e1ce2533da76bf772cb51fb6e992293.min.js",
+            "type": "",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 9,
+        "cookies": [
+          {
+            "name": "MSFPC",
+            "value": "GUID=f29fe9275d384c44a93abdecff7b518d&HASH=f29f&LV=202508&V=4&LU=1756096713275",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1787632714.464387,
+            "size": 83,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MS0",
+            "value": "c78b005a7535407db5cd8a69aa6e87fe",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1756098513.393093,
+            "size": 35,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MC1",
+            "value": "GUID=f29fe9275d384c44a93abdecff7b518d&HASH=f29f&LV=202508&V=4&LU=1756096713275",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1787632713.393001,
+            "size": 81,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MicrosoftApplicationsTelemetryDeviceId",
+            "value": "0e1ca310-6ce6-4a5e-9265-8d3008a37961",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1787632713.172773,
+            "size": 74,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "DDF175C861802FE3432C169348B48428~000000000000000000000000000000~YAAQHlzaF2SX0bOYAQAAWlKF3xxibBsk55CzAQnG1kx9C1fKrWdLB8sOcekRJ6Da0OWi6OnmmwZDfevzYAl6I24/wEJB4qNHd9VVKSBOrU6yOpFga+jxAD9aW953Ud2jyEuzEdEkaPpngbj9DLOWxJwiaTdWsuNip5xohJrQtuJWbg0W/Vy/7di9/esQJbltMie9jBY34tRNv3ahfdT+tW22ArZdpPeQbk7gJs0MbZgJwXCUPJHj8Ey4e3jnO2XzncNsKATebXNh4VdrOe9O+jAOcntErQZtWc7UwKcMjKWUfal0I3bRrVIk7cOtMsz0wt9DFU90Cq2f6iCyRkel4lv8sX4Ti17b87vDf9dzH1MPEuQ/cjAwZVG4t/rolukQdpZ/C1i/7ChRfeH07qnxmUg=",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1756103913.119073,
+            "size": 479,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ai_session",
+            "value": "3XsSS9fTFToTHs/EcZLZZq|1756096713173|1756096713202",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1756098513,
+            "size": 60,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akacd_OneRF",
+            "value": "1763872713~rv=84~id=163c149fb72ffb85a59e481f2eac2b68",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1763872713.118785,
+            "size": 63,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "CAS_PROGRAM",
+            "value": "echo",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1756096721.1185,
+            "size": 15,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "Cascade.AuthSSO",
+            "value": "1",
+            "domain": "www.microsoft.com",
+            "path": "/sv-se",
+            "expires": 1756098513.193411,
+            "size": 16,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 9,
+        "scriptAnalysis": {
+          "total": 62,
+          "tracking": 3,
+          "necessary": 59,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://scripts.clarity.ms/0.8.26/clarity.js",
+            "https://www.clarity.ms/tag/rcwvv0hsnp",
+            "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "[inline]",
+            "[inline]",
+            "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.ACSHASH75d0cb3e9ff9fee40f5ce5fd93c17fb2.min.js",
+            "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.ACSHASH5c75a4fa9fb3503322f8a0c9dd51512d.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 9,
+          "tracking": 0,
+          "necessary": 9
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1756096720202_reject_pre.png"
+      },
+      "reject": {
+        "timestamp": "2025-08-25T04:38:56.720Z",
+        "stage": "reject",
+        "url": "https://www.microsoft.com/sv-se/",
+        "scriptsCount": 62,
+        "scripts": [
+          {
+            "src": "https://scripts.clarity.ms/0.8.26/clarity.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.clarity.ms/tag/rcwvv0hsnp",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": " \n            (function(c,l,a,r,i,t,y){ \n                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).p"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\n        var isModernBrowser = (\n            'fetch' in window &&\n            'assign' in Object\n  "
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.ACSHASH75d0cb3e9ff9fee40f5ce5fd93c17fb2.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.ACSHASH5c75a4fa9fb3503322f8a0c9dd51512d.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/exp-analytics/v1.ACSHASHbf7b336dbb370c984e1bf59b1a980d86.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n                var expToken = {\n                    \"exp\": {\n                        \"target\": {\n "
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/exp-cookiecomp/v1.ACSHASHa238861e6209e4e02576ddf5d1749c8b.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/dynamicclientsidelibs/handlerscripts/v1.ACSHASH6734c5d7a732130b83c7d4a6ba54dcec.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/scripts/me/MeControl/10.25136.1/sv-SE/meBoot.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/scripts/me/MeControl/10.25136.1/sv-SE/meCore.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n  \t  \t\t\twindow.mscv = 'CASMicrosoftCV273341c7.0'\n  \t\t\t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n  \t  \t\t\twindow.msservercv = 'CASMicrosoftCV273341c7.0'\n  \t\t\t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\t\t\t\t\twindow.traceid = undefined;\n\t\t\t\t"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\twindow.msauthIsPublisher = true;\n\t"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/universalheader/v1/universalheader/clientlibs/site.ACSHASH6b0fa624326335f56e3ec96360ea8161.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/dynamic-price/v1/dynamic-price/clientlibs/sites.ACSHASHa26d031bf8c00f082570666bfff25659.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/calltoaction/v1/calltoaction/clientlibs/site.ACSHASH964114f14ca5f1658fba1f10201d6e0d.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/highlight/v1/highlight/clientlibs/site.ACSHASH7c85d20692857758ab7de8f4f3875cbd.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/highlightcarousel/v1/highlightcarousel/clientlibs/site.ACSHASHd400f29832195fd5da2ac04233f6dccc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-base.ACSHASH0f41d13aa1e519644ba949bbcffbd2d7.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/lists/link-list/v1/link-list/clientlibs/site.ACSHASHf11202afda48223f923cb85087fb53a3.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card/v1/content-card/clientlibs/site.ACSHASH599da71828ca4c25785a067f1ba2b290.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card/v1/content-card/clientlibs/site.ACSHASH599da71828ca4c25785a067f1ba2b290.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/socialfollow/v1/socialfollow/clientlibs/site.ACSHASHf9bb04580dd78f31d39261869e76dc76.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "\n            {\n                \"@context\": \"https://schema.org\",\n                \"@type\": \"Organizat"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/back-to-top-button/v1/back-to-top-button/clientlibs/sites.ACSHASH148bbe2eead6c5832c56691afb23e496.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    const globalPrivacyControlEnabled = navigator.globalPrivacyControl;\n\n    const GPC_DataSharingO"
+          },
+          {
+            "src": "https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/onerfstatics/marketingsites-neu-prod/shell/_scrf/js/themes=default/54-af9f9f/d4-fb1f57/e1-a50eee/e7-954872/d8-97d509/f0-251fe2/46-be1318/77-04a268/11-240c7b/63-077520/a4-34de62/77-380647/db-bc0148/dc-7e9864/6d-c07ea1/6f-dafe8c/f6-aa5278/e6-5f3533/6d-1e7ed0/b7-cadaa7/62-2741f0/ca-40b7b0/4e-ee3a55/3e-f5c39b/c3-6454d7/f9-7592d3/d0-e64f3e/92-10345d/79-499886/7e-cda2d3/58-ab4971/57-c14418/38-b93a9e/de-884374/1f-100dea/33-abe4df/2b-8e0ae6?ver=2.0&_cf=02242021_3231&iife=1",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/meversion?partner=mshomepage&market=sv-se&uhf=1",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/clientlib-mwf-new/main-light.ACSHASHf8a6ecd849f93a3e5d989c0cee0ceb80.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/clientlib-httpclient.ACSHASHef4feda6256042e46a6877fdfef29b4b.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-cookieconsent.ACSHASHc892f451b0c4db9c8ab2601a427c9b2c.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\t\t\t(function(){\n\t\t\t\t\tvar partnerScripts =\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"meta\": {\n\t\t\t\t\t\t\t\t\t\"partnerJsHash\": \"ACSH"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\t            //<![CDATA[\n\t\t\t\t\t//_pageBITags=jsonElement;\n\t\t\t\t//]]>\n\t\t\t"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\t\t\t(function(){\n\t\t\t\t\tvar contentSq =\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"entryFile\": \"https://cdnssl.clicktale.net/www"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/embed-thirdparty.ACSHASH8074248b00389a487fe4b9a5499d8616.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/featurecontrol.ACSHASHf120033122e43a4cb0b53bb306afc5dc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/components/structure/cascade-page/clientlibs/featurecontrol.ACSHASHf120033122e43a4cb0b53bb306afc5dc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/custom-oneds.ACSHASHd21775b74193f03767dd82cfbc692eff.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/components/structure/cascade-page/clientlibs/custom-oneds.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/cookie-compliance-manager.ACSHASH3e1ce2533da76bf772cb51fb6e992293.min.js",
+            "type": "",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 12,
+        "cookies": [
+          {
+            "name": "_clsk",
+            "value": "11rbbbb%5E1756096734501%5E1%5E0%5Ef.clarity.ms%2Fcollect",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1756183134,
+            "size": 61,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "bm_sv",
+            "value": "12D1E397159766194BA456AC54AA059F~YAAQHlzaF5yX0bOYAQAAl6KF3xzkLP6pHtEVykCVhU2W6UdkgGzu/gBzdx+rutXom5r9dtRNNwkX+fzfeta/6TGEDXsrrTDf5YuXWJX1sFGVT6uj3RqzpGyD9+HhZG7U4KAtqBVGwij5QsZnlgWBk6pTCZ34KsO0HQ+3Z8MauSfU7e9ihqCwVFcIK6sbFAurWfrlilDTQopviq4hUvUwqqpl03XslXu+jNxnh5HiRROURIQUwxRZayLRZHH0nam0bzGx~1",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1756103933.659142,
+            "size": 300,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "CAS_PROGRAM",
+            "value": "echo",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1756096741.658985,
+            "size": 15,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MSCC",
+            "value": "cid=47wwmviu8oejd69277quthqa-c1=1-c2=1-c3=1",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1771994320,
+            "size": 47,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ai_session",
+            "value": "3XsSS9fTFToTHs/EcZLZZq|1756096713173|1756096733724",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1756098533,
+            "size": 60,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "DDF175C861802FE3432C169348B48428~000000000000000000000000000000~YAAQHlzaF2SX0bOYAQAAWlKF3xxibBsk55CzAQnG1kx9C1fKrWdLB8sOcekRJ6Da0OWi6OnmmwZDfevzYAl6I24/wEJB4qNHd9VVKSBOrU6yOpFga+jxAD9aW953Ud2jyEuzEdEkaPpngbj9DLOWxJwiaTdWsuNip5xohJrQtuJWbg0W/Vy/7di9/esQJbltMie9jBY34tRNv3ahfdT+tW22ArZdpPeQbk7gJs0MbZgJwXCUPJHj8Ey4e3jnO2XzncNsKATebXNh4VdrOe9O+jAOcntErQZtWc7UwKcMjKWUfal0I3bRrVIk7cOtMsz0wt9DFU90Cq2f6iCyRkel4lv8sX4Ti17b87vDf9dzH1MPEuQ/cjAwZVG4t/rolukQdpZ/C1i/7ChRfeH07qnxmUg=",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1756103913.119073,
+            "size": 479,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MSFPC",
+            "value": "GUID=f29fe9275d384c44a93abdecff7b518d&HASH=f29f&LV=202508&V=4&LU=1756096713275",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1787632714.464387,
+            "size": 83,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MS0",
+            "value": "c78b005a7535407db5cd8a69aa6e87fe",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1756098513.393093,
+            "size": 35,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MC1",
+            "value": "GUID=f29fe9275d384c44a93abdecff7b518d&HASH=f29f&LV=202508&V=4&LU=1756096713275",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1787632713.393001,
+            "size": 81,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MicrosoftApplicationsTelemetryDeviceId",
+            "value": "0e1ca310-6ce6-4a5e-9265-8d3008a37961",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1787632733.711451,
+            "size": 74,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akacd_OneRF",
+            "value": "1763872713~rv=84~id=163c149fb72ffb85a59e481f2eac2b68",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1763872713.118785,
+            "size": 63,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "Cascade.AuthSSO",
+            "value": "1",
+            "domain": "www.microsoft.com",
+            "path": "/sv-se",
+            "expires": 1756098513.193411,
+            "size": 16,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 9,
+        "scriptAnalysis": {
+          "total": 62,
+          "tracking": 3,
+          "necessary": 59,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://scripts.clarity.ms/0.8.26/clarity.js",
+            "https://www.clarity.ms/tag/rcwvv0hsnp",
+            "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "[inline]",
+            "[inline]",
+            "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.ACSHASH75d0cb3e9ff9fee40f5ce5fd93c17fb2.min.js",
+            "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.ACSHASH5c75a4fa9fb3503322f8a0c9dd51512d.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 12,
+          "tracking": 0,
+          "necessary": 12
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1756096738733_reject.png"
+      },
+      "accept_pre": {
+        "timestamp": "2025-08-25T04:39:04.206Z",
+        "stage": "accept_pre",
+        "url": "https://www.microsoft.com/sv-se/",
+        "scriptsCount": 62,
+        "scripts": [
+          {
+            "src": "https://scripts.clarity.ms/0.8.26/clarity.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.clarity.ms/tag/rcwvv0hsnp",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": " \n            (function(c,l,a,r,i,t,y){ \n                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).p"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\n        var isModernBrowser = (\n            'fetch' in window &&\n            'assign' in Object\n  "
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.ACSHASH75d0cb3e9ff9fee40f5ce5fd93c17fb2.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.ACSHASH5c75a4fa9fb3503322f8a0c9dd51512d.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/exp-analytics/v1.ACSHASHbf7b336dbb370c984e1bf59b1a980d86.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n                var expToken = {\n                    \"exp\": {\n                        \"target\": {\n "
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/exp-cookiecomp/v1.ACSHASHa238861e6209e4e02576ddf5d1749c8b.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/dynamicclientsidelibs/handlerscripts/v1.ACSHASH6734c5d7a732130b83c7d4a6ba54dcec.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/scripts/me/MeControl/10.25136.1/sv-SE/meBoot.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/scripts/me/MeControl/10.25136.1/sv-SE/meCore.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n  \t  \t\t\twindow.mscv = 'CASMicrosoftCV273356c2.0'\n  \t\t\t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n  \t  \t\t\twindow.msservercv = 'CASMicrosoftCV273356c2.0'\n  \t\t\t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\t\t\t\t\twindow.traceid = undefined;\n\t\t\t\t"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\twindow.msauthIsPublisher = true;\n\t"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/universalheader/v1/universalheader/clientlibs/site.ACSHASH6b0fa624326335f56e3ec96360ea8161.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/dynamic-price/v1/dynamic-price/clientlibs/sites.ACSHASHa26d031bf8c00f082570666bfff25659.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/calltoaction/v1/calltoaction/clientlibs/site.ACSHASH964114f14ca5f1658fba1f10201d6e0d.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/highlight/v1/highlight/clientlibs/site.ACSHASH7c85d20692857758ab7de8f4f3875cbd.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/highlightcarousel/v1/highlightcarousel/clientlibs/site.ACSHASHd400f29832195fd5da2ac04233f6dccc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-base.ACSHASH0f41d13aa1e519644ba949bbcffbd2d7.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/lists/link-list/v1/link-list/clientlibs/site.ACSHASHf11202afda48223f923cb85087fb53a3.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card/v1/content-card/clientlibs/site.ACSHASH599da71828ca4c25785a067f1ba2b290.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card/v1/content-card/clientlibs/site.ACSHASH599da71828ca4c25785a067f1ba2b290.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/socialfollow/v1/socialfollow/clientlibs/site.ACSHASHf9bb04580dd78f31d39261869e76dc76.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "\n            {\n                \"@context\": \"https://schema.org\",\n                \"@type\": \"Organizat"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/back-to-top-button/v1/back-to-top-button/clientlibs/sites.ACSHASH148bbe2eead6c5832c56691afb23e496.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    const globalPrivacyControlEnabled = navigator.globalPrivacyControl;\n\n    const GPC_DataSharingO"
+          },
+          {
+            "src": "https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/onerfstatics/marketingsites-neu-prod/shell/_scrf/js/themes=default/54-af9f9f/d4-fb1f57/e1-a50eee/e7-954872/d8-97d509/f0-251fe2/46-be1318/77-04a268/11-240c7b/63-077520/a4-34de62/77-380647/db-bc0148/dc-7e9864/6d-c07ea1/6f-dafe8c/f6-aa5278/e6-5f3533/6d-1e7ed0/b7-cadaa7/62-2741f0/ca-40b7b0/4e-ee3a55/3e-f5c39b/c3-6454d7/f9-7592d3/d0-e64f3e/92-10345d/79-499886/7e-cda2d3/58-ab4971/57-c14418/38-b93a9e/de-884374/1f-100dea/33-abe4df/2b-8e0ae6?ver=2.0&_cf=02242021_3231&iife=1",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/meversion?partner=mshomepage&market=sv-se&uhf=1",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/clientlib-mwf-new/main-light.ACSHASHf8a6ecd849f93a3e5d989c0cee0ceb80.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/clientlib-httpclient.ACSHASHef4feda6256042e46a6877fdfef29b4b.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-cookieconsent.ACSHASHc892f451b0c4db9c8ab2601a427c9b2c.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\t\t\t(function(){\n\t\t\t\t\tvar partnerScripts =\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"meta\": {\n\t\t\t\t\t\t\t\t\t\"partnerJsHash\": \"ACSH"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\t            //<![CDATA[\n\t\t\t\t\t//_pageBITags=jsonElement;\n\t\t\t\t//]]>\n\t\t\t"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\t\t\t(function(){\n\t\t\t\t\tvar contentSq =\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"entryFile\": \"https://cdnssl.clicktale.net/www"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/embed-thirdparty.ACSHASH8074248b00389a487fe4b9a5499d8616.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/featurecontrol.ACSHASHf120033122e43a4cb0b53bb306afc5dc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/components/structure/cascade-page/clientlibs/featurecontrol.ACSHASHf120033122e43a4cb0b53bb306afc5dc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/custom-oneds.ACSHASHd21775b74193f03767dd82cfbc692eff.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/components/structure/cascade-page/clientlibs/custom-oneds.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/cookie-compliance-manager.ACSHASH3e1ce2533da76bf772cb51fb6e992293.min.js",
+            "type": "",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 9,
+        "cookies": [
+          {
+            "name": "MSFPC",
+            "value": "GUID=0e6d786fdb0440a19e809e895284777c&HASH=0e6d&LV=202508&V=4&LU=1756096739639",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1787632741.494399,
+            "size": 83,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MS0",
+            "value": "ad89ac2c4d3b48e888a6ba00a5ad96aa",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1756098539.49534,
+            "size": 35,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MC1",
+            "value": "GUID=0e6d786fdb0440a19e809e895284777c&HASH=0e6d&LV=202508&V=4&LU=1756096739639",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1787632739.495126,
+            "size": 81,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MicrosoftApplicationsTelemetryDeviceId",
+            "value": "3cc2f41f-3bbf-4680-b133-07cb2e90c295",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1787632739.195291,
+            "size": 74,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "99794CBACA14F35A6482FBAC4B05A6F0~000000000000000000000000000000~YAAQHlzaF6mX0bOYAQAAG7iF3xwVA83ttZWtNo9zn8YZcFoQa4R09hOVO8xFdrHD8PuMlHhyHjHPhZN4eGJD8ZLONIgXSwvxj5FjB12ud/vT9uFACU348Krxc9EM218hg0ng35uT5pjNJd79wwh8ZQTVuZB+9CBKbNQGnoZZj/f5FL1JLn+8Xh+Z3V4VMZIEYHZrdNCS+tSkVKi4iFWECS24GX/5IgXVv2sw2xZsUzz85iOP/20QK8b0GRJIzKSED6Nxt3tjMyPsMa5+wIimax6hYMmZIAomsDfIBPjVjsCtZi+XODIQyLQoythrF4MzYnZi4sd/RYF5txNv6dh0MDoSjSJzOoIDxH3lSf/Ox1AG2Q15xvTVGXjOnqafDFAmmp6p4z+ZI4iMdTeKBC0prqs=",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1756103939.170819,
+            "size": 479,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ai_session",
+            "value": "Uv0KxWyRasTlgED2TNYeZe|1756096739196|1756096739210",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1756098539,
+            "size": 60,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akacd_OneRF",
+            "value": "1763872739~rv=45~id=c3e1024a5ecb56ba1da4fa7bdef97059",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1763872739.170803,
+            "size": 63,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "CAS_PROGRAM",
+            "value": "echo",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1756096747.170758,
+            "size": 15,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "Cascade.AuthSSO",
+            "value": "1",
+            "domain": "www.microsoft.com",
+            "path": "/sv-se",
+            "expires": 1756098539.205029,
+            "size": 16,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 0,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 9,
+        "scriptAnalysis": {
+          "total": 62,
+          "tracking": 3,
+          "necessary": 59,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://scripts.clarity.ms/0.8.26/clarity.js",
+            "https://www.clarity.ms/tag/rcwvv0hsnp",
+            "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "[inline]",
+            "[inline]",
+            "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.ACSHASH75d0cb3e9ff9fee40f5ce5fd93c17fb2.min.js",
+            "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.ACSHASH5c75a4fa9fb3503322f8a0c9dd51512d.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 9,
+          "tracking": 0,
+          "necessary": 9
+        },
+        "localStorageAnalysis": {
+          "total": 0,
+          "tracking": 0,
+          "necessary": 0
+        },
+        "screenshot": "1756096746219_accept_pre.png"
+      },
+      "accept": {
+        "timestamp": "2025-08-25T04:39:26.302Z",
+        "stage": "accept",
+        "url": "https://www.microsoft.com/sv-se/",
+        "scriptsCount": 78,
+        "scripts": [
+          {
+            "src": "https://bat.bing.com/p/conversions/s/0.8.26",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://bat.bing.com/p/conversions/t/4000034?insights=1",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://bat.bing.com/bat.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://scripts.clarity.ms/0.8.26/clarity.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.clarity.ms/tag/rcwvv0hsnp",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": " \n            (function(c,l,a,r,i,t,y){ \n                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).p"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\n        var isModernBrowser = (\n            'fetch' in window &&\n            'assign' in Object\n  "
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.ACSHASH75d0cb3e9ff9fee40f5ce5fd93c17fb2.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.ACSHASH5c75a4fa9fb3503322f8a0c9dd51512d.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/exp-analytics/v1.ACSHASHbf7b336dbb370c984e1bf59b1a980d86.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n                var expToken = {\n                    \"exp\": {\n                        \"target\": {\n "
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/exp-cookiecomp/v1.ACSHASHa238861e6209e4e02576ddf5d1749c8b.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/dynamicclientsidelibs/handlerscripts/v1.ACSHASH6734c5d7a732130b83c7d4a6ba54dcec.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/scripts/me/MeControl/10.25136.1/sv-SE/meBoot.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/scripts/me/MeControl/10.25136.1/sv-SE/meCore.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.googletagmanager.com/gtag/js?id=923371515",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://bat.bing.com/p/action/4000034.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n  \t  \t\t\twindow.mscv = 'CASMicrosoftCV273356c2.0'\n  \t\t\t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n  \t  \t\t\twindow.msservercv = 'CASMicrosoftCV273356c2.0'\n  \t\t\t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\t\t\t\t\twindow.traceid = undefined;\n\t\t\t\t"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\twindow.msauthIsPublisher = true;\n\t"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/universalheader/v1/universalheader/clientlibs/site.ACSHASH6b0fa624326335f56e3ec96360ea8161.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/dynamic-price/v1/dynamic-price/clientlibs/sites.ACSHASHa26d031bf8c00f082570666bfff25659.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/calltoaction/v1/calltoaction/clientlibs/site.ACSHASH964114f14ca5f1658fba1f10201d6e0d.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/highlight/v1/highlight/clientlibs/site.ACSHASH7c85d20692857758ab7de8f4f3875cbd.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/highlightcarousel/v1/highlightcarousel/clientlibs/site.ACSHASHd400f29832195fd5da2ac04233f6dccc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-base.ACSHASH0f41d13aa1e519644ba949bbcffbd2d7.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/lists/link-list/v1/link-list/clientlibs/site.ACSHASHf11202afda48223f923cb85087fb53a3.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card/v1/content-card/clientlibs/site.ACSHASH599da71828ca4c25785a067f1ba2b290.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card/v1/content-card/clientlibs/site.ACSHASH599da71828ca4c25785a067f1ba2b290.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v3/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/content-card-item/v1/content-card-item/clientlibs/site.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/socialfollow/v1/socialfollow/clientlibs/site.ACSHASHf9bb04580dd78f31d39261869e76dc76.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "\n            {\n                \"@context\": \"https://schema.org\",\n                \"@type\": \"Organizat"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/content/back-to-top-button/v1/back-to-top-button/clientlibs/sites.ACSHASH148bbe2eead6c5832c56691afb23e496.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n    const globalPrivacyControlEnabled = navigator.globalPrivacyControl;\n\n    const GPC_DataSharingO"
+          },
+          {
+            "src": "https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/onerfstatics/marketingsites-neu-prod/shell/_scrf/js/themes=default/54-af9f9f/d4-fb1f57/e1-a50eee/e7-954872/d8-97d509/f0-251fe2/46-be1318/77-04a268/11-240c7b/63-077520/a4-34de62/77-380647/db-bc0148/dc-7e9864/6d-c07ea1/6f-dafe8c/f6-aa5278/e6-5f3533/6d-1e7ed0/b7-cadaa7/62-2741f0/ca-40b7b0/4e-ee3a55/3e-f5c39b/c3-6454d7/f9-7592d3/d0-e64f3e/92-10345d/79-499886/7e-cda2d3/58-ab4971/57-c14418/38-b93a9e/de-884374/1f-100dea/33-abe4df/2b-8e0ae6?ver=2.0&_cf=02242021_3231&iife=1",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mem.gfx.ms/meversion?partner=mshomepage&market=sv-se&uhf=1",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/clientlib-mwf-new/main-light.ACSHASHf8a6ecd849f93a3e5d989c0cee0ceb80.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/clientlib-httpclient.ACSHASHef4feda6256042e46a6877fdfef29b4b.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-cookieconsent.ACSHASHc892f451b0c4db9c8ab2601a427c9b2c.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\t\t\t(function(){\n\t\t\t\t\tvar partnerScripts =\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"meta\": {\n\t\t\t\t\t\t\t\t\t\"partnerJsHash\": \"ACSH"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\n\t            //<![CDATA[\n\t\t\t\t\t_pageBITags={\"pageTags\":{\"pageName\":\"HomePage\",\"mkt\":\"sv-se\",\"pageTyp"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "\n\t\t\t\t(function(){\n\t\t\t\t\tvar contentSq =\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"entryFile\": \"https://cdnssl.clicktale.net/www"
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/embed-thirdparty.ACSHASH8074248b00389a487fe4b9a5499d8616.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/featurecontrol.ACSHASHf120033122e43a4cb0b53bb306afc5dc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/components/structure/cascade-page/clientlibs/featurecontrol.ACSHASHf120033122e43a4cb0b53bb306afc5dc.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/custom-oneds.ACSHASHd21775b74193f03767dd82cfbc692eff.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/components/structure/cascade-page/clientlibs/custom-oneds.ACSHASHd41d8cd98f00b204e9800998ecf8427e.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/cookie-compliance-manager.ACSHASH3e1ce2533da76bf772cb51fb6e992293.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/embed-partnerscripts.ACSHASH93c4a03ba7b7eb6b3b5e3078e0f55638.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdnssl.clicktale.net/www32/ptc/05d32363-d534-4d93-9b65-cde674775e71.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.microsoft.com/etc.clientlibs/microsoft/clientlibs/clientlib-thirdparty/v62.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "\nif (typeof Bootstrapper !== 'object') {\n\twindow.Bootstrapper = {};\n\tBootstrapper.imageRequest = fun"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"__runScript1\"](function(event, target) {\ntry {\n    var _TMDL = {\n        busgrp: [],\n   "
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"__runScript2\"](function(event, target) {\ntry\n{\n\tvar marketMap = {\n\t\t\"AT\": \"5626847905543"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"__runScript3\"](function(event, target) {\n/*\nLinkedIn tag\n*/\ntry\n{\n\tvar c=new Image(0,0);"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"__runScript4\"](function(event, target) {\ntry\n{\n\tvar doFloodlights = function(debug) {\n\t\t"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"__runScript5\"](function(event, target) {\n/*  Adobe DCO Retargeting tag\n*/\n\ntry {\n\t// lan"
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"__runScript6\"](function(event, target) {\ntry\n{\n\tvar totamount = 0,\n\t  totvalstring = \"\","
+          },
+          {
+            "src": "",
+            "type": "",
+            "innerHTML": "_satellite[\"__runScript7\"](function(event, target) {\n// BINGUET\ntry\n{\n\t(function (w, d, t, r, u) {\n\t"
+          }
+        ],
+        "cookiesCount": 9,
+        "cookies": [
+          {
+            "name": "MSCC",
+            "value": "cid=gfgbqimxbpf43j2rhgh8b4uo-c1=2-c2=2-c3=2",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1771994346,
+            "size": 47,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MSFPC",
+            "value": "GUID=0e6d786fdb0440a19e809e895284777c&HASH=0e6d&LV=202508&V=4&LU=1756096739639",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1787632741.494399,
+            "size": 83,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MS0",
+            "value": "ad89ac2c4d3b48e888a6ba00a5ad96aa",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1756098539.49534,
+            "size": 35,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MC1",
+            "value": "GUID=0e6d786fdb0440a19e809e895284777c&HASH=0e6d&LV=202508&V=4&LU=1756096739639",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1787632739.495126,
+            "size": 81,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "akacd_OneRF",
+            "value": "1763872739~rv=45~id=c3e1024a5ecb56ba1da4fa7bdef97059",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1763872739.170803,
+            "size": 63,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ai_session",
+            "value": "Uv0KxWyRasTlgED2TNYeZe|1756096739196|1756096739210",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1756098539,
+            "size": 60,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "MicrosoftApplicationsTelemetryDeviceId",
+            "value": "3cc2f41f-3bbf-4680-b133-07cb2e90c295",
+            "domain": "www.microsoft.com",
+            "path": "/",
+            "expires": 1787632739.195291,
+            "size": 74,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "ak_bmsc",
+            "value": "99794CBACA14F35A6482FBAC4B05A6F0~000000000000000000000000000000~YAAQHlzaF6mX0bOYAQAAG7iF3xwVA83ttZWtNo9zn8YZcFoQa4R09hOVO8xFdrHD8PuMlHhyHjHPhZN4eGJD8ZLONIgXSwvxj5FjB12ud/vT9uFACU348Krxc9EM218hg0ng35uT5pjNJd79wwh8ZQTVuZB+9CBKbNQGnoZZj/f5FL1JLn+8Xh+Z3V4VMZIEYHZrdNCS+tSkVKi4iFWECS24GX/5IgXVv2sw2xZsUzz85iOP/20QK8b0GRJIzKSED6Nxt3tjMyPsMa5+wIimax6hYMmZIAomsDfIBPjVjsCtZi+XODIQyLQoythrF4MzYnZi4sd/RYF5txNv6dh0MDoSjSJzOoIDxH3lSf/Ox1AG2Q15xvTVGXjOnqafDFAmmp6p4z+ZI4iMdTeKBC0prqs=",
+            "domain": ".microsoft.com",
+            "path": "/",
+            "expires": 1756103939.170819,
+            "size": 479,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "Cascade.AuthSSO",
+            "value": "1",
+            "domain": "www.microsoft.com",
+            "path": "/sv-se",
+            "expires": 1756098539.205029,
+            "size": 16,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 3,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 15,
+        "scriptAnalysis": {
+          "total": 78,
+          "tracking": 9,
+          "necessary": 69,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://bat.bing.com/p/conversions/s/0.8.26",
+            "https://bat.bing.com/p/conversions/t/4000034?insights=1",
+            "https://bat.bing.com/bat.js",
+            "https://scripts.clarity.ms/0.8.26/clarity.js",
+            "https://www.clarity.ms/tag/rcwvv0hsnp",
+            "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js",
+            "https://www.googletagmanager.com/gtag/js?id=923371515",
+            "https://bat.bing.com/p/action/4000034.js",
+            "https://cdnssl.clicktale.net/www32/ptc/05d32363-d534-4d93-9b65-cde674775e71.js"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+            "[inline]",
+            "[inline]",
+            "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.ACSHASH75d0cb3e9ff9fee40f5ce5fd93c17fb2.min.js",
+            "https://www.microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.ACSHASH5c75a4fa9fb3503322f8a0c9dd51512d.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 9,
+          "tracking": 0,
+          "necessary": 9
+        },
+        "localStorageAnalysis": {
+          "total": 3,
+          "tracking": 3,
+          "necessary": 0
+        },
+        "screenshot": "1756096768314_accept.png"
+      }
+    },
+    "bannerAnalysis": {
+      "detected": true,
+      "provider": "Microsoft",
+      "text": "\n        \n            \n        \n          \n          \n          \n        \n         \n            \n                Vi använder valfria cookies för att förbättra din upplevelse på våra webbplatser, till ",
+      "hasDirectReject": true,
+      "hasAccept": true,
+      "hasSettings": true,
+      "type": "GDPR_style",
+      "buttonTexts": [
+        "godkänn",
+        "neka",
+        "hantera cookies"
+      ]
+    },
+    "gdprCompliance": {
+      "complianceScore": 50,
+      "riskLevel": "CRITICAL",
+      "summary": {
+        "totalViolations": 2,
+        "criticalViolations": 1,
+        "highViolations": 1,
+        "mediumViolations": 0
+      },
+      "violations": [
+        {
+          "code": "EU-C-001",
+          "title": "Pre-consent Tracking Script Execution",
+          "severity": "HIGH",
+          "gdprArticle": "Article 5(3)",
+          "description": "Tracking scripts executed before user consent obtained",
+          "businessImpact": "Unlawful processing of personal data, potential fines up to €20M",
+          "remediation": "Implement consent-gated script loading using CMP integration",
+          "details": {
+            "count": 3,
+            "scripts": [
+              "https://scripts.clarity.ms/0.8.26/clarity.js",
+              "https://www.clarity.ms/tag/rcwvv0hsnp",
+              "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js"
+            ],
+            "evidence": "1756096712698_baseline.png",
+            "rawData": {
+              "totalScripts": 62,
+              "trackingScripts": 3,
+              "necessaryScripts": 59
+            }
+          },
+          "detectedAt": "2025-08-25T04:39:28.392Z"
+        },
+        {
+          "code": "EU-C-011",
+          "title": "Consent Bypass Vulnerability",
+          "severity": "CRITICAL",
+          "gdprArticle": "Article 5(1)(a)",
+          "description": "Technical methods detected to bypass consent mechanism",
+          "businessImpact": "Systematic GDPR violations, potential criminal liability",
+          "remediation": "Implement server-side consent validation and audit trails",
+          "details": {
+            "type": "consent-bypass",
+            "scripts": [
+              "https://scripts.clarity.ms/0.8.26/clarity.js",
+              "https://www.clarity.ms/tag/rcwvv0hsnp",
+              "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js"
+            ],
+            "evidence": "1756096738733_reject.png"
+          },
+          "detectedAt": "2025-08-25T04:39:28.393Z"
+        }
+      ],
+      "recommendations": [
+        {
+          "priority": "IMMEDIATE",
+          "category": "Technical Implementation",
+          "action": "Implement consent-gated loading for all tracking technologies",
+          "timeline": "1-2 weeks",
+          "effort": "Medium",
+          "impact": "Eliminates high-risk pre-consent violations"
+        }
+      ],
+      "legalAnalysis": {
+        "affectedArticles": [
+          "Article 5(3)",
+          "Article 5(1)(a)"
+        ],
+        "legalRisk": "HIGH - Fundamental consent violations detected. Immediate remediation required.",
+        "regulatoryAction": "Regulatory investigation risk if user complaints filed. Priority remediation advised.",
+        "fineExposure": "Up to €20M or 4% of annual turnover for systematic consent violations"
+      }
+    }
+  },
+  "metadata": {
+    "spectralVersion": "1.0.0",
+    "analysisType": "comprehensive-privacy-compliance",
+    "reportGeneration": "automated"
+  }
+}

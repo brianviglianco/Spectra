@@ -1,0 +1,1959 @@
+{
+  "url": "https://orange.fr",
+  "timestamp": "2025-08-25T05:22:48.472Z",
+  "executiveReport": {
+    "executiveSummary": {
+      "complianceScore": 20,
+      "riskLevel": "CRITICAL",
+      "totalViolations": 3,
+      "criticalViolations": 2,
+      "trackingScripts": 16,
+      "unknownScripts": 0,
+      "cmpProvider": "None detected",
+      "consentMechanism": "Unknown"
+    },
+    "technicalFindings": {
+      "preConsentTracking": 16,
+      "postAcceptTracking": 38,
+      "postRejectTracking": 19,
+      "trackingIncrease": 22,
+      "cookieIncrease": 18,
+      "storageIncrease": 35
+    },
+    "businessImpact": "HIGH - Immediate legal risk, potential €20M fines, regulatory investigation likely",
+    "urgency": "IMMEDIATE - Address within 1-2 weeks"
+  },
+  "detailedResults": {
+    "url": "https://orange.fr",
+    "evidence": {
+      "baseline": {
+        "timestamp": "2025-08-25T05:22:08.811Z",
+        "stage": "baseline",
+        "url": "https://orange.fr",
+        "scriptsCount": 20,
+        "scripts": [
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/abtesting/prod/utag.sync.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Orange France\",\"alternateName\":\"Oran"
+          },
+          {
+            "src": "https://c.woopic.com/libs/common/o_load_responsive.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/cookie-monster/cookie-monster.lib.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/common.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://gp.cdn.woopic.com/magic/o_tealium.js?update",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/elcos-jaffa.gp.all.prod.jmPrlIs0.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.adgtw.orangeads.fr/mediation/ora_hp.prospects.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202502191254",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.606.js?utv=ut4.39.202412021534",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.417.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.444.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.635.js?utv=ut4.39.202503201343",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.609.js?utv=ut4.39.202508190838",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.626.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.646.js?utv=ut4.39.202506301236",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.384.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.adgtw.orangeads.fr/build/oan_common-async-3.2.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.orange.fr/sg1.js?profile=hp",
+            "type": "",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 4,
+        "cookies": [
+          {
+            "name": "utag_main",
+            "value": "v_id:0198dfad3f05001638997789b62905075001d06d00998$_sn:1$_ss:1$_pn:1%3Bexp-session$_st:1756101129797$ses_id:1756099329797%3Bexp-session",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1787635329,
+            "size": 144,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "nav",
+            "value": "all",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1756100229.648177,
+            "size": 6,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Strict",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "izclientid",
+            "value": "jv6xFdYDjKtDR3DZvokADI2N%2C1756704125",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1771651325.208412,
+            "size": 47,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "idzone",
+            "value": "AEkecEVe-4-oAEbzZ8Z005NnW3EeF_B3rz7cHN6CVcFhk1BKIyRJHOu_weVXVwEphhvQ7zvZFMNDkZBnixkbDKVBoJhGx4WOUbhxwoYIn16GbNeDLf0UqUBAMr_wSHQkH4UY",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": -1,
+            "size": 138,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 8,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 18,
+        "scriptAnalysis": {
+          "total": 20,
+          "tracking": 16,
+          "necessary": 4,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.js",
+            "https://tags.tiqcdn.com/utag/orange/abtesting/prod/utag.sync.js",
+            "https://c.woopic.com/libs/common/o_load_responsive.js",
+            "https://elcos.cdn.s.woopic.com/cookie-monster/cookie-monster.lib.js",
+            "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/common.js",
+            "https://gp.cdn.woopic.com/magic/o_tealium.js?update",
+            "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/elcos-jaffa.gp.all.prod.jmPrlIs0.js",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202502191254",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.606.js?utv=ut4.39.202412021534",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.417.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.444.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.635.js?utv=ut4.39.202503201343",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.609.js?utv=ut4.39.202508190838",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.626.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.646.js?utv=ut4.39.202506301236",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.384.js?utv=ut4.39.202508181023"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "[inline]",
+            "https://cdn.adgtw.orangeads.fr/mediation/ora_hp.prospects.js",
+            "https://cdn.adgtw.orangeads.fr/build/oan_common-async-3.2.min.js",
+            "https://www.orange.fr/sg1.js?profile=hp"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 2,
+          "tracking": 0,
+          "necessary": 2
+        },
+        "localStorageAnalysis": {
+          "total": 8,
+          "tracking": 0,
+          "necessary": 8
+        },
+        "screenshot": "1756099330827_baseline.png"
+      },
+      "reject_pre": {
+        "timestamp": "2025-08-25T05:22:16.571Z",
+        "stage": "reject_pre",
+        "url": "https://orange.fr",
+        "scriptsCount": 25,
+        "scripts": [
+          {
+            "src": "https://sdk.privacy-center.org/3e6e3e05-9201-4614-a13e-b9649d1fa0e4/loader.js?target_type=notice&target=qQMjK8bG",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/abtesting/prod/utag.sync.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Orange France\",\"alternateName\":\"Oran"
+          },
+          {
+            "src": "https://c.woopic.com/libs/common/o_load_responsive.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/cookie-monster/cookie-monster.lib.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/common.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://gp.cdn.woopic.com/magic/o_tealium.js?update",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/elcos-jaffa.gp.all.prod.jmPrlIs0.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202502191254",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.606.js?utv=ut4.39.202412021534",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.417.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.444.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.635.js?utv=ut4.39.202503201343",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.609.js?utv=ut4.39.202508190838",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.626.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.646.js?utv=ut4.39.202506301236",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.384.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.adgtw.orangeads.fr/mediation/ora_hp.prospects.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=orange/dnu/202508190905&cb=1756099335068",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.524.js?utv=ut4.39.202508190905",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://sdk.privacy-center.org/sdk/7f163e8f5f16b925c7d508448e8033b7f77f1104/modern/sdk.7f163e8f5f16b925c7d508448e8033b7f77f1104.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.adgtw.orangeads.fr/build/oan_common-async-3.2.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lptag.liveperson.net/tag/tag.js?site=31127979",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.orange.fr/sg1.js?profile=hp",
+            "type": "",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 4,
+        "cookies": [
+          {
+            "name": "utag_main",
+            "value": "v_id:0198dfad49bb000eca19abd9476c05075001d06d00998$_sn:1$_ss:1$_pn:1%3Bexp-session$_st:1756101135074$ses_id:1756099332539%3Bexp-session",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1787635335,
+            "size": 144,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "nav",
+            "value": "all",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1756100232.29474,
+            "size": 6,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Strict",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "izclientid",
+            "value": "lBp_xIFUTyRJn33LKJEAB1UH%2C1756704132",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1771651331.938611,
+            "size": 47,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "idzone",
+            "value": "AEkeuYsE8sfvvjAS7D5dI8mlDVwgKvPPdzOOVXB4COBIXMP9-FnDY2nxvd8ZuKt41SQvMnZHgIeXs54IfgcKsSp0_tNxnhBXDGjX3r741jG1Xps8Dtthr8MggLqaWWF9oIiL",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": -1,
+            "size": 138,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 8,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 23,
+        "scriptAnalysis": {
+          "total": 25,
+          "tracking": 19,
+          "necessary": 6,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.js",
+            "https://tags.tiqcdn.com/utag/orange/abtesting/prod/utag.sync.js",
+            "https://c.woopic.com/libs/common/o_load_responsive.js",
+            "https://elcos.cdn.s.woopic.com/cookie-monster/cookie-monster.lib.js",
+            "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/common.js",
+            "https://gp.cdn.woopic.com/magic/o_tealium.js?update",
+            "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/elcos-jaffa.gp.all.prod.jmPrlIs0.js",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202502191254",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.606.js?utv=ut4.39.202412021534",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.417.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.444.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.635.js?utv=ut4.39.202503201343",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.609.js?utv=ut4.39.202508190838",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.626.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.646.js?utv=ut4.39.202506301236",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.384.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=orange/dnu/202508190905&cb=1756099335068",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.524.js?utv=ut4.39.202508190905",
+            "https://lptag.liveperson.net/tag/tag.js?site=31127979"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://sdk.privacy-center.org/3e6e3e05-9201-4614-a13e-b9649d1fa0e4/loader.js?target_type=notice&target=qQMjK8bG",
+            "[inline]",
+            "https://cdn.adgtw.orangeads.fr/mediation/ora_hp.prospects.js",
+            "https://sdk.privacy-center.org/sdk/7f163e8f5f16b925c7d508448e8033b7f77f1104/modern/sdk.7f163e8f5f16b925c7d508448e8033b7f77f1104.js",
+            "https://cdn.adgtw.orangeads.fr/build/oan_common-async-3.2.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 2,
+          "tracking": 0,
+          "necessary": 2
+        },
+        "localStorageAnalysis": {
+          "total": 8,
+          "tracking": 0,
+          "necessary": 8
+        },
+        "screenshot": "1756099338585_reject_pre.png"
+      },
+      "reject": {
+        "timestamp": "2025-08-25T05:22:16.571Z",
+        "stage": "reject_unavailable",
+        "url": "https://orange.fr",
+        "scriptsCount": 25,
+        "scripts": [
+          {
+            "src": "https://sdk.privacy-center.org/3e6e3e05-9201-4614-a13e-b9649d1fa0e4/loader.js?target_type=notice&target=qQMjK8bG",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/abtesting/prod/utag.sync.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Orange France\",\"alternateName\":\"Oran"
+          },
+          {
+            "src": "https://c.woopic.com/libs/common/o_load_responsive.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/cookie-monster/cookie-monster.lib.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/common.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://gp.cdn.woopic.com/magic/o_tealium.js?update",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/elcos-jaffa.gp.all.prod.jmPrlIs0.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202502191254",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.606.js?utv=ut4.39.202412021534",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.417.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.444.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.635.js?utv=ut4.39.202503201343",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.609.js?utv=ut4.39.202508190838",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.626.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.646.js?utv=ut4.39.202506301236",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.384.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.adgtw.orangeads.fr/mediation/ora_hp.prospects.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=orange/dnu/202508190905&cb=1756099335068",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.524.js?utv=ut4.39.202508190905",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://sdk.privacy-center.org/sdk/7f163e8f5f16b925c7d508448e8033b7f77f1104/modern/sdk.7f163e8f5f16b925c7d508448e8033b7f77f1104.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.adgtw.orangeads.fr/build/oan_common-async-3.2.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lptag.liveperson.net/tag/tag.js?site=31127979",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.orange.fr/sg1.js?profile=hp",
+            "type": "",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 4,
+        "cookies": [
+          {
+            "name": "utag_main",
+            "value": "v_id:0198dfad49bb000eca19abd9476c05075001d06d00998$_sn:1$_ss:1$_pn:1%3Bexp-session$_st:1756101135074$ses_id:1756099332539%3Bexp-session",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1787635335,
+            "size": 144,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "nav",
+            "value": "all",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1756100232.29474,
+            "size": 6,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Strict",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "izclientid",
+            "value": "lBp_xIFUTyRJn33LKJEAB1UH%2C1756704132",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1771651331.938611,
+            "size": 47,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "idzone",
+            "value": "AEkeuYsE8sfvvjAS7D5dI8mlDVwgKvPPdzOOVXB4COBIXMP9-FnDY2nxvd8ZuKt41SQvMnZHgIeXs54IfgcKsSp0_tNxnhBXDGjX3r741jG1Xps8Dtthr8MggLqaWWF9oIiL",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": -1,
+            "size": 138,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 8,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 23,
+        "scriptAnalysis": {
+          "total": 25,
+          "tracking": 19,
+          "necessary": 6,
+          "unknown": 0,
+          "trackingDetails": [
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.js",
+            "https://tags.tiqcdn.com/utag/orange/abtesting/prod/utag.sync.js",
+            "https://c.woopic.com/libs/common/o_load_responsive.js",
+            "https://elcos.cdn.s.woopic.com/cookie-monster/cookie-monster.lib.js",
+            "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/common.js",
+            "https://gp.cdn.woopic.com/magic/o_tealium.js?update",
+            "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/elcos-jaffa.gp.all.prod.jmPrlIs0.js",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202502191254",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.606.js?utv=ut4.39.202412021534",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.417.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.444.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.635.js?utv=ut4.39.202503201343",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.609.js?utv=ut4.39.202508190838",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.626.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.646.js?utv=ut4.39.202506301236",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.384.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=orange/dnu/202508190905&cb=1756099335068",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.524.js?utv=ut4.39.202508190905",
+            "https://lptag.liveperson.net/tag/tag.js?site=31127979"
+          ],
+          "unknownDetails": [],
+          "necessaryDetails": [
+            "https://sdk.privacy-center.org/3e6e3e05-9201-4614-a13e-b9649d1fa0e4/loader.js?target_type=notice&target=qQMjK8bG",
+            "[inline]",
+            "https://cdn.adgtw.orangeads.fr/mediation/ora_hp.prospects.js",
+            "https://sdk.privacy-center.org/sdk/7f163e8f5f16b925c7d508448e8033b7f77f1104/modern/sdk.7f163e8f5f16b925c7d508448e8033b7f77f1104.js",
+            "https://cdn.adgtw.orangeads.fr/build/oan_common-async-3.2.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 2,
+          "tracking": 0,
+          "necessary": 2
+        },
+        "localStorageAnalysis": {
+          "total": 8,
+          "tracking": 0,
+          "necessary": 8
+        },
+        "screenshot": "1756099338585_reject_pre.png",
+        "violation": "No reject option provided (GDPR violation)"
+      },
+      "accept_pre": {
+        "timestamp": "2025-08-25T05:22:24.319Z",
+        "stage": "accept_pre",
+        "url": "https://orange.fr",
+        "scriptsCount": 31,
+        "scripts": [
+          {
+            "src": "https://sdk.privacy-center.org/3e6e3e05-9201-4614-a13e-b9649d1fa0e4/loader.js?target_type=notice&target=qQMjK8bG",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/abtesting/prod/utag.sync.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Orange France\",\"alternateName\":\"Oran"
+          },
+          {
+            "src": "https://c.woopic.com/libs/common/o_load_responsive.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/cookie-monster/cookie-monster.lib.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/common.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://gp.cdn.woopic.com/magic/o_tealium.js?update",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/elcos-jaffa.gp.all.prod.jmPrlIs0.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.adgtw.orangeads.fr/mediation/ora_hp.prospects.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202502191254",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.606.js?utv=ut4.39.202412021534",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.417.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.444.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.635.js?utv=ut4.39.202503201343",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.609.js?utv=ut4.39.202508190838",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.626.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.646.js?utv=ut4.39.202506301236",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.384.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=orange/dnu/202508190905&cb=1756099341649",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.524.js?utv=ut4.39.202508190905",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://sdk.privacy-center.org/sdk/7f163e8f5f16b925c7d508448e8033b7f77f1104/modern/sdk.7f163e8f5f16b925c7d508448e8033b7f77f1104.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lptag.liveperson.net/tag/tag.js?site=31127979",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.489.js?utv=ut4.39.202508190905",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lptag.liveperson.net/lptag/api/account/31127979/configuration/applications/taglets/.jsonp?v=2.0&df=undefined&b=undefined",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.adgtw.orangeads.fr/build/oan_common-async-3.2.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lpcdn.lpsnmedia.net/le_unified_window/10.43.1-release_1855106683/ui-framework.js?version=10.43.1-release_1855106683",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lpcdn.lpsnmedia.net/le_unified_window/10.43.1-release_1855106683/surveylogicinstance.min.js?version=10.43.1-release_1855106683",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lpcdn.lpsnmedia.net/le_unified_window/10.43.1-release_1855106683/desktopEmbedded.js?version=10.43.1-release_1855106683",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.orange.fr/sg1.js?profile=hp",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.33.3-release_1982870847/storage.secure.min.js?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&force=1&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+            "type": "",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 5,
+        "cookies": [
+          {
+            "name": "userconsent",
+            "value": "{\"c\":{\"w\":{\"cs\":{\"c1\":\"1\",\"c2\":\"1\",\"c3\":\"1\",\"c4\":\"1\",\"c5\":\"1\",\"c6\":\"1\"},\"t\":\"2025-08-25T05:22:22.062Z\",\"v\":\"1\"}}}",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1787721742,
+            "size": 124,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "utag_main",
+            "value": "v_id:0198dfad6d2c0020d1160622568805075001d06d00998$_sn:1$_ss:1$_pn:1%3Bexp-session$_st:1756101142047$ses_id:1756099341612%3Bexp-session",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1787635342,
+            "size": 144,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "nav",
+            "value": "all",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1756100240.72982,
+            "size": 6,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Strict",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "izclientid",
+            "value": "lu1bLRHqIW5K5n5OIDEABzSh%2C1756704139",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1771651339.717688,
+            "size": 47,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "idzone",
+            "value": "AEkecLJTszDYdS1SS1neU1EZgu9H5CGpISJX_p7esTIuRNHjVjEYpogd4_NPIcaHL6_YuQmppEz27pW3LCfpiML04WevzI-yGsxElpBXI_PSVyvn2gYJt9MV5-BKmeC9k8wh",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": -1,
+            "size": 138,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 8,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 28,
+        "scriptAnalysis": {
+          "total": 31,
+          "tracking": 21,
+          "necessary": 7,
+          "unknown": 3,
+          "trackingDetails": [
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.js",
+            "https://tags.tiqcdn.com/utag/orange/abtesting/prod/utag.sync.js",
+            "https://c.woopic.com/libs/common/o_load_responsive.js",
+            "https://elcos.cdn.s.woopic.com/cookie-monster/cookie-monster.lib.js",
+            "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/common.js",
+            "https://gp.cdn.woopic.com/magic/o_tealium.js?update",
+            "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/elcos-jaffa.gp.all.prod.jmPrlIs0.js",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202502191254",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.606.js?utv=ut4.39.202412021534",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.417.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.444.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.635.js?utv=ut4.39.202503201343",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.609.js?utv=ut4.39.202508190838",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.626.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.646.js?utv=ut4.39.202506301236",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.384.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=orange/dnu/202508190905&cb=1756099341649",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.524.js?utv=ut4.39.202508190905",
+            "https://lptag.liveperson.net/tag/tag.js?site=31127979",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.489.js?utv=ut4.39.202508190905",
+            "https://lptag.liveperson.net/lptag/api/account/31127979/configuration/applications/taglets/.jsonp?v=2.0&df=undefined&b=undefined"
+          ],
+          "unknownDetails": [
+            "https://lpcdn.lpsnmedia.net/le_unified_window/10.43.1-release_1855106683/ui-framework.js?version=10.43.1-release_1855106683",
+            "https://lpcdn.lpsnmedia.net/le_unified_window/10.43.1-release_1855106683/surveylogicinstance.min.js?version=10.43.1-release_1855106683",
+            "https://lpcdn.lpsnmedia.net/le_unified_window/10.43.1-release_1855106683/desktopEmbedded.js?version=10.43.1-release_1855106683"
+          ],
+          "necessaryDetails": [
+            "https://sdk.privacy-center.org/3e6e3e05-9201-4614-a13e-b9649d1fa0e4/loader.js?target_type=notice&target=qQMjK8bG",
+            "[inline]",
+            "https://cdn.adgtw.orangeads.fr/mediation/ora_hp.prospects.js",
+            "https://sdk.privacy-center.org/sdk/7f163e8f5f16b925c7d508448e8033b7f77f1104/modern/sdk.7f163e8f5f16b925c7d508448e8033b7f77f1104.js",
+            "https://cdn.adgtw.orangeads.fr/build/oan_common-async-3.2.min.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 3,
+          "tracking": 0,
+          "necessary": 3
+        },
+        "localStorageAnalysis": {
+          "total": 8,
+          "tracking": 0,
+          "necessary": 8
+        },
+        "screenshot": "1756099346325_accept_pre.png"
+      },
+      "accept": {
+        "timestamp": "2025-08-25T05:22:46.391Z",
+        "stage": "accept",
+        "url": "https://orange.fr",
+        "scriptsCount": 74,
+        "scripts": [
+          {
+            "src": "https://pagead2.googlesyndication.com/pagead/js/rum.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://asset.easydmp.net/js/client.js?t=243903",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.googletagmanager.com/gtag/destination?id=G-XXXXXXXX&cx=c&gtm=4e58k1",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.confiant-integrations.net/gptprebidnative/202508181115/wrap.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-SEKC3E0EYK&cx=c&gtm=4e58k1",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://asset.easydmp.net/mt/orange/mt.js?t=243903",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://optiyield.opti-digital.com/pfc/web/sdk?version=4.0.14_backfill",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://c.amazon-adsystem.com/aax2/apstag.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://gp.cdn.woopic.com/tools/pdb.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://qualtrics.cdn.s.woopic.com/orange_france/qsi.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://t.contentsquare.net/uxa/b4d5f36da7d6a.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.googletagmanager.com/gtag/js?id=DC-8307999",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://audience-static.smart-traffik.com/audience.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://sdk.privacy-center.org/3e6e3e05-9201-4614-a13e-b9649d1fa0e4/loader.js?target_type=notice&target=qQMjK8bG",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://sdk.privacy-center.org/3e6e3e05-9201-4614-a13e-b9649d1fa0e4/loader.js?target_type=notice&target=qQMjK8bG",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/abtesting/prod/utag.sync.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "application/ld+json",
+            "innerHTML": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Orange France\",\"alternateName\":\"Oran"
+          },
+          {
+            "src": "https://c.woopic.com/libs/common/o_load_responsive.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/cookie-monster/cookie-monster.lib.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/common.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://gp.cdn.woopic.com/magic/o_tealium.js?update",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/elcos-jaffa.gp.all.prod.jmPrlIs0.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.adgtw.orangeads.fr/mediation/ora_hp.prospects.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202502191254",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.606.js?utv=ut4.39.202412021534",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.417.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.444.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.635.js?utv=ut4.39.202503201343",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.609.js?utv=ut4.39.202508190838",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.626.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.646.js?utv=ut4.39.202506301236",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.384.js?utv=ut4.39.202508181023",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=orange/dnu/202508190905&cb=1756099341649",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.524.js?utv=ut4.39.202508190905",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://sdk.privacy-center.org/sdk/7f163e8f5f16b925c7d508448e8033b7f77f1104/modern/sdk.7f163e8f5f16b925c7d508448e8033b7f77f1104.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lptag.liveperson.net/tag/tag.js?site=31127979",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.489.js?utv=ut4.39.202508190905",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lptag.liveperson.net/lptag/api/account/31127979/configuration/applications/taglets/.jsonp?v=2.0&df=undefined&b=undefined",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.adgtw.orangeads.fr/build/oan_common-async-3.2.min.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lpcdn.lpsnmedia.net/le_unified_window/10.43.1-release_1855106683/ui-framework.js?version=10.43.1-release_1855106683",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lpcdn.lpsnmedia.net/le_unified_window/10.43.1-release_1855106683/surveylogicinstance.min.js?version=10.43.1-release_1855106683",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lpcdn.lpsnmedia.net/le_unified_window/10.43.1-release_1855106683/desktopEmbedded.js?version=10.43.1-release_1855106683",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.575.js?utv=ut4.39.202508190905",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://a40vg3ronr.kameleoon.eu/kameleoon.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.336.js?utv=ut4.39.202508190905",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://static.mediarithmics.com/tag/2/tag.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://events.mics-notrack.com/v1/sites/orange_web/contextual_targeting.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://config.aps.amazon-adsystem.com/configs/3280",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://mv.outbrain.com/Multivac/api/get?url=https%3A%2F%2Fwww.orange.fr%2Fportail&idx=0&rand=30518&widgetJSId=SF_2&va=true&et=true&format=html&px=484&py=2599&vpd=1831&settings=true&recs=true&cw=397&key=NANOWDGT01&tch=0&darkMode=true&adblck=0&abwl=0&cnsntv2=CQWtIsAQWtIsAAHABBENB4FgAP_gAEPgAAAAK_lB7G7fTWljeT53afskaYxOwVhq4sAgBgKJkwgByDpEsJwGgGAwIATAIKAKGAIAIHRBIQBlCADQREAAIIABICDMAACQARACJiBECAERAkBACAhJEwAhEAAQgHBUAlUAkBIESFqgQNhAggAABUAQIAAEAICFAAQABBggQAAQEAAAAmgAiABAIAAIEAAMCFEIAEBBAAECAAAAIAAMABAAAAAAAAAAAAAAAAAAAAAAAAAACCbwAIhoVEEJYEAIRCBhBAgAUEAQAECAIAAAgYIAAEgYBKAMABBgMABAAAAACAAAAAAAAQAAAQAIQABAAACAACAACAAAAAAAAAAgQAAAAUIAAAAICAEAIAAAAQAARABQAIEAAAAQAEBQAAAAIAQAAAAAAACAgAAAAAAAIAAAAAAAAIJAAIAAACAACAAAAAAACBAAQQAAAAAAAAAAAAAQAhQMcABIADQAHwAYABmAEIARQAqACwAGMANQA3gCEAIYAXAAvgBigDwAPUAggCDAEKAJMASoAnQBQACoAGdANIA1QBsQDgAOIAcgA7gB6AD_AIMARAAjgBJgCWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGnAasA4QBzQDqgHZAPQAesA_QB_wECAIHAQeAiwBGICOAEdAJFAS8AmaBNgE2wJ3An-BQ4FEAKMgU0BT8CpAKlgVeBWUCxALIgWWBZkCzgLRgWqBbAC5gF3AL0AXuAwABhoDDwGKAMaAZGAysBmgDOYGeAZ_A0EDQgGtQNdA2CBsYGyANqAbaA3ABuUDdAN1Ab9A4UDhgHHAOWAcxA6cDqIHWgdeA7gB3YDvQHfwPCA8MB7wD4gHyQPnA-kB9gD-AIAwQDBAUCB0EFgQXAhoBDiCH4IgwRJBEqCJoIngRRAimBFkCMAEZwI1ARsAjfBHEEc4I9gj5BH8EggJCASHgkSCRYElQJOAShAlMBKkCVgEtQJfgTEAmQBMqCZoJnQTYBNsCboE5AJzATqAnYBO4CeAE8wJ7AT_AoCBQ8CkEFIgUkApSBSsClwFNIKcApyBT8Co8FSQVKAqYBVECqwFWgKvwVhBWMCswFbgK4gWFgsOCxIFiwLIAWYAs4BZ4C0YFp4LWgtcBbMC3IFuwLejAWIACQAHwAYABkAEUAKgAsABjADUAN4AhACGAGIAQQAjQBJgCVAE6AKAAVAAzoBpAGrAOAA4gByADuAHoAP8AiABHACWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGmAasA4QBzQDqgHZAPQAesBAgCDwEUgIsARwAjoBLwCZoE2ATbAncCf4FDgUQAoyBTQFPwKkAqWBV4FcwLEAsiBZYFmQLOAtEBasC1wLYAW2Au4BegC9wGAAMNAYeAxQBjQDIwGVgM0AZzAzwDP4GggaEA1qBroGwQNjA2QBtQDcIG6AbqA36BwoHDAOOAcsA5gB08DrQOvAdwA7sB3sDwgPDAeOA94B8QD5IHzgfSA-yB_AH8wQEBAUCB0EFgQXAhgBDQCHEEPwRBgiSCJQETQIogRTAizBGAEYQI1ARsAjfBHEEcwI-QR_BIKCRIJFgSVAk4BKYCVIEtQJfgTIAmVBM0EzoJsAm2BN0CcgE5gJ1ATuAngBPYCf4FAQKHgUggpECkgFKQKVgUuAppBTgFOQKfgVHgqSCpQFTAKrAVaAq_BWEFYwKzAVuAriBYWCw4LEgWLAsaBZgCzwFowLTwWtBa4C2YFuQLdgW9.f_wACHwAAAAA&obRecsAbtestVars=1550:5795,1551:5797,1869:7500&wdr-attribution-src=1&activeTab=true&lsl=1&cha=x86&chb=64&chfv=%5B%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22139.0.7258.138%22%7D%2C%7B%22brand%22%3A%22Not%3BA%3DBrand%22%2C%22version%22%3A%2299.0.0.0%22%7D%5D&chpv=10_15_7&chp=Mac%20OS%20X&clientType=21&clientVer=8462aaa8764_2025-08-19&devMem=8&scrOri=p&hwc=4&ttfb=305&bandwidth=1.45&netQ=3g&ccnsnt=true&version=8462aaa8764_2025-08-19&sig=aK0VVvVJ&apv=false&osLang=de-DE&winW=1366&winH=768&scrW=1470&scrH=956&dpr=1&secured=true&cmpStat=1&ccpaStat=0&ogn=https%3A%2F%2Fwww.orange.fr%2Fportail",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://events.mediarithmics.com/v1/conf.js?$site_token=orange_web&cb=1756099350122",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202508190101/pubads_impl.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://siteintercept.qualtrics.com/dxjsmodule/8.0d8be1d80729cd07e641.chunk.js?Q_CLIENTVERSION=2.34.0&Q_CLIENTTYPE=web&Q_BRANDID=www.orange.fr",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "(function() { var load = function() {!function(e){\"use strict\";var t,i=500,n=\"user-agent\",o=\"\",r=\"fu"
+          },
+          {
+            "src": "",
+            "type": "text/javascript",
+            "innerHTML": "(function() { var load = function() {!function(e){\"use strict\";function t(e,t,i,s){return new(i||(i="
+          },
+          {
+            "src": "https://events.mediarithmics.com/v1/device_info.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://static.mediarithmics.com/tag/2/evaluator.min.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://events.mediarithmics.com/v1/sites/orange_web/segment.js?v=1224",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cookie-matching.mediarithmics.com/v1/gather_id?opid=goo&gdpr=1&gdpr_consent=CQWtIsAQWtIsAAHABBENB4FgAP_gAEPgAAAAK_lB7G7fTWljeT53afskaYxOwVhq4sAgBgKJkwgByDpEsJwGgGAwIATAIKAKGAIAIHRBIQBlCADQREAAIIABICDMAACQARACJiBECAERAkBACAhJEwAhEAAQgHBUAlUAkBIESFqgQNhAggAABUAQIAAEAICFAAQABBggQAAQEAAAAmgAiABAIAAIEAAMCFEIAEBBAAECAAAAIAAMABAAAAAAAAAAAAAAAAAAAAAAAAAACCbwAIhoVEEJYEAIRCBhBAgAUEAQAECAIAAAgYIAAEgYBKAMABBgMABAAAAACAAAAAAAAQAAAQAIQABAAACAACAACAAAAAAAAAAgQAAAAUIAAAAICAEAIAAAAQAARABQAIEAAAAQAEBQAAAAIAQAAAAAAACAgAAAAAAAIAAAAAAAAIJAAIAAACAACAAAAAAACBAAQQAAAAAAAAAAAAAQAhQMcABIADQAHwAYABmAEIARQAqACwAGMANQA3gCEAIYAXAAvgBigDwAPUAggCDAEKAJMASoAnQBQACoAGdANIA1QBsQDgAOIAcgA7gB6AD_AIMARAAjgBJgCWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGnAasA4QBzQDqgHZAPQAesA_QB_wECAIHAQeAiwBGICOAEdAJFAS8AmaBNgE2wJ3An-BQ4FEAKMgU0BT8CpAKlgVeBWUCxALIgWWBZkCzgLRgWqBbAC5gF3AL0AXuAwABhoDDwGKAMaAZGAysBmgDOYGeAZ_A0EDQgGtQNdA2CBsYGyANqAbaA3ABuUDdAN1Ab9A4UDhgHHAOWAcxA6cDqIHWgdeA7gB3YDvQHfwPCA8MB7wD4gHyQPnA-kB9gD-AIAwQDBAUCB0EFgQXAhoBDiCH4IgwRJBEqCJoIngRRAimBFkCMAEZwI1ARsAjfBHEEc4I9gj5BH8EggJCASHgkSCRYElQJOAShAlMBKkCVgEtQJfgTEAmQBMqCZoJnQTYBNsCboE5AJzATqAnYBO4CeAE8wJ7AT_AoCBQ8CkEFIgUkApSBSsClwFNIKcApyBT8Co8FSQVKAqYBVECqwFWgKvwVhBWMCswFbgK4gWFgsOCxIFiwLIAWYAs4BZ4C0YFp4LWgtcBbMC3IFuwLejAWIACQAHwAYABkAEUAKgAsABjADUAN4AhACGAGIAQQAjQBJgCVAE6AKAAVAAzoBpAGrAOAA4gByADuAHoAP8AiABHACWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGmAasA4QBzQDqgHZAPQAesBAgCDwEUgIsARwAjoBLwCZoE2ATbAncCf4FDgUQAoyBTQFPwKkAqWBV4FcwLEAsiBZYFmQLOAtEBasC1wLYAW2Au4BegC9wGAAMNAYeAxQBjQDIwGVgM0AZzAzwDP4GggaEA1qBroGwQNjA2QBtQDcIG6AbqA36BwoHDAOOAcsA5gB08DrQOvAdwA7sB3sDwgPDAeOA94B8QD5IHzgfSA-yB_AH8wQEBAUCB0EFgQXAhgBDQCHEEPwRBgiSCJQETQIogRTAizBGAEYQI1ARsAjfBHEEcwI-QR_BIKCRIJFgSVAk4BKYCVIEtQJfgTIAmVBM0EzoJsAm2BN0CcgE5gJ1ATuAngBPYCf4FAQKHgUggpECkgFKQKVgUuAppBTgFOQKfgVHgqSCpQFTAKrAVaAq_BWEFYwKzAVuAriBYWCw4LEgWLAsaBZgCzwFowLTwWtBa4C2YFuQLdgW9.f_wACHwAAAAA",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cookie-matching.mediarithmics.com/v1/gather_id?opid=apx&gdpr=1&gdpr_consent=CQWtIsAQWtIsAAHABBENB4FgAP_gAEPgAAAAK_lB7G7fTWljeT53afskaYxOwVhq4sAgBgKJkwgByDpEsJwGgGAwIATAIKAKGAIAIHRBIQBlCADQREAAIIABICDMAACQARACJiBECAERAkBACAhJEwAhEAAQgHBUAlUAkBIESFqgQNhAggAABUAQIAAEAICFAAQABBggQAAQEAAAAmgAiABAIAAIEAAMCFEIAEBBAAECAAAAIAAMABAAAAAAAAAAAAAAAAAAAAAAAAAACCbwAIhoVEEJYEAIRCBhBAgAUEAQAECAIAAAgYIAAEgYBKAMABBgMABAAAAACAAAAAAAAQAAAQAIQABAAACAACAACAAAAAAAAAAgQAAAAUIAAAAICAEAIAAAAQAARABQAIEAAAAQAEBQAAAAIAQAAAAAAACAgAAAAAAAIAAAAAAAAIJAAIAAACAACAAAAAAACBAAQQAAAAAAAAAAAAAQAhQMcABIADQAHwAYABmAEIARQAqACwAGMANQA3gCEAIYAXAAvgBigDwAPUAggCDAEKAJMASoAnQBQACoAGdANIA1QBsQDgAOIAcgA7gB6AD_AIMARAAjgBJgCWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGnAasA4QBzQDqgHZAPQAesA_QB_wECAIHAQeAiwBGICOAEdAJFAS8AmaBNgE2wJ3An-BQ4FEAKMgU0BT8CpAKlgVeBWUCxALIgWWBZkCzgLRgWqBbAC5gF3AL0AXuAwABhoDDwGKAMaAZGAysBmgDOYGeAZ_A0EDQgGtQNdA2CBsYGyANqAbaA3ABuUDdAN1Ab9A4UDhgHHAOWAcxA6cDqIHWgdeA7gB3YDvQHfwPCA8MB7wD4gHyQPnA-kB9gD-AIAwQDBAUCB0EFgQXAhoBDiCH4IgwRJBEqCJoIngRRAimBFkCMAEZwI1ARsAjfBHEEc4I9gj5BH8EggJCASHgkSCRYElQJOAShAlMBKkCVgEtQJfgTEAmQBMqCZoJnQTYBNsCboE5AJzATqAnYBO4CeAE8wJ7AT_AoCBQ8CkEFIgUkApSBSsClwFNIKcApyBT8Co8FSQVKAqYBVECqwFWgKvwVhBWMCswFbgK4gWFgsOCxIFiwLIAWYAs4BZ4C0YFp4LWgtcBbMC3IFuwLejAWIACQAHwAYABkAEUAKgAsABjADUAN4AhACGAGIAQQAjQBJgCVAE6AKAAVAAzoBpAGrAOAA4gByADuAHoAP8AiABHACWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGmAasA4QBzQDqgHZAPQAesBAgCDwEUgIsARwAjoBLwCZoE2ATbAncCf4FDgUQAoyBTQFPwKkAqWBV4FcwLEAsiBZYFmQLOAtEBasC1wLYAW2Au4BegC9wGAAMNAYeAxQBjQDIwGVgM0AZzAzwDP4GggaEA1qBroGwQNjA2QBtQDcIG6AbqA36BwoHDAOOAcsA5gB08DrQOvAdwA7sB3sDwgPDAeOA94B8QD5IHzgfSA-yB_AH8wQEBAUCB0EFgQXAhgBDQCHEEPwRBgiSCJQETQIogRTAizBGAEYQI1ARsAjfBHEEcwI-QR_BIKCRIJFgSVAk4BKYCVIEtQJfgTIAmVBM0EzoJsAm2BN0CcgE5gJ1ATuAngBPYCf4FAQKHgUggpECkgFKQKVgUuAppBTgFOQKfgVHgqSCpQFTAKrAVaAq_BWEFYwKzAVuAriBYWCw4LEgWLAsaBZgCzwFowLTwWtBa4C2YFuQLdgW9.f_wACHwAAAAA",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://static.criteo.net/js/ld/publishertag.ids.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://invstatic101.creativecdn.com/encrypted-signals/encrypted-tag-g.js",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://widgets.outbrain.com/nanoWidget/8462aaa8764_2025-08-19/module/webVitals.js?e=2",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://widgets.outbrain.com/nanoWidget/8462aaa8764_2025-08-19/module/publisherIDsCollector.js?e=2",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cookie-matching.mediarithmics.com/v1/getids?utidl=&gdpr=1&gdpr_consent=CQWtIsAQWtIsAAHABBENB4FgAP_gAEPgAAAAK_lB7G7fTWljeT53afskaYxOwVhq4sAgBgKJkwgByDpEsJwGgGAwIATAIKAKGAIAIHRBIQBlCADQREAAIIABICDMAACQARACJiBECAERAkBACAhJEwAhEAAQgHBUAlUAkBIESFqgQNhAggAABUAQIAAEAICFAAQABBggQAAQEAAAAmgAiABAIAAIEAAMCFEIAEBBAAECAAAAIAAMABAAAAAAAAAAAAAAAAAAAAAAAAAACCbwAIhoVEEJYEAIRCBhBAgAUEAQAECAIAAAgYIAAEgYBKAMABBgMABAAAAACAAAAAAAAQAAAQAIQABAAACAACAACAAAAAAAAAAgQAAAAUIAAAAICAEAIAAAAQAARABQAIEAAAAQAEBQAAAAIAQAAAAAAACAgAAAAAAAIAAAAAAAAIJAAIAAACAACAAAAAAACBAAQQAAAAAAAAAAAAAQAhQMcABIADQAHwAYABmAEIARQAqACwAGMANQA3gCEAIYAXAAvgBigDwAPUAggCDAEKAJMASoAnQBQACoAGdANIA1QBsQDgAOIAcgA7gB6AD_AIMARAAjgBJgCWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGnAasA4QBzQDqgHZAPQAesA_QB_wECAIHAQeAiwBGICOAEdAJFAS8AmaBNgE2wJ3An-BQ4FEAKMgU0BT8CpAKlgVeBWUCxALIgWWBZkCzgLRgWqBbAC5gF3AL0AXuAwABhoDDwGKAMaAZGAysBmgDOYGeAZ_A0EDQgGtQNdA2CBsYGyANqAbaA3ABuUDdAN1Ab9A4UDhgHHAOWAcxA6cDqIHWgdeA7gB3YDvQHfwPCA8MB7wD4gHyQPnA-kB9gD-AIAwQDBAUCB0EFgQXAhoBDiCH4IgwRJBEqCJoIngRRAimBFkCMAEZwI1ARsAjfBHEEc4I9gj5BH8EggJCASHgkSCRYElQJOAShAlMBKkCVgEtQJfgTEAmQBMqCZoJnQTYBNsCboE5AJzATqAnYBO4CeAE8wJ7AT_AoCBQ8CkEFIgUkApSBSsClwFNIKcApyBT8Co8FSQVKAqYBVECqwFWgKvwVhBWMCswFbgK4gWFgsOCxIFiwLIAWYAs4BZ4C0YFp4LWgtcBbMC3IFuwLejAWIACQAHwAYABkAEUAKgAsABjADUAN4AhACGAGIAQQAjQBJgCVAE6AKAAVAAzoBpAGrAOAA4gByADuAHoAP8AiABHACWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGmAasA4QBzQDqgHZAPQAesBAgCDwEUgIsARwAjoBLwCZoE2ATbAncCf4FDgUQAoyBTQFPwKkAqWBV4FcwLEAsiBZYFmQLOAtEBasC1wLYAW2Au4BegC9wGAAMNAYeAxQBjQDIwGVgM0AZzAzwDP4GggaEA1qBroGwQNjA2QBtQDcIG6AbqA36BwoHDAOOAcsA5gB08DrQOvAdwA7sB3sDwgPDAeOA94B8QD5IHzgfSA-yB_AH8wQEBAUCB0EFgQXAhgBDQCHEEPwRBgiSCJQETQIogRTAizBGAEYQI1ARsAjfBHEEcwI-QR_BIKCRIJFgSVAk4BKYCVIEtQJfgTIAmVBM0EzoJsAm2BN0CcgE5gJ1ATuAngBPYCf4FAQKHgUggpECkgFKQKVgUuAppBTgFOQKfgVHgqSCpQFTAKrAVaAq_BWEFYwKzAVuAriBYWCw4LEgWLAsaBZgCzwFowLTwWtBa4C2YFuQLdgW9.f_wACHwAAAAA&$site_token=orange_web",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://www.orange.fr/sg1.js?profile=hp",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://lpcdn.lpsnmedia.net/le_secure_storage/3.33.3-release_1982870847/storage.secure.min.js?loc=https%3A%2F%2Fwww.orange.fr&site=31127979&force=1&env=prod&isCrossDomain=true&accdn=accdn.lpsnmedia.net",
+            "type": "",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://widgets.outbrain.com/outbrain.js?i=fac0593a",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.confiant-integrations.net/Ngwh8Nfclp8QnaUOpjNkhYFSsl8/gpt_and_prebid/config.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://cdn.adgtw.orangeads.fr/prebid/ora.js?v918",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://optiyield.opti-digital.com/pfc/modules/?pubid=3513",
+            "type": "module",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://boot.pbstck.com/v1/tag/3700b9cf-d86a-4561-b673-67f5393f6f04",
+            "type": "text/javascript",
+            "innerHTML": ""
+          },
+          {
+            "src": "https://zncvlwowedrfcbkl4-orangefrance.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_cVlwOweDRfcbKL4",
+            "type": "text/javascript",
+            "innerHTML": ""
+          }
+        ],
+        "cookiesCount": 22,
+        "cookies": [
+          {
+            "name": "mics_vid",
+            "value": "140603031273",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1771632000,
+            "size": 20,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "LPSID-31127979",
+            "value": "7ifznUWASUa1eH0xSUmX5g",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": -1,
+            "size": 36,
+            "httpOnly": false,
+            "secure": false,
+            "session": true,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "__eoi",
+            "value": "ID=de81ea5ddc336589:T=1756099357:RT=1756099357:S=AA-Afjaf3uTaGZqrDiguPMO0qNPr",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1771651357,
+            "size": 82,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_ga_SEKC3E0EYK",
+            "value": "GS2.1.s1756099353$o1$g0$t1756099353$j60$l0$h795850019",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1789959353,
+            "size": 67,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "__gads",
+            "value": "ID=c31255f03750bf3e:T=1756099357:RT=1756099357:S=ALNI_MZmLRHN2b5LCSSXZHMKrBB_PknLJg",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1789795357,
+            "size": 89,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_ga",
+            "value": "GA1.1.1621205089.1756099353",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1789959353,
+            "size": 30,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "LPVID",
+            "value": "czNGQ1YTU2NzEzZjA0NzQ0",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1787635354,
+            "size": 27,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "cto_bidid",
+            "value": "J6gWml9UVUVqb01yWWgweG4yQXJLUFJLRGN6TCUyRm9MY2NoVldPUVgzdmpVJTJCUnNmUmlUSUhMdDhjUURZenAyMlRXZXZNUG54eEklMkZyaWNjd1ZIRjFtbVE1aVQwZyUzRCUzRA",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1789784549,
+            "size": 147,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "cto_bundle",
+            "value": "6RRRBV91Qml3RUx3UXl2b3NSUDA3YVJOU2xtWjFQNVVLZE9yRVRkZWJ4b1U4b29OcHQlMkZZbSUyRm00bk5zbkM3TzRpNDhpTlJWMnR0ZElxMGpRMkw4MXRkT1BmWWFzWFlSSDB1M2p0WlBZVjRvQ0h5TVpaenIyQkwlMkZyWnJMc29IVDA4WXFEbQ",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1789795360,
+            "size": 196,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "idzone",
+            "value": "AEkecLJTszDYdS1SS1neU1EZgu9H5CGpISJX_p7esTIuRNHjVjEYpogd4_NPIcaHL6_YuQmppEz27pW3LCfpiML04WevzI-yGsxElpBXI_PSVyvn2gYJt9MV5-BKmeC9k8wh",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": -1,
+            "size": 138,
+            "httpOnly": true,
+            "secure": true,
+            "session": true,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_cs_s",
+            "value": "1.5.U.9.1756101150509",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1756101150,
+            "size": 26,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_cs_id",
+            "value": "74cc6b8c-51b6-a35a-b2b8-3c43b09287a4.1756099350.1.1756099350.1756099350.1749206128.1790263350497.1.x",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1790263350,
+            "size": 106,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "__gpi",
+            "value": "UID=00001269f383f6e4:T=1756099357:RT=1756099357:S=ALNI_MaAqEfXZkUUjlZxFK-FEXlNQqVqyg",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1789795357,
+            "size": 89,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "userconsent",
+            "value": "{\"c\":{\"w\":{\"cs\":{\"c1\":\"0\",\"c2\":\"0\",\"c3\":\"0\",\"c4\":\"0\",\"c5\":\"0\",\"c6\":\"0\"},\"t\":\"2025-08-25T05:22:26.401Z\",\"v\":\"2\"}}}",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1787721746,
+            "size": 124,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_cs_c",
+            "value": "1",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1790263350,
+            "size": 6,
+            "httpOnly": false,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "mics_lts",
+            "value": "1756099358491",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1771632000,
+            "size": 21,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_gcl_au",
+            "value": "1.1.196875640.1756099348",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1763875348,
+            "size": 31,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "utag_main",
+            "value": "v_id:0198dfad6d2c0020d1160622568805075001d06d00998$_sn:1$_ss:1$_pn:1%3Bexp-session$_st:1756101146403$ses_id:1756099341612%3Bexp-session",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1787635346,
+            "size": 144,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "nav",
+            "value": "all",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1756100240.72982,
+            "size": 6,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Strict",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "_fbp",
+            "value": "fb.1.1756099346402.2107572978",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1758691346,
+            "size": 33,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "kameleoonVisitorCode",
+            "value": "s2f933aus40fez15",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1787635348,
+            "size": 36,
+            "httpOnly": false,
+            "secure": false,
+            "session": false,
+            "sameSite": "Lax",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          },
+          {
+            "name": "izclientid",
+            "value": "lu1bLRHqIW5K5n5OIDEABzSh%2C1756704139",
+            "domain": ".orange.fr",
+            "path": "/",
+            "expires": 1771651339.717688,
+            "size": 47,
+            "httpOnly": true,
+            "secure": true,
+            "session": false,
+            "sameSite": "None",
+            "priority": "Medium",
+            "sameParty": false,
+            "sourceScheme": "Secure"
+          }
+        ],
+        "localStorageCount": 43,
+        "trackingPixels": 0,
+        "thirdPartyScripts": 67,
+        "scriptAnalysis": {
+          "total": 74,
+          "tracking": 38,
+          "necessary": 13,
+          "unknown": 23,
+          "trackingDetails": [
+            "https://pagead2.googlesyndication.com/pagead/js/rum.js",
+            "https://www.googletagmanager.com/gtag/destination?id=G-XXXXXXXX&cx=c&gtm=4e58k1",
+            "https://cdn.confiant-integrations.net/gptprebidnative/202508181115/wrap.js",
+            "https://www.googletagmanager.com/gtag/js?id=G-SEKC3E0EYK&cx=c&gtm=4e58k1",
+            "https://c.amazon-adsystem.com/aax2/apstag.js",
+            "https://gp.cdn.woopic.com/tools/pdb.min.js",
+            "https://qualtrics.cdn.s.woopic.com/orange_france/qsi.js",
+            "https://www.googletagmanager.com/gtag/js?id=DC-8307999",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.js",
+            "https://tags.tiqcdn.com/utag/orange/abtesting/prod/utag.sync.js",
+            "https://c.woopic.com/libs/common/o_load_responsive.js",
+            "https://elcos.cdn.s.woopic.com/cookie-monster/cookie-monster.lib.js",
+            "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/common.js",
+            "https://gp.cdn.woopic.com/magic/o_tealium.js?update",
+            "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/elcos-jaffa.gp.all.prod.jmPrlIs0.js",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202502191254",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.606.js?utv=ut4.39.202412021534",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.417.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.444.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.635.js?utv=ut4.39.202503201343",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.609.js?utv=ut4.39.202508190838",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.626.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.646.js?utv=ut4.39.202506301236",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.384.js?utv=ut4.39.202508181023",
+            "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=orange/dnu/202508190905&cb=1756099341649",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.524.js?utv=ut4.39.202508190905",
+            "https://lptag.liveperson.net/tag/tag.js?site=31127979",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.489.js?utv=ut4.39.202508190905",
+            "https://lptag.liveperson.net/lptag/api/account/31127979/configuration/applications/taglets/.jsonp?v=2.0&df=undefined&b=undefined",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.575.js?utv=ut4.39.202508190905",
+            "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.336.js?utv=ut4.39.202508190905",
+            "https://config.aps.amazon-adsystem.com/configs/3280",
+            "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202508190101/pubads_impl.js",
+            "https://widgets.outbrain.com/nanoWidget/8462aaa8764_2025-08-19/module/webVitals.js?e=2",
+            "https://widgets.outbrain.com/nanoWidget/8462aaa8764_2025-08-19/module/publisherIDsCollector.js?e=2",
+            "https://widgets.outbrain.com/outbrain.js?i=fac0593a",
+            "https://cdn.confiant-integrations.net/Ngwh8Nfclp8QnaUOpjNkhYFSsl8/gpt_and_prebid/config.js",
+            "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+          ],
+          "unknownDetails": [
+            "https://asset.easydmp.net/js/client.js?t=243903",
+            "https://asset.easydmp.net/mt/orange/mt.js?t=243903",
+            "https://optiyield.opti-digital.com/pfc/web/sdk?version=4.0.14_backfill",
+            "https://t.contentsquare.net/uxa/b4d5f36da7d6a.js",
+            "https://audience-static.smart-traffik.com/audience.js",
+            "https://lpcdn.lpsnmedia.net/le_unified_window/10.43.1-release_1855106683/ui-framework.js?version=10.43.1-release_1855106683",
+            "https://lpcdn.lpsnmedia.net/le_unified_window/10.43.1-release_1855106683/surveylogicinstance.min.js?version=10.43.1-release_1855106683",
+            "https://lpcdn.lpsnmedia.net/le_unified_window/10.43.1-release_1855106683/desktopEmbedded.js?version=10.43.1-release_1855106683",
+            "https://a40vg3ronr.kameleoon.eu/kameleoon.js",
+            "https://static.mediarithmics.com/tag/2/tag.min.js",
+            "https://events.mics-notrack.com/v1/sites/orange_web/contextual_targeting.js",
+            "https://events.mediarithmics.com/v1/conf.js?$site_token=orange_web&cb=1756099350122",
+            "https://events.mediarithmics.com/v1/device_info.js",
+            "https://static.mediarithmics.com/tag/2/evaluator.min.js",
+            "https://events.mediarithmics.com/v1/sites/orange_web/segment.js?v=1224",
+            "https://cookie-matching.mediarithmics.com/v1/gather_id?opid=goo&gdpr=1&gdpr_consent=CQWtIsAQWtIsAAHABBENB4FgAP_gAEPgAAAAK_lB7G7fTWljeT53afskaYxOwVhq4sAgBgKJkwgByDpEsJwGgGAwIATAIKAKGAIAIHRBIQBlCADQREAAIIABICDMAACQARACJiBECAERAkBACAhJEwAhEAAQgHBUAlUAkBIESFqgQNhAggAABUAQIAAEAICFAAQABBggQAAQEAAAAmgAiABAIAAIEAAMCFEIAEBBAAECAAAAIAAMABAAAAAAAAAAAAAAAAAAAAAAAAAACCbwAIhoVEEJYEAIRCBhBAgAUEAQAECAIAAAgYIAAEgYBKAMABBgMABAAAAACAAAAAAAAQAAAQAIQABAAACAACAACAAAAAAAAAAgQAAAAUIAAAAICAEAIAAAAQAARABQAIEAAAAQAEBQAAAAIAQAAAAAAACAgAAAAAAAIAAAAAAAAIJAAIAAACAACAAAAAAACBAAQQAAAAAAAAAAAAAQAhQMcABIADQAHwAYABmAEIARQAqACwAGMANQA3gCEAIYAXAAvgBigDwAPUAggCDAEKAJMASoAnQBQACoAGdANIA1QBsQDgAOIAcgA7gB6AD_AIMARAAjgBJgCWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGnAasA4QBzQDqgHZAPQAesA_QB_wECAIHAQeAiwBGICOAEdAJFAS8AmaBNgE2wJ3An-BQ4FEAKMgU0BT8CpAKlgVeBWUCxALIgWWBZkCzgLRgWqBbAC5gF3AL0AXuAwABhoDDwGKAMaAZGAysBmgDOYGeAZ_A0EDQgGtQNdA2CBsYGyANqAbaA3ABuUDdAN1Ab9A4UDhgHHAOWAcxA6cDqIHWgdeA7gB3YDvQHfwPCA8MB7wD4gHyQPnA-kB9gD-AIAwQDBAUCB0EFgQXAhoBDiCH4IgwRJBEqCJoIngRRAimBFkCMAEZwI1ARsAjfBHEEc4I9gj5BH8EggJCASHgkSCRYElQJOAShAlMBKkCVgEtQJfgTEAmQBMqCZoJnQTYBNsCboE5AJzATqAnYBO4CeAE8wJ7AT_AoCBQ8CkEFIgUkApSBSsClwFNIKcApyBT8Co8FSQVKAqYBVECqwFWgKvwVhBWMCswFbgK4gWFgsOCxIFiwLIAWYAs4BZ4C0YFp4LWgtcBbMC3IFuwLejAWIACQAHwAYABkAEUAKgAsABjADUAN4AhACGAGIAQQAjQBJgCVAE6AKAAVAAzoBpAGrAOAA4gByADuAHoAP8AiABHACWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGmAasA4QBzQDqgHZAPQAesBAgCDwEUgIsARwAjoBLwCZoE2ATbAncCf4FDgUQAoyBTQFPwKkAqWBV4FcwLEAsiBZYFmQLOAtEBasC1wLYAW2Au4BegC9wGAAMNAYeAxQBjQDIwGVgM0AZzAzwDP4GggaEA1qBroGwQNjA2QBtQDcIG6AbqA36BwoHDAOOAcsA5gB08DrQOvAdwA7sB3sDwgPDAeOA94B8QD5IHzgfSA-yB_AH8wQEBAUCB0EFgQXAhgBDQCHEEPwRBgiSCJQETQIogRTAizBGAEYQI1ARsAjfBHEEcwI-QR_BIKCRIJFgSVAk4BKYCVIEtQJfgTIAmVBM0EzoJsAm2BN0CcgE5gJ1ATuAngBPYCf4FAQKHgUggpECkgFKQKVgUuAppBTgFOQKfgVHgqSCpQFTAKrAVaAq_BWEFYwKzAVuAriBYWCw4LEgWLAsaBZgCzwFowLTwWtBa4C2YFuQLdgW9.f_wACHwAAAAA",
+            "https://cookie-matching.mediarithmics.com/v1/gather_id?opid=apx&gdpr=1&gdpr_consent=CQWtIsAQWtIsAAHABBENB4FgAP_gAEPgAAAAK_lB7G7fTWljeT53afskaYxOwVhq4sAgBgKJkwgByDpEsJwGgGAwIATAIKAKGAIAIHRBIQBlCADQREAAIIABICDMAACQARACJiBECAERAkBACAhJEwAhEAAQgHBUAlUAkBIESFqgQNhAggAABUAQIAAEAICFAAQABBggQAAQEAAAAmgAiABAIAAIEAAMCFEIAEBBAAECAAAAIAAMABAAAAAAAAAAAAAAAAAAAAAAAAAACCbwAIhoVEEJYEAIRCBhBAgAUEAQAECAIAAAgYIAAEgYBKAMABBgMABAAAAACAAAAAAAAQAAAQAIQABAAACAACAACAAAAAAAAAAgQAAAAUIAAAAICAEAIAAAAQAARABQAIEAAAAQAEBQAAAAIAQAAAAAAACAgAAAAAAAIAAAAAAAAIJAAIAAACAACAAAAAAACBAAQQAAAAAAAAAAAAAQAhQMcABIADQAHwAYABmAEIARQAqACwAGMANQA3gCEAIYAXAAvgBigDwAPUAggCDAEKAJMASoAnQBQACoAGdANIA1QBsQDgAOIAcgA7gB6AD_AIMARAAjgBJgCWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGnAasA4QBzQDqgHZAPQAesA_QB_wECAIHAQeAiwBGICOAEdAJFAS8AmaBNgE2wJ3An-BQ4FEAKMgU0BT8CpAKlgVeBWUCxALIgWWBZkCzgLRgWqBbAC5gF3AL0AXuAwABhoDDwGKAMaAZGAysBmgDOYGeAZ_A0EDQgGtQNdA2CBsYGyANqAbaA3ABuUDdAN1Ab9A4UDhgHHAOWAcxA6cDqIHWgdeA7gB3YDvQHfwPCA8MB7wD4gHyQPnA-kB9gD-AIAwQDBAUCB0EFgQXAhoBDiCH4IgwRJBEqCJoIngRRAimBFkCMAEZwI1ARsAjfBHEEc4I9gj5BH8EggJCASHgkSCRYElQJOAShAlMBKkCVgEtQJfgTEAmQBMqCZoJnQTYBNsCboE5AJzATqAnYBO4CeAE8wJ7AT_AoCBQ8CkEFIgUkApSBSsClwFNIKcApyBT8Co8FSQVKAqYBVECqwFWgKvwVhBWMCswFbgK4gWFgsOCxIFiwLIAWYAs4BZ4C0YFp4LWgtcBbMC3IFuwLejAWIACQAHwAYABkAEUAKgAsABjADUAN4AhACGAGIAQQAjQBJgCVAE6AKAAVAAzoBpAGrAOAA4gByADuAHoAP8AiABHACWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGmAasA4QBzQDqgHZAPQAesBAgCDwEUgIsARwAjoBLwCZoE2ATbAncCf4FDgUQAoyBTQFPwKkAqWBV4FcwLEAsiBZYFmQLOAtEBasC1wLYAW2Au4BegC9wGAAMNAYeAxQBjQDIwGVgM0AZzAzwDP4GggaEA1qBroGwQNjA2QBtQDcIG6AbqA36BwoHDAOOAcsA5gB08DrQOvAdwA7sB3sDwgPDAeOA94B8QD5IHzgfSA-yB_AH8wQEBAUCB0EFgQXAhgBDQCHEEPwRBgiSCJQETQIogRTAizBGAEYQI1ARsAjfBHEEcwI-QR_BIKCRIJFgSVAk4BKYCVIEtQJfgTIAmVBM0EzoJsAm2BN0CcgE5gJ1ATuAngBPYCf4FAQKHgUggpECkgFKQKVgUuAppBTgFOQKfgVHgqSCpQFTAKrAVaAq_BWEFYwKzAVuAriBYWCw4LEgWLAsaBZgCzwFowLTwWtBa4C2YFuQLdgW9.f_wACHwAAAAA",
+            "https://static.criteo.net/js/ld/publishertag.ids.js",
+            "https://invstatic101.creativecdn.com/encrypted-signals/encrypted-tag-g.js",
+            "https://cookie-matching.mediarithmics.com/v1/getids?utidl=&gdpr=1&gdpr_consent=CQWtIsAQWtIsAAHABBENB4FgAP_gAEPgAAAAK_lB7G7fTWljeT53afskaYxOwVhq4sAgBgKJkwgByDpEsJwGgGAwIATAIKAKGAIAIHRBIQBlCADQREAAIIABICDMAACQARACJiBECAERAkBACAhJEwAhEAAQgHBUAlUAkBIESFqgQNhAggAABUAQIAAEAICFAAQABBggQAAQEAAAAmgAiABAIAAIEAAMCFEIAEBBAAECAAAAIAAMABAAAAAAAAAAAAAAAAAAAAAAAAAACCbwAIhoVEEJYEAIRCBhBAgAUEAQAECAIAAAgYIAAEgYBKAMABBgMABAAAAACAAAAAAAAQAAAQAIQABAAACAACAACAAAAAAAAAAgQAAAAUIAAAAICAEAIAAAAQAARABQAIEAAAAQAEBQAAAAIAQAAAAAAACAgAAAAAAAIAAAAAAAAIJAAIAAACAACAAAAAAACBAAQQAAAAAAAAAAAAAQAhQMcABIADQAHwAYABmAEIARQAqACwAGMANQA3gCEAIYAXAAvgBigDwAPUAggCDAEKAJMASoAnQBQACoAGdANIA1QBsQDgAOIAcgA7gB6AD_AIMARAAjgBJgCWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGnAasA4QBzQDqgHZAPQAesA_QB_wECAIHAQeAiwBGICOAEdAJFAS8AmaBNgE2wJ3An-BQ4FEAKMgU0BT8CpAKlgVeBWUCxALIgWWBZkCzgLRgWqBbAC5gF3AL0AXuAwABhoDDwGKAMaAZGAysBmgDOYGeAZ_A0EDQgGtQNdA2CBsYGyANqAbaA3ABuUDdAN1Ab9A4UDhgHHAOWAcxA6cDqIHWgdeA7gB3YDvQHfwPCA8MB7wD4gHyQPnA-kB9gD-AIAwQDBAUCB0EFgQXAhoBDiCH4IgwRJBEqCJoIngRRAimBFkCMAEZwI1ARsAjfBHEEc4I9gj5BH8EggJCASHgkSCRYElQJOAShAlMBKkCVgEtQJfgTEAmQBMqCZoJnQTYBNsCboE5AJzATqAnYBO4CeAE8wJ7AT_AoCBQ8CkEFIgUkApSBSsClwFNIKcApyBT8Co8FSQVKAqYBVECqwFWgKvwVhBWMCswFbgK4gWFgsOCxIFiwLIAWYAs4BZ4C0YFp4LWgtcBbMC3IFuwLejAWIACQAHwAYABkAEUAKgAsABjADUAN4AhACGAGIAQQAjQBJgCVAE6AKAAVAAzoBpAGrAOAA4gByADuAHoAP8AiABHACWgE3AJ7AUEBRQCmgFRgK8Ar4BZgC5wF2AXmAvgC-gGEAMbAZwBnQDQQGmAasA4QBzQDqgHZAPQAesBAgCDwEUgIsARwAjoBLwCZoE2ATbAncCf4FDgUQAoyBTQFPwKkAqWBV4FcwLEAsiBZYFmQLOAtEBasC1wLYAW2Au4BegC9wGAAMNAYeAxQBjQDIwGVgM0AZzAzwDP4GggaEA1qBroGwQNjA2QBtQDcIG6AbqA36BwoHDAOOAcsA5gB08DrQOvAdwA7sB3sDwgPDAeOA94B8QD5IHzgfSA-yB_AH8wQEBAUCB0EFgQXAhgBDQCHEEPwRBgiSCJQETQIogRTAizBGAEYQI1ARsAjfBHEEcwI-QR_BIKCRIJFgSVAk4BKYCVIEtQJfgTIAmVBM0EzoJsAm2BN0CcgE5gJ1ATuAngBPYCf4FAQKHgUggpECkgFKQKVgUuAppBTgFOQKfgVHgqSCpQFTAKrAVaAq_BWEFYwKzAVuAriBYWCw4LEgWLAsaBZgCzwFowLTwWtBa4C2YFuQLdgW9.f_wACHwAAAAA&$site_token=orange_web",
+            "https://optiyield.opti-digital.com/pfc/modules/?pubid=3513",
+            "https://boot.pbstck.com/v1/tag/3700b9cf-d86a-4561-b673-67f5393f6f04",
+            "https://zncvlwowedrfcbkl4-orangefrance.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_cVlwOweDRfcbKL4"
+          ],
+          "necessaryDetails": [
+            "https://sdk.privacy-center.org/3e6e3e05-9201-4614-a13e-b9649d1fa0e4/loader.js?target_type=notice&target=qQMjK8bG",
+            "https://sdk.privacy-center.org/3e6e3e05-9201-4614-a13e-b9649d1fa0e4/loader.js?target_type=notice&target=qQMjK8bG",
+            "[inline]",
+            "https://cdn.adgtw.orangeads.fr/mediation/ora_hp.prospects.js",
+            "https://sdk.privacy-center.org/sdk/7f163e8f5f16b925c7d508448e8033b7f77f1104/modern/sdk.7f163e8f5f16b925c7d508448e8033b7f77f1104.js"
+          ],
+          "mathCheck": "PASS"
+        },
+        "cookieAnalysis": {
+          "total": 20,
+          "tracking": 4,
+          "necessary": 16
+        },
+        "localStorageAnalysis": {
+          "total": 43,
+          "tracking": 1,
+          "necessary": 42
+        },
+        "screenshot": "1756099368410_accept.png"
+      }
+    },
+    "bannerAnalysis": {
+      "detected": false
+    },
+    "gdprCompliance": {
+      "complianceScore": 20,
+      "riskLevel": "CRITICAL",
+      "summary": {
+        "totalViolations": 3,
+        "criticalViolations": 2,
+        "highViolations": 1,
+        "mediumViolations": 0
+      },
+      "violations": [
+        {
+          "code": "EU-C-001",
+          "title": "Pre-consent Tracking Script Execution",
+          "severity": "HIGH",
+          "gdprArticle": "Article 5(3)",
+          "description": "Tracking scripts executed before user consent obtained",
+          "businessImpact": "Unlawful processing of personal data, potential fines up to €20M",
+          "remediation": "Implement consent-gated script loading using CMP integration",
+          "details": {
+            "count": 16,
+            "scripts": [
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.js",
+              "https://tags.tiqcdn.com/utag/orange/abtesting/prod/utag.sync.js",
+              "https://c.woopic.com/libs/common/o_load_responsive.js",
+              "https://elcos.cdn.s.woopic.com/cookie-monster/cookie-monster.lib.js",
+              "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/common.js",
+              "https://gp.cdn.woopic.com/magic/o_tealium.js?update",
+              "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/elcos-jaffa.gp.all.prod.jmPrlIs0.js",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202502191254",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.606.js?utv=ut4.39.202412021534",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.417.js?utv=ut4.39.202508181023",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.444.js?utv=ut4.39.202508181023",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.635.js?utv=ut4.39.202503201343",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.609.js?utv=ut4.39.202508190838",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.626.js?utv=ut4.39.202508181023",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.646.js?utv=ut4.39.202506301236",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.384.js?utv=ut4.39.202508181023"
+            ],
+            "evidence": "1756099330827_baseline.png",
+            "rawData": {
+              "totalScripts": 20,
+              "trackingScripts": 16,
+              "necessaryScripts": 4
+            }
+          },
+          "detectedAt": "2025-08-25T05:22:48.471Z"
+        },
+        {
+          "code": "EU-C-004",
+          "title": "Missing Reject Option",
+          "severity": "CRITICAL",
+          "gdprArticle": "Article 7(4)",
+          "description": "No clear mechanism to reject non-essential cookies",
+          "businessImpact": "Consent not freely given, entire consent framework invalid",
+          "remediation": "Add prominent \"Reject All\" button with equal visual weight to \"Accept\"",
+          "details": {
+            "detectedButtons": [],
+            "evidence": "1756099330827_baseline.png"
+          },
+          "detectedAt": "2025-08-25T05:22:48.471Z"
+        },
+        {
+          "code": "EU-C-011",
+          "title": "Consent Bypass Vulnerability",
+          "severity": "CRITICAL",
+          "gdprArticle": "Article 5(1)(a)",
+          "description": "Technical methods detected to bypass consent mechanism",
+          "businessImpact": "Systematic GDPR violations, potential criminal liability",
+          "remediation": "Implement server-side consent validation and audit trails",
+          "details": {
+            "type": "consent-bypass",
+            "scripts": [
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.js",
+              "https://tags.tiqcdn.com/utag/orange/abtesting/prod/utag.sync.js",
+              "https://c.woopic.com/libs/common/o_load_responsive.js",
+              "https://elcos.cdn.s.woopic.com/cookie-monster/cookie-monster.lib.js",
+              "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/common.js",
+              "https://gp.cdn.woopic.com/magic/o_tealium.js?update",
+              "https://elcos.cdn.s.woopic.com/public/libs/1V24WOux/common/js/elcos-jaffa.gp.all.prod.jmPrlIs0.js",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.440.js?utv=ut4.39.202502191254",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.606.js?utv=ut4.39.202412021534",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.417.js?utv=ut4.39.202508181023",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.444.js?utv=ut4.39.202508181023",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.635.js?utv=ut4.39.202503201343",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.609.js?utv=ut4.39.202508190838",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.626.js?utv=ut4.39.202508181023",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.646.js?utv=ut4.39.202506301236",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.384.js?utv=ut4.39.202508181023",
+              "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=orange/dnu/202508190905&cb=1756099335068",
+              "https://tags.tiqcdn.com/utag/orange/dnu/prod/utag.524.js?utv=ut4.39.202508190905",
+              "https://lptag.liveperson.net/tag/tag.js?site=31127979"
+            ],
+            "evidence": "1756099338585_reject_pre.png"
+          },
+          "detectedAt": "2025-08-25T05:22:48.471Z"
+        }
+      ],
+      "recommendations": [
+        {
+          "priority": "IMMEDIATE",
+          "category": "Technical Implementation",
+          "action": "Implement consent-gated loading for all tracking technologies",
+          "timeline": "1-2 weeks",
+          "effort": "Medium",
+          "impact": "Eliminates high-risk pre-consent violations"
+        },
+        {
+          "priority": "IMMEDIATE",
+          "category": "UI/UX Design",
+          "action": "Add prominent \"Reject All\" button to consent banner",
+          "timeline": "1-3 days",
+          "effort": "Low",
+          "impact": "Ensures freely given consent, critical for GDPR compliance"
+        }
+      ],
+      "legalAnalysis": {
+        "affectedArticles": [
+          "Article 5(3)",
+          "Article 7(4)",
+          "Article 5(1)(a)"
+        ],
+        "legalRisk": "HIGH - Fundamental consent violations detected. Immediate remediation required.",
+        "regulatoryAction": "Regulatory investigation risk if user complaints filed. Priority remediation advised.",
+        "fineExposure": "Up to €20M or 4% of annual turnover for systematic consent violations"
+      }
+    }
+  },
+  "metadata": {
+    "spectralVersion": "1.0.0",
+    "analysisType": "comprehensive-privacy-compliance",
+    "reportGeneration": "automated"
+  }
+}

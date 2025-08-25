@@ -812,180 +812,7 @@ class SpectralCrawler {
             }
         }
 
-        // ✅ PRIORITY 4: TrustArc detection - ENHANCED IMPLEMENTATION
-        console.log(`🔍 Trying TrustArc-specific detection for ${action}...`);
-        
-        // Enhanced TrustArc text-based detection
-        const trustArcTextResult = await this.page.evaluate((actionType, patterns) => {
-            // TrustArc often uses iframes and specific text patterns
-            const allElements = Array.from(document.querySelectorAll('button, a, [role="button"], input[type="button"], input[type="submit"], div[onclick]'));
-            
-            // TrustArc-specific patterns by language
-            const trustArcPatterns = {
-                accept: {
-                    'de': ['akzeptieren', 'annehmen', 'zustimmen', 'alle akzeptieren', 'cookies akzeptieren'],
-                    'en': ['accept', 'accept all', 'agree', 'allow all', 'consent']
-                },
-                reject: {
-                    'de': ['ablehnen', 'zurückweisen', 'verweigern', 'alle ablehnen', 'cookies ablehnen'],
-                    'en': ['reject', 'decline', 'deny', 'reject all', 'opt out']
-                },
-                settings: {
-                    'de': ['einstellungen', 'anpassen', 'verwalten', 'mehr optionen'],
-                    'en': ['settings', 'preferences', 'manage', 'more options']
-                }
-            };
-            
-            // Detect language from page
-            const htmlLang = document.documentElement.lang || 'en';
-            const detectedLang = htmlLang.toLowerCase().substring(0, 2);
-            const currentPatterns = trustArcPatterns[actionType][detectedLang] || trustArcPatterns[actionType]['en'];
-            
-            for (const element of allElements) {
-                const text = (element.textContent || element.value || '').toLowerCase().trim();
-                const ariaLabel = element.getAttribute('aria-label')?.toLowerCase() || '';
-                const title = element.getAttribute('title')?.toLowerCase() || '';
-                const onclick = element.getAttribute('onclick') || '';
-                const combinedText = text + ' ' + ariaLabel + ' ' + title;
-                
-                // Check TrustArc patterns
-                for (const pattern of currentPatterns) {
-                    if (combinedText.includes(pattern) || onclick.includes(pattern)) {
-                        // Additional validation for TrustArc elements
-                        if (onclick.includes('truste') || 
-                            element.className.includes('truste') ||
-                            element.id.includes('truste') ||
-                            text.length < 50) { // Avoid long explanatory text
-                            
-                            const rect = element.getBoundingClientRect();
-                            if (rect.width > 0 && rect.height > 0) {
-                                element.click();
-                                return `TrustArc ${actionType}: "${text || ariaLabel || 'button'}" (${pattern})`;
-                            }
-                        }
-                    }
-                }
-            }
-            
-            // Also check iframes for TrustArc content
-            const iframes = document.querySelectorAll('iframe[src*="trustarc"], iframe[src*="truste"]');
-            for (const iframe of iframes) {
-                try {
-                    const rect = iframe.getBoundingClientRect();
-                    if (rect.width > 100 && rect.height > 50) {
-                        // Try to access iframe content
-                        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-                        if (iframeDoc) {
-                            const iframeButtons = iframeDoc.querySelectorAll('button, a, [role="button"]');
-                            for (const btn of iframeButtons) {
-                                const btnText = btn.textContent?.toLowerCase() || '';
-                                for (const pattern of currentPatterns) {
-                                    if (btnText.includes(pattern)) {
-                                        btn.click();
-                                        return `TrustArc iframe ${actionType}: "${btnText}" (${pattern})`;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                } catch (e) {
-                    // Cross-origin iframe, continue to fallback
-                }
-            }
-            
-            return false;
-        }, action, targetPatterns);
-
-        if (trustArcTextResult) {
-            console.log(`✅ Clicked TrustArc ${action} button: ${trustArcTextResult} [${detectedLanguage}]`);
-            await new Promise(resolve => setTimeout(resolve, 5000));
-            return true;
-        }
-        
-        // Fallback to standard selectors
-        const trustArcSelectors = {
-            accept: [
-                'button[onclick*="truste"]',
-                '.truste-button-1', 
-                '.call',
-                'input[value*="accept"], input[value*="akzeptieren"]',
-                // Oracle-specific patterns observed
-                'button[class*="accept"]', 
-                'a[href*="consent"][href*="accept"]'
-            ],
-            reject: [
-                'button[onclick*="reject"]',
-                '.truste-button-2',
-                '.call2',
-                'input[value*="reject"], input[value*="ablehnen"]',
-                // Oracle-specific patterns observed
-                'button[class*="reject"]',
-                'a[href*="consent"][href*="reject"]'
-            ],
-            settings: [
-                '.truste-button-3',
-                'button[onclick*="preferences"]',
-                'a[href*="privacy-preferences"]',
-                'button[class*="settings"]'
-            ]
-        };
-
-        for (const selector of trustArcSelectors[action] || []) {
-            try {
-                const button = await this.page.$(selector);
-                if (button) {
-                    const isVisible = await button.evaluate(el => el.offsetParent !== null);
-                    if (isVisible) {
-                        await button.click();
-                        console.log(`✅ Clicked TrustArc ${action} button: ${selector} [${detectedLanguage}]`);
-                        await new Promise(resolve => setTimeout(resolve, 5000));
-                        return true;
-                    }
-                }
-            } catch (error) {
-                console.log(`⚠️ Error with TrustArc selector ${selector}:`, error.message);
-            }
-        }
-
-        // ✅ PRIORITY 5: AmEx UCM detection - NEW IMPLEMENTATION  
-        console.log(`🔍 Trying AmEx UCM-specific detection for ${action}...`);
-        
-        // UCM uses standard button text but may need specific handling
-        const ucmTextBased = await this.page.evaluate((actionType) => {
-            const buttons = document.querySelectorAll('button, a[role="button"], input[type="button"]');
-            const patterns = {
-                accept: ['alle akzeptieren', 'akzeptieren', 'accept all', 'accept'],
-                reject: ['alle ablehnen', 'ablehnen', 'reject all', 'reject', 'decline'],
-                settings: ['mehr optionen', 'optionen', 'more options', 'settings', 'preferences']
-            };
-            
-            const targetPatterns = patterns[actionType] || [];
-            
-            for (const button of buttons) {
-                const text = button.textContent?.toLowerCase().trim() || '';
-                const value = button.value?.toLowerCase() || '';
-                const combinedText = text + ' ' + value;
-                
-                for (const pattern of targetPatterns) {
-                    if (combinedText.includes(pattern)) {
-                        const rect = button.getBoundingClientRect();
-                        if (rect.width > 0 && rect.height > 0) {
-                            button.click();
-                            return `UCM ${actionType}: "${text || value}"`;
-                        }
-                    }
-                }
-            }
-            return false;
-        }, action);
-
-        if (ucmTextBased) {
-            console.log(`✅ Clicked UCM ${action} button: ${ucmTextBased} [${detectedLanguage}]`);
-            await new Promise(resolve => setTimeout(resolve, 5000));
-            return true;
-        }
-
-        // ✅ PRIORITY 6: Usercentrics detection - ENHANCED & FIXED
+        // ✅ PRIORITY 4: Usercentrics detection - ENHANCED & FIXED
         console.log(`🔍 Trying Usercentrics-specific detection for ${action}...`);
         
         // First try text-based detection with proper async handling
@@ -1017,8 +844,7 @@ class SpectralCrawler {
                     const text = element.textContent?.toLowerCase().trim() || '';
                     const ariaLabel = element.getAttribute('aria-label')?.toLowerCase() || '';
                     const title = element.getAttribute('title')?.toLowerCase() || '';
-                    // ✅ CRITICAL FIX: Safe className access
-                    const className = String(element.className || '').toLowerCase();
+                    const className = element.className?.toLowerCase() || '';
                     const combinedText = text + ' ' + ariaLabel + ' ' + title + ' ' + className;
                     
                     for (const pattern of targetPatterns) {
@@ -1084,7 +910,7 @@ class SpectralCrawler {
             }
         }
 
-        // ✅ PRIORITY 7: Iframe handling (with multi-language support)
+        // ✅ PRIORITY 5: Iframe handling (with multi-language support)
         const iframeSuccess = await this.page.evaluate((actionType, patterns) => {
             const iframes = document.querySelectorAll('iframe');
             for (const iframe of iframes) {
@@ -1168,34 +994,7 @@ class SpectralCrawler {
                                       document.querySelector('script[src*="usercentrics"]')?.parentElement ||
                                       document.querySelector('script[src*="app.usercentrics.eu"]')?.parentElement;
             
-            // ✅ NEW: TRUSTARC CMP DETECTION - Based on Oracle patterns
-            const trustArcBanner = document.querySelector('script[src*="consent.trustarc.com"]')?.parentElement ||
-                                  document.querySelector('iframe[src*="consent.trustarc.com"]') ||
-                                  document.querySelector('[data-domain*="trustarc"], [id*="truste"], [class*="truste"]') ||
-                                  document.querySelector('#truste-consent-track, .truste_box_overlay') ||
-                                  // Text-based detection for TrustArc content
-                                  Array.from(document.querySelectorAll('div, section')).find(el => 
-                                      el.textContent && (
-                                          el.textContent.includes('Powered by TrustArc') ||
-                                          el.textContent.includes('TrustArc') ||
-                                          (el.textContent.includes('Cookie-Einstellungen') && el.textContent.length < 500)
-                                      )
-                                  );
-            
-            // ✅ NEW: AMERICAN EXPRESS UCM DETECTION - Custom consent management
-            const ucmBanner = document.querySelector('script[src*="user-consent-management"]')?.parentElement ||
-                             document.querySelector('script[src*="/ucm/"]')?.parentElement ||
-                             // AmEx-specific patterns
-                             document.querySelector('script[src*="aexp-static.com"][src*="consent"]')?.parentElement ||
-                             // Text-based detection for AmEx cookie settings
-                             Array.from(document.querySelectorAll('div, section')).find(el => 
-                                 el.textContent && (
-                                     el.textContent.includes('American Express Cookie-Einstellungen') ||
-                                     el.textContent.includes('Unsere Verwendung von Cookies')
-                                 )
-                             );
-            
-            const banner = oneTrustBanner || cookiebotBanner || sourcePointBanner || microsoftBanner || usercentricsBanner || trustArcBanner || ucmBanner;
+            const banner = oneTrustBanner || cookiebotBanner || sourcePointBanner || microsoftBanner || usercentricsBanner;
             if (!banner) return { detected: false };
             
             const consentButtons = [];
@@ -1222,33 +1021,24 @@ class SpectralCrawler {
                 'acceptera', 'avvisa', 'hantera', 'inställningar', 'godkänn', 'neka'
             ];
             
-            // ✅ CRITICAL FIX: Safe property access to prevent className error + TrustArc Enhancement
-            document.querySelectorAll('button, a[role="button"], [data-cookie-optin-type], input[type="button"], [class*="button"], [data-testid], iframe[src*="trustarc"], iframe[src*="truste"]').forEach(btn => {
+            // ✅ CRITICAL FIX: Safe property access to prevent className error
+            document.querySelectorAll('button, a[role="button"], [data-cookie-optin-type], input[type="button"], [class*="button"], [data-testid]').forEach(btn => {
                 const text = (btn.textContent || btn.value || '').toLowerCase().trim();
                 const ariaLabel = btn.getAttribute('aria-label')?.toLowerCase() || '';
                 const title = btn.getAttribute('title')?.toLowerCase() || '';
                 // ✅ FIXED: Safe className access
                 const className = btn.className ? String(btn.className).toLowerCase() : '';
                 const dataTestId = btn.getAttribute('data-testid')?.toLowerCase() || '';
-                const onclick = btn.getAttribute('onclick')?.toLowerCase() || '';
                 
-                const combinedText = text + ' ' + ariaLabel + ' ' + title + ' ' + className + ' ' + dataTestId + ' ' + onclick;
+                const combinedText = text + ' ' + ariaLabel + ' ' + title + ' ' + className + ' ' + dataTestId;
                 
                 if (combinedText && (
                     universalButtonPatterns.some(pattern => combinedText.includes(pattern)) ||
                     combinedText.includes('cookie') || combinedText.includes('privacy') ||
-                    combinedText.includes('consent') || combinedText.includes('trustarc') ||
-                    combinedText.includes('truste') || onclick.includes('truste') ||
                     btn.id.includes('cookie') || btn.id.includes('consent') ||
-                    className.includes('cookie') || className.includes('consent') ||
-                    className.includes('truste')
+                    className.includes('cookie') || className.includes('consent')
                 )) {
-                    consentButtons.push(text || ariaLabel || title || 'unlabeled');
-                }
-                
-                // ✅ ENHANCED: Special handling for TrustArc iframes
-                if (btn.tagName === 'IFRAME' && (btn.src.includes('trustarc') || btn.src.includes('truste'))) {
-                    consentButtons.push('trustarc-iframe');
+                    consentButtons.push(text || ariaLabel || 'unlabeled');
                 }
             });
             
@@ -1261,24 +1051,6 @@ class SpectralCrawler {
                             consentButtons.push(text);
                         }
                     });
-                }
-            });
-            
-            // ✅ NEW: TrustArc-specific iframe button detection
-            document.querySelectorAll('iframe[src*="trustarc"], iframe[src*="truste"]').forEach(iframe => {
-                try {
-                    const iframeDoc = iframe.contentDocument;
-                    if (iframeDoc) {
-                        iframeDoc.querySelectorAll('button, a[role="button"], input[type="button"]').forEach(btn => {
-                            const text = btn.textContent?.toLowerCase().trim() || btn.value?.toLowerCase() || '';
-                            if (text && text.length < 50) {
-                                iframeButtons.push(`trustarc-${text}`);
-                            }
-                        });
-                    }
-                } catch (e) {
-                    // Cross-origin iframe - add placeholder
-                    iframeButtons.push('trustarc-iframe-crossorigin');
                 }
             });
             
@@ -1298,7 +1070,7 @@ class SpectralCrawler {
             
             const allButtonTexts = [...consentButtons, ...iframeButtons].slice(0, 20);
             
-            // Multi-language acceptance detection - TRUSTARC ENHANCED
+            // Multi-language acceptance detection - USERCENTRICS ENHANCED
             const hasAccept = allButtonTexts.some(text => 
                 ['accept', 'allow', 'agree', 'consent', 'yes', 'ok',
                  'annehmen', 'akzeptieren', 'zustimmen', 'ja', 'alle akzeptieren', 'alle cookies akzeptieren',
@@ -1307,13 +1079,11 @@ class SpectralCrawler {
                  'accetta', 'consenti', 'sì',
                  'accepteren', 'toestaan', 'ja',
                  'accepter', 'tillad', 'ja',
-                 'acceptera', 'tillåt', 'ja', 'godkänn', // ✅ Swedish enhanced
-                 // ✅ TrustArc specific patterns
-                 'trustarc-accept', 'trustarc-allow', 'trustarc-iframe'
+                 'acceptera', 'tillåt', 'ja', 'godkänn' // ✅ Swedish enhanced
                 ].some(pattern => text.includes(pattern))
             );
             
-            // Multi-language rejection detection - TRUSTARC ENHANCED
+            // Multi-language rejection detection - USERCENTRICS ENHANCED
             const hasReject = allButtonTexts.some(text => 
                 ['reject', 'decline', 'deny', 'no', 'necessary', 'essential',
                  'ablehnen', 'verweigern', 'zurückweisen', 'nein', 'notwendige', 'erforderliche', 
@@ -1323,13 +1093,11 @@ class SpectralCrawler {
                  'rifiuta', 'declina', 'no', 'necessari', 'essenziali',
                  'weigeren', 'afwijzen', 'nee', 'noodzakelijke', 'essentiële',
                  'afvis', 'nægt', 'nej', 'nødvendige', 'væsentlige',
-                 'avvisa', 'neka', 'nej', 'nödvändiga', 'väsentliga', // ✅ Swedish enhanced
-                 // ✅ TrustArc specific patterns
-                 'trustarc-reject', 'trustarc-decline', 'trustarc-deny'
+                 'avvisa', 'neka', 'nej', 'nödvändiga', 'väsentliga' // ✅ Swedish enhanced
                 ].some(pattern => text.includes(pattern))
             );
             
-            // Multi-language settings detection - TRUSTARC ENHANCED
+            // Multi-language settings detection - ENHANCED
             const hasSettings = allButtonTexts.some(text => 
                 ['manage', 'settings', 'preferences', 'customize', 'details', 'more',
                  'verwalten', 'einstellungen', 'anpassen', 'details', 'mehr',
@@ -1338,9 +1106,7 @@ class SpectralCrawler {
                  'gestisci', 'impostazioni', 'personalizza', 'dettagli', 'altro',
                  'beheren', 'instellingen', 'aanpassen', 'details', 'meer',
                  'administrer', 'indstillinger', 'tilpas', 'detaljer', 'flere',
-                 'hantera', 'inställningar', 'anpassa', 'detaljer', 'fler', // ✅ Swedish enhanced
-                 // ✅ TrustArc specific patterns
-                 'trustarc-settings', 'trustarc-preferences', 'privacy-preferences'
+                 'hantera', 'inställningar', 'anpassa', 'detaljer', 'fler' // ✅ Swedish enhanced
                 ].some(pattern => text.includes(pattern))
             );
             
@@ -1350,8 +1116,6 @@ class SpectralCrawler {
             else if (sourcePointBanner) provider = 'SourcePoint';
             else if (microsoftBanner) provider = 'Microsoft';
             else if (usercentricsBanner) provider = 'Usercentrics';  // ✅ ENHANCED
-            else if (trustArcBanner) provider = 'TrustArc';  // ✅ NEW
-            else if (ucmBanner) provider = 'AmEx UCM';  // ✅ NEW
             
             const textContent = banner.textContent || banner.innerText || '';
             
